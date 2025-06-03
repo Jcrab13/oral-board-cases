@@ -1,0 +1,494 @@
+[
+  {
+    "case_id": "scenario_1_acute_abdomen",
+    "title": "Scenario 1: Acute Abdomen",
+    "diagnosis_topic": "Acute Abdomen with Sudden Onset Pain",
+    "setup_script": "A 62-year-old male presents to the emergency department with severe, diffuse abdominal pain that began suddenly about 4 hours ago. He rates the pain as 9/10 and states it is unlike anything he has experienced before. He reports some nausea but no vomiting. He has been taking ibuprofen regularly for knee pain. Vital signs show: Temperature 38.0\u00b0C, HR 110, BP 105/70, RR 22. On examination, his abdomen is rigid with diffuse tenderness and guarding. Initial labs show: WBC 16,000/\u03bcL, Hgb 13.5 g/dL, BUN 28 mg/dL, Creatinine 1.3 mg/dL. How would you proceed with this patient?",
+    "dynamic_flow": [
+      {
+        "trigger": "If resident asks for additional history",
+        "reply": "Patient reports taking NSAIDs for knee pain, has history of dyspepsia but never sought treatment. No prior surgeries."
+      },
+      {
+        "trigger": "If resident asks for additional physical exam findings",
+        "reply": "Patient has absent bowel sounds and tympany over the upper abdomen."
+      },
+      {
+        "trigger": "If resident requests imaging",
+        "reply": "You obtain an upright chest X-ray that shows free air under the diaphragm."
+      },
+      {
+        "trigger": "If resident orders additional labs",
+        "reply": "Lactic acid is 3.2 mmol/L."
+      },
+      {
+        "trigger": "If resident requests CT",
+        "reply": "CT scan shows free intraperitoneal air and fluid particularly around the duodenum and near the pylorus of the stomach."
+      },
+      {
+        "trigger": "If resident initiates resuscitation and proposes surgical intervention",
+        "reply": "The patient is given IV fluids, antibiotics, and prepared for surgery. What is your operative plan?"
+      },
+      {
+        "trigger": "If resident chooses laparoscopic approach",
+        "reply": "During laparoscopy, you identify a 1 cm anterior duodenal perforation with purulent fluid throughout the abdomen. What will you do now?"
+      },
+      {
+        "trigger": "If resident chooses open approach",
+        "reply": "Upon entering the abdomen, you find a 1 cm anterior duodenal perforation with purulent fluid throughout the abdomen. What will you do now?"
+      },
+      {
+        "trigger": "If resident describes Graham patch repair",
+        "reply": "You successfully perform the repair. How will you manage this patient postoperatively?"
+      },
+      {
+        "trigger": "If resident does not address H. pylori",
+        "reply": "The patient recovers well but returns 6 months later with similar symptoms. What might you have missed?"
+      }
+    ],
+    "critical_decision_points": [
+      "Appropriate initial workup for acute abdomen",
+      "Recognition of perforated viscus on imaging",
+      "Decision for emergency surgical intervention",
+      "Appropriate surgical approach and technique (Graham patch vs. other)",
+      "Postoperative management and addressing underlying cause (H. pylori, NSAID use)",
+      "Appropriate antibiotic selection and duration"
+    ],
+    "rubric": {
+      "diagnostic_reasoning": [
+        "Does not recognize perforated viscus despite clinical and radiographic evidence",
+        "Delayed recognition of perforated viscus, incomplete differential diagnosis",
+        "Recognizes perforated viscus but does not identify peptic ulcer disease as likely cause",
+        "Correctly diagnoses perforated peptic ulcer, provides appropriate differential",
+        "Excellent diagnostic approach, comprehensive differential, identifies likelihood of NSAID-induced ulcer, considers H. pylori"
+      ],
+      "clinical_judgment": [
+        "Inappropriate management plan, delays surgical intervention",
+        "Somewhat delayed surgical intervention, inadequate resuscitation",
+        "Appropriate surgical intervention, standard resuscitation measures",
+        "Prompt surgical intervention with comprehensive resuscitation including antibiotics, IVF, NPO, NGT",
+        "Excellent clinical judgment with rapid stabilization, appropriate prioritization, and consideration of comorbidities"
+      ],
+      "communication": [
+        "Disorganized presentation of thoughts, unable to articulate plan clearly",
+        "Presents thoughts with some organization but lacks clarity in certain areas",
+        "Clear communication of diagnosis and plan with standard organization",
+        "Well-organized presentation of findings and plan, good explanation of rationale",
+        "Exceptionally clear communication, excellent organization, articulates complex decision-making and contingency plans"
+      ],
+      "surgical_knowledge": [
+        "Inadequate knowledge of surgical anatomy and technique for managing perforated ulcer",
+        "Basic understanding of surgical approach but lacks details on technique",
+        "Adequate knowledge of surgical anatomy and standard approach to repair",
+        "Good knowledge of surgical anatomy, various repair options, and potential complications",
+        "Excellent knowledge of surgical anatomy, technical considerations, repair options, and management of complications"
+      ],
+      "professionalism": [
+        "Does not acknowledge limitations or seek help appropriately",
+        "Minimal acknowledgment of limitations, defensive when questioned",
+        "Acknowledges limitations and seeks help appropriately",
+        "Good insight into limitations, communicates effectively with team, considers patient-centered approach",
+        "Excellent professionalism, clear understanding of role in team, patient advocacy, acknowledges uncertainty appropriately"
+      ]
+    },
+    "resident_feedback_template": "Your performance on this acute abdomen scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of perforated peptic ulcer disease, particularly regarding [specific knowledge gap]. Recommended reading includes chapters on peptic ulcer disease in Schwartz's Principles of Surgery and recent guidelines on management of perforated viscus.",
+    "learner_feedback_questions": [
+      "How realistic was this scenario? (1-5 scale)",
+      "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+      "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+      "Were the examiner prompts clear and helpful? (1-5 scale)",
+      "What aspects of this scenario were most valuable to your learning?",
+      "What suggestions do you have to improve this scenario?",
+      "Additional comments or feedback:"
+    ]
+  },
+  {
+    "case_id": "scenario_2_blunt_abdominal_trauma",
+    "title": "Scenario 2: Trauma",
+    "diagnosis_topic": "Blunt Abdominal Trauma with Hemodynamic Changes",
+    "setup_script": "A 28-year-old female is brought to the emergency department after a motor vehicle collision where she was the restrained driver. She was traveling approximately 45 mph when she was T-boned on the driver's side. On arrival, she is alert and oriented but complaining of left upper quadrant pain and left shoulder pain. Vital signs are: BP 110/70, HR 105, RR 20, O2 saturation 99% on room air. Physical exam reveals seat belt sign across the chest and abdomen, and tenderness to palpation in the left upper quadrant with voluntary guarding. Initial labs show: Hgb 11.2 g/dL, WBC 14,500/\u03bcL, platelets 230,000/\u03bcL, and normal coagulation studies. How would you proceed with this patient?",
+    "dynamic_flow": [
+      {
+        "trigger": "If resident asks for additional history",
+        "reply": "Patient was extricated by EMS, no loss of consciousness, complains of increasing abdominal pain, and has no significant past medical history."
+      },
+      {
+        "trigger": "If resident requests FAST exam",
+        "reply": "FAST exam shows free fluid in the left upper quadrant and in the pelvis."
+      },
+      {
+        "trigger": "If resident requests CT scan",
+        "reply": "CT scan shows a grade III splenic laceration with moderate amount of free fluid in the abdomen. No other solid organ injuries are identified."
+      },
+      {
+        "trigger": "If resident initiates resuscitation and proposes non-operative management",
+        "reply": "You admit the patient to the ICU for monitoring. Six hours later, the patient becomes more tachycardic (HR 125) and blood pressure drops to 90/60. Repeat Hgb is 8.5 g/dL. What now?"
+      },
+      {
+        "trigger": "If resident proposes angioembolization",
+        "reply": "Interventional radiology is consulted but will take 1 hour to mobilize. The patient continues to be tachycardic with marginally improving BP despite fluid resuscitation. What's your next step?"
+      },
+      {
+        "trigger": "If resident decides on operative management",
+        "reply": "You take the patient to the operating room. On exploration, you find a significantly shattered spleen with active bleeding. What is your operative plan now?"
+      },
+      {
+        "trigger": "If resident describes splenectomy",
+        "reply": "You successfully perform a splenectomy. The patient stabilizes. What specific postoperative considerations does this young patient require?"
+      },
+      {
+        "trigger": "If resident does not address post-splenectomy vaccination",
+        "reply": "The patient recovers well but 1 year later develops severe pneumococcal pneumonia. What important aspect of post-splenectomy care may have been missed?"
+      }
+    ],
+    "critical_decision_points": [
+      "Appropriate trauma assessment and resuscitation",
+      "Recognition of potential splenic injury based on mechanism and physical exam",
+      "Appropriate use and interpretation of FAST exam and CT scan",
+      "Decision-making regarding non-operative vs. operative management",
+      "Recognition of failed non-operative management",
+      "Technical considerations for splenectomy",
+      "Post-splenectomy care, including vaccination and patient education"
+    ],
+    "rubric": {
+      "diagnostic_reasoning": [
+        "Fails to recognize potential for splenic injury despite mechanism and symptoms",
+        "Delayed recognition of splenic injury, incomplete trauma assessment",
+        "Recognizes potential splenic injury, orders appropriate imaging",
+        "Promptly identifies splenic injury, grades severity appropriately, recognizes clinical signs of ongoing bleeding",
+        "Excellent diagnostic approach with comprehensive trauma assessment, appropriate imaging interpretation, and recognition of Kehr's sign as referred pain"
+      ],
+      "clinical_judgment": [
+        "Inappropriate management plan, misinterprets hemodynamic status",
+        "Delays intervention in deteriorating patient, inadequate resuscitation",
+        "Appropriate initial non-operative management with adequate monitoring",
+        "Good clinical judgment in recognizing failed non-operative management, appropriate resuscitation",
+        "Excellent judgment throughout, with appropriate initial management and prompt recognition of need for operative intervention, considers angioembolization when appropriate"
+      ],
+      "communication": [
+        "Disorganized presentation of trauma assessment, unable to articulate plan",
+        "Somewhat organized but incomplete information, lacks clarity in management plan",
+        "Clear communication of findings and management plan",
+        "Well-organized, systematic presentation of ATLS approach, clear explanation of decision-making",
+        "Exceptionally clear communication, excellent organization following trauma protocols, articulates contingency plans"
+      ],
+      "surgical_knowledge": [
+        "Inadequate knowledge of splenic injury grading and management options",
+        "Basic understanding of splenic injury but limited knowledge of management guidelines",
+        "Adequate knowledge of splenic injury grading and standard management approaches",
+        "Good knowledge of splenic injuries, operative techniques, and consideration of splenic preservation",
+        "Excellent knowledge of AAST grading system, management algorithms, operative techniques, and post-splenectomy considerations"
+      ],
+      "professionalism": [
+        "Does not involve trauma team or surgical colleagues appropriately",
+        "Minimal collaboration with trauma team, defensive when questioned",
+        "Appropriate collaboration and communication with trauma team",
+        "Good leadership in trauma setting, effective communication with entire team",
+        "Excellent team leadership, clear delegation, appropriate consultation, and emphasis on patient-centered care"
+      ]
+    },
+    "resident_feedback_template": "Your performance on this trauma scenario demonstrated [strengths in initial assessment/resuscitation/decision-making]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of splenic injuries, particularly regarding [specific knowledge gap]. Recommended reading includes the AAST spleen injury grading system, Eastern Association for the Surgery of Trauma (EAST) guidelines on management of blunt splenic injury, and post-splenectomy vaccination protocols.",
+    "learner_feedback_questions": [
+      "How realistic was this scenario? (1-5 scale)",
+      "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+      "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+      "Were the examiner prompts clear and helpful? (1-5 scale)",
+      "What aspects of this scenario were most valuable to your learning?",
+      "What suggestions do you have to improve this scenario?",
+      "Additional comments or feedback:"
+    ]
+  },
+  {
+    "case_id": "scenario_3_deteriorating_abdominal_sepsis",
+    "title": "Scenario 3: Surgical Critical Care",
+    "diagnosis_topic": "Deteriorating Patient with Abdominal Sepsis",
+    "setup_script": "You are called to the ICU to see a 68-year-old male with a history of hypertension, COPD, and known diverticulosis who was admitted 12 hours ago with abdominal pain. Despite IV antibiotics and fluid resuscitation, he has deteriorated. Current vital signs: Temperature 39.2\u00b0C, HR 128, BP 75/40, RR 28, O2 saturation 91% on 2L nasal cannula. Physical exam shows diffuse abdominal tenderness with involuntary guarding and rebound, worse in the left lower quadrant. Lab results show: WBC 22,000/\u03bcL, Hgb 10.5 g/dL, lactate 5.6 mmol/L, creatinine 2.1 mg/dL (baseline 1.0). Recent CT scan shows perforated sigmoid diverticulitis with free air and fluid collections in the pelvis. How would you manage this patient?",
+    "dynamic_flow": [
+      {
+        "trigger": "If resident prioritizes hemodynamic stabilization",
+        "reply": "After 2L of crystalloid, the patient remains hypotensive with BP 80/45. How will you proceed?"
+      },
+      {
+        "trigger": "If resident initiates vasopressors",
+        "reply": "You start norepinephrine. The BP improves to 90/55. What's your next step in management?"
+      },
+      {
+        "trigger": "If resident doesn't mention immediate surgical intervention",
+        "reply": "The patient continues to deteriorate despite medical management. What definitive treatment does this patient need?"
+      },
+      {
+        "trigger": "If resident prepares for surgery",
+        "reply": "What is your specific operative plan for this patient with perforated diverticulitis and septic shock?"
+      },
+      {
+        "trigger": "If resident suggests Hartmann's procedure",
+        "reply": "During surgery, you find diffuse fecal peritonitis, a 2cm perforation in the sigmoid colon with surrounding inflammation and induration. How will you complete the operation?"
+      },
+      {
+        "trigger": "If resident doesn't mention damage control approach",
+        "reply": "The patient is becoming increasingly unstable on the operating table with worsening acidosis (pH 7.15) and hypothermia (temperature 35.2\u00b0C). How does this change your operative approach?"
+      },
+      {
+        "trigger": "If resident describes damage control surgery",
+        "reply": "You perform a Hartmann's procedure with end colostomy, leave the abdomen open with a temporary closure device, and transfer the patient to the ICU. What specific postoperative ICU management will you order?"
+      },
+      {
+        "trigger": "If resident doesn't address source control adequately",
+        "reply": "The patient remains febrile and vasopressor-dependent 48 hours postoperatively. What concerns do you have and what would you do next?"
+      }
+    ],
+    "critical_decision_points": [
+      "Recognition and management of septic shock",
+      "Appropriate fluid resuscitation and vasopressor initiation",
+      "Decision for emergency surgical intervention",
+      "Choice of appropriate surgical procedure (Hartmann's vs. primary anastomosis)",
+      "Recognition of need for damage control surgery in unstable patient",
+      "Postoperative critical care management",
+      "Recognition and management of ongoing sepsis",
+      "ICU management including ventilator settings, nutrition, and renal support if needed"
+    ],
+    "rubric": {
+      "diagnostic_reasoning": [
+        "Does not recognize septic shock or link to perforated diverticulitis",
+        "Delayed recognition of severity of septic shock or source",
+        "Recognizes septic shock and perforated diverticulitis as source",
+        "Promptly identifies septic shock, understands pathophysiology, and correctly interprets all clinical data",
+        "Excellent diagnostic approach with comprehensive differential diagnosis, precise interpretation of hemodynamic parameters, and recognition of organ dysfunction"
+      ],
+      "clinical_judgment": [
+        "Inappropriate or dangerously delayed management of septic shock",
+        "Suboptimal resuscitation, delayed surgical intervention",
+        "Appropriate initial resuscitation and recognition of need for surgical intervention",
+        "Good clinical judgment in sepsis management, appropriate prioritization of interventions",
+        "Excellent clinical judgment throughout with proper sequencing of resuscitation, source control, and ongoing management; anticipates complications"
+      ],
+      "communication": [
+        "Disorganized presentation, unable to articulate management priorities",
+        "Somewhat organized but incomplete information on management plan",
+        "Clear communication of sepsis management and surgical plan",
+        "Well-organized, systematic presentation of assessment and plan with clear rationale",
+        "Exceptionally clear communication, excellent organization, articulates complex decision-making and multidisciplinary approach"
+      ],
+      "surgical_knowledge": [
+        "Inadequate knowledge of management of perforated diverticulitis",
+        "Basic understanding of surgical options but limited knowledge of critical care principles",
+        "Adequate knowledge of surgical approach and critical care management",
+        "Good knowledge of surgical options, damage control principles, and ICU management",
+        "Excellent knowledge of surgical decision-making in unstable patients, damage control techniques, and comprehensive ICU management including ventilator strategies and renal support"
+      ],
+      "professionalism": [
+        "Does not involve critical care team appropriately",
+        "Minimal collaboration with ICU team, defensive when questioned",
+        "Appropriate collaboration and communication with ICU team",
+        "Good leadership in critical care setting, effective communication with entire team",
+        "Excellent team leadership, clear delegation, appropriate consultation with critical care specialists, and emphasis on patient-centered care"
+      ]
+    },
+    "resident_feedback_template": "Your performance on this septic shock scenario demonstrated [strengths in resuscitation/surgical decision-making/critical care management]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of septic shock and perforated diverticulitis, particularly regarding [specific knowledge gap]. Recommended reading includes the Surviving Sepsis Campaign guidelines, damage control surgery principles, and management options for complicated diverticulitis.",
+    "learner_feedback_questions": [
+      "How realistic was this scenario? (1-5 scale)",
+      "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+      "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+      "Were the examiner prompts clear and helpful? (1-5 scale)",
+      "What aspects of this scenario were most valuable to your learning?",
+      "What suggestions do you have to improve this scenario?",
+      "Additional comments or feedback:"
+    ]
+  },
+  {
+    "case_id": "scenario_4_growing_breast_mass",
+    "title": "Scenario 4: Breast",
+    "diagnosis_topic": "Growing Breast Mass with Skin Changes",
+    "setup_script": "A 52-year-old female presents to your clinic with a right breast mass that she noticed 3 months ago but delayed seeking care due to the COVID-19 pandemic. She reports the mass has been growing steadily and is now painful. She denies nipple discharge but has noticed some skin dimpling. She has no previous breast biopsies and no family history of breast or ovarian cancer. On examination, you palpate a 5 cm firm, fixed mass in the upper outer quadrant of the right breast with overlying skin dimpling. You also palpate firm, enlarged lymph nodes in the right axilla. How would you proceed with this patient?",
+    "dynamic_flow": [
+      {
+        "trigger": "If resident requests appropriate imaging",
+        "reply": "Mammogram and ultrasound show a 5.2 cm spiculated mass with microcalcifications in the right upper outer quadrant, suspicious for malignancy (BIRADS 5). Ultrasound confirms multiple enlarged right axillary lymph nodes with loss of fatty hilum."
+      },
+      {
+        "trigger": "If resident proceeds with biopsy",
+        "reply": "Core needle biopsy of the breast mass shows invasive ductal carcinoma, grade 3, ER/PR negative, HER2 positive. FNA of an axillary node is positive for metastatic carcinoma."
+      },
+      {
+        "trigger": "If resident orders staging workup",
+        "reply": "CT chest/abdomen/pelvis and bone scan show no evidence of distant metastases."
+      },
+      {
+        "trigger": "If resident discusses surgical options immediately",
+        "reply": "Given the size of the tumor, skin involvement, and positive axillary nodes, what approach would you recommend for this patient?"
+      },
+      {
+        "trigger": "If resident proposes neoadjuvant therapy",
+        "reply": "You refer the patient to medical oncology and she receives neoadjuvant chemotherapy with HER2-targeted therapy. After 6 months, the tumor has decreased to 1.5 cm by imaging and the skin changes have resolved. What is your surgical plan now?"
+      },
+      {
+        "trigger": "If resident recommends breast conservation",
+        "reply": "What factors influence your decision between breast conservation and mastectomy in this case?"
+      },
+      {
+        "trigger": "If resident recommends mastectomy",
+        "reply": "What type of mastectomy would you recommend and why? What would you discuss regarding reconstruction options?"
+      },
+      {
+        "trigger": "If resident addresses axillary management",
+        "reply": "How would you manage the axilla in this patient after neoadjuvant therapy?"
+      },
+      {
+        "trigger": "If resident does not address the possibility of pathologic complete response",
+        "reply": "The final pathology shows no residual invasive cancer in the breast specimen, but 2 of 15 lymph nodes are positive for metastatic disease. How does this change your recommendations for adjuvant therapy and follow-up?"
+      }
+    ],
+    "critical_decision_points": [
+      "Appropriate initial diagnostic workup for suspected breast cancer",
+      "Recognition of locally advanced disease requiring multidisciplinary approach",
+      "Decision regarding neoadjuvant therapy",
+      "Surgical planning after neoadjuvant therapy (breast conservation vs. mastectomy)",
+      "Management of the axilla after neoadjuvant therapy",
+      "Understanding of adjuvant therapy recommendations",
+      "Discussion of reconstruction options if mastectomy is performed",
+      "Appropriate follow-up planning"
+    ],
+    "rubric": {
+      "diagnostic_reasoning": [
+        "Inadequate diagnostic workup for suspected breast cancer",
+        "Basic workup but missing important elements or incorrect sequencing",
+        "Appropriate diagnostic workup including imaging and tissue diagnosis",
+        "Comprehensive diagnostic approach with appropriate staging",
+        "Excellent diagnostic reasoning with thorough workup, appropriate staging, and consideration of genetic testing"
+      ],
+      "clinical_judgment": [
+        "Recommends immediate surgery without consideration of neoadjuvant therapy",
+        "Considers neoadjuvant therapy but lacks understanding of indications or benefits",
+        "Appropriately recommends neoadjuvant therapy for locally advanced disease",
+        "Good clinical judgment in multidisciplinary approach, surgical planning after neoadjuvant therapy",
+        "Excellent judgment throughout with appropriate sequencing of therapy, surgical planning, and consideration of patient factors and preferences"
+      ],
+      "communication": [
+        "Disorganized presentation, unable to articulate management plan clearly",
+        "Somewhat organized but incomplete explanation of treatment options",
+        "Clear communication of diagnosis, staging, and treatment plan",
+        "Well-organized, systematic presentation with clear explanation of multidisciplinary approach",
+        "Exceptionally clear communication, excellent organization, articulates complex decision-making and addresses patient-centered concerns"
+      ],
+      "surgical_knowledge": [
+        "Inadequate knowledge of surgical management of breast cancer",
+        "Basic understanding of surgical options but limited knowledge of current guidelines",
+        "Adequate knowledge of surgical approach for locally advanced breast cancer",
+        "Good knowledge of surgical options, axillary management after neoadjuvant therapy",
+        "Excellent knowledge of current guidelines, technical considerations for surgery after neoadjuvant therapy, and management of the axilla"
+      ],
+      "professionalism": [
+        "Does not involve multidisciplinary team appropriately",
+        "Minimal consideration of patient preferences or multidisciplinary approach",
+        "Appropriate consideration of patient preferences and multidisciplinary approach",
+        "Good communication with multidisciplinary team, consideration of patient preferences",
+        "Excellent patient-centered approach, clear communication with multidisciplinary team, addresses psychosocial aspects of care"
+      ]
+    },
+    "resident_feedback_template": "Your performance on this breast cancer scenario demonstrated [strengths in diagnostic workup/surgical planning/multidisciplinary approach]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of locally advanced breast cancer, particularly regarding [specific knowledge gap]. Recommended reading includes NCCN guidelines for breast cancer, management of the axilla after neoadjuvant therapy, and options for reconstruction after mastectomy.",
+    "learner_feedback_questions": [
+      "How realistic was this scenario? (1-5 scale)",
+      "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+      "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+      "Were the examiner prompts clear and helpful? (1-5 scale)",
+      "What aspects of this scenario were most valuable to your learning?",
+      "What suggestions do you have to improve this scenario?",
+      "Additional comments or feedback:"
+    ]
+  },
+  {
+    "case_id": "scenario_5_right_upper_quadrant_pain_fever",
+    "title": "Scenario 5: Hepatobiliary/Pancreatic",
+    "diagnosis_topic": "Right Upper Quadrant Pain with Fever",
+    "setup_script": "A 58-year-old female with obesity, diabetes, and hypertension presents to the emergency department with 36 hours of worsening right upper quadrant pain, nausea, vomiting, and fever. She reports having similar but milder episodes in the past after fatty meals. Vital signs show: Temperature 38.6\u00b0C, HR 112, BP 138/84, RR 20. On examination, she has right upper quadrant tenderness with a positive Murphy's sign. Initial labs show: WBC 16,800/\u03bcL, total bilirubin 2.1 mg/dL, direct bilirubin 1.3 mg/dL, AST 98 U/L, ALT 86 U/L, alkaline phosphatase 210 U/L. How would you proceed with this patient?",
+    "dynamic_flow": [
+      {
+        "trigger": "If resident requests imaging",
+        "reply": "Ultrasound shows a distended gallbladder with wall thickening to 6mm, pericholecystic fluid, and multiple gallstones. The common bile duct measures 8mm without definite stones visualized."
+      },
+      {
+        "trigger": "If resident initiates antibiotics and IV fluids",
+        "reply": "You start IV fluids and empiric antibiotics. The patient feels somewhat better, but remains febrile at 38.2\u00b0C after 6 hours. What's your plan now?"
+      },
+      {
+        "trigger": "If resident proposes early laparoscopic cholecystectomy",
+        "reply": "What timing would you recommend for surgery, and what are the technical considerations for this case?"
+      },
+      {
+        "trigger": "If resident proposes delayed cholecystectomy",
+        "reply": "The patient continues to have pain and fever despite 24 hours of antibiotics. Would you reconsider your approach?"
+      },
+      {
+        "trigger": "If resident proceeds with surgery",
+        "reply": "During laparoscopic cholecystectomy, you encounter significant inflammation with adhesions around the gallbladder. You cannot clearly identify the cystic duct or artery. What will you do now?"
+      },
+      {
+        "trigger": "If resident describes safe bailout options",
+        "reply": "You decide to perform a subtotal cholecystectomy leaving the posterior wall attached to the liver. What are the specific steps for this procedure?"
+      },
+      {
+        "trigger": "If resident recommends conversion to open",
+        "reply": "You convert to open cholecystectomy. Describe your approach to the critical view of safety in this difficult case."
+      },
+      {
+        "trigger": "If resident doesn't address the possibility of bile duct injury",
+        "reply": "During the postoperative period, the patient develops increasing right upper quadrant pain, fever, and has bilious drainage from a surgical drain. What is your concern and next steps?"
+      }
+    ],
+    "critical_decision_points": [
+      "Appropriate diagnostic workup for acute cholecystitis",
+      "Decision regarding timing of surgical intervention",
+      "Recognition of difficult gallbladder and alternative approaches",
+      "Management of potential bile duct injury",
+      "Appropriate antibiotic selection and duration",
+      "Bailout options for difficult cholecystectomy"
+    ],
+    "rubric": {
+      "diagnostic_reasoning": [
+        "Fails to recognize acute cholecystitis despite clinical and ultrasound findings",
+        "Delayed or incomplete diagnosis, does not consider alternative diagnoses",
+        "Correctly diagnoses acute cholecystitis with standard workup",
+        "Comprehensive diagnostic approach with consideration of cholangitis and other complications",
+        "Excellent diagnostic reasoning with thorough differential diagnosis and identification of severity markers"
+      ],
+      "clinical_judgment": [
+        "Inappropriate management plan, delays needed intervention",
+        "Inconsistent management decisions, inadequate antibiotics",
+        "Appropriate antibiotic selection and timely surgical planning",
+        "Good clinical judgment regarding timing of surgery and technical approach",
+        "Excellent judgment throughout with appropriate anticipation of challenges and complications"
+      ],
+      "communication": [
+        "Disorganized presentation, unable to articulate surgical plan",
+        "Basic explanation of findings and plan but lacks detail",
+        "Clear communication of diagnosis and management plan",
+        "Well-organized presentation with good explanation of surgical options",
+        "Exceptionally clear explanation of diagnosis, management options, and potential complications with excellent patient-centered approach"
+      ],
+      "surgical_knowledge": [
+        "Inadequate knowledge of gallbladder anatomy and surgical techniques",
+        "Basic understanding of standard cholecystectomy but limited knowledge of difficult cases",
+        "Adequate knowledge of surgical anatomy and bailout options",
+        "Good knowledge of safe technical approaches to difficult cholecystectomy",
+        "Excellent knowledge of surgical anatomy, technical considerations, bailout options, and management of complications"
+      ],
+      "professionalism": [
+        "Does not recognize limitations or seek help appropriately",
+        "Reluctant to consider alternative approaches when facing difficulties",
+        "Recognizes limitations and willing to adapt surgical approach",
+        "Good insight into personal limitations, communicates effectively about difficulties",
+        "Excellent professionalism, prioritizes patient safety, willing to convert or seek assistance appropriately"
+      ]
+    },
+    "resident_feedback_template": "Your performance on this acute cholecystitis scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing management of difficult cholecystectomy, particularly regarding [specific knowledge gap]. Recommended reading includes SAGES guidelines on safe cholecystectomy, Tokyo Guidelines for acute cholecystitis, and technical approaches to bailout options for difficult cases.",
+    "learner_feedback_questions": [
+      "How realistic was this scenario? (1-5 scale)",
+      "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+      "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+      "Were the examiner prompts clear and helpful? (1-5 scale)",
+      "What aspects of this scenario were most valuable to your learning?",
+      "What suggestions do you have to improve this scenario?",
+      "Additional comments or feedback:"
+    ]
+  }
+]
