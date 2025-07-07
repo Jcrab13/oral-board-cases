@@ -4,77 +4,77 @@
       "id": "001",
       "slug": "acute-abdomen",
       "title": "Acute Abdomen",
-      "path": "cases/scenario_1_acute_abdomen.json",
+      "path": "cases/scenario_001_acute_abdomen.json",
       "tags": ["GI", "emergency"]
     },
     {
       "id": "002",
       "slug": "blunt-abdominal-trauma",
       "title": "Blunt Abdominal Trauma",
-      "path": "cases/scenario_2_blunt_abdominal_trauma.json",
+      "path": "cases/scenario_002_blunt_abdominal_trauma.json",
       "tags": ["trauma"]
     },
     {
       "id": "003",
       "slug": "deteriorating-abdominal-sepsis",
       "title": "Deteriorating Abdominal Sepsis",
-      "path": "cases/scenario_3_deteriorating_abdominal_sepsis.json",
+      "path": "cases/scenario_003_deteriorating_abdominal_sepsis.json",
       "tags": ["sepsis", "critical-care"]
     },
     {
       "id": "004",
       "slug": "growing-breast-mass",
       "title": "Growing Breast Mass",
-      "path": "cases/scenario_4_growing_breast_mass.json",
+      "path": "cases/scenario_004_growing_breast_mass.json",
       "tags": ["breast", "oncology"]
     },
     {
       "id": "005",
       "slug": "right-upper-quadrant-pain",
       "title": "Right Upper Quadrant Pain with Fever",
-      "path": "cases/scenario_5_right_upper_quadrant_pain_fever.json",
+      "path": "cases/scenario_005_right_upper_quadrant_pain_fever.json",
       "tags": ["hepatobiliary"]
     },
     {
       "id": "006",
       "slug": "sudden-abdominal-back-pain",
       "title": "Sudden Abdominal and Back Pain",
-      "path": "cases/scenario_6_sudden_abdominal_back_pain.json",
+      "path": "cases/scenario_006_sudden_abdominal_back_pain.json",
       "tags": ["vascular", "emergency"]
     },
     {
       "id": "007",
       "slug": "rectal-bleeding-bowel-habits",
       "title": "Rectal Bleeding and Change in Bowel Habits",
-      "path": "cases/scenario_7_rectal_bleeding_bowel_habits.json",
+      "path": "cases/scenario_007_rectal_bleeding_bowel_habits.json",
       "tags": ["colorectal", "oncology"]
     },
     {
       "id": "008",
       "slug": "chest-pain-after-retching",
       "title": "Chest Pain After Retching",
-      "path": "cases/scenario_8_chest_pain_after_retching.json",
+      "path": "cases/scenario_008_chest_pain_after_retching.json",
       "tags": ["esophageal", "GI"]
     },
     {
       "id": "009",
       "slug": "right-lower-quadrant-pain",
       "title": "Right Lower Quadrant Pain",
-      "path": "cases/scenario_9_right_lower_quadrant_pain.json",
+      "path": "cases/scenario_009_right_lower_quadrant_pain.json",
       "tags": ["appendicitis", "emergency"]
     },
     {
       "id": "010",
       "slug": "thyroid-nodule-suspicious",
       "title": "Thyroid Nodule with Suspicious Features",
-      "path": "cases/scenario_10_thyroid_nodule_suspicious_features.json",
+      "path": "cases/scenario_010_thyroid_nodule_suspicious_features.json",
       "tags": ["endocrine", "oncology"]
     },
     {
       "id": "011",
       "slug": "progressive-cellulitis-systemic",
       "title": "Progressive Cellulitis with Systemic Symptoms",
-      "path": "cases/scenario_11_progressive_cellulitis_systemic_symptoms.json",
+      "path": "cases/scenario_011_progressive_cellulitis_systemic_symptoms.json",
       "tags": ["soft-tissue", "infection"]
     }
   ]
