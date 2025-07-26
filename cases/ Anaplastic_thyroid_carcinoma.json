@@ -1,0 +1,87 @@
+{
+  "case_id": "scenario_anaplastic_thyroid_carcinoma",
+  "title": "Scenario: Anaplastic Thyroid Carcinoma (ENT / Oncology)",
+  "diagnosis_topic": "Rapidly Enlarging Neck Mass with Airway Compromise",
+  "setup_script": "A 70-year-old man presents to the emergency department with a three-week history of a rapidly enlarging neck mass, progressive hoarseness, dysphagia to solids, and new orthopnea. His wife reports noisy breathing overnight. Past medical history includes long-standing multinodular goiter and hypertension; no prior neck irradiation. Medications include amlodipine only. Vital signs reveal HR 118, BP 146/82, RR 26, SpO₂ 91% on room air; stridor is audible at rest. Neck examination shows an 8 × 7 cm firm mass fixed to surrounding tissues with erythematous overlying skin, palpable right level III lymph nodes, and tracheal tug present. Bedside laryngoscopy demonstrates sluggish right vocal cord and subglottic lumen narrowing to approximately 3 mm. How would you proceed?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident describes immediate priorities",
+      "reply": "The patient has worsening stridor, especially when supine, highlighting impending airway compromise requiring urgent airway management."
+    },
+    {
+      "trigger": "If resident orders cross-sectional imaging",
+      "reply": "CT neck and chest demonstrate a large infiltrative thyroid mass encasing the carotid sheath, tracheal deviation, level III–IV adenopathy, and pulmonary nodules indicating distant metastases and unresectability."
+    },
+    {
+      "trigger": "If resident requests airway plan",
+      "reply": "Awake fiber-optic intubation shows near-complete glottic view with tracheal narrowing to 4 mm on imaging. Acceptable approaches include awake fiber-optic intubation, cervical tracheostomy under local anesthesia, or rigid bronchoscopy with stenting."
+    },
+    {
+      "trigger": "If resident obtains biopsy",
+      "reply": "Core biopsy is preferred and confirms anaplastic thyroid carcinoma with BRAF V600E mutation positive. Fine needle aspiration alone is suspicious but insufficient; additional tissue sampling is necessary."
+    },
+    {
+      "trigger": "If resident discusses goals of care and prognosis",
+      "reply": "Family is shocked by the diagnosis. The patient desires all measures to maintain breathing. Discuss the poor prognosis with under 20% one-year survival and set realistic expectations."
+    },
+    {
+      "trigger": "If resident outlines definitive management",
+      "reply": "Multidisciplinary management includes emergent airway stabilization, initiation of targeted therapy with dabrafenib plus trametinib within 24 hours, planning for palliative intensity-modulated radiation therapy (40 Gy), consideration of pembrolizumab if PD-L1-positive, and nutritional support via PEG if dysphagia worsens."
+    },
+    {
+      "trigger": "If resident advocates for debulking surgery",
+      "reply": "The tumor is unresectable due to carotid and vertebral artery invasion; surgery would be morbid and not beneficial. Recommend focusing on airway management and systemic therapy."
+    },
+    {
+      "trigger": "If resident addresses end-of-life planning after progression",
+      "reply": "Six weeks post initial therapy, the patient shows disease progression with looming hypercapnic CO₂ narcosis. Discuss DNR status, hospice care, and align treatment with patient goals."
+    }
+  ],
+  "critical_decision_points": [
+    "Emergent airway strategy selection including awake fiber-optic intubation, tracheostomy under local anesthesia, or stenting, with appropriate team coordination",
+    "Optimal biopsy choice with core biopsy for histological diagnosis and molecular profiling (BRAF V600E and other mutations)",
+    "Recognition of tumor unresectability due to carotid and vertebral encasement and distant metastases precluding curative surgery",
+    "Initiation of targeted systemic therapy promptly—dabrafenib plus trametinib for BRAF V600E mutant anaplastic thyroid carcinoma",
+    "Palliative care communication including realistic prognosis discussion and advance-care planning with early hospice integration"
+  ],
+  "rubric": {
+    "airway_management": [
+      "Delays securing airway or plans general anesthesia without airway backup",
+      "Chooses intubation or tracheostomy but omits backup plans",
+      "Presents stepwise airway management with awake fiber-optic intubation, tracheostomy kit ready, ECMO backup considered; engages anesthesia and ENT teams early"
+    ],
+    "diagnostic_reasoning": [
+      "Orders fine needle aspiration only without molecular testing",
+      "Secures core biopsy with partial disease staging",
+      "Completes comprehensive full-body staging, core biopsy, molecular panel including BRAF mutation; cites guideline-recommended timelines"
+    ],
+    "oncologic_judgment": [
+      "Insists on thyroidectomy despite unresectability",
+      "Accepts unresectability but proposes vague or non-specific therapy",
+      "Implements BRAF-targeted therapy and palliative radiation therapy; plans immunotherapy if indicated and considers clinical trials"
+    ],
+    "palliative_care_communication": [
+      "Gives false hope and avoids code status discussion",
+      "Discusses prognosis but follow-up on goals is limited",
+      "Engages in clear, empathic dialogue; revisits goals regularly with early hospice involvement"
+    ],
+    "professionalism_teamwork": [
+      "Works in isolation without engaging relevant specialties",
+      "Calls ENT or oncology late in the case",
+      "Activates multidisciplinary airway and tumor board within hours to coordinate care"
+    ]
+  },
+  "resident_feedback_template": "Your management of this anaplastic thyroid carcinoma case demonstrated strengths in rapid recognition of impending airway collapse and selection of awake fiber-optic intubation. You appropriately obtained core biopsy and molecular testing without delay and integrated BRAF inhibitor therapy into first-line treatment consistent with guidelines. Opportunities for improvement include counseling the family using survival data to set realistic expectations, considering early tracheal stenting to minimize prolonged intubation morbidity, and clarifying when performance status precludes aggressive therapy to pivot towards best supportive care. Continue to strengthen multidisciplinary collaboration to ensure timely coordinated treatment. Recommended readings include the 2021 ATA Anaplastic Thyroid Cancer Guidelines sections on emergency management and systemic therapy, and the latest NCCN thyroid cancer algorithms.",
+  "learner_feedback_questions": [
+    "How realistic was this scenario? (1-5 scale)",
+    "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+    "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+    "Were the examiner prompts clear and helpful? (1-5 scale)",
+    "What aspects of this scenario were most valuable to your learning?",
+    "What suggestions do you have to improve this scenario?",
+    "Additional comments or feedback:"
+  ]
+}
+
+
+
