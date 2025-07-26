@@ -1,0 +1,186 @@
+{
+  "case_id": "scenario_hyperparathyroidism_case_65F",
+  "title": "Scenario: Primary Hyperparathyroidism Evaluation and Management",
+  "diagnosis_topic": "Primary Hyperparathyroidism",
+  "setup_script": "A 65-year-old woman is referred for evaluation of hypercalcemia found on routine labs. She reports mild fatigue and generalized bone discomfort. Vital signs: BP 138/82 mm Hg, HR 82 bpm, RR 14, Temperature 36.8°C, SpO₂ 98% on room air. Initial labs show elevated serum calcium at 11.6 mg/dL and elevated parathyroid hormone (PTH) at 148 pg/mL.",
+  "dynamic_flow": [
+    {
+      "trigger": "Start HPI",
+      "reply": "Ask about renal colic history, bone fractures history, presence of psychiatric symptoms or fatigue. If no renal or bone history obtained, volunteer that patient had 2 kidney stones."
+    },
+    {
+      "trigger": "PMH and family history inquiry",
+      "reply": "Ask about previous medications like lithium or thiazides, family history of Multiple Endocrine Neoplasia (MEN), dietary calcium intake. If MEN is not queried, examiner will state family history is negative."
+    },
+    {
+      "trigger": "Lab interpretation after given Ca 11.6 mg/dL and PTH 148 pg/mL",
+      "reply": "Interpret as primary hyperparathyroidism. Order a 24-hour urine calcium and creatinine to exclude familial hypocalciuric hypercalcemia (FHH). If the resident fails to order, prompt: 'What do these labs suggest?'"
+    },
+    {
+      "trigger": "Post biochemical diagnosis",
+      "reply": "Order bone mineral density testing (DEXA), comprehensive metabolic panel (CMP), and localization imaging such as neck ultrasound or 4-D CT scan before surgery. If imaging not ordered, prompt: 'Would imaging help?'"
+    },
+    {
+      "trigger": "Imaging results provided",
+      "reply": "Ultrasound shows a 1.2 cm left inferior parathyroid adenoma. Discuss operative indications including symptoms, calcium level more than 1 mg/dL above upper limit of normal, and age >50 years. If unclear, examiner lists indications and asks for management plan."
+    },
+    {
+      "trigger": "Patient opts for surgery",
+      "reply": "Outline preoperative steps: vocal cord examination, stopping anticoagulants, vitamin D replacement, and informed consent. If recurrent laryngeal nerve (RLN) concerns are not mentioned, prompt: 'Any nerve concerns?'"
+    },
+    {
+      "trigger": "Transition to operating room setup",
+      "reply": "Describe patient positioning (supine with shoulder roll), incision (1-cm Kocher incision), use of loupe and light, RLN monitoring (optional). If incision not specified, prompt for location."
+    },
+    {
+      "trigger": "Intraoperative steps in the neck",
+      "reply": "Describe splitting platysma, separating strap muscles, and identifying RLN before gland manipulation. If RLN not mentioned, prompt: 'Any nerves you’re worried about?'"
+    },
+    {
+      "trigger": "After adenoma excision",
+      "reply": "Explain intraoperative PTH (IOPTH) protocol: baseline PTH after induction, pre-excision (time zero), post-excision at 5 and 10 minutes using Miami criteria (≥50% drop and into normal range). If timing or protocol incomplete, examiner provides PTH numbers."
+    },
+    {
+      "trigger": "IOPTH 5 min result = 92 pg/mL (38% drop)",
+      "reply": "Recognize inadequate drop, wait for 10-minute draw and prepare for possible further exploration. If calls cure too early, examiner challenges with next value."
+    },
+    {
+      "trigger": "IOPTH 10 min result = 68 pg/mL (54% drop but still elevated)",
+      "reply": "Interpret as incomplete cure; convert to bilateral neck exploration. If satisfied with cure, examiner challenges to verify criteria."
+    },
+    {
+      "trigger": "Alternative IOPTH 10 min result = 60 pg/mL (normal range)",
+      "reply": "Accept cure, proceed with hemostasis, RLN check, and wound closure. If misinterprets, examiner corrects."
+    },
+    {
+      "trigger": "Postoperative orders",
+      "reply": "Order frequent serum calcium and PTH every 6 hours, magnesium monitoring, IV calcium gluconate for symptoms, oral calcitriol, and voice assessment. If calcium monitoring omitted, prompt: 'How do you detect hypocalcemia?'"
+    },
+    {
+      "trigger": "Post-op symptomatic hypocalcemia (Ca 7.1 mg/dL and paresthesias)",
+      "reply": "Diagnose hungry bone syndrome vs transient hypocalcemia. Initiate IV calcium, oral calcitriol, and cardiac telemetry. If treatment omitted, prompt: 'Symptoms worsening—what is your next step?'"
+    },
+    {
+      "trigger": "One minute remaining",
+      "reply": "Summarize plan, confirm pathology has been sent, arrange follow-up DEXA scan."
+    }
+  ],
+  "critical_decision_points": [
+    "Establish biochemical diagnosis of primary hyperparathyroidism and exclude familial hypocalciuric hypercalcemia (FHH) by 24-hour urine studies",
+    "Order localization imaging only after biochemical diagnosis",
+    "Apply operative indications correctly and obtain informed consent",
+    "Ensure safe operative exposure with early recurrent laryngeal nerve identification",
+    "Implement accurate intraoperative PTH (IOPTH) protocol with timing and interpretation using Miami criteria",
+    "Interpret IOPTH results correctly to decide between focused parathyroidectomy and bilateral neck exploration",
+    "Prevent and treat postoperative hypocalcemia and hungry bone syndrome",
+    "Maintain communication efficiency and composure under timed conditions"
+  ],
+  "rubric": {
+    "History & Physical": {
+      "max_points": 10,
+      "passing_score": 7,
+      "criteria": [
+        "Includes renal colic, bone fractures, fatigue, psychiatric symptoms",
+        "History of medications such as lithium, thiazides",
+        "Family history of MEN syndromes"
+      ]
+    },
+    "Diagnostics & Interpretation": {
+      "max_points": 12,
+      "passing_score": 9,
+      "criteria": [
+        "Orders 24-hour urine calcium/creatinine clearance",
+        "Orders DEXA scan and appropriate timing of localization imaging",
+        "Correctly interprets labs confirming primary HPT"
+      ]
+    },
+    "Decision-Making / Planning": {
+      "max_points": 12,
+      "passing_score": 9,
+      "criteria": [
+        "Applies operative indications correctly",
+        "Obtains informed consent with explanation",
+        "Plans preoperative vitamin D replacement and assessment"
+      ]
+    },
+    "Operative Technique & Exposure": {
+      "max_points": 10,
+      "passing_score": 7,
+      "criteria": [
+        "Proper patient positioning with shoulder roll",
+        "Describes appropriate Kocher incision",
+        "Early identification and protection of recurrent laryngeal nerve"
+      ]
+    },
+    "IOPTH Protocol Knowledge": {
+      "max_points": 10,
+      "passing_score": 8,
+      "criteria": [
+        "Baseline PTH after anesthesia induction",
+        "Proper timing of post-excision draws at 5 and 10 minutes",
+        "Use Miami criteria for cure assessment"
+      ]
+    },
+    "IOPTH Interpretation & Judgment": {
+      "max_points": 12,
+      "passing_score": 9,
+      "criteria": [
+        "Interprets % drop in PTH correctly",
+        "Decides on further exploration if criteria not met",
+        "Recognizes incomplete cure with inadequate PTH drop"
+      ]
+    },
+    "Post-operative Management": {
+      "max_points": 10,
+      "passing_score": 7,
+      "criteria": [
+        "Orders serum calcium and PTH monitoring every 6 hours",
+        "Recognizes and treats hypocalcemia/hungry bone syndrome",
+        "Prescribes IV calcium and oral calcitriol with appropriate monitoring"
+      ]
+    },
+    "Safety & Complication Prevention": {
+      "max_points": 6,
+      "passing_score": 4,
+      "criteria": [
+        "Protects recurrent laryngeal nerve throughout",
+        "Ensures hemostasis before closure",
+        "Performs voice assessments postoperatively"
+      ]
+    },
+    "Communication & Teamwork": {
+      "max_points": 4,
+      "passing_score": 3,
+      "criteria": [
+        "Clear explanation of diagnosis and management plan",
+        "Prioritizes critical safety information"
+      ]
+    },
+    "Professionalism & Efficiency": {
+      "max_points": 4,
+      "passing_score": 3,
+      "criteria": [
+        "Maintains composure under time pressure",
+        "Seeks missing data proactively",
+        "Manages time effectively throughout scenario"
+      ]
+    }
+  },
+  "automatic_fail_criteria": [
+    "No postoperative calcium monitoring",
+    "Failure to identify and protect recurrent laryngeal nerve"
+  ],
+  "resident_feedback_template": "Your performance in this primary hyperparathyroidism scenario demonstrated strengths in diagnostic reasoning and operative exposure, particularly your precise approach to recurrent laryngeal nerve identification. Areas for improvement include confirming baseline intraoperative PTH timing to avoid dilution errors and preparing for hungry bone syndrome with appropriate vitamin D preload and scheduled monitoring. Consider reviewing the AAES guidelines on intraoperative PTH criteria and scripting a concise post-operative order set involving calcium, magnesium, and calcitriol supplementation. Re-attempting endocrine surgery cases with emphasis on IOPTH interpretation is recommended to improve proficiency.",
+  "learner_feedback_questions": [
+    "How realistic was this scenario? (1-5 scale)",
+    "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+    "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+    "Were the examiner prompts clear and helpful? (1-5 scale)",
+    "What aspects of this scenario were most valuable to your learning?",
+    "What suggestions do you have to improve this scenario?",
+    "Additional comments or feedback:"
+  ]
+}
+
+
+
