@@ -1,0 +1,19 @@
+{
+  "case_id": "scenario_anaplastic_thyroid_carcinoma",
+  "title": "Scenario: Anaplastic Thyroid Carcinoma (ENT / Oncology)",
+  "diagnosis_topic": "Rapidly Enlarging Neck Mass with Airway Compromise",
+  "setup_script": "A 70-year-old man presents to the emergency department with a three-week history of a rapidly enlarging neck mass, progressive hoarseness, dysphagia to solids, and new orthopnea. His wife reports noisy breathing overnight. Past medical history includes long-standing multinodular goiter and hypertension; no prior neck irradiation. Medications include amlodipine only. Vital signs reveal HR 118, BP 146/82, RR 26, SpO₂ 91% on room air; stridor is audible at rest. Neck examination shows an 8 × 7 cm firm mass fixed to surrounding tissues with erythematous overlying skin, palpable right level III lymph nodes, and tracheal tug present. Bedside laryngoscopy demonstrates sluggish right vocal cord and subglottic lumen narrowing to approximately 3 mm. How would you proceed?",
+  "dynamic_flow": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "rubric": {}
+}
+
+
