@@ -1,0 +1,102 @@
+{
+    "case_id": "scenario_pancreatic_pseudocyst",
+    "title": "Scenario: Symptomatic Pancreatic Pseudocyst (General Surgery / GI)",
+    "diagnosis_topic": "Epigastric Fullness and Early Satiety Following Pancreatitis",
+    "setup_script": "A 46-year-old man, four weeks after an episode of alcohol-induced necrotizing pancreatitis, presents with persistent early satiety, epigastric fullness, and an 8-lb weight loss. Vitals: T 37.0 °C, HR 96, BP 128/82, RR 18, SpO₂ 98% RA. No additional information is available unless requested.",
+    "dynamic_flow": [
+      {
+        "trigger": "If resident requests history and physical",
+        "reply": "Focused history reveals ongoing nausea, inability to tolerate oral intake, and no fever. Physical exam shows epigastric fullness and mild tenderness without peritonitis."
+      },
+      {
+        "trigger": "If resident orders labs and imaging",
+        "reply": "Lipase is 120 U/L, Hgb 13 g/dL. CT abdomen/pelvis with IV contrast shows a 10-cm thin-walled fluid collection in the lesser sac with mass effect on the stomach, no debris, and mature wall—consistent with pancreatic pseudocyst."
+      },
+      {
+        "trigger": "If resident diagnoses pancreatic pseudocyst",
+        "reply": "The patient complains of early satiety and vomiting after meals, indicating gastric outlet obstruction."
+      },
+      {
+        "trigger": "If resident discusses drainage options",
+        "reply": "Endoscopic cyst-gastrostomy with LAMS is available. Interventional endoscopist can perform the procedure tomorrow."
+      },
+      {
+        "trigger": "If resident prepares for endoscopy",
+        "reply": "Pre-procedure checklist: NPO status confirmed, type & screen completed, coags normal, single-dose prophylactic antibiotics given, informed consent obtained."
+      },
+      {
+        "trigger": "If resident asks about intra-procedure findings",
+        "reply": "During EUS, a LAMS is deployed and 800 mL of brown fluid is drained. The patient reports feeling better afterward."
+      },
+      {
+        "trigger": "If resident asks about post-procedure care",
+        "reply": "Plan includes: post-procedure CT in 48 hours, PPI initiation, advancement of diet as tolerated, and scheduling LAMS removal in 4–6 weeks."
+      },
+      {
+        "trigger": "If resident inquires about new symptoms or complications",
+        "reply": "On POD 2, the patient has stable vitals but Hgb drops to 10.2 g/dL (↓3 g/dL) and melena is noted. CTA shows bleeding from a short gastric branch."
+      },
+      {
+        "trigger": "If resident chooses embolization",
+        "reply": "Interventional radiology performs successful embolization. The patient stabilizes."
+      },
+      {
+        "trigger": "If embolization fails",
+        "reply": "Escalate to the OR for laparoscopic or open surgical oversew of bleeding site, wedge gastrectomy, or possible distal pancreatectomy if bleeding persists."
+      }
+    ],
+    "critical_decision_points": [
+      "Differentiate pancreatic pseudocyst from walled-off necrosis",
+      "Select appropriate drainage modality (endoscopic vs surgical vs percutaneous)",
+      "Recognize and manage post-procedure bleeding",
+      "Plan long-term follow-up including LAMS removal and alcohol cessation"
+    ],
+    "rubric": {
+      "diagnostic_reasoning": [
+        "Fails to distinguish pseudocyst from WON",
+        "Basic diagnosis without clear classification (e.g., timing, debris)",
+        "Correct diagnosis with understanding of Atlanta classification",
+        "Strong diagnostic reasoning with integration of imaging and symptoms",
+        "Excellent recognition and classification with anticipatory planning"
+      ],
+      "clinical_judgment": [
+        "Chooses inappropriate intervention (e.g., percutaneous)",
+        "Basic plan but incomplete or delayed",
+        "Appropriate drainage modality with reasonable preparation",
+        "Strong judgment in escalation, coordination with IR/GI",
+        "Excellent decision-making, anticipates complications and follow-up"
+      ],
+      "communication": [
+        "Disorganized or unclear plan",
+        "Basic explanation to team or patient",
+        "Clear and structured communication of diagnosis and plan",
+        "Good coordination with multidisciplinary team and consent discussion",
+        "Exceptional clarity and leadership in inter-team communication"
+      ],
+      "surgical_knowledge": [
+        "Lacks understanding of cyst-gastrostomy steps or LAMS use",
+        "Basic knowledge but missing pre/post steps",
+        "Good grasp of endoscopic technique and surgical alternatives",
+        "Well-informed on technical aspects and complications",
+        "Excellent technical knowledge, including surgical bailout options"
+      ],
+      "professionalism": [
+        "No discussion of alcohol cessation or patient support",
+        "Minimal attention to long-term care",
+        "Addresses post-procedure care and counseling",
+        "Strong focus on professionalism and patient-centered follow-up",
+        "Comprehensive care including prevention, counseling, and cost-awareness"
+      ]
+    },
+    "resident_feedback_template": "Your performance on the pancreatic pseudocyst case demonstrated [strengths in diagnosis, procedural planning, or complication management]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Please review guidelines on pancreatic fluid collections, especially the timing and technique for LAMS placement, and be sure to anticipate potential complications such as post-procedure bleeding. Recommended reading includes AGA guidelines on pancreatic pseudocyst management and endoscopic drainage techniques.",
+    "learner_feedback_questions": [
+      "How realistic was this scenario? (1–5 scale)",
+      "How helpful was this scenario in preparing you for the oral boards? (1–5 scale)",
+      "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+      "Were the examiner prompts clear and helpful? (1–5 scale)",
+      "What aspects of this scenario were most valuable to your learning?",
+      "What suggestions do you have to improve this scenario?",
+      "Additional comments or feedback:"
+    ]
+  }
+  

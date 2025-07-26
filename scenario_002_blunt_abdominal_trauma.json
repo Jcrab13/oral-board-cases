@@ -1,0 +1,96 @@
+{
+  "case_id": "scenario_2_blunt_abdominal_trauma",
+  "title": "Scenario 2: Trauma",
+  "diagnosis_topic": "Blunt Abdominal Trauma with Hemodynamic Changes",
+  "setup_script": "A 28-year-old female is brought to the emergency department after a motor vehicle collision where she was the restrained driver. She was traveling approximately 45 mph when she was T-boned on the driver's side. On arrival, she is alert and oriented but complaining of left upper quadrant pain and left shoulder pain. Vital signs are: BP 110/70, HR 105, RR 20, O2 saturation 99% on room air. Physical exam reveals seat belt sign across the chest and abdomen, and tenderness to palpation in the left upper quadrant with voluntary guarding. Initial labs show: Hgb 11.2 g/dL, WBC 14,500/μL, platelets 230,000/μL, and normal coagulation studies. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for additional history",
+      "reply": "Patient was extricated by EMS, no loss of consciousness, complains of increasing abdominal pain, and has no significant past medical history."
+    },
+    {
+      "trigger": "If resident requests FAST exam",
+      "reply": "FAST exam shows free fluid in the left upper quadrant and in the pelvis."
+    },
+    {
+      "trigger": "If resident requests CT scan",
+      "reply": "CT scan shows a grade III splenic laceration with moderate amount of free fluid in the abdomen. No other solid organ injuries are identified."
+    },
+    {
+      "trigger": "If resident initiates resuscitation and proposes non-operative management",
+      "reply": "You admit the patient to the ICU for monitoring. Six hours later, the patient becomes more tachycardic (HR 125) and blood pressure drops to 90/60. Repeat Hgb is 8.5 g/dL. What now?"
+    },
+    {
+      "trigger": "If resident proposes angioembolization",
+      "reply": "Interventional radiology is consulted but will take 1 hour to mobilize. The patient continues to be tachycardic with marginally improving BP despite fluid resuscitation. What's your next step?"
+    },
+    {
+      "trigger": "If resident decides on operative management",
+      "reply": "You take the patient to the operating room. On exploration, you find a significantly shattered spleen with active bleeding. What is your operative plan now?"
+    },
+    {
+      "trigger": "If resident describes splenectomy",
+      "reply": "You successfully perform a splenectomy. The patient stabilizes. What specific postoperative considerations does this young patient require?"
+    },
+    {
+      "trigger": "If resident does not address post-splenectomy vaccination",
+      "reply": "The patient recovers well but 1 year later develops severe pneumococcal pneumonia. What important aspect of post-splenectomy care may have been missed?"
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate trauma assessment and resuscitation",
+    "Recognition of potential splenic injury based on mechanism and physical exam",
+    "Appropriate use and interpretation of FAST exam and CT scan",
+    "Decision-making regarding non-operative vs. operative management",
+    "Recognition of failed non-operative management",
+    "Technical considerations for splenectomy",
+    "Post-splenectomy care, including vaccination and patient education"
+  ],
+  "rubric": {
+    "diagnostic_reasoning": [
+      "Fails to recognize potential for splenic injury despite mechanism and symptoms",
+      "Delayed recognition of splenic injury, incomplete trauma assessment",
+      "Recognizes potential splenic injury, orders appropriate imaging",
+      "Promptly identifies splenic injury, grades severity appropriately, recognizes clinical signs of ongoing bleeding",
+      "Excellent diagnostic approach with comprehensive trauma assessment, appropriate imaging interpretation, and recognition of Kehr's sign as referred pain"
+    ],
+    "clinical_judgment": [
+      "Inappropriate management plan, misinterprets hemodynamic status",
+      "Delays intervention in deteriorating patient, inadequate resuscitation",
+      "Appropriate initial non-operative management with adequate monitoring",
+      "Good clinical judgment in recognizing failed non-operative management, appropriate resuscitation",
+      "Excellent judgment throughout, with appropriate initial management and prompt recognition of need for operative intervention, considers angioembolization when appropriate"
+    ],
+    "communication": [
+      "Disorganized presentation of trauma assessment, unable to articulate plan",
+      "Somewhat organized but incomplete information, lacks clarity in management plan",
+      "Clear communication of findings and management plan",
+      "Well-organized, systematic presentation of ATLS approach, clear explanation of decision-making",
+      "Exceptionally clear communication, excellent organization following trauma protocols, articulates contingency plans"
+    ],
+    "surgical_knowledge": [
+      "Inadequate knowledge of splenic injury grading and management options",
+      "Basic understanding of splenic injury but limited knowledge of management guidelines",
+      "Adequate knowledge of splenic injury grading and standard management approaches",
+      "Good knowledge of splenic injuries, operative techniques, and consideration of splenic preservation",
+      "Excellent knowledge of AAST grading system, management algorithms, operative techniques, and post-splenectomy considerations"
+    ],
+    "professionalism": [
+      "Does not involve trauma team or surgical colleagues appropriately",
+      "Minimal collaboration with trauma team, defensive when questioned",
+      "Appropriate collaboration and communication with trauma team",
+      "Good leadership in trauma setting, effective communication with entire team",
+      "Excellent team leadership, clear delegation, appropriate consultation, and emphasis on patient-centered care"
+    ]
+  },
+  "resident_feedback_template": "Your performance on this trauma scenario demonstrated [strengths in initial assessment/resuscitation/decision-making]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of splenic injuries, particularly regarding [specific knowledge gap]. Recommended reading includes the AAST spleen injury grading system, Eastern Association for the Surgery of Trauma (EAST) guidelines on management of blunt splenic injury, and post-splenectomy vaccination protocols.",
+  "learner_feedback_questions": [
+    "How realistic was this scenario? (1-5 scale)",
+    "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+    "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+    "Were the examiner prompts clear and helpful? (1-5 scale)",
+    "What aspects of this scenario were most valuable to your learning?",
+    "What suggestions do you have to improve this scenario?",
+    "Additional comments or feedback:"
+  ]
+}
