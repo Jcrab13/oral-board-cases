@@ -1,1 +1,104 @@
-{"case_id":"scenario_001_acute_abdomen","title":"Scenario 1: Acute Abdomen","diagnosis_topic":"Acute Abdomen with Sudden Onset Pain","setup_script":"A 62-year-old male presents to the emergency department with severe, diffuse abdominal pain that began suddenly about 4 hours ago. He rates the pain as 9/10 and states it is unlike anything he has experienced before. He reports some nausea but no vomiting. He has been taking ibuprofen regularly for knee pain. Vital signs show: Temperature 38.0°C, HR 110, BP 105/70, RR 22. On examination, his abdomen is rigid with diffuse tenderness and guarding. Initial labs show: WBC 16,000/μL, Hgb 13.5 g/dL, BUN 28 mg/dL, Creatinine 1.3 mg/dL. How would you proceed with this patient?","dynamic_flow":[{"trigger":"If resident asks for additional history","reply":"Patient reports taking NSAIDs for knee pain, has history of dyspepsia but never sought treatment. No prior surgeries."},{"trigger":"If resident asks for additional physical exam findings","reply":"Patient has absent bowel sounds and tympany over the upper abdomen."},{"trigger":"If resident requests imaging","reply":"You obtain an upright chest X-ray that shows free air under the diaphragm."},{"trigger":"If resident orders additional labs","reply":"Lactic acid is 3.2 mmol/L."},{"trigger":"If resident requests CT","reply":"CT scan shows free intraperitoneal air and fluid particularly around the duodenum and near the pylorus of the stomach."},{"trigger":"If resident initiates resuscitation and proposes surgical intervention","reply":"The patient is given IV fluids, antibiotics, and prepared for surgery. What is your operative plan?"},{"trigger":"If resident chooses laparoscopic approach","reply":"During laparoscopy, you identify a 1 cm anterior duodenal perforation with purulent fluid throughout the abdomen. What will you do now?"},{"trigger":"If resident chooses open approach","reply":"Upon entering the abdomen, you find a 1 cm anterior duodenal perforation with purulent fluid throughout the abdomen. What will you do now?"},{"trigger":"If resident describes Graham patch repair","reply":"You successfully perform the repair. How will you manage this patient postoperatively?"},{"trigger":"If resident does not address H. pylori","reply":"The patient recovers well but returns 6 months later with similar symptoms. What might you have missed?"}],"critical_decision_points":["Appropriate initial workup for acute abdomen","Recognition of perforated viscus on imaging","Decision for emergency surgical intervention","Appropriate surgical approach and technique (Graham patch vs. other)","Postoperative management and addressing underlying cause (H. pylori, NSAID use)","Appropriate antibiotic selection and duration"],"rubric":{"diagnostic_reasoning":["Does not recognize perforated viscus despite clinical and radiographic evidence","Delayed recognition of perforated viscus, incomplete differential diagnosis","Recognizes perforated viscus but does not identify peptic ulcer disease as likely cause","Correctly diagnoses perforated peptic ulcer, provides appropriate differential","Excellent diagnostic approach, comprehensive differential, identifies likelihood of NSAID-induced ulcer, considers H. pylori"],"clinical_judgment":["Inappropriate management plan, delays surgical intervention","Somewhat delayed surgical intervention, inadequate resuscitation","Appropriate surgical intervention, standard resuscitation measures","Prompt surgical intervention with comprehensive resuscitation including antibiotics, IVF, NPO, NGT","Excellent clinical judgment with rapid stabilization, appropriate prioritization, and consideration of comorbidities"],"communication":["Disorganized presentation of thoughts, unable to articulate plan clearly","Presents thoughts with some organization but lacks clarity in certain areas","Clear communication of diagnosis and plan with standard organization","Well-organized presentation of findings and plan, good explanation of rationale","Exceptionally clear communication, excellent organization, articulates complex decision-making and contingency plans"],"surgical_knowledge":["Inadequate knowledge of surgical anatomy and technique for managing perforated ulcer","Basic understanding of surgical approach but lacks details on technique","Adequate knowledge of surgical anatomy and standard approach to repair","Good knowledge of surgical anatomy, various repair options, and potential complications","Excellent knowledge of surgical anatomy, technical considerations, repair options, and management of complications"],"professionalism":["Does not acknowledge limitations or seek help appropriately","Minimal acknowledgment of limitations, defensive when questioned","Acknowledges limitations and seeks help appropriately","Good insight into limitations, communicates effectively with team, considers patient-centered approach","Excellent professionalism, clear understanding of role in team, patient advocacy, acknowledges uncertainty appropriately"]},"resident_feedback_template":"Your performance on this acute abdomen scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of perforated peptic ulcer disease, particularly regarding [specific knowledge gap]. Recommended reading includes chapters on peptic ulcer disease in Schwartz's Principles of Surgery and recent guidelines on management of perforated viscus.","learner_feedback_questions":["How realistic was this scenario? (1-5 scale)","How helpful was this scenario in preparing you for the oral boards? (1-5 scale)","Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)","Were the examiner prompts clear and helpful? (1-5 scale)","What aspects of this scenario were most valuable to your learning?","What suggestions do you have to improve this scenario?","Additional comments or feedback:"]}
+
+{
+  "case_id": "scenario_1_acute_abdomen",
+  "title": "Scenario 1: Acute Abdomen",
+  "diagnosis_topic": "Acute Abdomen with Sudden Onset Pain",
+  "setup_script": "A 62-year-old male presents to the emergency department with severe, diffuse abdominal pain that began suddenly about 4 hours ago. He rates the pain as 9/10 and states it is unlike anything he has experienced before. He reports some nausea but no vomiting. He has been taking ibuprofen regularly for knee pain. Vital signs show: Temperature 38.0°C, HR 110, BP 105/70, RR 22. On examination, his abdomen is rigid with diffuse tenderness and guarding. Initial labs show: WBC 16,000/μL, Hgb 13.5 g/dL, BUN 28 mg/dL, Creatinine 1.3 mg/dL. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for additional history",
+      "reply": "Patient reports taking NSAIDs for knee pain, has history of dyspepsia but never sought treatment. No prior surgeries."
+    },
+    {
+      "trigger": "If resident asks for additional physical exam findings",
+      "reply": "Patient has absent bowel sounds and tympany over the upper abdomen."
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "You obtain an upright chest X-ray that shows free air under the diaphragm."
+    },
+    {
+      "trigger": "If resident orders additional labs",
+      "reply": "Lactic acid is 3.2 mmol/L."
+    },
+    {
+      "trigger": "If resident requests CT",
+      "reply": "CT scan shows free intraperitoneal air and fluid particularly around the duodenum and near the pylorus of the stomach."
+    },
+    {
+      "trigger": "If resident initiates resuscitation and proposes surgical intervention",
+      "reply": "The patient is given IV fluids, antibiotics, and prepared for surgery. What is your operative plan?"
+    },
+    {
+      "trigger": "If resident chooses laparoscopic approach",
+      "reply": "During laparoscopy, you identify a 1 cm anterior duodenal perforation with purulent fluid throughout the abdomen. What will you do now?"
+    },
+    {
+      "trigger": "If resident chooses open approach",
+      "reply": "Upon entering the abdomen, you find a 1 cm anterior duodenal perforation with purulent fluid throughout the abdomen. What will you do now?"
+    },
+    {
+      "trigger": "If resident describes Graham patch repair",
+      "reply": "You successfully perform the repair. How will you manage this patient postoperatively?"
+    },
+    {
+      "trigger": "If resident does not address H. pylori",
+      "reply": "The patient recovers well but returns 6 months later with similar symptoms. What might you have missed?"
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate initial workup for acute abdomen",
+    "Recognition of perforated viscus on imaging",
+    "Decision for emergency surgical intervention",
+    "Appropriate surgical approach and technique (Graham patch vs. other)",
+    "Postoperative management and addressing underlying cause (H. pylori, NSAID use)",
+    "Appropriate antibiotic selection and duration"
+  ],
+  "rubric": {
+    "diagnostic_reasoning": [
+      "Does not recognize perforated viscus despite clinical and radiographic evidence",
+      "Delayed recognition of perforated viscus, incomplete differential diagnosis",
+      "Recognizes perforated viscus but does not identify peptic ulcer disease as likely cause",
+      "Correctly diagnoses perforated peptic ulcer, provides appropriate differential",
+      "Excellent diagnostic approach, comprehensive differential, identifies likelihood of NSAID-induced ulcer, considers H. pylori"
+    ],
+    "clinical_judgment": [
+      "Inappropriate management plan, delays surgical intervention",
+      "Somewhat delayed surgical intervention, inadequate resuscitation",
+      "Appropriate surgical intervention, standard resuscitation measures",
+      "Prompt surgical intervention with comprehensive resuscitation including antibiotics, IVF, NPO, NGT",
+      "Excellent clinical judgment with rapid stabilization, appropriate prioritization, and consideration of comorbidities"
+    ],
+    "communication": [
+      "Disorganized presentation of thoughts, unable to articulate plan clearly",
+      "Presents thoughts with some organization but lacks clarity in certain areas",
+      "Clear communication of diagnosis and plan with standard organization",
+      "Well-organized presentation of findings and plan, good explanation of rationale",
+      "Exceptionally clear communication, excellent organization, articulates complex decision-making and contingency plans"
+    ],
+    "surgical_knowledge": [
+      "Inadequate knowledge of surgical anatomy and technique for managing perforated ulcer",
+      "Basic understanding of surgical approach but lacks details on technique",
+      "Adequate knowledge of surgical anatomy and standard approach to repair",
+      "Good knowledge of surgical anatomy, various repair options, and potential complications",
+      "Excellent knowledge of surgical anatomy, technical considerations, repair options, and management of complications"
+    ],
+    "professionalism": [
+      "Does not acknowledge limitations or seek help appropriately",
+      "Minimal acknowledgment of limitations, defensive when questioned",
+      "Acknowledges limitations and seeks help appropriately",
+      "Good insight into limitations, communicates effectively with team, considers patient-centered approach",
+      "Excellent professionalism, clear understanding of role in team, patient advocacy, acknowledges uncertainty appropriately"
+    ]
+  },
+  "resident_feedback_template": "Your performance on this acute abdomen scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of perforated peptic ulcer disease, particularly regarding [specific knowledge gap]. Recommended reading includes chapters on peptic ulcer disease in Schwartz's Principles of Surgery and recent guidelines on management of perforated viscus.",
+  "learner_feedback_questions": [
+    "How realistic was this scenario? (1-5 scale)",
+    "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+    "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+    "Were the examiner prompts clear and helpful? (1-5 scale)",
+    "What aspects of this scenario were most valuable to your learning?",
+    "What suggestions do you have to improve this scenario?",
+    "Additional comments or feedback:"
+  ]
+}

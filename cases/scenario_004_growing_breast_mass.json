@@ -1,1 +1,101 @@
-{"case_id":"scenario_004_growing_breast_mass","title":"Scenario 4: Breast","diagnosis_topic":"Growing Breast Mass with Skin Changes","setup_script":"A 52-year-old female presents to your clinic with a right breast mass that she noticed 3 months ago but delayed seeking care due to the COVID-19 pandemic. She reports the mass has been growing steadily and is now painful. She denies nipple discharge but has noticed some skin dimpling. She has no previous breast biopsies and no family history of breast or ovarian cancer. On examination, you palpate a 5 cm firm, fixed mass in the upper outer quadrant of the right breast with overlying skin dimpling. You also palpate firm, enlarged lymph nodes in the right axilla. How would you proceed with this patient?","dynamic_flow":[{"trigger":"If resident requests appropriate imaging","reply":"Mammogram and ultrasound show a 5.2 cm spiculated mass with microcalcifications in the right upper outer quadrant, suspicious for malignancy (BIRADS 5). Ultrasound confirms multiple enlarged right axillary lymph nodes with loss of fatty hilum."},{"trigger":"If resident proceeds with biopsy","reply":"Core needle biopsy of the breast mass shows invasive ductal carcinoma, grade 3, ER/PR negative, HER2 positive. FNA of an axillary node is positive for metastatic carcinoma."},{"trigger":"If resident orders staging workup","reply":"CT chest/abdomen/pelvis and bone scan show no evidence of distant metastases."},{"trigger":"If resident discusses surgical options immediately","reply":"Given the size of the tumor, skin involvement, and positive axillary nodes, what approach would you recommend for this patient?"},{"trigger":"If resident proposes neoadjuvant therapy","reply":"You refer the patient to medical oncology and she receives neoadjuvant chemotherapy with HER2-targeted therapy. After 6 months, the tumor has decreased to 1.5 cm by imaging and the skin changes have resolved. What is your surgical plan now?"},{"trigger":"If resident recommends breast conservation","reply":"What factors influence your decision between breast conservation and mastectomy in this case?"},{"trigger":"If resident recommends mastectomy","reply":"What type of mastectomy would you recommend and why? What would you discuss regarding reconstruction options?"},{"trigger":"If resident addresses axillary management","reply":"How would you manage the axilla in this patient after neoadjuvant therapy?"},{"trigger":"If resident does not address the possibility of pathologic complete response","reply":"The final pathology shows no residual invasive cancer in the breast specimen, but 2 of 15 lymph nodes are positive for metastatic disease. How does this change your recommendations for adjuvant therapy and follow-up?"}],"critical_decision_points":["Appropriate initial diagnostic workup for suspected breast cancer","Recognition of locally advanced disease requiring multidisciplinary approach","Decision regarding neoadjuvant therapy","Surgical planning after neoadjuvant therapy (breast conservation vs. mastectomy)","Management of the axilla after neoadjuvant therapy","Understanding of adjuvant therapy recommendations","Discussion of reconstruction options if mastectomy is performed","Appropriate follow-up planning"],"rubric":{"diagnostic_reasoning":["Inadequate diagnostic workup for suspected breast cancer","Basic workup but missing important elements or incorrect sequencing","Appropriate diagnostic workup including imaging and tissue diagnosis","Comprehensive diagnostic approach with appropriate staging","Excellent diagnostic reasoning with thorough workup, appropriate staging, and consideration of genetic testing"],"clinical_judgment":["Recommends immediate surgery without consideration of neoadjuvant therapy","Considers neoadjuvant therapy but lacks understanding of indications or benefits","Appropriately recommends neoadjuvant therapy for locally advanced disease","Good clinical judgment in multidisciplinary approach, surgical planning after neoadjuvant therapy","Excellent judgment throughout with appropriate sequencing of therapy, surgical planning, and consideration of patient factors and preferences"],"communication":["Disorganized presentation, unable to articulate management plan clearly","Somewhat organized but incomplete explanation of treatment options","Clear communication of diagnosis, staging, and treatment plan","Well-organized, systematic presentation with clear explanation of multidisciplinary approach","Exceptionally clear communication, excellent organization, articulates complex decision-making and addresses patient-centered concerns"],"surgical_knowledge":["Inadequate knowledge of surgical management of breast cancer","Basic understanding of surgical options but limited knowledge of current guidelines","Adequate knowledge of surgical approach for locally advanced breast cancer","Good knowledge of surgical options, axillary management after neoadjuvant therapy","Excellent knowledge of current guidelines, technical considerations for surgery after neoadjuvant therapy, and management of the axilla"],"professionalism":["Does not involve multidisciplinary team appropriately","Minimal consideration of patient preferences or multidisciplinary approach","Appropriate consideration of patient preferences and multidisciplinary approach","Good communication with multidisciplinary team, consideration of patient preferences","Excellent patient-centered approach, clear communication with multidisciplinary team, addresses psychosocial aspects of care"]},"resident_feedback_template":"Your performance on this breast cancer scenario demonstrated [strengths in diagnostic workup/surgical planning/multidisciplinary approach]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of locally advanced breast cancer, particularly regarding [specific knowledge gap]. Recommended reading includes NCCN guidelines for breast cancer, management of the axilla after neoadjuvant therapy, and options for reconstruction after mastectomy.","learner_feedback_questions":["How realistic was this scenario? (1-5 scale)","How helpful was this scenario in preparing you for the oral boards? (1-5 scale)","Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)","Were the examiner prompts clear and helpful? (1-5 scale)","What aspects of this scenario were most valuable to your learning?","What suggestions do you have to improve this scenario?","Additional comments or feedback:"]}
+{
+  "case_id": "scenario_4_growing_breast_mass",
+  "title": "Scenario 4: Breast",
+  "diagnosis_topic": "Growing Breast Mass with Skin Changes",
+  "setup_script": "A 52-year-old female presents to your clinic with a right breast mass that she noticed 3 months ago but delayed seeking care due to the COVID-19 pandemic. She reports the mass has been growing steadily and is now painful. She denies nipple discharge but has noticed some skin dimpling. She has no previous breast biopsies and no family history of breast or ovarian cancer. On examination, you palpate a 5 cm firm, fixed mass in the upper outer quadrant of the right breast with overlying skin dimpling. You also palpate firm, enlarged lymph nodes in the right axilla. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests appropriate imaging",
+      "reply": "Mammogram and ultrasound show a 5.2 cm spiculated mass with microcalcifications in the right upper outer quadrant, suspicious for malignancy (BIRADS 5). Ultrasound confirms multiple enlarged right axillary lymph nodes with loss of fatty hilum."
+    },
+    {
+      "trigger": "If resident proceeds with biopsy",
+      "reply": "Core needle biopsy of the breast mass shows invasive ductal carcinoma, grade 3, ER/PR negative, HER2 positive. FNA of an axillary node is positive for metastatic carcinoma."
+    },
+    {
+      "trigger": "If resident orders staging workup",
+      "reply": "CT chest/abdomen/pelvis and bone scan show no evidence of distant metastases."
+    },
+    {
+      "trigger": "If resident discusses surgical options immediately",
+      "reply": "Given the size of the tumor, skin involvement, and positive axillary nodes, what approach would you recommend for this patient?"
+    },
+    {
+      "trigger": "If resident proposes neoadjuvant therapy",
+      "reply": "You refer the patient to medical oncology and she receives neoadjuvant chemotherapy with HER2-targeted therapy. After 6 months, the tumor has decreased to 1.5 cm by imaging and the skin changes have resolved. What is your surgical plan now?"
+    },
+    {
+      "trigger": "If resident recommends breast conservation",
+      "reply": "What factors influence your decision between breast conservation and mastectomy in this case?"
+    },
+    {
+      "trigger": "If resident recommends mastectomy",
+      "reply": "What type of mastectomy would you recommend and why? What would you discuss regarding reconstruction options?"
+    },
+    {
+      "trigger": "If resident addresses axillary management",
+      "reply": "How would you manage the axilla in this patient after neoadjuvant therapy?"
+    },
+    {
+      "trigger": "If resident does not address the possibility of pathologic complete response",
+      "reply": "The final pathology shows no residual invasive cancer in the breast specimen, but 2 of 15 lymph nodes are positive for metastatic disease. How does this change your recommendations for adjuvant therapy and follow-up?"
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate initial diagnostic workup for suspected breast cancer",
+    "Recognition of locally advanced disease requiring multidisciplinary approach",
+    "Decision regarding neoadjuvant therapy",
+    "Surgical planning after neoadjuvant therapy (breast conservation vs. mastectomy)",
+    "Management of the axilla after neoadjuvant therapy",
+    "Understanding of adjuvant therapy recommendations",
+    "Discussion of reconstruction options if mastectomy is performed",
+    "Appropriate follow-up planning"
+  ],
+  "rubric": {
+    "diagnostic_reasoning": [
+      "Inadequate diagnostic workup for suspected breast cancer",
+      "Basic workup but missing important elements or incorrect sequencing",
+      "Appropriate diagnostic workup including imaging and tissue diagnosis",
+      "Comprehensive diagnostic approach with appropriate staging",
+      "Excellent diagnostic reasoning with thorough workup, appropriate staging, and consideration of genetic testing"
+    ],
+    "clinical_judgment": [
+      "Recommends immediate surgery without consideration of neoadjuvant therapy",
+      "Considers neoadjuvant therapy but lacks understanding of indications or benefits",
+      "Appropriately recommends neoadjuvant therapy for locally advanced disease",
+      "Good clinical judgment in multidisciplinary approach, surgical planning after neoadjuvant therapy",
+      "Excellent judgment throughout with appropriate sequencing of therapy, surgical planning, and consideration of patient factors and preferences"
+    ],
+    "communication": [
+      "Disorganized presentation, unable to articulate management plan clearly",
+      "Somewhat organized but incomplete explanation of treatment options",
+      "Clear communication of diagnosis, staging, and treatment plan",
+      "Well-organized, systematic presentation with clear explanation of multidisciplinary approach",
+      "Exceptionally clear communication, excellent organization, articulates complex decision-making and addresses patient-centered concerns"
+    ],
+    "surgical_knowledge": [
+      "Inadequate knowledge of surgical management of breast cancer",
+      "Basic understanding of surgical options but limited knowledge of current guidelines",
+      "Adequate knowledge of surgical approach for locally advanced breast cancer",
+      "Good knowledge of surgical options, axillary management after neoadjuvant therapy",
+      "Excellent knowledge of current guidelines, technical considerations for surgery after neoadjuvant therapy, and management of the axilla"
+    ],
+    "professionalism": [
+      "Does not involve multidisciplinary team appropriately",
+      "Minimal consideration of patient preferences or multidisciplinary approach",
+      "Appropriate consideration of patient preferences and multidisciplinary approach",
+      "Good communication with multidisciplinary team, consideration of patient preferences",
+      "Excellent patient-centered approach, clear communication with multidisciplinary team, addresses psychosocial aspects of care"
+    ]
+  },
+  "resident_feedback_template": "Your performance on this breast cancer scenario demonstrated [strengths in diagnostic workup/surgical planning/multidisciplinary approach]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of locally advanced breast cancer, particularly regarding [specific knowledge gap]. Recommended reading includes NCCN guidelines for breast cancer, management of the axilla after neoadjuvant therapy, and options for reconstruction after mastectomy.",
+  "learner_feedback_questions": [
+    "How realistic was this scenario? (1-5 scale)",
+    "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+    "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+    "Were the examiner prompts clear and helpful? (1-5 scale)",
+    "What aspects of this scenario were most valuable to your learning?",
+    "What suggestions do you have to improve this scenario?",
+    "Additional comments or feedback:"
+  ]
+}

@@ -1,1 +1,95 @@
-{"case_id":"scenario_005_right_upper_quadrant_pain_fever","title":"Scenario 5: Hepatobiliary/Pancreatic","diagnosis_topic":"Right Upper Quadrant Pain with Fever","setup_script":"A 58-year-old female with obesity, diabetes, and hypertension presents to the emergency department with 36 hours of worsening right upper quadrant pain, nausea, vomiting, and fever. She reports having similar but milder episodes in the past after fatty meals. Vital signs show: Temperature 38.6°C, HR 112, BP 138/84, RR 20. On examination, she has right upper quadrant tenderness with a positive Murphy's sign. Initial labs show: WBC 16,800/μL, total bilirubin 2.1 mg/dL, direct bilirubin 1.3 mg/dL, AST 98 U/L, ALT 86 U/L, alkaline phosphatase 210 U/L. How would you proceed with this patient?","dynamic_flow":[{"trigger":"If resident requests imaging","reply":"Ultrasound shows a distended gallbladder with wall thickening to 6mm, pericholecystic fluid, and multiple gallstones. The common bile duct measures 8mm without definite stones visualized."},{"trigger":"If resident initiates antibiotics and IV fluids","reply":"You start IV fluids and empiric antibiotics. The patient feels somewhat better, but remains febrile at 38.2°C after 6 hours. What's your plan now?"},{"trigger":"If resident proposes early laparoscopic cholecystectomy","reply":"What timing would you recommend for surgery, and what are the technical considerations for this case?"},{"trigger":"If resident proposes delayed cholecystectomy","reply":"The patient continues to have pain and fever despite 24 hours of antibiotics. Would you reconsider your approach?"},{"trigger":"If resident proceeds with surgery","reply":"During laparoscopic cholecystectomy, you encounter significant inflammation with adhesions around the gallbladder. You cannot clearly identify the cystic duct or artery. What will you do now?"},{"trigger":"If resident describes safe bailout options","reply":"You decide to perform a subtotal cholecystectomy leaving the posterior wall attached to the liver. What are the specific steps for this procedure?"},{"trigger":"If resident recommends conversion to open","reply":"You convert to open cholecystectomy. Describe your approach to the critical view of safety in this difficult case."},{"trigger":"If resident doesn't address the possibility of bile duct injury","reply":"During the postoperative period, the patient develops increasing right upper quadrant pain, fever, and has bilious drainage from a surgical drain. What is your concern and next steps?"}],"critical_decision_points":["Appropriate diagnostic workup for acute cholecystitis","Decision regarding timing of surgical intervention","Recognition of difficult gallbladder and alternative approaches","Management of potential bile duct injury","Appropriate antibiotic selection and duration","Bailout options for difficult cholecystectomy"],"rubric":{"diagnostic_reasoning":["Fails to recognize acute cholecystitis despite clinical and ultrasound findings","Delayed or incomplete diagnosis, does not consider alternative diagnoses","Correctly diagnoses acute cholecystitis with standard workup","Comprehensive diagnostic approach with consideration of cholangitis and other complications","Excellent diagnostic reasoning with thorough differential diagnosis and identification of severity markers"],"clinical_judgment":["Inappropriate management plan, delays needed intervention","Inconsistent management decisions, inadequate antibiotics","Appropriate antibiotic selection and timely surgical planning","Good clinical judgment regarding timing of surgery and technical approach","Excellent judgment throughout with appropriate anticipation of challenges and complications"],"communication":["Disorganized presentation, unable to articulate surgical plan","Basic explanation of findings and plan but lacks detail","Clear communication of diagnosis and management plan","Well-organized presentation with good explanation of surgical options","Exceptionally clear explanation of diagnosis, management options, and potential complications with excellent patient-centered approach"],"surgical_knowledge":["Inadequate knowledge of gallbladder anatomy and surgical techniques","Basic understanding of standard cholecystectomy but limited knowledge of difficult cases","Adequate knowledge of surgical anatomy and bailout options","Good knowledge of safe technical approaches to difficult cholecystectomy","Excellent knowledge of surgical anatomy, technical considerations, bailout options, and management of complications"],"professionalism":["Does not recognize limitations or seek help appropriately","Reluctant to consider alternative approaches when facing difficulties","Recognizes limitations and willing to adapt surgical approach","Good insight into personal limitations, communicates effectively about difficulties","Excellent professionalism, prioritizes patient safety, willing to convert or seek assistance appropriately"]},"resident_feedback_template":"Your performance on this acute cholecystitis scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing management of difficult cholecystectomy, particularly regarding [specific knowledge gap]. Recommended reading includes SAGES guidelines on safe cholecystectomy, Tokyo Guidelines for acute cholecystitis, and technical approaches to bailout options for difficult cases.","learner_feedback_questions":["How realistic was this scenario? (1-5 scale)","How helpful was this scenario in preparing you for the oral boards? (1-5 scale)","Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)","Were the examiner prompts clear and helpful? (1-5 scale)","What aspects of this scenario were most valuable to your learning?","What suggestions do you have to improve this scenario?","Additional comments or feedback:"]}
+{
+  "case_id": "scenario_5_right_upper_quadrant_pain_fever",
+  "title": "Scenario 5: Hepatobiliary/Pancreatic",
+  "diagnosis_topic": "Right Upper Quadrant Pain with Fever",
+  "setup_script": "A 58-year-old female with obesity, diabetes, and hypertension presents to the emergency department with 36 hours of worsening right upper quadrant pain, nausea, vomiting, and fever. She reports having similar but milder episodes in the past after fatty meals. Vital signs show: Temperature 38.6°C, HR 112, BP 138/84, RR 20. On examination, she has right upper quadrant tenderness with a positive Murphy's sign. Initial labs show: WBC 16,800/μL, total bilirubin 2.1 mg/dL, direct bilirubin 1.3 mg/dL, AST 98 U/L, ALT 86 U/L, alkaline phosphatase 210 U/L. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "Ultrasound shows a distended gallbladder with wall thickening to 6mm, pericholecystic fluid, and multiple gallstones. The common bile duct measures 8mm without definite stones visualized."
+    },
+    {
+      "trigger": "If resident initiates antibiotics and IV fluids",
+      "reply": "You start IV fluids and empiric antibiotics. The patient feels somewhat better, but remains febrile at 38.2°C after 6 hours. What's your plan now?"
+    },
+    {
+      "trigger": "If resident proposes early laparoscopic cholecystectomy",
+      "reply": "What timing would you recommend for surgery, and what are the technical considerations for this case?"
+    },
+    {
+      "trigger": "If resident proposes delayed cholecystectomy",
+      "reply": "The patient continues to have pain and fever despite 24 hours of antibiotics. Would you reconsider your approach?"
+    },
+    {
+      "trigger": "If resident proceeds with surgery",
+      "reply": "During laparoscopic cholecystectomy, you encounter significant inflammation with adhesions around the gallbladder. You cannot clearly identify the cystic duct or artery. What will you do now?"
+    },
+    {
+      "trigger": "If resident describes safe bailout options",
+      "reply": "You decide to perform a subtotal cholecystectomy leaving the posterior wall attached to the liver. What are the specific steps for this procedure?"
+    },
+    {
+      "trigger": "If resident recommends conversion to open",
+      "reply": "You convert to open cholecystectomy. Describe your approach to the critical view of safety in this difficult case."
+    },
+    {
+      "trigger": "If resident doesn't address the possibility of bile duct injury",
+      "reply": "During the postoperative period, the patient develops increasing right upper quadrant pain, fever, and has bilious drainage from a surgical drain. What is your concern and next steps?"
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate diagnostic workup for acute cholecystitis",
+    "Decision regarding timing of surgical intervention",
+    "Recognition of difficult gallbladder and alternative approaches",
+    "Management of potential bile duct injury",
+    "Appropriate antibiotic selection and duration",
+    "Bailout options for difficult cholecystectomy"
+  ],
+  "rubric": {
+    "diagnostic_reasoning": [
+      "Fails to recognize acute cholecystitis despite clinical and ultrasound findings",
+      "Delayed or incomplete diagnosis, does not consider alternative diagnoses",
+      "Correctly diagnoses acute cholecystitis with standard workup",
+      "Comprehensive diagnostic approach with consideration of cholangitis and other complications",
+      "Excellent diagnostic reasoning with thorough differential diagnosis and identification of severity markers"
+    ],
+    "clinical_judgment": [
+      "Inappropriate management plan, delays needed intervention",
+      "Inconsistent management decisions, inadequate antibiotics",
+      "Appropriate antibiotic selection and timely surgical planning",
+      "Good clinical judgment regarding timing of surgery and technical approach",
+      "Excellent judgment throughout with appropriate anticipation of challenges and complications"
+    ],
+    "communication": [
+      "Disorganized presentation, unable to articulate surgical plan",
+      "Basic explanation of findings and plan but lacks detail",
+      "Clear communication of diagnosis and management plan",
+      "Well-organized presentation with good explanation of surgical options",
+      "Exceptionally clear explanation of diagnosis, management options, and potential complications with excellent patient-centered approach"
+    ],
+    "surgical_knowledge": [
+      "Inadequate knowledge of gallbladder anatomy and surgical techniques",
+      "Basic understanding of standard cholecystectomy but limited knowledge of difficult cases",
+      "Adequate knowledge of surgical anatomy and bailout options",
+      "Good knowledge of safe technical approaches to difficult cholecystectomy",
+      "Excellent knowledge of surgical anatomy, technical considerations, bailout options, and management of complications"
+    ],
+    "professionalism": [
+      "Does not recognize limitations or seek help appropriately",
+      "Reluctant to consider alternative approaches when facing difficulties",
+      "Recognizes limitations and willing to adapt surgical approach",
+      "Good insight into personal limitations, communicates effectively about difficulties",
+      "Excellent professionalism, prioritizes patient safety, willing to convert or seek assistance appropriately"
+    ]
+  },
+  "resident_feedback_template": "Your performance on this acute cholecystitis scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing management of difficult cholecystectomy, particularly regarding [specific knowledge gap]. Recommended reading includes SAGES guidelines on safe cholecystectomy, Tokyo Guidelines for acute cholecystitis, and technical approaches to bailout options for difficult cases.",
+  "learner_feedback_questions": [
+    "How realistic was this scenario? (1-5 scale)",
+    "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
+    "Was the difficulty level appropriate? (Too easy / Appropriate / Too difficult)",
+    "Were the examiner prompts clear and helpful? (1-5 scale)",
+    "What aspects of this scenario were most valuable to your learning?",
+    "What suggestions do you have to improve this scenario?",
+    "Additional comments or feedback:"
+  ]
+}
