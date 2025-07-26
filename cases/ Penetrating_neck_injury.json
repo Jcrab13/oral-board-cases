@@ -1,0 +1,116 @@
+{
+  "case_id": "penetrating_zone_ii_neck_injury",
+  "title": "Oral Board Case: Penetrating Zone II Neck Injury (Trauma Surgery)",
+  "diagnosis_topic": "Penetrating Neck Trauma with Vascular Injury",
+  "setup_script": "A 42-year-old male is brought in after a close-range handgun wound to the left side of the neck, located just anterior to the sternocleidomastoid at the C5 vertebral level. On arrival: Airway – patient speaking in short sentences with a hoarse voice; Breathing – respiratory rate 24 with equal breath sounds bilaterally; Circulation – blood pressure 96/60 mm Hg, heart rate 122 beats per minute, with an expanding left-sided neck hematoma exhibiting venous oozing; Disability – GCS 15 without focal neurological deficits; Exposure – no additional injuries identified. Please outline your initial management.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident begins ATLS assessment and calls for airway equipment",
+      "reply": "The neck hematoma enlarges and the patient’s voice becomes muffled."
+    },
+    {
+      "trigger": "If resident performs awake fiber-optic intubation or a surgical airway before airway compromise",
+      "reply": "The endotracheal tube is secured with blood pressure 90/55 mm Hg and heart rate 130 bpm."
+    },
+    {
+      "trigger": "If resident applies direct pressure and activates massive transfusion protocol",
+      "reply": "After transfusion of 1 unit packed red blood cells, the blood pressure improves to 102/64 mm Hg and heart rate decreases to 118 bpm."
+    },
+    {
+      "trigger": "If resident requests CT angiography (CTA) of the neck and chest once patient is marginally stabilized",
+      "reply": "CTA demonstrates a left common carotid artery pseudo-aneurysm with contrast extravasation, without evidence of aerodigestive tract injury."
+    },
+    {
+      "trigger": "If resident decides on emergent operative neck exploration for hard vascular signs",
+      "reply": "Intra-operative findings reveal brisk carotid bleeding and a partially shredded internal jugular vein."
+    },
+    {
+      "trigger": "If resident asked to describe operative strategy in detail",
+      "reply": "Discuss approach via an anterior sternocleidomastoid incision, proximal and distal vascular control, consideration for intraluminal shunting, repair techniques, jugular vein management options (ligation vs repair), and protection of adjacent nerves such as the vagus."
+    },
+    {
+      "trigger": "If resident completes repair and patient is stable postoperatively",
+      "reply": "Thirty minutes later in ICU, the patient develops right upper extremity weakness with blood pressure elevated at 150/90 mm Hg."
+    },
+    {
+      "trigger": "If resident asked to interpret and manage new neurologic symptoms",
+      "reply": "Consider acute stroke due to carotid injury or thrombosis; recommend urgent stroke work-up including CT head and CTA, maintain systolic blood pressure between 140–160 mm Hg, initiate antiplatelet or anticoagulation therapy as appropriate."
+    },
+    {
+      "trigger": "On ICU day 1, patient develops airway edema and fails cuff leak test",
+      "reply": "Plan for airway management including consideration for tracheostomy. If resident requests additional imaging delaying airway intervention, patient becomes hemodynamically unstable en route with blood pressure dropping to 70/40 mm Hg, prompting immediate return to OR."
+    }
+  ],
+  "critical_decision_points": [
+    "Early airway control prior to airway compromise from expanding hematoma",
+    "Recognition of hard signs of vascular injury mandating prompt surgical exploration versus selective imaging",
+    "Selection and execution of surgical approach: anterior SCM incision, obtaining proximal and distal vascular control, use of intraluminal shunts if indicated",
+    "Management of associated venous injuries and preservation versus ligation decisions",
+    "Postoperative neurological monitoring and management of stroke risk (blood pressure targets, antiplatelet/anticoagulation therapy, imaging)",
+    "Management of airway edema including timing and planning for tracheostomy and venous thromboembolism (VTE) prophylaxis"
+  ],
+  "rubric": {
+    "diagnostic_reasoning": [
+      "Ignores hard signs; delays airway management and imaging",
+      "Recognizes hematoma but delays CTA and airway intervention",
+      "Anticipates carotid injury and emphasizes need for immediate OR exploration if patient unstable",
+      "Demonstrates comprehensive understanding of vascular injury patterns and prioritizes timely interventions",
+      "Excellent critical reasoning with integration of clinical signs and imaging to guide emergent care"
+    ],
+    "airway_management": [
+      "Attempts rapid sequence intubation (RSI) without preparation resulting in airway loss",
+      "Performs intubation without backup plan for surgical airway",
+      "Utilizes awake fiber-optic intubation or preemptive surgical airway with tracheostomy plan if needed",
+      "Demonstrates advanced airway management anticipating progression of airway compromise",
+      "Exemplary coordination of airway strategy including backup and escalation plans"
+    ],
+    "hemorrhage_control_technique": [
+      "Uncertain about incision placement and vascular control methods",
+      "Achieves control but provides vague repair plan",
+      "Details anterior SCM incision, proximal and distal vascular clamps, use of Pruitt shunt, microsurgical repair with 6-0 prolene, and jugular vein management",
+      "Thorough operative knowledge with meticulous technique and awareness of neurovascular anatomy",
+      "Masterful surgical technique ensuring optimal vascular control and repair"
+    ],
+    "neurologic_management": [
+      "Neglects neurological monitoring postoperatively",
+      "Checks neurologic status but lacks stroke evaluation protocol",
+      "Maintains systolic blood pressure between 140–160 mm Hg, initiates antiplatelet therapy within 24 hours, and orders emergent cerebral imaging if deficits develop",
+      "Proactively manages stroke risk with comprehensive neurovascular surveillance and therapies",
+      "Leads multidisciplinary care for neurologic complications optimizing outcomes"
+    ],
+    "postoperative_care": [
+      "No plan for airway edema or VTE prophylaxis",
+      "Basic postoperative orders without proactive airway or thromboembolism management",
+      "Implements steroids or cuff-leak test, early swallow evaluation, and low molecular weight heparin once bleeding risk acceptable",
+      "Integrates multidisciplinary postoperative strategies addressing airway, nutrition, and VTE prevention",
+      "Exemplary ICU care optimizing respiratory function and minimizing complications"
+    ],
+    "communication_leadership": [
+      "Disorganized, ineffective communication with team and family",
+      "Adequate but lacks clarity and closed-loop coordination",
+      "Provides clear closed-loop communication with anesthesia, vascular surgery, ENT teams, and updates family preoperatively",
+      "Demonstrates leadership in coordinating care and guiding the team under pressure",
+      "Outstanding communication fostering team cohesion and patient-centered care"
+    ],
+    "professionalism": [
+      "Dismissive or indifferent attitude towards patient and team",
+      "Acceptable professionalism with some gaps in empathy or ethics",
+      "Calm, ethical, acknowledges knowledge limits and seeks assistance appropriately",
+      "Exemplifies professional ethics with compassionate patient and team interactions",
+      "Role model professionalism recognized by peers and patients"
+    ]
+  },
+  "resident_feedback_template": "Your management of this penetrating zone II neck injury demonstrated strengths in [specify strengths, e.g., airway management, surgical technique]. You successfully [mention specific positive actions, e.g., secured airway preemptively, activated massive transfusion protocol]. Areas to improve include [highlight areas needing improvement, e.g., earlier recognition of hard signs, more detailed neurovascular management]. Reviewing guidelines on penetrating neck trauma, particularly regarding operative indications and postoperative neurological surveillance, will enhance your clinical approach. Recommended reading includes the EAST Penetrating Neck Trauma Practice Management Guidelines, current Medscape summaries on penetrating neck wounds, and the WTA Critical Decisions Algorithm for penetrating neck trauma.",
+  "learner_feedback_questions": [
+    "How realistic did you find this case scenario? (1-5 scale)",
+    "How useful was this scenario in preparing you for oral board examinations? (1-5 scale)",
+    "Was the difficulty of the case appropriate for your level of training? (Too easy / Appropriate / Too difficult)",
+    "How clear and helpful were the examiner prompts throughout the scenario? (1-5 scale)",
+    "Which aspects of this case were most valuable to your learning?",
+    "What suggestions do you have to improve the scenario or case format?",
+    "Additional comments or feedback:"
+  ]
+}
+
+
+
