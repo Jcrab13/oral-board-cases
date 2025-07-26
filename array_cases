@@ -1,10 +1,9 @@
-
 [
   {
     "case_id": "scenario_1_acute_abdomen",
     "title": "Scenario 1: Acute Abdomen",
     "diagnosis_topic": "Acute Abdomen with Sudden Onset Pain",
-    "setup_script": "A 62-year-old male presents to the emergency department with severe, diffuse abdominal pain that began suddenly about 4 hours ago. He rates the pain as 9/10 and states it is unlike anything he has experienced before. He reports some nausea but no vomiting. He has been taking ibuprofen regularly for knee pain. Vital signs show: Temperature 38.0\u00b0C, HR 110, BP 105/70, RR 22. On examination, his abdomen is rigid with diffuse tenderness and guarding. Initial labs show: WBC 16,000/\u03bcL, Hgb 13.5 g/dL, BUN 28 mg/dL, Creatinine 1.3 mg/dL. How would you proceed with this patient?",
+    "setup_script": "A 62-year-old male presents to the emergency department with severe, diffuse abdominal pain that began suddenly about 4 hours ago. He rates the pain as 9/10 and states it is unlik[...]",
     "dynamic_flow": [
       {
         "trigger": "If resident asks for additional history",
@@ -92,7 +91,7 @@
         "Excellent professionalism, clear understanding of role in team, patient advocacy, acknowledges uncertainty appropriately"
       ]
     },
-    "resident_feedback_template": "Your performance on this acute abdomen scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of perforated peptic ulcer disease, particularly regarding [specific knowledge gap]. Recommended reading includes chapters on peptic ulcer disease in Schwartz's Principles of Surgery and recent guidelines on management of perforated viscus.",
+    "resident_feedback_template": "Your performance on this acute abdomen scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Area[...]",
     "learner_feedback_questions": [
       "How realistic was this scenario? (1-5 scale)",
       "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
@@ -107,7 +106,7 @@
     "case_id": "scenario_2_blunt_abdominal_trauma",
     "title": "Scenario 2: Trauma",
     "diagnosis_topic": "Blunt Abdominal Trauma with Hemodynamic Changes",
-    "setup_script": "A 28-year-old female is brought to the emergency department after a motor vehicle collision where she was the restrained driver. She was traveling approximately 45 mph when she was T-boned on the driver's side. On arrival, she is alert and oriented but complaining of left upper quadrant pain and left shoulder pain. Vital signs are: BP 110/70, HR 105, RR 20, O2 saturation 99% on room air. Physical exam reveals seat belt sign across the chest and abdomen, and tenderness to palpation in the left upper quadrant with voluntary guarding. Initial labs show: Hgb 11.2 g/dL, WBC 14,500/\u03bcL, platelets 230,000/\u03bcL, and normal coagulation studies. How would you proceed with this patient?",
+    "setup_script": "A 28-year-old female is brought to the emergency department after a motor vehicle collision where she was the restrained driver. She was traveling approximately 45 mph when she wa[...]",
     "dynamic_flow": [
       {
         "trigger": "If resident asks for additional history",
@@ -127,7 +126,7 @@
       },
       {
         "trigger": "If resident proposes angioembolization",
-        "reply": "Interventional radiology is consulted but will take 1 hour to mobilize. The patient continues to be tachycardic with marginally improving BP despite fluid resuscitation. What's your next step?"
+        "reply": "Interventional radiology is consulted but will take 1 hour to mobilize. The patient continues to be tachycardic with marginally improving BP despite fluid resuscitation. What's your [...]"
       },
       {
         "trigger": "If resident decides on operative management",
@@ -188,7 +187,7 @@
         "Excellent team leadership, clear delegation, appropriate consultation, and emphasis on patient-centered care"
       ]
     },
-    "resident_feedback_template": "Your performance on this trauma scenario demonstrated [strengths in initial assessment/resuscitation/decision-making]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of splenic injuries, particularly regarding [specific knowledge gap]. Recommended reading includes the AAST spleen injury grading system, Eastern Association for the Surgery of Trauma (EAST) guidelines on management of blunt splenic injury, and post-splenectomy vaccination protocols.",
+    "resident_feedback_template": "Your performance on this trauma scenario demonstrated [strengths in initial assessment/resuscitation/decision-making]. You correctly [specific positive actions]. Are[...]",
     "learner_feedback_questions": [
       "How realistic was this scenario? (1-5 scale)",
       "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
@@ -203,7 +202,7 @@
     "case_id": "scenario_3_deteriorating_abdominal_sepsis",
     "title": "Scenario 3: Surgical Critical Care",
     "diagnosis_topic": "Deteriorating Patient with Abdominal Sepsis",
-    "setup_script": "You are called to the ICU to see a 68-year-old male with a history of hypertension, COPD, and known diverticulosis who was admitted 12 hours ago with abdominal pain. Despite IV antibiotics and fluid resuscitation, he has deteriorated. Current vital signs: Temperature 39.2\u00b0C, HR 128, BP 75/40, RR 28, O2 saturation 91% on 2L nasal cannula. Physical exam shows diffuse abdominal tenderness with involuntary guarding and rebound, worse in the left lower quadrant. Lab results show: WBC 22,000/\u03bcL, Hgb 10.5 g/dL, lactate 5.6 mmol/L, creatinine 2.1 mg/dL (baseline 1.0). Recent CT scan shows perforated sigmoid diverticulitis with free air and fluid collections in the pelvis. How would you manage this patient?",
+    "setup_script": "You are called to the ICU to see a 68-year-old male with a history of hypertension, COPD, and known diverticulosis who was admitted 12 hours ago with abdominal pain. Despite IV an[...]",
     "dynamic_flow": [
       {
         "trigger": "If resident prioritizes hemodynamic stabilization",
@@ -227,11 +226,11 @@
       },
       {
         "trigger": "If resident doesn't mention damage control approach",
-        "reply": "The patient is becoming increasingly unstable on the operating table with worsening acidosis (pH 7.15) and hypothermia (temperature 35.2\u00b0C). How does this change your operative approach?"
+        "reply": "The patient is becoming increasingly unstable on the operating table with worsening acidosis (pH 7.15) and hypothermia (temperature 35.2\u00b0C). How does this change your operative [...]"
       },
       {
         "trigger": "If resident describes damage control surgery",
-        "reply": "You perform a Hartmann's procedure with end colostomy, leave the abdomen open with a temporary closure device, and transfer the patient to the ICU. What specific postoperative ICU management will you order?"
+        "reply": "You perform a Hartmann's procedure with end colostomy, leave the abdomen open with a temporary closure device, and transfer the patient to the ICU. What specific postoperative ICU ma[...]"
       },
       {
         "trigger": "If resident doesn't address source control adequately",
@@ -285,7 +284,7 @@
         "Excellent team leadership, clear delegation, appropriate consultation with critical care specialists, and emphasis on patient-centered care"
       ]
     },
-    "resident_feedback_template": "Your performance on this septic shock scenario demonstrated [strengths in resuscitation/surgical decision-making/critical care management]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of septic shock and perforated diverticulitis, particularly regarding [specific knowledge gap]. Recommended reading includes the Surviving Sepsis Campaign guidelines, damage control surgery principles, and management options for complicated diverticulitis.",
+    "resident_feedback_template": "Your performance on this septic shock scenario demonstrated [strengths in resuscitation/surgical decision-making/critical care management]. You correctly [specific p[...]",
     "learner_feedback_questions": [
       "How realistic was this scenario? (1-5 scale)",
       "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
@@ -300,11 +299,11 @@
     "case_id": "scenario_4_growing_breast_mass",
     "title": "Scenario 4: Breast",
     "diagnosis_topic": "Growing Breast Mass with Skin Changes",
-    "setup_script": "A 52-year-old female presents to your clinic with a right breast mass that she noticed 3 months ago but delayed seeking care due to the COVID-19 pandemic. She reports the mass has been growing steadily and is now painful. She denies nipple discharge but has noticed some skin dimpling. She has no previous breast biopsies and no family history of breast or ovarian cancer. On examination, you palpate a 5 cm firm, fixed mass in the upper outer quadrant of the right breast with overlying skin dimpling. You also palpate firm, enlarged lymph nodes in the right axilla. How would you proceed with this patient?",
+    "setup_script": "A 52-year-old female presents to your clinic with a right breast mass that she noticed 3 months ago but delayed seeking care due to the COVID-19 pandemic. She reports the mass has[...]",
     "dynamic_flow": [
       {
         "trigger": "If resident requests appropriate imaging",
-        "reply": "Mammogram and ultrasound show a 5.2 cm spiculated mass with microcalcifications in the right upper outer quadrant, suspicious for malignancy (BIRADS 5). Ultrasound confirms multiple enlarged right axillary lymph nodes with loss of fatty hilum."
+        "reply": "Mammogram and ultrasound show a 5.2 cm spiculated mass with microcalcifications in the right upper outer quadrant, suspicious for malignancy (BIRADS 5). Ultrasound confirms multiple [...]"
       },
       {
         "trigger": "If resident proceeds with biopsy",
@@ -320,7 +319,7 @@
       },
       {
         "trigger": "If resident proposes neoadjuvant therapy",
-        "reply": "You refer the patient to medical oncology and she receives neoadjuvant chemotherapy with HER2-targeted therapy. After 6 months, the tumor has decreased to 1.5 cm by imaging and the skin changes have resolved. What is your surgical plan now?"
+        "reply": "You refer the patient to medical oncology and she receives neoadjuvant chemotherapy with HER2-targeted therapy. After 6 months, the tumor has decreased to 1.5 cm by imaging and the s[...]"
       },
       {
         "trigger": "If resident recommends breast conservation",
@@ -336,7 +335,7 @@
       },
       {
         "trigger": "If resident does not address the possibility of pathologic complete response",
-        "reply": "The final pathology shows no residual invasive cancer in the breast specimen, but 2 of 15 lymph nodes are positive for metastatic disease. How does this change your recommendations for adjuvant therapy and follow-up?"
+        "reply": "The final pathology shows no residual invasive cancer in the breast specimen, but 2 of 15 lymph nodes are positive for metastatic disease. How does this change your recommendations f[...]"
       }
     ],
     "critical_decision_points": [
@@ -386,7 +385,7 @@
         "Excellent patient-centered approach, clear communication with multidisciplinary team, addresses psychosocial aspects of care"
       ]
     },
-    "resident_feedback_template": "Your performance on this breast cancer scenario demonstrated [strengths in diagnostic workup/surgical planning/multidisciplinary approach]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of locally advanced breast cancer, particularly regarding [specific knowledge gap]. Recommended reading includes NCCN guidelines for breast cancer, management of the axilla after neoadjuvant therapy, and options for reconstruction after mastectomy.",
+    "resident_feedback_template": "Your performance on this breast cancer scenario demonstrated [strengths in diagnostic workup/surgical planning/multidisciplinary approach]. You correctly [specific p[...]",
     "learner_feedback_questions": [
       "How realistic was this scenario? (1-5 scale)",
       "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
@@ -401,11 +400,11 @@
     "case_id": "scenario_5_right_upper_quadrant_pain_fever",
     "title": "Scenario 5: Hepatobiliary/Pancreatic",
     "diagnosis_topic": "Right Upper Quadrant Pain with Fever",
-    "setup_script": "A 58-year-old female with obesity, diabetes, and hypertension presents to the emergency department with 36 hours of worsening right upper quadrant pain, nausea, vomiting, and fever. She reports having similar but milder episodes in the past after fatty meals. Vital signs show: Temperature 38.6\u00b0C, HR 112, BP 138/84, RR 20. On examination, she has right upper quadrant tenderness with a positive Murphy's sign. Initial labs show: WBC 16,800/\u03bcL, total bilirubin 2.1 mg/dL, direct bilirubin 1.3 mg/dL, AST 98 U/L, ALT 86 U/L, alkaline phosphatase 210 U/L. How would you proceed with this patient?",
+    "setup_script": "A 58-year-old female with obesity, diabetes, and hypertension presents to the emergency department with 36 hours of worsening right upper quadrant pain, nausea, vomiting, and feve[...]",
     "dynamic_flow": [
       {
         "trigger": "If resident requests imaging",
-        "reply": "Ultrasound shows a distended gallbladder with wall thickening to 6mm, pericholecystic fluid, and multiple gallstones. The common bile duct measures 8mm without definite stones visualized."
+        "reply": "Ultrasound shows a distended gallbladder with wall thickening to 6mm, pericholecystic fluid, and multiple gallstones. The common bile duct measures 8mm without definite stones visual[...]"
       },
       {
         "trigger": "If resident initiates antibiotics and IV fluids",
@@ -421,7 +420,7 @@
       },
       {
         "trigger": "If resident proceeds with surgery",
-        "reply": "During laparoscopic cholecystectomy, you encounter significant inflammation with adhesions around the gallbladder. You cannot clearly identify the cystic duct or artery. What will you do now?"
+        "reply": "During laparoscopic cholecystectomy, you encounter significant inflammation with adhesions around the gallbladder. You cannot clearly identify the cystic duct or artery. What will yo[...]"
       },
       {
         "trigger": "If resident describes safe bailout options",
@@ -433,7 +432,7 @@
       },
       {
         "trigger": "If resident doesn't address the possibility of bile duct injury",
-        "reply": "During the postoperative period, the patient develops increasing right upper quadrant pain, fever, and has bilious drainage from a surgical drain. What is your concern and next steps?"
+        "reply": "During the postoperative period, the patient develops increasing right upper quadrant pain, fever, and has bilious drainage from a surgical drain. What is your concern and next steps[...]"
       }
     ],
     "critical_decision_points": [
@@ -481,7 +480,7 @@
         "Excellent professionalism, prioritizes patient safety, willing to convert or seek assistance appropriately"
       ]
     },
-    "resident_feedback_template": "Your performance on this acute cholecystitis scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing management of difficult cholecystectomy, particularly regarding [specific knowledge gap]. Recommended reading includes SAGES guidelines on safe cholecystectomy, Tokyo Guidelines for acute cholecystitis, and technical approaches to bailout options for difficult cases.",
+    "resident_feedback_template": "Your performance on this acute cholecystitis scenario demonstrated [strengths in diagnosis/management/technical knowledge]. You correctly [specific positive actions][...]",
     "learner_feedback_questions": [
       "How realistic was this scenario? (1-5 scale)",
       "How helpful was this scenario in preparing you for the oral boards? (1-5 scale)",
@@ -491,11 +490,12 @@
       "What suggestions do you have to improve this scenario?",
       "Additional comments or feedback:"
     ]
-{
+  },
+  {
     "case_id": "scenario_pancreatic_pseudocyst",
     "title": "Scenario: Symptomatic Pancreatic Pseudocyst (General Surgery / GI)",
     "diagnosis_topic": "Epigastric Fullness and Early Satiety Following Pancreatitis",
-    "setup_script": "A 46-year-old man, four weeks after an episode of alcohol-induced necrotizing pancreatitis, presents with persistent early satiety, epigastric fullness, and an 8-lb weight loss. Vitals: T 37.0 °C, HR 96, BP 128/82, RR 18, SpO₂ 98% RA. No additional information is available unless requested.",
+    "setup_script": "A 46-year-old man, four weeks after an episode of alcohol-induced necrotizing pancreatitis, presents with persistent early satiety, epigastric fullness, and an 8-lb weight loss. V[...]",
     "dynamic_flow": [
       {
         "trigger": "If resident requests history and physical",
@@ -503,7 +503,7 @@
       },
       {
         "trigger": "If resident orders labs and imaging",
-        "reply": "Lipase is 120 U/L, Hgb 13 g/dL. CT abdomen/pelvis with IV contrast shows a 10-cm thin-walled fluid collection in the lesser sac with mass effect on the stomach, no debris, and mature wall—consistent with pancreatic pseudocyst."
+        "reply": "Lipase is 120 U/L, Hgb 13 g/dL. CT abdomen/pelvis with IV contrast shows a 10-cm thin-walled fluid collection in the lesser sac with mass effect on the stomach, no debris, and mature[...]"
       },
       {
         "trigger": "If resident diagnoses pancreatic pseudocyst",
@@ -581,7 +581,7 @@
         "Comprehensive care including prevention, counseling, and cost-awareness"
       ]
     },
-    "resident_feedback_template": "Your performance on the pancreatic pseudocyst case demonstrated [strengths in diagnosis, procedural planning, or complication management]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Please review guidelines on pancreatic fluid collections, especially the timing and technique for LAMS placement, and be sure to anticipate potential complications such as post-procedure bleeding. Recommended reading includes AGA guidelines on pancreatic pseudocyst management and endoscopic drainage techniques.",
+    "resident_feedback_template": "Your performance on the pancreatic pseudocyst case demonstrated [strengths in diagnosis, procedural planning, or complication management]. You correctly [specific po[...]",
     "learner_feedback_questions": [
       "How realistic was this scenario? (1–5 scale)",
       "How helpful was this scenario in preparing you for the oral boards? (1–5 scale)",
@@ -591,7 +591,5 @@
       "What suggestions do you have to improve this scenario?",
       "Additional comments or feedback:"
     ]
-  }
-  
   }
 ]
