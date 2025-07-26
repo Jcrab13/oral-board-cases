@@ -76,6 +76,13 @@
       "title": "Progressive Cellulitis with Systemic Symptoms",
       "path": "cases/scenario_011_progressive_cellulitis_systemic_symptoms.json",
       "tags": ["soft-tissue", "infection"]
+    },
+    {
+      "id": "012",
+      "slug": "pancreatic-pseudocyst",
+      "title": "Pacreatic Pseudocyst",
+      "path": "cases/scenario_012_scenario_pancreatic_pseudocyst.json",
+      "tags": ["soft-tissue", "infection"]
     }
   ]
 }
