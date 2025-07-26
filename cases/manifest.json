@@ -79,10 +79,11 @@
     },
     {
       "id": "012",
-      "slug": "pancreatic-pseudocyst",
-      "title": "Pacreatic Pseudocyst",
-      "path": "cases/scenario_012_scenario_pancreatic_pseudocyst.json",
-      "tags": ["soft-tissue", "infection"]
+      "slug": "symptomatic-pancreatic-pseudocyst",
+      "title": "Symptomatic Pancreatic Pseudocyst",
+      "path": "cases/scenario_012_pancreatic_pseudocyst.json",
+      "tags": ["pancreas", "GI"]
     }
+
   ]
 }
