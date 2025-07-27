@@ -83,27 +83,6 @@
       "title": "Symptomatic Pancreatic Pseudocyst",
       "path": "cases/scenario_012_pancreatic_pseudocyst.json",
       "tags": ["pancreas", "GI"]
-    },
-    {
-      "id": "013",
-      "slug": "anaplastic-thyroid-carcinoma",
-      "title": "Anaplastic Thyroid Carcinoma (ENT / Oncology)",
-      "path": "cases/scenario_013_anaplastic_thyroid_carcinoma.json",
-      "tags": ["endocrine", "oncology", "airway"]
-    },
-    {
-      "id": "014",
-      "slug": "primary-hyperparathyroidism",
-      "title": "Primary Hyperparathyroidism Evaluation and Management",
-      "path": "cases/scenario_014_hyperparathyroidism.json",
-      "tags": ["endocrine", "parathyroid"]
-    },
-    {
-      "id": "015",
-      "slug": "penetrating-zone-ii-neck-injury",
-      "title": "Penetrating Zone II Neck Injury (Trauma Surgery)",
-      "path": "cases/scenario_015_penetrating_neck_injury.json",
-      "tags": ["trauma", "vascular", "neck"]
     }
 
   ]
