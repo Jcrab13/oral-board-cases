@@ -1,0 +1,198 @@
+{
+  "case_id": "breast_01",
+  "title": "Ductal Carcinoma in Situ Detected on Screening Mammogram",
+  "diagnosis_topic": "DCIS (Stage 0 breast cancer)",
+  "tags": [
+    "breast",
+    "DCIS",
+    "lumpectomy"
+  ],
+  "setup_script": "A 52-year-old woman undergoes screening mammography showing microcalcifications in the upper outer quadrant of the left breast. Stereotactic core biopsy reveals high-grade ductal carcinoma in situ (DCIS) with comedo necrosis.",
+  "dynamic_flow": [
+    {
+      "trigger": "Obtain history including family history of breast cancer, hormone use, and previous biopsies; perform clinical breast exam.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss the pathology of DCIS and that it is non-invasive but carries risk of progression to invasive cancer.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order MRI or additional imaging if there is concern for multifocal disease or high breast density.",
+      "reply": ""
+    },
+    {
+      "trigger": "Explain treatment options: breast conserving surgery (lumpectomy) with radiation versus mastectomy; weigh pros and cons.",
+      "reply": ""
+    },
+    {
+      "trigger": "Assess candidacy for lumpectomy based on lesion size relative to breast size and patient preference.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain informed consent for lumpectomy; discuss need for sentinel lymph node biopsy if extensive DCIS or planned mastectomy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan surgery with wire or seed localization to excise DCIS with clear margins; send specimens for frozen section if available.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform lumpectomy with oncoplastic closure; orient specimen for pathology; excise margins when necessary.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative management: manage wound, schedule radiation therapy consultation, and discuss endocrine therapy if ER positive.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review final pathology for margin status; decide on re-excision if margins positive.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss follow-up including yearly mammography and lifestyle modifications to reduce recurrence.",
+      "reply": ""
+    },
+    {
+      "trigger": "Provide emotional support and resources such as support groups and genetic counseling if indicated.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Communicating the nature of DCIS and treatment options clearly.",
+    "Determining appropriateness of breast conservation versus mastectomy.",
+    "Achieving clear margins during lumpectomy and deciding on sentinel lymph node biopsy.",
+    "Coordinating postoperative radiation and endocrine therapy.",
+    "Providing psychosocial support and surveillance plan."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider dcis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of dcis"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes dcis as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including dcis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies dcis as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for dcis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for dcis but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for dcis."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for dcis."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This case assessed your ability to counsel a patient with DCIS on treatment options and perform a lumpectomy with proper margins. Reflect on your explanation of risks, coordination with radiation oncology, and provision of support resources."
+  }
+}

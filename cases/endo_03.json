@@ -1,0 +1,198 @@
+{
+  "case_id": "endo_03",
+  "title": "Primary Hyperparathyroidism with Nephrolithiasis",
+  "diagnosis_topic": "Symptomatic primary hyperparathyroidism",
+  "tags": [
+    "endocrine",
+    "hyperparathyroidism",
+    "parathyroidectomy"
+  ],
+  "setup_script": "A 55-year-old man presents with recurrent kidney stones and mild hypercalcemia. Serum calcium is 11.5 mg/dL (normal 8.5-10.5), PTH is elevated, and bone density T-score is -2.6. Neck ultrasound shows a 1.5 cm parathyroid adenoma behind the left inferior thyroid pole.",
+  "dynamic_flow": [
+    {
+      "trigger": "Review symptoms of primary hyperparathyroidism and indications for surgery, including stones, bone disease, and age <50.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order 24-hour urinary calcium, vitamin D level, kidney imaging, and bone density to confirm criteria for surgery.",
+      "reply": ""
+    },
+    {
+      "trigger": "Explain guidelines recommending surgery for symptomatic and certain asymptomatic patients and obtain informed consent.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss focused parathyroidectomy vs four-gland exploration; decide on minimally invasive approach with intraoperative PTH monitoring.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan preoperative localization studies (ultrasound, sestamibi scan) and discuss importance of rechecking vocal cord function pre-op.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform focused parathyroidectomy with intraoperative PTH drop >50% from baseline confirming excision.",
+      "reply": ""
+    },
+    {
+      "trigger": "Preserve remaining parathyroid glands and minimize manipulation to prevent hypocalcemia.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative management: monitor calcium and PTH levels; start calcium/vitamin D supplementation if needed.",
+      "reply": ""
+    },
+    {
+      "trigger": "Assess pathology to confirm adenoma and rule out carcinoma; document weight and morphology.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor for hungry bone syndrome and symptoms of hypocalcemia; adjust supplements accordingly.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange follow-up with endocrinology and nephrology for stone prevention and bone health.",
+      "reply": ""
+    },
+    {
+      "trigger": "Educate patient about hydration, dietary modifications, and need for periodic calcium and bone density tests.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Identifying indications for surgery based on calcium level, bone density, and kidney stones938944208070123L155-L170.",
+    "Selecting appropriate localization studies and surgical approach.",
+    "Intraoperative PTH monitoring to confirm complete excision.",
+    "Managing postoperative calcium levels and anticipating hungry bone syndrome.",
+    "Educating patient on long-term monitoring for recurrence and renal/bone health."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider primary hyperparathyroidism or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of primary hyperparathyroidism"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes primary hyperparathyroidism as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including primary hyperparathyroidism and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies primary hyperparathyroidism as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for primary hyperparathyroidism."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for primary hyperparathyroidism but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for primary hyperparathyroidism."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for primary hyperparathyroidism."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "In this case you were expected to recognize indications for parathyroidectomy and choose the correct surgical approach. You should have ordered appropriate localization and metabolic studies, discussed intraoperative PTH monitoring, and managed postoperative calcium. Reflect on how well you explained the rationale for surgery and postoperative expectations to the patient."
+  }
+}

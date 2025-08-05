@@ -1,0 +1,199 @@
+{
+  "case_id": "trauma_03",
+  "title": "Penetrating Thoracic Trauma with Hemothorax",
+  "diagnosis_topic": "Gunshot wound causing massive hemothorax and potential cardiac injury",
+  "tags": [
+    "trauma",
+    "thoracic",
+    "penetrating",
+    "hemothorax"
+  ],
+  "setup_script": "A 29-year-old man presents with a single gunshot wound to the left posterior chest. He is short of breath and coughing up blood. He has no past medical history.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses airway and breathing",
+      "reply": "Airway patent, but breath sounds decreased on the left side with dullness to percussion."
+    },
+    {
+      "trigger": "If resident obtains vitals",
+      "reply": "BP 95/55 mmHg, HR 125 bpm, RR 28/min, SpO2 90% on non-rebreather mask."
+    },
+    {
+      "trigger": "If resident places large-bore chest tube on the left",
+      "reply": "1.5 L of blood immediately returns followed by continuous output > 200 mL/hr."
+    },
+    {
+      "trigger": "If resident orders chest X-ray",
+      "reply": "Left hemothorax with mediastinal shift; tube position confirmed."
+    },
+    {
+      "trigger": "If resident initiates transfusion and obtains type and cross",
+      "reply": "Labs show Hgb 10 g/dL, INR 1.2."
+    },
+    {
+      "trigger": "If resident consults trauma surgery and cardiothoracic surgery",
+      "reply": "Prepare for emergent thoracotomy due to massive chest tube output."
+    },
+    {
+      "trigger": "If resident delays operative intervention",
+      "reply": "Patient becomes hypotensive and suffers cardiac arrest."
+    },
+    {
+      "trigger": "If resident asks about indication for thoracotomy",
+      "reply": "Initial chest tube output > 1500 mL or > 200 mL/hr suggests ongoing arterial bleeding."
+    },
+    {
+      "trigger": "If resident inspects wound trajectory",
+      "reply": "Concern for pulmonary and possibly cardiac injury; plan clamshell or posterolateral thoracotomy."
+    },
+    {
+      "trigger": "If resident discusses pain control",
+      "reply": "Administer IV analgesia and consider intubation for airway protection."
+    },
+    {
+      "trigger": "If resident asks about postoperative complications",
+      "reply": "Risk of retained hemothorax, empyema, ARDS; requires monitoring."
+    },
+    {
+      "trigger": "If resident considers autotransfusion",
+      "reply": "Use cell saver if available to reinfuse shed blood."
+    }
+  ],
+  "critical_decision_points": [
+    "Management of airway, breathing and circulation in penetrating chest trauma",
+    "Recognition of massive hemothorax and indications for thoracotomy",
+    "Timely chest tube placement and monitoring of output",
+    "Activation of operative team without unnecessary delay",
+    "Postoperative surveillance for complications"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider penetrating thoracic trauma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of penetrating thoracic trauma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes penetrating thoracic trauma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including penetrating thoracic trauma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies penetrating thoracic trauma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for penetrating thoracic trauma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for penetrating thoracic trauma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for penetrating thoracic trauma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for penetrating thoracic trauma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You correctly placed a chest tube and identified criteria for emergent thoracotomy. Continue to refine your assessment of wound trajectory and coordination with cardiothoracic surgery."
+  }
+}

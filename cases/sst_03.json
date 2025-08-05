@@ -1,0 +1,199 @@
+{
+  "case_id": "sst_03",
+  "title": "Cellulitis vs. Necrotizing Infection",
+  "diagnosis_topic": "Differentiating simple cellulitis from early necrotizing fasciitis",
+  "tags": [
+    "skin",
+    "cellulitis",
+    "necrotizing infection",
+    "differential"
+  ],
+  "setup_script": "A 50-year-old woman presents with a rapidly enlarging red, warm area on her right thigh. She reports severe pain out of proportion to the redness and has a low-grade fever.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 125/80 mmHg, HR 102 bpm, RR 20/min, Temp 38 C."
+    },
+    {
+      "trigger": "If resident inspects the leg",
+      "reply": "Erythematous plaque extending 10 cm with indistinct borders; no bullae or crepitus yet; exquisitely tender to palpation."
+    },
+    {
+      "trigger": "If resident orders lab work",
+      "reply": "WBC 16 K/uL, CRP elevated, sodium low at 131 mEq/L (LRINEC score high)."
+    },
+    {
+      "trigger": "If resident initiates empiric IV antibiotics",
+      "reply": "Started on vancomycin plus piperacillin-tazobactam while awaiting further assessment."
+    },
+    {
+      "trigger": "If resident marks the edges of erythema and monitors progression",
+      "reply": "Erythema expands 2 cm over 1 hour suggesting rapid progression."
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "CT scan shows thickened fascia and small foci of gas in soft tissues."
+    },
+    {
+      "trigger": "If resident calls for emergent surgical evaluation",
+      "reply": "Exploration reveals gray necrotic fascia confirming necrotizing fasciitis."
+    },
+    {
+      "trigger": "If resident delays consultation thinking it is simple cellulitis",
+      "reply": "Patient deteriorates quickly with septic shock."
+    },
+    {
+      "trigger": "If resident educates about differentiating features",
+      "reply": "Disproportionate pain, bullae, systemic toxicity and rapid spread suggest necrotizing process."
+    },
+    {
+      "trigger": "If resident states that cellulitis alone often responds to oral antibiotics",
+      "reply": "For cellulitis without systemic features, oral beta-lactams suffice."
+    },
+    {
+      "trigger": "If resident discusses the LRINEC score",
+      "reply": "Helps risk-stratify patients but should not delay surgical exploration when suspicion is high."
+    },
+    {
+      "trigger": "If resident plans postoperative care",
+      "reply": "ICU management, repeat debridements and broad-spectrum antibiotics continued."
+    }
+  ],
+  "critical_decision_points": [
+    "High index of suspicion for necrotizing infection when pain is disproportionate",
+    "Use of lab markers and imaging to support diagnosis without delaying surgery",
+    "Early initiation of broad-spectrum antibiotics and surgical consultation",
+    "Understanding limitations of the LRINEC score and the need for clinical judgement",
+    "Postoperative management including repeat exploration and intensive care"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider cellulitis vs. necrotizing infection or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of cellulitis vs. necrotizing infection"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes cellulitis vs. necrotizing infection as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including cellulitis vs. necrotizing infection and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies cellulitis vs. necrotizing infection as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for cellulitis vs. necrotizing infection."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for cellulitis vs. necrotizing infection but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for cellulitis vs. necrotizing infection."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for cellulitis vs. necrotizing infection."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You effectively distinguished between cellulitis and necrotizing fasciitis, leading to timely surgical intervention. Continue to trust clinical instincts over lab scores alone when the presentation is concerning."
+  }
+}

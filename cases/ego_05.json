@@ -1,0 +1,198 @@
+{
+  "case_id": "ego_05",
+  "title": "Esophageal Carcinoma",
+  "diagnosis_topic": "Malignant tumor of the esophagus requiring multimodal therapy",
+  "tags": [
+    "esophagogastric",
+    "esophageal cancer",
+    "oncology"
+  ],
+  "setup_script": "A 60-year-old man with a long history of smoking and alcohol use presents with progressive dysphagia to solids then liquids. He has lost 15 lbs over 3 months.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 115/70 mmHg, HR 95 bpm, RR 18/min, Temp 37.2 C."
+    },
+    {
+      "trigger": "If resident performs upper endoscopy",
+      "reply": "Circumferential mass at the distal third of the esophagus; biopsies reveal adenocarcinoma."
+    },
+    {
+      "trigger": "If resident orders endoscopic ultrasound and CT/PET",
+      "reply": "T3 lesion invading adventitia with suspected peri-esophageal lymph nodes; no distant metastasis on PET."
+    },
+    {
+      "trigger": "If resident evaluates nutritional status",
+      "reply": "BMI 19 kg/m2; albumin 3.0 g/dL; may require feeding jejunostomy pre-treatment."
+    },
+    {
+      "trigger": "If resident discusses neoadjuvant chemoradiation (CROSS regimen)",
+      "reply": "Carboplatin, paclitaxel and radiotherapy for 5 weeks followed by restaging."
+    },
+    {
+      "trigger": "If restaging shows downstaging and no metastasis",
+      "reply": "Plan for transthoracic (Ivor Lewis) esophagectomy with gastric pull-up and two-field lymphadenectomy."
+    },
+    {
+      "trigger": "If resident delays therapy",
+      "reply": "Tumor progresses beyond curative stage; palliative stent placement for dysphagia may be needed."
+    },
+    {
+      "trigger": "If patient is early stage T1a",
+      "reply": "Endoscopic mucosal resection or submucosal dissection considered without surgery."
+    },
+    {
+      "trigger": "If resident discusses postoperative complications",
+      "reply": "Respiratory complications, anastomotic leak, recurrent laryngeal nerve injury and chylothorax."
+    },
+    {
+      "trigger": "If resident arranges postoperative ICU care",
+      "reply": "Early extubation, chest physiotherapy and jejunal feeding started day 1."
+    },
+    {
+      "trigger": "If resident plans long-term surveillance",
+      "reply": "CT and endoscopy every 6 months for 2 years then annually; monitor nutritional status."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Smoking cessation, alcohol abstinence and involvement of support groups."
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis and staging of esophageal cancer using endoscopic ultrasound, CT and PET",
+    "Neoadjuvant chemoradiation for locally advanced disease",
+    "Surgical approaches to esophagectomy and postoperative management",
+    "Consideration of endoscopic therapy for early lesions",
+    "Long-term surveillance and management of nutrition and complications"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider esophageal carcinoma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of esophageal carcinoma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes esophageal carcinoma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including esophageal carcinoma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies esophageal carcinoma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for esophageal carcinoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for esophageal carcinoma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for esophageal carcinoma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for esophageal carcinoma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You effectively integrated multimodal therapy for esophageal cancer. Improve by detailing postoperative complication management and criteria for endoscopic resection in early stage disease."
+  }
+}

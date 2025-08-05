@@ -1,0 +1,199 @@
+{
+  "case_id": "sst_07",
+  "title": "Lipoma vs. Liposarcoma",
+  "diagnosis_topic": "Evaluation of a benign subcutaneous mass with consideration of malignancy",
+  "tags": [
+    "skin",
+    "soft tissue",
+    "lipoma",
+    "liposarcoma"
+  ],
+  "setup_script": "A 45-year-old woman presents with a soft, mobile mass on her upper arm that she noticed two years ago. It has grown slowly and is now about 5 cm in diameter.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "Normal limits."
+    },
+    {
+      "trigger": "If resident palpates the mass",
+      "reply": "Soft, rubbery, mobile under the skin, non-tender; overlying skin normal."
+    },
+    {
+      "trigger": "If resident asks about growth rate and symptoms",
+      "reply": "Growth has been slow; no pain or weight loss."
+    },
+    {
+      "trigger": "If resident orders ultrasound",
+      "reply": "Shows a homogeneous, hypoechoic, well-circumscribed lesion consistent with lipoma."
+    },
+    {
+      "trigger": "If resident considers MRI for lesions >5 cm or deep",
+      "reply": "MRI reveals well-encapsulated mass without invasion."
+    },
+    {
+      "trigger": "If resident differentiates lipoma from liposarcoma",
+      "reply": "Liposarcoma often larger, deep, firm, rapidly growing or associated with pain; biopsy indicated if suspicious."
+    },
+    {
+      "trigger": "If resident recommends no further workup for benign lesion",
+      "reply": "Observation appropriate if asymptomatic; reassure patient."
+    },
+    {
+      "trigger": "If resident offers excision",
+      "reply": "Discuss local excision under local anesthesia for symptomatic relief or cosmetic reasons."
+    },
+    {
+      "trigger": "If resident performs excisional biopsy",
+      "reply": "Mass removed and pathology confirms benign lipoma."
+    },
+    {
+      "trigger": "If resident provides postoperative care instructions",
+      "reply": "Keep incision clean and dry; monitor for recurrence."
+    },
+    {
+      "trigger": "If resident evaluates for multiple lipomas",
+      "reply": "Consider familial multiple lipomatosis; genetic counseling if significant."
+    },
+    {
+      "trigger": "If resident advises patient to return for changes",
+      "reply": "Encourage reporting of rapid growth, firmness or pain suggesting malignancy."
+    }
+  ],
+  "critical_decision_points": [
+    "Clinical evaluation of subcutaneous masses including size, depth and consistency",
+    "Appropriate use of imaging and biopsy for suspicious lesions",
+    "Differentiating benign lipoma from liposarcoma based on features",
+    "Indications for excision vs. observation",
+    "Patient counseling on monitoring and recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider lipoma vs. liposarcoma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of lipoma vs. liposarcoma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes lipoma vs. liposarcoma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including lipoma vs. liposarcoma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies lipoma vs. liposarcoma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for lipoma vs. liposarcoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for lipoma vs. liposarcoma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for lipoma vs. liposarcoma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for lipoma vs. liposarcoma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You correctly distinguished between benign and malignant features of a soft tissue mass. Continue to hone your ability to counsel patients on when excision is necessary and to recognize atypical presentations."
+  }
+}

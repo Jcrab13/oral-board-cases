@@ -1,0 +1,198 @@
+{
+  "case_id": "endo_08",
+  "title": "Recurrent Laryngeal Nerve Injury After Thyroidectomy",
+  "diagnosis_topic": "Postoperative airway complication",
+  "tags": [
+    "endocrine",
+    "complication",
+    "nerve injury"
+  ],
+  "setup_script": "You are notified on postoperative day 1 that your thyroidectomy patient is hoarse and stridorous. She had a total thyroidectomy for multinodular goiter yesterday. Her calcium is normal. No drain output abnormalities.",
+  "dynamic_flow": [
+    {
+      "trigger": "Assess airway patency and signs of respiratory distress; call anesthesiology for possible re-intubation.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform bedside laryngoscopy to evaluate vocal cord function; identify unilateral or bilateral recurrent laryngeal nerve injury.",
+      "reply": ""
+    },
+    {
+      "trigger": "If bilateral nerve injury causing airway obstruction, emergently secure airway with tracheostomy or re-intubation.",
+      "reply": ""
+    },
+    {
+      "trigger": "For unilateral nerve injury, counsel patient about voice changes and plan for voice therapy; monitor for aspiration.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review operative note for difficulty with nerve identification, risk factors like large goiter or reoperative surgery.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order neck ultrasound to rule out hematoma or seroma compressing airway; if present, evacuate immediately.",
+      "reply": ""
+    },
+    {
+      "trigger": "Ensure calcium levels are stable and look for signs of hypocalcemia causing laryngeal spasms.",
+      "reply": ""
+    },
+    {
+      "trigger": "Consult ENT for laryngeal EMG and evaluation of vocal cord mobility.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss potential for nerve recovery (up to 6-12 months) and plan follow-up with speech therapy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Document complication disclosure with patient and family and inform risk management.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review your surgical technique to identify possible improvements for nerve preservation.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange postoperative follow-up to assess voice function and consider medialization procedures if no recovery.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Prompt recognition of airway compromise and securing airway if bilateral nerve injury.",
+    "Evaluation for compressive hematoma causing stridor.",
+    "Counseling patient on prognosis of nerve injury and need for therapy.",
+    "Involving ENT and speech therapy early.",
+    "Documentation and disclosure of complication."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider recurrent laryngeal nerve injury or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of recurrent laryngeal nerve injury"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes recurrent laryngeal nerve injury as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including recurrent laryngeal nerve injury and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies recurrent laryngeal nerve injury as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for recurrent laryngeal nerve injury."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for recurrent laryngeal nerve injury but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for recurrent laryngeal nerve injury."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for recurrent laryngeal nerve injury."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Complications happen; your response matters. This scenario assessed your ability to recognize and manage recurrent laryngeal nerve injury. Reflect on whether you promptly secured the airway, evaluated for hematoma, involved appropriate consultants, and communicated transparently with the patient."
+  }
+}

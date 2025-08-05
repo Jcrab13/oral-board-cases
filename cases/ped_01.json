@@ -1,0 +1,198 @@
+{
+  "case_id": "ped_01",
+  "title": "Hypertrophic Pyloric Stenosis",
+  "diagnosis_topic": "Infantile hypertrophy of the pyloric muscle causing gastric outlet obstruction",
+  "tags": [
+    "pediatric",
+    "pyloric stenosis",
+    "vomiting"
+  ],
+  "setup_script": "A 6-week-old firstborn male presents with projectile, non-bilious vomiting after feeds for the past 3 days. He remains hungry after vomiting and has lost weight.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident checks vital signs",
+      "reply": "HR 160 bpm, RR 40/min, Temp 37 C; signs of mild dehydration (sunken fontanelle, decreased urine output)."
+    },
+    {
+      "trigger": "If resident takes feeding history",
+      "reply": "Progressive non-bilious vomiting occurring soon after each feed; baby demands feeding immediately after vomiting."
+    },
+    {
+      "trigger": "If resident palpates abdomen",
+      "reply": "Olive-shaped mobile mass in the right upper quadrant and visible peristaltic waves moving left to right after feeding."
+    },
+    {
+      "trigger": "If resident orders metabolic panel",
+      "reply": "Hypochloremic hypokalemic metabolic alkalosis with chloride 88 mEq/L and CO2 33 mEq/L."
+    },
+    {
+      "trigger": "If resident obtains ultrasound",
+      "reply": "Pyloric muscle thickness 4 mm and length 18 mm confirming hypertrophic pylorus."
+    },
+    {
+      "trigger": "If resident initiates IV fluids and corrects electrolytes",
+      "reply": "Start isotonic fluids with added potassium after urine output established."
+    },
+    {
+      "trigger": "If resident places nasogastric tube and keeps NPO",
+      "reply": "Decompress stomach while correcting dehydration."
+    },
+    {
+      "trigger": "If resident consults pediatric surgery",
+      "reply": "Plan for Ramstedt pyloromyotomy once electrolyte and acid-base status normalizes."
+    },
+    {
+      "trigger": "If resident delays correction and proceeds to OR immediately",
+      "reply": "Increased risk of postoperative apnea and complications."
+    },
+    {
+      "trigger": "If resident asks about non-operative management",
+      "reply": "There is no role for medical therapy; surgery is definitive."
+    },
+    {
+      "trigger": "If resident discusses postoperative feeding",
+      "reply": "Resume oral feeds 6 hours after surgery starting with small glucose solutions then advance to formula/breast milk."
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "Rare; nonetheless perform general exam to rule out other congenital issues."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of classic presentation of hypertrophic pyloric stenosis",
+    "Assessment of dehydration and electrolyte disturbances",
+    "Use of ultrasound to confirm diagnosis",
+    "Preoperative correction of metabolic alkalosis prior to pyloromyotomy",
+    "Postoperative feeding protocol and parental counseling"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider hypertrophic pyloric stenosis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of hypertrophic pyloric stenosis"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes hypertrophic pyloric stenosis as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including hypertrophic pyloric stenosis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies hypertrophic pyloric stenosis as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for hypertrophic pyloric stenosis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for hypertrophic pyloric stenosis but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for hypertrophic pyloric stenosis."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for hypertrophic pyloric stenosis."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You properly identified pyloric stenosis and corrected the infant's fluids before surgery. To enhance your performance, explain to parents the postoperative feeding plan and reassure them about prognosis."
+  }
+}

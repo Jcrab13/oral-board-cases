@@ -1,0 +1,198 @@
+{
+  "case_id": "endo_05",
+  "title": "Adrenal Incidentaloma with Subclinical Cushing Syndrome",
+  "diagnosis_topic": "Functional adrenocortical tumor",
+  "tags": [
+    "endocrine",
+    "adrenal incidentaloma",
+    "hypercortisolism"
+  ],
+  "setup_script": "A 50-year-old woman undergoes abdominal CT for renal colic, revealing a 4 cm right adrenal mass. She has mild hypertension and obesity. Workup shows elevated late-night salivary cortisol and failure to suppress on 1 mg overnight dexamethasone test, consistent with subclinical Cushing syndrome.",
+  "dynamic_flow": [
+    {
+      "trigger": "Explain differential of adrenal incidentaloma: benign adenoma, pheochromocytoma, cortisol or aldosterone-secreting tumor, malignancy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order hormonal evaluation: dexamethasone suppression test, plasma metanephrines, aldosterone/renin ratio, and DHEAS.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review imaging characteristics: size, Hounsfield units, washout on CT or MRI to assess risk of malignancy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss criteria for adrenalectomy: size >4 cm, growth over time, functional tumors, or suspicious imaging features.",
+      "reply": ""
+    },
+    {
+      "trigger": "Counsel patient on risks and benefits of laparoscopic adrenalectomy versus observation; consider comorbid conditions.",
+      "reply": ""
+    },
+    {
+      "trigger": "Optimize blood pressure and control hypercortisolism preoperatively with medical therapy if severe.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform laparoscopic right adrenalectomy with attention to vascular control and avoiding tumor rupture.",
+      "reply": ""
+    },
+    {
+      "trigger": "Anticipate need for perioperative steroid coverage due to suppressed contralateral adrenal gland; taper gradually postoperatively.",
+      "reply": ""
+    },
+    {
+      "trigger": "Assess final pathology for adenoma versus carcinoma; check Weiss criteria for malignancy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor postoperative cortisol levels and signs of adrenal insufficiency; adjust steroid replacement accordingly.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange endocrinology follow-up for long-term management of blood pressure and metabolic syndrome.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan surveillance imaging to monitor for recurrence or growth of contralateral nodules.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Comprehensive hormonal evaluation of incidentaloma to determine functionality.",
+    "Using imaging criteria and size to decide surgery versus observation.",
+    "Safe laparoscopic adrenalectomy and avoidance of tumor spillage.",
+    "Perioperative steroid management to prevent adrenal crisis.",
+    "Long-term surveillance for recurrence and metabolic effects."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider adrenal incidentaloma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of adrenal incidentaloma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes adrenal incidentaloma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including adrenal incidentaloma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies adrenal incidentaloma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for adrenal incidentaloma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for adrenal incidentaloma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for adrenal incidentaloma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for adrenal incidentaloma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This scenario explored the workup of an adrenal incidentaloma. Key elements included biochemical testing, imaging assessment, surgical indications, and perioperative steroid management. Reflect on your decision-making regarding surgical threshold and postoperative follow-up."
+  }
+}

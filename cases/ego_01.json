@@ -1,0 +1,198 @@
+{
+  "case_id": "ego_01",
+  "title": "Esophageal Perforation (Boerhaave's Syndrome)",
+  "diagnosis_topic": "Transmural esophageal rupture following forceful emesis",
+  "tags": [
+    "esophagogastric",
+    "esophageal perforation",
+    "emergency"
+  ],
+  "setup_script": "A 50-year-old man develops sudden severe chest pain and shortness of breath after repeated episodes of vomiting following a heavy meal. He has a history of alcoholism.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 90/50 mmHg, HR 120 bpm, RR 28/min, Temp 38.2 C; patient appears toxic."
+    },
+    {
+      "trigger": "If resident takes history",
+      "reply": "Severe chest pain radiating to the back, dyspnea and odynophagia after forceful retching; denies prior reflux."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Subcutaneous emphysema in the neck, mediastinal crepitus (Hamman's crunch) and tachypnea."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 18 K/uL, elevated lactate; pleural fluid (if tapped) may show high amylase and food particles."
+    },
+    {
+      "trigger": "If resident obtains chest X-ray",
+      "reply": "Pneumomediastinum and left pleural effusion; may show widened mediastinum."
+    },
+    {
+      "trigger": "If resident orders CT scan with IV and oral contrast",
+      "reply": "Demonstrates contrast extravasation from distal esophagus into mediastinum with surrounding air and fluid."
+    },
+    {
+      "trigger": "If resident keeps patient NPO and initiates broad-spectrum IV antibiotics and antifungals",
+      "reply": "Piperacillin-tazobactam and fluconazole started; NPO with NG decompression avoided to prevent contamination."
+    },
+    {
+      "trigger": "If resident consults thoracic surgery",
+      "reply": "Patient taken emergently for operative repair with primary closure and drainage of mediastinum; endoscopic stent considered in contained leaks in stable patients."
+    },
+    {
+      "trigger": "If resident delays diagnosis and treatment",
+      "reply": "Mediastinitis and sepsis progress rapidly leading to multi-organ failure."
+    },
+    {
+      "trigger": "If resident discusses non-operative management",
+      "reply": "Appropriate for contained cervical perforations without systemic toxicity; includes antibiotics and drainage."
+    },
+    {
+      "trigger": "If resident outlines postoperative care",
+      "reply": "NPO with jejunal feeding, serial imaging to assess healing and chest tube management."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Avoid excessive alcohol intake and seek care for severe vomiting in the future."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of esophageal perforation based on history of forceful vomiting and chest pain",
+    "Use of imaging (CT with contrast) to confirm diagnosis and locate perforation",
+    "Prompt initiation of NPO status, broad-spectrum antibiotics and surgical consultation",
+    "Selection between operative repair and non-operative management depending on containment and patient stability",
+    "Postoperative management including nutrition, drainage and prevention of mediastinitis"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider esophageal perforation or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of esophageal perforation"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes esophageal perforation as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including esophageal perforation and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies esophageal perforation as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for esophageal perforation."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for esophageal perforation but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for esophageal perforation."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for esophageal perforation."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You appropriately managed Boerhaave's syndrome with rapid diagnosis and surgical referral. Strengthen your plan by discussing indications for non-operative management and stent placement."
+  }
+}

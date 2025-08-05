@@ -1,0 +1,198 @@
+{
+  "case_id": "ego_04",
+  "title": "Gastric Adenocarcinoma",
+  "diagnosis_topic": "Malignant tumor of the stomach requiring staging and resection",
+  "tags": [
+    "esophagogastric",
+    "gastric cancer",
+    "oncology"
+  ],
+  "setup_script": "A 65-year-old man with a history of smoking presents with weight loss, early satiety and vague epigastric discomfort. His stool tested positive for occult blood.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 130/70 mmHg, HR 90 bpm, RR 16/min, Temp 37 C."
+    },
+    {
+      "trigger": "If resident conducts endoscopy",
+      "reply": "Ulcerated mass in the antrum; biopsies show intestinal-type adenocarcinoma."
+    },
+    {
+      "trigger": "If resident orders CT scan and endoscopic ultrasound",
+      "reply": "CT shows thickening of the gastric wall without distant metastasis; EUS indicates T2N1 lesion with 2 regional lymph nodes involved."
+    },
+    {
+      "trigger": "If resident evaluates nutritional status and co-morbidities",
+      "reply": "Mild anemia (Hgb 9.5 g/dL) and hypoalbuminemia."
+    },
+    {
+      "trigger": "If resident discusses treatment plan with multidisciplinary team",
+      "reply": "Neoadjuvant chemotherapy (FLOT) followed by subtotal gastrectomy with D2 lymphadenectomy is recommended."
+    },
+    {
+      "trigger": "If resident delays therapy",
+      "reply": "Tumor progresses to unresectable stage or metastasis occurs."
+    },
+    {
+      "trigger": "If resident plans surgical resection",
+      "reply": "Laparoscopic or open subtotal gastrectomy removing 5 cm margins; reconstruction with Billroth II or Roux-en-Y."
+    },
+    {
+      "trigger": "If resident considers perioperative chemotherapy",
+      "reply": "Improves survival in stage II/III disease; monitor for neutropenia and mucositis."
+    },
+    {
+      "trigger": "If resident outlines postoperative care",
+      "reply": "Early enteral feeding via jejunostomy, monitor for anastomotic leak, nutritional deficiencies (B12, iron) and dumping syndrome."
+    },
+    {
+      "trigger": "If resident schedules surveillance",
+      "reply": "CT scans and endoscopic evaluation every 6 months for 2 years then annually."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Smoking cessation, dietary modifications and support resources."
+    },
+    {
+      "trigger": "If resident addresses psychosocial aspects",
+      "reply": "Provide counseling and involve oncology social worker."
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis of gastric cancer via endoscopy and biopsy",
+    "Staging with CT and endoscopic ultrasound to determine depth and nodal involvement",
+    "Use of neoadjuvant chemotherapy and surgical resection with adequate lymphadenectomy",
+    "Postoperative nutritional management and surveillance for recurrence",
+    "Multidisciplinary care coordination and patient counseling"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider gastric adenocarcinoma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of gastric adenocarcinoma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes gastric adenocarcinoma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including gastric adenocarcinoma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies gastric adenocarcinoma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for gastric adenocarcinoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for gastric adenocarcinoma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for gastric adenocarcinoma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for gastric adenocarcinoma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You managed gastric cancer comprehensively. Continue to refine your understanding of staging systems and perioperative chemotherapy protocols."
+  }
+}

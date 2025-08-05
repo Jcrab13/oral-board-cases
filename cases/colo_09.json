@@ -1,0 +1,198 @@
+{
+  "case_id": "colo_09",
+  "title": "Massive Lower GI Bleed from Angiodysplasia",
+  "diagnosis_topic": "Acute colonic hemorrhage",
+  "tags": [
+    "colorectal",
+    "lower GI bleed",
+    "angiodysplasia"
+  ],
+  "setup_script": "A 70-year-old man presents with maroon stools and syncope. He is on anticoagulation for atrial fibrillation. His blood pressure is 90/60 mm Hg and heart rate 110 bpm. Initial resuscitation stabilizes him.",
+  "dynamic_flow": [
+    {
+      "trigger": "Initiate resuscitation: place two large bore IV lines, order type and cross, administer fluids and transfuse blood products as needed.",
+      "reply": ""
+    },
+    {
+      "trigger": "Hold anticoagulation and reverse if necessary with vitamin K or prothrombin complex concentrate.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform focused history on previous GI bleeding, comorbidities, and medications; conduct rectal exam.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order labs including CBC, coagulation profile, liver function tests; insert NG tube to rule out upper GI bleed if uncertain.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange urgent colonoscopy after rapid bowel preparation with nasogastric lavage or enemas to localize bleeding source.",
+      "reply": ""
+    },
+    {
+      "trigger": "During colonoscopy, identify angiodysplasia in cecum; treat with endoscopic thermal coagulation (argon plasma coagulation).",
+      "reply": ""
+    },
+    {
+      "trigger": "If colonoscopy fails to localize or control bleeding, consider CT angiography or tagged RBC scan to identify active bleeding.",
+      "reply": ""
+    },
+    {
+      "trigger": "For ongoing bleeding, consult interventional radiology for superselective mesenteric angiography and embolization.",
+      "reply": ""
+    },
+    {
+      "trigger": "If nonoperative management fails or patient becomes unstable, proceed with segmental colectomy of bleeding source.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss surgical risks and obtain informed consent emphasizing high morbidity in emergency colectomy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Post-treatment care: monitor hemoglobin, hemodynamics, and stool output; restart anticoagulation when safe.",
+      "reply": ""
+    },
+    {
+      "trigger": "Educate patient on risk factors for angiodysplasia, potential recurrence, and need for follow-up colonoscopy.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Aggressive resuscitation and anticoagulation reversal in acute bleeding.",
+    "Timely colonoscopy and endoscopic treatment of angiodysplasia.",
+    "Use of angiography or surgery when endoscopic therapy fails.",
+    "Decision on when to operate based on hemodynamic stability and localization.",
+    "Post-bleeding management and patient education."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider lower gi bleed or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of lower gi bleed"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes lower gi bleed as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including lower gi bleed and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies lower gi bleed as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for lower gi bleed."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for lower gi bleed but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for lower gi bleed."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for lower gi bleed."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This case required rapid stabilization of a lower GI bleed and knowledge of diagnostic and therapeutic modalities. Reflect on your resuscitation approach, decision for endoscopic therapy, and contingency plans when bleeding persists."
+  }
+}

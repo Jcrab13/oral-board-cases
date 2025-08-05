@@ -1,0 +1,198 @@
+{
+  "case_id": "ego_07",
+  "title": "Bleeding Gastric Ulcer",
+  "diagnosis_topic": "Hemorrhage from a gastric ulcer requiring endoscopic and medical management",
+  "tags": [
+    "esophagogastric",
+    "gastric ulcer",
+    "bleeding"
+  ],
+  "setup_script": "A 50-year-old man presents to the ED with hematemesis and melena. He has a history of chronic NSAID use for back pain.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 100/60 mmHg, HR 110 bpm, RR 20/min, Temp 37 C; patient appears pale."
+    },
+    {
+      "trigger": "If resident places two large-bore IVs and initiates fluid resuscitation",
+      "reply": "Start crystalloid followed by blood transfusion targeting Hgb >7 g/dL."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "CBC shows hemoglobin 8 g/dL, platelets 200 K/uL; coagulation profile normal; BUN elevated relative to creatinine."
+    },
+    {
+      "trigger": "If resident starts IV proton pump inhibitor infusion",
+      "reply": "Pantoprazole bolus and infusion to stabilize clot and reduce rebleeding risk."
+    },
+    {
+      "trigger": "If resident inserts NG tube",
+      "reply": "Aspirates bright red blood confirming active upper GI bleeding."
+    },
+    {
+      "trigger": "If resident consults gastroenterology",
+      "reply": "Emergent endoscopy performed; a 1 cm gastric ulcer with a visible vessel is injected with epinephrine and clipped."
+    },
+    {
+      "trigger": "If endoscopic therapy fails or ulcer rebleeds",
+      "reply": "Consider repeat endoscopy, arterial embolization or surgical oversewing and vagotomy with pyloroplasty."
+    },
+    {
+      "trigger": "If resident tests for H. pylori",
+      "reply": "Urea breath test or biopsy; start eradication therapy if positive."
+    },
+    {
+      "trigger": "If resident discontinues NSAIDs and initiates PPI maintenance",
+      "reply": "Educate patient about alternative analgesics and the need for long-term acid suppression."
+    },
+    {
+      "trigger": "If resident delays endoscopic intervention",
+      "reply": "Increased risk of continued bleeding, hemodynamic instability and mortality."
+    },
+    {
+      "trigger": "If resident evaluates for gastric outlet obstruction or malignancy",
+      "reply": "Biopsy edges of ulcer to rule out malignancy; consider imaging or repeat endoscopy if symptoms persist."
+    },
+    {
+      "trigger": "If resident provides discharge instructions",
+      "reply": "Adherence to H. pylori therapy, avoidance of ulcerogenic medications and follow-up endoscopy to confirm healing."
+    }
+  ],
+  "critical_decision_points": [
+    "Resuscitation and stabilization of a patient with bleeding gastric ulcer",
+    "Use of IV proton pump inhibitors and early endoscopic hemostasis",
+    "Recognition of indications for repeat endoscopy, embolization or surgery",
+    "Testing for H. pylori and cessation of NSAIDs",
+    "Follow-up endoscopy to ensure ulcer healing and rule out malignancy"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider bleeding gastric ulcer or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of bleeding gastric ulcer"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes bleeding gastric ulcer as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including bleeding gastric ulcer and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies bleeding gastric ulcer as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for bleeding gastric ulcer."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for bleeding gastric ulcer but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for bleeding gastric ulcer."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for bleeding gastric ulcer."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You managed the bleeding gastric ulcer effectively with resuscitation and endoscopic therapy. Improve by outlining surgical options and postoperative management for refractory bleeding."
+  }
+}

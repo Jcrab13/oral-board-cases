@@ -1,0 +1,198 @@
+{
+  "case_id": "sst_05",
+  "title": "Basal Cell Carcinoma",
+  "diagnosis_topic": "Pearly, slow-growing skin lesion consistent with basal cell carcinoma",
+  "tags": [
+    "skin",
+    "cancer",
+    "basal cell carcinoma"
+  ],
+  "setup_script": "A 60-year-old woman with fair skin presents with a 5-mm pearly papule with telangiectasia on the bridge of her nose. It has been present for one year and has slowly enlarged.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews vital signs",
+      "reply": "Within normal limits."
+    },
+    {
+      "trigger": "If resident examines the lesion",
+      "reply": "Translucent nodule with rolled borders and central depression; no ulceration."
+    },
+    {
+      "trigger": "If resident asks about sun exposure and risk factors",
+      "reply": "Patient reports years of outdoor work without sunscreen."
+    },
+    {
+      "trigger": "If resident orders dermatoscopic evaluation",
+      "reply": "Shows arborizing vessels typical of basal cell carcinoma."
+    },
+    {
+      "trigger": "If resident performs shave or punch biopsy",
+      "reply": "Pathology confirms nodular basal cell carcinoma."
+    },
+    {
+      "trigger": "If resident discusses treatment options",
+      "reply": "Options include surgical excision with 4 mm margins or Mohs micrographic surgery for cosmetic areas."
+    },
+    {
+      "trigger": "If resident recommends Mohs surgery",
+      "reply": "Preferred for lesions on the face to maximize tissue conservation and ensure clear margins."
+    },
+    {
+      "trigger": "If resident provides postoperative care instructions",
+      "reply": "Wound care, suture removal and scar management discussed."
+    },
+    {
+      "trigger": "If resident addresses recurrence risk",
+      "reply": "Recurrence is low after complete excision but higher with positive margins or certain subtypes."
+    },
+    {
+      "trigger": "If resident educates about sun protection",
+      "reply": "Regular sunscreen use, protective clothing and avoidance of tanning beds."
+    },
+    {
+      "trigger": "If resident screens for other skin lesions",
+      "reply": "Full skin exam performed to look for additional actinic damage or lesions."
+    },
+    {
+      "trigger": "If resident differentiates from squamous cell carcinoma and melanoma",
+      "reply": "Emphasize differences in appearance and metastatic potential."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition and biopsy of suspicious skin lesions",
+    "Selection of appropriate treatment modality (excision vs. Mohs)",
+    "Patient counseling on sun protection and surveillance",
+    "Understanding recurrence risk and histologic subtypes",
+    "Full skin examination to identify additional lesions"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider basal cell carcinoma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of basal cell carcinoma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes basal cell carcinoma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including basal cell carcinoma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies basal cell carcinoma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for basal cell carcinoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for basal cell carcinoma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for basal cell carcinoma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for basal cell carcinoma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You managed the basal cell carcinoma appropriately. Future improvements could include deeper discussion about treatment options and comprehensive sun safety counseling."
+  }
+}

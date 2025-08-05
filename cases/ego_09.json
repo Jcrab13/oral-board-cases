@@ -1,0 +1,198 @@
+{
+  "case_id": "ego_09",
+  "title": "Gastric Outlet Obstruction",
+  "diagnosis_topic": "Obstruction of the distal stomach due to peptic ulcer or malignancy",
+  "tags": [
+    "esophagogastric",
+    "gastric outlet obstruction",
+    "obstruction"
+  ],
+  "setup_script": "A 70-year-old man reports persistent vomiting of partially digested food several hours after meals, early satiety and weight loss. He has a history of peptic ulcer disease but has not taken proton pump inhibitors.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 110/65 mmHg, HR 100 bpm, RR 18/min, Temp 36.8 C."
+    },
+    {
+      "trigger": "If resident takes history",
+      "reply": "Non-bilious vomiting of undigested food, early satiety, bloating and weight loss of 12 lbs; no hematemesis or melena."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Emaciated appearance, succussion splash in epigastrium and visible peristalsis."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Metabolic alkalosis with hypokalemia and hypochloremia; BUN/Cr elevated due to dehydration."
+    },
+    {
+      "trigger": "If resident places nasogastric tube",
+      "reply": "Aspirates 1 L of foul-smelling gastric contents; relieves pain temporarily."
+    },
+    {
+      "trigger": "If resident orders upper GI series or CT",
+      "reply": "Shows markedly dilated stomach with narrow passage at pylorus; no mass on imaging."
+    },
+    {
+      "trigger": "If resident performs endoscopy",
+      "reply": "Ulcerated pyloric channel with edema causing obstruction; biopsies to rule out malignancy."
+    },
+    {
+      "trigger": "If obstruction secondary to benign ulcer",
+      "reply": "Treat with IV PPI, H. pylori eradication and consider endoscopic balloon dilation; plan for definitive surgery (vagotomy and pyloroplasty) if refractory."
+    },
+    {
+      "trigger": "If obstruction due to malignancy",
+      "reply": "Staging and surgical planning for distal gastrectomy or gastrojejunostomy bypass; palliative stenting for unresectable cases."
+    },
+    {
+      "trigger": "If resident delays decompression and rehydration",
+      "reply": "Progressive dehydration, electrolyte imbalance and aspiration risk."
+    },
+    {
+      "trigger": "If resident discusses postoperative care",
+      "reply": "Nutritional support, gradual advancement of diet and monitoring for dumping syndrome in surgical patients."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of adhering to PPI therapy, avoiding NSAIDs and following up for repeat endoscopy to confirm healing."
+    }
+  ],
+  "critical_decision_points": [
+    "Evaluation of gastric outlet obstruction with history, physical and imaging",
+    "Resuscitation with nasogastric decompression and correction of electrolyte abnormalities",
+    "Endoscopic assessment to differentiate benign ulcer from malignancy",
+    "Medical, endoscopic and surgical management options based on etiology",
+    "Postoperative nutritional management and prevention of recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider gastric outlet obstruction or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of gastric outlet obstruction"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes gastric outlet obstruction as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including gastric outlet obstruction and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies gastric outlet obstruction as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for gastric outlet obstruction."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for gastric outlet obstruction but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for gastric outlet obstruction."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for gastric outlet obstruction."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You managed gastric outlet obstruction with appropriate decompression and evaluation. Further work could include detailing criteria for surgical intervention and postoperative nutritional support."
+  }
+}

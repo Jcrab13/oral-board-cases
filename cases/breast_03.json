@@ -1,0 +1,198 @@
+{
+  "case_id": "breast_03",
+  "title": "Male Breast Mass - Gynecomastia vs Carcinoma",
+  "diagnosis_topic": "Differential of male breast enlargement",
+  "tags": [
+    "breast",
+    "male breast mass",
+    "gynecomastia"
+  ],
+  "setup_script": "A 60-year-old man notices a painless lump under his right nipple. He is overweight, takes spironolactone for heart failure, and has no family history of breast cancer. On exam, there is a 2 cm firm subareolar mass.",
+  "dynamic_flow": [
+    {
+      "trigger": "Gather history including duration of mass, medication use (spironolactone, estrogen), liver disease, and testicular symptoms.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform thorough breast and testicular exams; assess for lymphadenopathy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order bilateral diagnostic mammography and ultrasound to differentiate gynecomastia (diffuse subareolar density) from suspicious mass.",
+      "reply": ""
+    },
+    {
+      "trigger": "If imaging shows suspicious features, perform core needle biopsy to rule out carcinoma.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review biopsy results: if gynecomastia, consider medication review, treat underlying cause; if carcinoma, stage accordingly.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss risk factors for male breast cancer including BRCA mutations, Klinefelter syndrome, and radiation exposure; offer genetic testing if indicated.",
+      "reply": ""
+    },
+    {
+      "trigger": "If carcinoma diagnosed, plan modified radical mastectomy due to small breast size; discuss sentinel lymph node biopsy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain informed consent; explain surgical risks and need for adjuvant therapy (chemotherapy, endocrine therapy depending on receptor status).",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform surgery; orient specimen; send sentinel nodes for frozen section; proceed to axillary dissection if positive.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative management: manage drain, wound, and discuss radiation therapy if large tumor or nodal involvement.",
+      "reply": ""
+    },
+    {
+      "trigger": "Refer patient to medical oncology for systemic therapy; coordinate endocrine therapy (tamoxifen) for hormone receptor positive disease.",
+      "reply": ""
+    },
+    {
+      "trigger": "Provide counseling on body image, support groups, and monitoring for recurrence.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Distinguishing gynecomastia from carcinoma with appropriate imaging and biopsy.",
+    "Recognizing risk factors and indications for genetic testing in male breast cancer.",
+    "Selecting appropriate surgical management and sentinel lymph node biopsy.",
+    "Coordinating adjuvant therapy based on receptor status.",
+    "Addressing psychosocial aspects and survivorship in male patients."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider male breast mass or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of male breast mass"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes male breast mass as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including male breast mass and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies male breast mass as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for male breast mass."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for male breast mass but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for male breast mass."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for male breast mass."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "In this case you were expected to differentiate benign gynecomastia from carcinoma, counsel on risk factors, and manage male breast cancer. Reflect on your diagnostic approach, surgical decision, and sensitivity to psychosocial concerns."
+  }
+}

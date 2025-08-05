@@ -1,0 +1,197 @@
+{
+  "case_id": "vascular_07",
+  "title": "Thoracic Outlet Syndrome",
+  "diagnosis_topic": "Compression of neurovascular structures at the thoracic outlet",
+  "tags": [
+    "vascular",
+    "thoracic outlet"
+  ],
+  "setup_script": "A 29-year-old competitive swimmer experiences numbness and weakness in her right arm when training. Symptoms worsen with overhead activity and are accompanied by swelling and discoloration of the hand.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for vitals",
+      "reply": "BP 118/70 mmHg, HR 72 bpm, RR 16/min, Temp 36.8 C."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Positive Adson's and Roos tests reproducing symptoms; absent radial pulse when head turned to right; mild thenar atrophy."
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "Duplex ultrasound shows subclavian vein compression during provocative maneuvers; CTA demonstrates cervical rib and venous congestion."
+    },
+    {
+      "trigger": "If resident orders nerve conduction studies",
+      "reply": "Reveal brachial plexus compression at thoracic outlet."
+    },
+    {
+      "trigger": "If resident initiates conservative therapy",
+      "reply": "Recommend physical therapy focused on postural correction and first-rib mobilization; symptoms improve initially."
+    },
+    {
+      "trigger": "If resident considers thrombolysis",
+      "reply": "Indicated if acute effort thrombosis (Paget-Schroetter) occurs; not present now."
+    },
+    {
+      "trigger": "If resident refers to vascular surgery",
+      "reply": "Discuss first rib resection and scalenectomy for persisting neurovascular compromise."
+    },
+    {
+      "trigger": "If resident delays referral",
+      "reply": "Progressive neurologic deficits and venous thrombosis develop."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Avoid heavy overhead activities until definitive treatment."
+    },
+    {
+      "trigger": "If resident asks about anatomy",
+      "reply": "Compression may involve brachial plexus, subclavian vein, or subclavian artery."
+    },
+    {
+      "trigger": "If resident notes risk factors",
+      "reply": "Overhead athletes, cervical ribs, repetitive trauma."
+    },
+    {
+      "trigger": "If resident outlines postoperative care",
+      "reply": "Physical therapy to restore range of motion and prevent recurrence."
+    }
+  ],
+  "critical_decision_points": [
+    "Identification of neurovascular compression symptoms",
+    "Appropriate use of provocative maneuvers and imaging",
+    "Trial of conservative therapy",
+    "Recognition of indications for surgical decompression",
+    "Patient education and risk modification"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider thoracic outlet syndrome or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of thoracic outlet syndrome"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes thoracic outlet syndrome as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including thoracic outlet syndrome and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies thoracic outlet syndrome as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for thoracic outlet syndrome."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for thoracic outlet syndrome but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for thoracic outlet syndrome."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for thoracic outlet syndrome."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You identified thoracic outlet syndrome and pursued appropriate diagnostic tests. Work on clarifying indications for operative decompression versus continued conservative management."
+  }
+}

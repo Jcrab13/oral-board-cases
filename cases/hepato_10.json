@@ -1,0 +1,198 @@
+{
+  "case_id": "hepato_10",
+  "title": "Primary Sclerosing Cholangitis (PSC)",
+  "diagnosis_topic": "Chronic progressive cholestatic liver disease with inflammation and fibrosis of intra- and extrahepatic bile ducts",
+  "tags": [
+    "hepatobiliary",
+    "PSC",
+    "cholestasis"
+  ],
+  "setup_script": "A 35-year-old man with a history of ulcerative colitis presents with fatigue, pruritus and elevated liver enzymes. He denies alcohol use.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 118/75 mmHg, HR 90 bpm, RR 16/min, Temp 36.6 C."
+    },
+    {
+      "trigger": "If resident orders liver function tests",
+      "reply": "Elevated alkaline phosphatase and gamma-glutamyl transferase with mildly elevated bilirubin; AST/ALT normal or mildly elevated."
+    },
+    {
+      "trigger": "If resident orders MRCP",
+      "reply": "Multifocal strictures and segmental dilatations of intrahepatic and extrahepatic bile ducts giving a beaded appearance characteristic of PSC."
+    },
+    {
+      "trigger": "If resident evaluates for autoimmune markers",
+      "reply": "p-ANCA positive; negative anti-mitochondrial antibody (rules out primary biliary cholangitis)."
+    },
+    {
+      "trigger": "If resident discusses management",
+      "reply": "No curative medical therapy; treat pruritus with cholestyramine; evaluate for vitamin deficiencies."
+    },
+    {
+      "trigger": "If resident screens for cholangiocarcinoma",
+      "reply": "Annual MRCP or ultrasound and CA 19-9 levels; risk increased in PSC."
+    },
+    {
+      "trigger": "If resident monitors for dominant strictures",
+      "reply": "Endoscopic dilation and stenting if symptomatic."
+    },
+    {
+      "trigger": "If resident addresses indication for liver transplantation",
+      "reply": "Development of liver failure, intractable pruritus or recurrent cholangitis."
+    },
+    {
+      "trigger": "If resident discusses concomitant inflammatory bowel disease",
+      "reply": "Colonoscopy surveillance every 1-2 years due to increased colorectal cancer risk."
+    },
+    {
+      "trigger": "If resident explains prognosis",
+      "reply": "Median survival from diagnosis approximately 10-15 years without transplantation."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of vaccination against hepatitis A and B and avoidance of hepatotoxic agents."
+    },
+    {
+      "trigger": "If resident considers clinical trials",
+      "reply": "Referral to centers investigating new therapies (e.g., ursodeoxycholic acid high dose, obeticholic acid)."
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis of PSC using cholestatic liver enzymes and MRCP",
+    "Lack of effective medical therapy and management of symptoms",
+    "Screening for complications such as cholangiocarcinoma and colorectal cancer",
+    "Timing of liver transplantation and management of dominant strictures",
+    "Patient education on prognosis, vaccinations and lifestyle modifications"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider primary sclerosing cholangitis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of primary sclerosing cholangitis"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes primary sclerosing cholangitis as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including primary sclerosing cholangitis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies primary sclerosing cholangitis as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for primary sclerosing cholangitis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for primary sclerosing cholangitis but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for primary sclerosing cholangitis."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for primary sclerosing cholangitis."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You demonstrated knowledge of PSC diagnosis and monitoring. Further develop by discussing screening protocols for cholangiocarcinoma and colorectal cancer in more detail."
+  }
+}

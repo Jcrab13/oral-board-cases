@@ -1,0 +1,198 @@
+{
+  "case_id": "endo_09",
+  "title": "Cushing Disease Due to ACTH-Secreting Pituitary Adenoma",
+  "diagnosis_topic": "Endocrine evaluation for hypercortisolism",
+  "tags": [
+    "endocrine",
+    "pituitary",
+    "hypercortisolism"
+  ],
+  "setup_script": "A 35-year-old woman has progressive weight gain, facial rounding, purple striae, and hypertension. Labs show elevated 24-hour urinary cortisol and failure to suppress on low-dose dexamethasone test. ACTH level is elevated. Pituitary MRI reveals a 6 mm microadenoma.",
+  "dynamic_flow": [
+    {
+      "trigger": "Discuss differential for hypercortisolism: Cushing disease, ectopic ACTH, adrenal adenoma/carcinoma.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order confirmatory tests: midnight salivary cortisol, high-dose dexamethasone suppression, CRH stimulation to differentiate sources.",
+      "reply": ""
+    },
+    {
+      "trigger": "Interpret results consistent with pituitary ACTH secretion; plan for transsphenoidal pituitary surgery.",
+      "reply": ""
+    },
+    {
+      "trigger": "Coordinate with neurosurgery and endocrinology; obtain preoperative ophthalmology exam and cortisol control with ketoconazole/mifepristone if severe.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss surgical risks: CSF leak, hypopituitarism, diabetes insipidus; obtain informed consent.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform transsphenoidal resection of microadenoma; confirm histology of corticotroph tumor.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor postoperative cortisol; treat adrenal insufficiency with stress dosing and taper accordingly.",
+      "reply": ""
+    },
+    {
+      "trigger": "Assess for postoperative complications: visual changes, diabetes insipidus, infection; manage promptly.",
+      "reply": ""
+    },
+    {
+      "trigger": "Follow up with endocrinology for hormone replacement (thyroid, adrenal, gonadal) if hypopituitarism occurs.",
+      "reply": ""
+    },
+    {
+      "trigger": "If residual or recurrent tumor, consider repeat surgery, radiation, or medical therapy (pasireotide, cabergoline).",
+      "reply": ""
+    },
+    {
+      "trigger": "Educate patient on symptoms of adrenal insufficiency and necessity for medical alert identification.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange long-term surveillance with cortisol levels and MRI to detect recurrence.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Differentiating causes of Cushing syndrome and confirming pituitary source.",
+    "Planning and coordinating transsphenoidal surgery with multidisciplinary team.",
+    "Managing perioperative adrenal insufficiency and stress dosing.",
+    "Identifying and treating postoperative complications.",
+    "Long-term surveillance for recurrence and management of hypopituitarism."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider cushing disease or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of cushing disease"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes cushing disease as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including cushing disease and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies cushing disease as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for cushing disease."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for cushing disease but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for cushing disease."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for cushing disease."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This case required thorough evaluation of hypercortisolism and coordination with neurosurgery for pituitary resection. Reflect on your differential diagnosis, decision for transsphenoidal surgery, and management of adrenal insufficiency postoperatively."
+  }
+}

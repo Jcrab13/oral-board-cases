@@ -1,0 +1,198 @@
+{
+  "case_id": "breast_06",
+  "title": "Lactational Mastitis with Abscess Formation",
+  "diagnosis_topic": "Breast abscess in breastfeeding woman",
+  "tags": [
+    "breast",
+    "mastitis",
+    "abscess"
+  ],
+  "setup_script": "A 28-year-old woman who is breastfeeding her newborn develops fever, breast pain, and swelling in the right breast. On exam, there is a 3 cm tender, fluctuant mass with erythema.",
+  "dynamic_flow": [
+    {
+      "trigger": "Obtain history of breastfeeding technique, milk stasis, and systemic symptoms; assess for risk factors like nipple trauma.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform physical exam noting localized warmth, tenderness, and fluctuance; check axillary nodes.",
+      "reply": ""
+    },
+    {
+      "trigger": "Diagnose mastitis versus abscess; order breast ultrasound to confirm abscess and guide drainage.",
+      "reply": ""
+    },
+    {
+      "trigger": "Initiate broad-spectrum antibiotics covering Staphylococcus aureus and MRSA (e.g., dicloxacillin or clindamycin).",
+      "reply": ""
+    },
+    {
+      "trigger": "Encourage continued breastfeeding or pumping to facilitate drainage unless abscess is large and painful.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan ultrasound-guided needle aspiration of abscess; send fluid for culture and sensitivity.",
+      "reply": ""
+    },
+    {
+      "trigger": "If abscess fails to resolve or recurs, perform incision and drainage under local anesthesia; pack cavity and instruct on wound care.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor response to therapy; repeat aspiration if necessary; adjust antibiotics based on culture results.",
+      "reply": ""
+    },
+    {
+      "trigger": "Educate patient on proper breastfeeding technique, frequent feeding, and nipple care to prevent recurrence.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss potential need for lactation consultant and support.",
+      "reply": ""
+    },
+    {
+      "trigger": "If severe or systemic illness persists, consider hospitalization for IV antibiotics and surgical drainage.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan follow-up to ensure resolution and evaluate for underlying pathology if abscess recurs (e.g., inflammatory cancer).",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Differentiating mastitis from abscess and using ultrasound for diagnosis.",
+    "Appropriate antibiotic selection and continued breastfeeding advice.",
+    "Technique for aspiration versus incision and drainage and timing.",
+    "Monitoring for resolution and adjusting therapy based on cultures.",
+    "Education on breastfeeding practices and prevention of recurrence."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider lactational mastitis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of lactational mastitis"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes lactational mastitis as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including lactational mastitis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies lactational mastitis as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for lactational mastitis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for lactational mastitis but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for lactational mastitis."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for lactational mastitis."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This case focused on mastitis progressing to abscess. Reflect on your prompt diagnosis, choice of antibiotics, and decision to drain, as well as your patient education on breastfeeding technique."
+  }
+}

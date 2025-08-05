@@ -1,0 +1,198 @@
+{
+  "case_id": "sst_06",
+  "title": "Cutaneous Melanoma",
+  "diagnosis_topic": "Pigmented lesion concerning for melanoma with staging considerations",
+  "tags": [
+    "skin",
+    "cancer",
+    "melanoma"
+  ],
+  "setup_script": "A 38-year-old man presents with a dark mole on his upper back that has recently changed in size and color. He reports occasional itching but no bleeding.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews vital signs",
+      "reply": "Unremarkable."
+    },
+    {
+      "trigger": "If resident inspects the lesion",
+      "reply": "Asymmetric pigmented plaque measuring 9 mm with irregular borders and color variegation."
+    },
+    {
+      "trigger": "If resident performs excisional biopsy with narrow margin",
+      "reply": "Entire lesion removed; pathology reports superficial spreading melanoma with Breslow depth 1.2 mm, no ulceration."
+    },
+    {
+      "trigger": "If resident determines need for sentinel lymph node biopsy",
+      "reply": "Indicated for melanomas >1 mm thickness; schedule concurrently with wide excision."
+    },
+    {
+      "trigger": "If resident plans wide local excision",
+      "reply": "1-2 cm margin based on depth; closure to be performed primarily or with flap."
+    },
+    {
+      "trigger": "If resident orders staging scans",
+      "reply": "Not routinely indicated for stage IB melanoma without symptoms."
+    },
+    {
+      "trigger": "If sentinel node is positive on pathology",
+      "reply": "Discuss completion lymphadenectomy vs. active surveillance and adjuvant immunotherapy (e.g., nivolumab)."
+    },
+    {
+      "trigger": "If resident delays proper excision",
+      "reply": "Risk of local recurrence and metastasis increases."
+    },
+    {
+      "trigger": "If resident educates patient on skin self-exam and UV protection",
+      "reply": "Emphasize avoidance of sunburns and tanning beds."
+    },
+    {
+      "trigger": "If resident discusses genetic testing",
+      "reply": "Consider if multiple primary melanomas or family history suggests CDKN2A mutations."
+    },
+    {
+      "trigger": "If resident outlines follow-up schedule",
+      "reply": "Dermatologic and surgical follow-up every 3-6 months for the first 2 years, then annually."
+    },
+    {
+      "trigger": "If resident addresses adjuvant therapies",
+      "reply": "Immunotherapy or targeted therapy for stage III-IV disease."
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate biopsy technique for suspicious pigmented lesions",
+    "Use of Breslow depth to guide excision margins and sentinel node biopsy",
+    "Decision-making for adjuvant therapy and nodal management",
+    "Patient education on self-examination and sun protection",
+    "Long-term surveillance and genetic considerations"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider cutaneous melanoma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of cutaneous melanoma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes cutaneous melanoma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including cutaneous melanoma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies cutaneous melanoma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for cutaneous melanoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for cutaneous melanoma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for cutaneous melanoma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for cutaneous melanoma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You followed the recommended steps for melanoma management. You could further enhance your performance by articulating the indications for sentinel node biopsy and the evidence for adjuvant therapy."
+  }
+}

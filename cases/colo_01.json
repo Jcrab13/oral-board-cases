@@ -1,0 +1,198 @@
+{
+  "case_id": "colo_01",
+  "title": "Obstructing Left-Sided Colon Cancer",
+  "diagnosis_topic": "Descending colon adenocarcinoma causing large bowel obstruction",
+  "tags": [
+    "colorectal",
+    "colon cancer",
+    "obstruction"
+  ],
+  "setup_script": "A 68-year-old man presents with abdominal distension, obstipation, and vomiting for two days. He has a history of weight loss and iron-deficiency anemia. CT abdomen shows an obstructing mass in the descending colon with proximal dilation and no signs of perforation.",
+  "dynamic_flow": [
+    {
+      "trigger": "Take history focusing on change in bowel habits, weight loss, family history, and constitutional symptoms.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform physical exam noting abdominal distension, tympany, and signs of peritonitis; assess hemodynamic stability.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order labs including CBC, CMP, coagulation studies, and carcinoembryonic antigen (CEA) level.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain CT scan confirming left-sided obstructing mass without perforation; discuss differential of benign vs malignant obstruction.",
+      "reply": ""
+    },
+    {
+      "trigger": "Place nasogastric tube for decompression; start IV fluids and broad-spectrum antibiotics.",
+      "reply": ""
+    },
+    {
+      "trigger": "Consult gastroenterology for colonoscopy to obtain biopsy and decompress using stent if patient is high risk or bridge to surgery.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss surgical options: emergent Hartmann's procedure versus on-table primary anastomosis after onco-surgical resection; consider patient's nutrition and comorbidities.",
+      "reply": ""
+    },
+    {
+      "trigger": "Decide to proceed with left hemicolectomy with primary anastomosis if stable and bowel preparation feasible.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform oncologic resection with high vascular ligation and regional lymphadenectomy; evaluate anastomotic viability.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative management: monitor for anastomotic leak, ileus, and treat pain; start early ambulation and DVT prophylaxis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review pathology staging; refer to oncology for adjuvant therapy based on TNM stage.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan surveillance colonoscopy and CEA monitoring; counsel patient on lifestyle modification and family screening.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition and stabilization of acute large bowel obstruction.",
+    "Decision on stent placement versus emergency resection and anastomosis.",
+    "Proper oncologic resection with lymphadenectomy and margin assessment.",
+    "Postoperative monitoring for anastomotic leak and management of complications.",
+    "Coordination with oncology for adjuvant therapy and surveillance."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider obstructing colon cancer or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of obstructing colon cancer"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes obstructing colon cancer as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including obstructing colon cancer and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies obstructing colon cancer as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for obstructing colon cancer."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for obstructing colon cancer but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for obstructing colon cancer."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for obstructing colon cancer."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This scenario evaluated your management of an obstructing colon cancer. Reflect on your stabilization, decision for stent versus surgery, operative technique, and postoperative oncologic planning."
+  }
+}

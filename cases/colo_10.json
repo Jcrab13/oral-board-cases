@@ -1,0 +1,198 @@
+{
+  "case_id": "colo_10",
+  "title": "Familial Adenomatous Polyposis Prophylactic Colectomy",
+  "diagnosis_topic": "Inherited colorectal cancer syndrome",
+  "tags": [
+    "colorectal",
+    "FAP",
+    "prophylactic surgery"
+  ],
+  "setup_script": "A 22-year-old woman with known familial adenomatous polyposis (FAP) presents for consultation. She has hundreds of adenomatous polyps throughout the colon on surveillance colonoscopy. She is otherwise healthy and has not developed symptoms.",
+  "dynamic_flow": [
+    {
+      "trigger": "Explain genetics and natural history of FAP including nearly 100% risk of colon cancer by age 40.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review previous endoscopic findings and any extra-colonic manifestations (duodenal polyps, desmoid tumors).",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss surgical options: total abdominal colectomy with ileorectal anastomosis (IRA) versus proctocolectomy with ileal pouch-anal anastomosis (IPAA).",
+      "reply": ""
+    },
+    {
+      "trigger": "Consider factors influencing choice: number of rectal polyps, sphincter function, patient lifestyle, fertility concerns.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain preoperative evaluation including nutrition assessment and counseling about fertility and pregnancy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan prophylactic surgery; decide on laparoscopic restorative proctocolectomy with J-pouch to eliminate risk of rectal cancer.",
+      "reply": ""
+    },
+    {
+      "trigger": "Explain operative steps: total proctocolectomy, construction of ileal pouch, and diverting loop ileostomy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform surgery laparoscopically; ensure adequate mesenteric length and tension-free anastomosis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative care: monitor fluid status, stoma, and early feeding; manage pain and DVT prophylaxis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Educate patient on stoma care and schedule for ileostomy closure after 8-12 weeks following pouch test.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange screening for duodenal and periampullary adenomas and management of desmoid tumors.",
+      "reply": ""
+    },
+    {
+      "trigger": "Provide genetic counseling for family planning and encourage testing of at-risk relatives.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Counseling on cancer risk and prophylactic surgery options in FAP.",
+    "Choosing between IRA and IPAA based on rectal disease burden and patient factors.",
+    "Executing restorative proctocolectomy with pouch creation and temporary diversion.",
+    "Postoperative care and timing of stoma reversal.",
+    "Long-term surveillance for extra-colonic manifestations and genetic counseling."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider familial adenomatous polyposis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of familial adenomatous polyposis"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes familial adenomatous polyposis as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including familial adenomatous polyposis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies familial adenomatous polyposis as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for familial adenomatous polyposis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for familial adenomatous polyposis but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for familial adenomatous polyposis."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for familial adenomatous polyposis."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "In FAP management, you must counsel on prophylactic surgery and coordinate a complex operation. Reflect on how you explained options, executed restorative proctocolectomy, and arranged long-term surveillance and genetic counseling."
+  }
+}

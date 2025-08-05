@@ -1,0 +1,198 @@
+{
+  "case_id": "ped_10",
+  "title": "Biliary Atresia",
+  "diagnosis_topic": "Progressive fibro-obliterative disease of the extrahepatic bile ducts",
+  "tags": [
+    "pediatric",
+    "liver",
+    "biliary atresia"
+  ],
+  "setup_script": "A 6-week-old infant presents with persistent jaundice since birth, dark urine and pale stools. Physical exam reveals hepatomegaly.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident checks vital signs",
+      "reply": "BP 85/45 mmHg, HR 140 bpm, RR 30/min, Temp 37.1 C."
+    },
+    {
+      "trigger": "If resident reviews history",
+      "reply": "Jaundice noted at 2 weeks; poor weight gain; no family history of liver disease."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Jaundiced skin and sclera, enlarged firm liver, spleen palpable 2 cm below costal margin."
+    },
+    {
+      "trigger": "If resident orders laboratory studies",
+      "reply": "Direct bilirubin elevated (8 mg/dL), AST and ALT mildly elevated, gamma-glutamyl transferase markedly elevated, PT prolonged."
+    },
+    {
+      "trigger": "If resident obtains abdominal ultrasound",
+      "reply": "Absence of gallbladder and triangular cord sign at porta hepatis suggesting biliary atresia."
+    },
+    {
+      "trigger": "If resident schedules hepatobiliary iminodiacetic acid (HIDA) scan after phenobarbital priming",
+      "reply": "No excretion of tracer into intestine confirming biliary obstruction."
+    },
+    {
+      "trigger": "If resident initiates nutritional support and fat-soluble vitamin supplementation",
+      "reply": "Prevents deficiencies and supports growth."
+    },
+    {
+      "trigger": "If resident consults pediatric surgery for Kasai portoenterostomy",
+      "reply": "Recommended before 8 weeks of age to improve bile flow; definitive surgery scheduled."
+    },
+    {
+      "trigger": "If resident delays surgery beyond 3 months",
+      "reply": "Reduced success of Kasai procedure; higher likelihood of needing liver transplant."
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "Cardiac anomalies, polysplenia or situs inversus occasionally present."
+    },
+    {
+      "trigger": "If resident discusses post-Kasai care",
+      "reply": "Prophylactic antibiotics, ursodeoxycholic acid, and monitoring for cholangitis and progressive liver disease."
+    },
+    {
+      "trigger": "If resident counsels parents about long-term outcomes",
+      "reply": "Many patients eventually require liver transplantation despite initial surgery; discuss transplant evaluation."
+    }
+  ],
+  "critical_decision_points": [
+    "Early recognition of conjugated hyperbilirubinemia and cholestatic jaundice",
+    "Diagnostic imaging with ultrasound and HIDA scan",
+    "Timely referral for Kasai portoenterostomy before 8 weeks of age",
+    "Supportive management with nutrition and vitamin supplementation",
+    "Counseling families on prognosis and potential need for liver transplantation"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider biliary atresia or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of biliary atresia"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes biliary atresia as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including biliary atresia and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies biliary atresia as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for biliary atresia."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for biliary atresia but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for biliary atresia."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for biliary atresia."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You correctly identified biliary atresia and emphasized early surgical intervention. To enhance your performance, clearly outline the postoperative care regimen and transplant referral process."
+  }
+}

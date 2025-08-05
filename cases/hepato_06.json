@@ -1,0 +1,198 @@
+{
+  "case_id": "hepato_06",
+  "title": "Choledocholithiasis",
+  "diagnosis_topic": "Common bile duct stones causing biliary obstruction without infection",
+  "tags": [
+    "hepatobiliary",
+    "common bile duct stones",
+    "obstruction"
+  ],
+  "setup_script": "A 50-year-old woman presents with intermittent right upper quadrant pain and jaundice. She has a prior history of gallstones but no surgeries.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 125/80 mmHg, HR 96 bpm, RR 18/min, Temp 37.2 C."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Elevated bilirubin 3.5 mg/dL, alkaline phosphatase 250 U/L, AST/ALT mildly elevated, amylase normal."
+    },
+    {
+      "trigger": "If resident orders ultrasound",
+      "reply": "Gallbladder with stones and common bile duct 9 mm diameter but no definitive stone seen."
+    },
+    {
+      "trigger": "If resident orders MRCP or EUS",
+      "reply": "Reveals 6 mm stone in distal common bile duct causing obstruction."
+    },
+    {
+      "trigger": "If resident starts IV fluids and analgesia",
+      "reply": "Symptom relief while awaiting intervention."
+    },
+    {
+      "trigger": "If resident consults gastroenterology for ERCP",
+      "reply": "Endoscopic sphincterotomy and stone extraction performed successfully."
+    },
+    {
+      "trigger": "If resident delays ERCP",
+      "reply": "Obstruction may progress to cholangitis or pancreatitis."
+    },
+    {
+      "trigger": "If resident plans interval laparoscopic cholecystectomy",
+      "reply": "Schedule within a few days after ERCP to prevent recurrence of CBD stones."
+    },
+    {
+      "trigger": "If resident misdiagnoses as simple cholelithiasis",
+      "reply": "May perform cholecystectomy without clearing CBD leading to retained stones."
+    },
+    {
+      "trigger": "If resident discusses intraoperative cholangiography",
+      "reply": "Helps detect stones and guide management during cholecystectomy."
+    },
+    {
+      "trigger": "If resident addresses postoperative care",
+      "reply": "Monitor liver enzymes; manage transient pancreatitis from ERCP if it occurs."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of completing cholecystectomy and recognizing symptoms of recurrence."
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis of choledocholithiasis using laboratory markers and imaging",
+    "Role of MRCP/EUS and ERCP in diagnosis and therapy",
+    "Timing of ERCP relative to cholecystectomy",
+    "Recognition of complications if stones are not removed",
+    "Use of intraoperative cholangiography and patient education"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider choledocholithiasis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of choledocholithiasis"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes choledocholithiasis as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including choledocholithiasis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies choledocholithiasis as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for choledocholithiasis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for choledocholithiasis but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for choledocholithiasis."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for choledocholithiasis."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You correctly managed common bile duct stones. Further development should focus on explaining imaging choices and the timing of ERCP and cholecystectomy."
+  }
+}

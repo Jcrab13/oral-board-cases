@@ -1,0 +1,198 @@
+{
+  "case_id": "breast_02",
+  "title": "Inflammatory Breast Cancer with Skin Changes",
+  "diagnosis_topic": "Stage III inflammatory breast cancer",
+  "tags": [
+    "breast",
+    "inflammatory cancer",
+    "neoadjuvant therapy"
+  ],
+  "setup_script": "A 45-year-old woman presents with rapidly enlarging left breast with erythema, edema, and peau d'orange for two weeks. She has no fever. Palpable axillary lymph nodes are present. Biopsy confirms invasive ductal carcinoma with dermal lymphatic invasion.",
+  "dynamic_flow": [
+    {
+      "trigger": "Recognize clinical presentation of inflammatory breast cancer (IBC) and differentiate from mastitis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order diagnostic imaging: bilateral mammogram, ultrasound, and breast MRI to assess extent; stage with CT chest/abdomen/pelvis and bone scan.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform core needle biopsy of breast lesion and fine-needle aspiration of axillary nodes; confirm diagnosis histologically.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss aggressive nature of IBC and poor prognosis without treatment; emphasize need for multidisciplinary care.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan neoadjuvant systemic therapy (chemotherapy with anti-HER2 agents if HER2 positive) followed by modified radical mastectomy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Refer to medical oncology for staging and initiation of chemotherapy; manage treatment side effects.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor response to therapy with clinical exams and imaging; adjust regimen if inadequate response.",
+      "reply": ""
+    },
+    {
+      "trigger": "After completion of chemotherapy, plan modified radical mastectomy with axillary lymph node dissection; discuss reconstruction options.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform surgery; ensure clear margins; send specimens for pathology to assess response (pathologic complete response).",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative care: manage drains, wound, and discuss need for adjuvant radiation therapy to chest wall and regional nodes.",
+      "reply": ""
+    },
+    {
+      "trigger": "Continue systemic therapy (HER2 targeted agents, endocrine therapy) as indicated; refer to radiation oncology.",
+      "reply": ""
+    },
+    {
+      "trigger": "Provide psychosocial support and counseling on prognosis, fertility preservation, and survivorship.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Early recognition of inflammatory breast cancer and avoidance of delay with antibiotics.",
+    "Appropriate staging and initiation of neoadjuvant chemotherapy.",
+    "Timing of surgery after systemic therapy and extent of axillary surgery.",
+    "Coordination of adjuvant radiation and systemic therapy.",
+    "Comprehensive patient counseling and psychosocial support."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider inflammatory breast cancer or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of inflammatory breast cancer"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes inflammatory breast cancer as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including inflammatory breast cancer and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies inflammatory breast cancer as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for inflammatory breast cancer."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for inflammatory breast cancer but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for inflammatory breast cancer."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for inflammatory breast cancer."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This scenario tested your recognition and management of inflammatory breast cancer. Reflect on your prompt staging, initiation of neoadjuvant therapy, surgical planning, and postoperative multidisciplinary coordination."
+  }
+}

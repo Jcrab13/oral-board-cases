@@ -1,0 +1,705 @@
+{
+    "cases": [
+      {
+        "id": "breast_01",
+        "slug": "ductal-carcinoma-in-situ-detected-on-screening-mammogram",
+        "title": "Ductal Carcinoma in Situ Detected on Screening Mammogram",
+        "path": "cases/breast_01.json",
+        "tags": ["breast", "DCIS", "lumpectomy"]
+      },
+      {
+        "id": "breast_02",
+        "slug": "inflammatory-breast-cancer-with-skin-changes",
+        "title": "Inflammatory Breast Cancer with Skin Changes",
+        "path": "cases/breast_02.json",
+        "tags": ["breast", "inflammatory-cancer", "neoadjuvant-therapy"]
+      },
+      {
+        "id": "breast_03",
+        "slug": "male-breast-mass-gynecomastia-vs-carcinoma",
+        "title": "Male Breast Mass - Gynecomastia vs Carcinoma",
+        "path": "cases/breast_03.json",
+        "tags": ["breast", "male-breast-mass", "gynecomastia"]
+      },
+      {
+        "id": "breast_04",
+        "slug": "palpable-fibroadenoma-in-young-woman",
+        "title": "Palpable Fibroadenoma in Young Woman",
+        "path": "cases/breast_04.json",
+        "tags": ["breast", "fibroadenoma", "benign"]
+      },
+      {
+        "id": "breast_05",
+        "slug": "triple-negative-invasive-ductal-carcinoma",
+        "title": "Triple-Negative Invasive Ductal Carcinoma",
+        "path": "cases/breast_05.json",
+        "tags": ["breast", "triple-negative", "chemotherapy"]
+      },
+      {
+        "id": "breast_06",
+        "slug": "lactational-mastitis-with-abscess-formation",
+        "title": "Lactational Mastitis with Abscess Formation",
+        "path": "cases/breast_06.json",
+        "tags": ["breast", "mastitis", "abscess"]
+      },
+      {
+        "id": "breast_07",
+        "slug": "recurrent-breast-cyst-requiring-evaluation",
+        "title": "Recurrent Breast Cyst Requiring Evaluation",
+        "path": "cases/breast_07.json",
+        "tags": ["breast", "cyst", "evaluation"]
+      },
+      {
+        "id": "breast_08",
+        "slug": "brca-mutation-carrier-seeking-prophylactic-surgery",
+        "title": "BRCA Mutation Carrier Seeking Prophylactic Surgery",
+        "path": "cases/breast_08.json",
+        "tags": ["breast", "BRCA", "prophylactic-mastectomy"]
+      },
+      {
+        "id": "breast_09",
+        "slug": "paget-disease-of-the-nipple",
+        "title": "Paget Disease of the Nipple",
+        "path": "cases/breast_09.json",
+        "tags": ["breast", "paget-disease", "nipple-lesion"]
+      },
+      {
+        "id": "breast_10",
+        "slug": "phyllodes-tumor-with-rapid-growth",
+        "title": "Phyllodes Tumor with Rapid Growth",
+        "path": "cases/breast_10.json",
+        "tags": ["breast", "phyllodes-tumor", "surgery"]
+      },
+      {
+        "id": "colo_01",
+        "slug": "colon-adenocarcinoma-obstruction",
+        "title": "Colon Adenocarcinoma with Obstruction",
+        "path": "cases/colo_01.json",
+        "tags": ["colorectal", "cancer", "obstruction"]
+      },
+      {
+        "id": "colo_02",
+        "slug": "rectal-cancer-staging-treatment",
+        "title": "Rectal Cancer Requiring Staging and Treatment",
+        "path": "cases/colo_02.json",
+        "tags": ["colorectal", "rectal-cancer", "neoadjuvant"]
+      },
+      {
+        "id": "colo_03",
+        "slug": "diverticulitis-with-abscess",
+        "title": "Diverticulitis with Abscess Formation",
+        "path": "cases/colo_03.json",
+        "tags": ["colorectal", "diverticulitis", "abscess"]
+      },
+      {
+        "id": "colo_04",
+        "slug": "ulcerative-colitis-with-toxic-megacolon",
+        "title": "Ulcerative Colitis with Toxic Megacolon",
+        "path": "cases/colo_04.json",
+        "tags": ["colorectal", "ulcerative-colitis", "toxic-megacolon"]
+      },
+      {
+        "id": "colo_05",
+        "slug": "crohn-disease-with-small-bowel-obstruction",
+        "title": "Crohn Disease with Small Bowel Obstruction",
+        "path": "cases/colo_05.json",
+        "tags": ["colorectal", "crohn-disease", "obstruction"]
+      },
+      {
+        "id": "colo_06",
+        "slug": "hemorrhoids-requiring-surgical-management",
+        "title": "Hemorrhoids Requiring Surgical Management",
+        "path": "cases/colo_06.json",
+        "tags": ["colorectal", "hemorrhoids", "proctology"]
+      },
+      {
+        "id": "colo_07",
+        "slug": "anal-fissure-and-fistula",
+        "title": "Anal Fissure and Fistula",
+        "path": "cases/colo_07.json",
+        "tags": ["colorectal", "anal-fissure", "fistula"]
+      },
+      {
+        "id": "colo_08",
+        "slug": "lower-gi-bleeding-from-angiodysplasia",
+        "title": "Lower GI Bleeding from Angiodysplasia",
+        "path": "cases/colo_08.json",
+        "tags": ["colorectal", "bleeding", "angiodysplasia"]
+      },
+      {
+        "id": "colo_09",
+        "slug": "sigmoid-volvulus",
+        "title": "Sigmoid Volvulus",
+        "path": "cases/colo_09.json",
+        "tags": ["colorectal", "volvulus", "decompression"]
+      },
+      {
+        "id": "colo_10",
+        "slug": "colon-polyps-requiring-surgery",
+        "title": "Colon Polyps Requiring Surgery",
+        "path": "cases/colo_10.json",
+        "tags": ["colorectal", "polyps", "surgery"]
+      },
+      {
+        "id": "ego_01",
+        "slug": "esophageal-perforation-boerhaave-syndrome",
+        "title": "Esophageal Perforation (Boerhaave’s Syndrome)",
+        "path": "cases/ego_01.json",
+        "tags": ["esophageal", "perforation", "mediastinitis"]
+      },
+      {
+        "id": "ego_02",
+        "slug": "achalasia",
+        "title": "Achalasia",
+        "path": "cases/ego_02.json",
+        "tags": ["esophageal", "achalasia", "myotomy"]
+      },
+      {
+        "id": "ego_03",
+        "slug": "hiatal-hernia-with-reflux-disease",
+        "title": "Hiatal Hernia with Reflux Disease",
+        "path": "cases/ego_03.json",
+        "tags": ["hiatal-hernia", "GERD", "nissen"]
+      },
+      {
+        "id": "ego_04",
+        "slug": "gastric-adenocarcinoma",
+        "title": "Gastric Adenocarcinoma",
+        "path": "cases/ego_04.json",
+        "tags": ["gastric", "cancer", "gastrectomy"]
+      },
+      {
+        "id": "ego_05",
+        "slug": "esophageal-carcinoma",
+        "title": "Esophageal Carcinoma",
+        "path": "cases/ego_05.json",
+        "tags": ["esophageal", "cancer", "dysphagia"]
+      },
+      {
+        "id": "ego_06",
+        "slug": "barrett-esophagus-with-high-grade-dysplasia",
+        "title": "Barrett’s Esophagus with High-Grade Dysplasia",
+        "path": "cases/ego_06.json",
+        "tags": ["esophageal", "barrett", "dysplasia"]
+      },
+      {
+        "id": "ego_07",
+        "slug": "bleeding-gastric-ulcer",
+        "title": "Bleeding Gastric Ulcer",
+        "path": "cases/ego_07.json",
+        "tags": ["gastric", "ulcer", "bleeding"]
+      },
+      {
+        "id": "ego_08",
+        "slug": "paraesophageal-hernia",
+        "title": "Paraesophageal Hernia",
+        "path": "cases/ego_08.json",
+        "tags": ["herniation", "paraesophageal", "surgery"]
+      },
+      {
+        "id": "ego_09",
+        "slug": "gastric-outlet-obstruction",
+        "title": "Gastric Outlet Obstruction",
+        "path": "cases/ego_09.json",
+        "tags": ["gastric", "obstruction", "pyloric-stenosis"]
+      },
+      {
+        "id": "ego_10",
+        "slug": "caustic-ingestion-injury",
+        "title": "Caustic Ingestion Injury",
+        "path": "cases/ego_10.json",
+        "tags": ["caustic", "esophageal", "injury"]
+      },
+      {
+        "id": "endo_01",
+        "slug": "primary-hyperparathyroidism-evaluation",
+        "title": "Primary Hyperparathyroidism Evaluation",
+        "path": "cases/endo_01.json",
+        "tags": ["endocrine", "hyperparathyroidism", "surgery"]
+      },
+      {
+        "id": "endo_02",
+        "slug": "thyroid-nodule-with-suspicious-features",
+        "title": "Thyroid Nodule with Suspicious Features",
+        "path": "cases/endo_02.json",
+        "tags": ["endocrine", "thyroid-nodule", "FNA"]
+      },
+      {
+        "id": "endo_03",
+        "slug": "adrenal-incidentaloma-pheochromocytoma",
+        "title": "Adrenal Incidentaloma (Pheochromocytoma vs Adenoma)",
+        "path": "cases/endo_03.json",
+        "tags": ["endocrine", "pheochromocytoma", "incidentaloma"]
+      },
+      {
+        "id": "endo_04",
+        "slug": "medullary-thyroid-carcinoma",
+        "title": "Medullary Thyroid Carcinoma",
+        "path": "cases/endo_04.json",
+        "tags": ["endocrine", "medullary-carcinoma", "calcitonin"]
+      },
+      {
+        "id": "endo_05",
+        "slug": "graves-disease-considering-thyroidectomy",
+        "title": "Graves Disease Considering Thyroidectomy",
+        "path": "cases/endo_05.json",
+        "tags": ["endocrine", "graves", "hyperthyroidism"]
+      },
+      {
+        "id": "endo_06",
+        "slug": "insulinoma-pancreatic-neuroendocrine-tumor",
+        "title": "Insulinoma (Pancreatic Neuroendocrine Tumor)",
+        "path": "cases/endo_06.json",
+        "tags": ["endocrine", "insulinoma", "neuroendocrine"]
+      },
+      {
+        "id": "endo_07",
+        "slug": "papillary-thyroid-cancer-with-cervical-lymphadenopathy",
+        "title": "Papillary Thyroid Cancer with Cervical Lymphadenopathy",
+        "path": "cases/endo_07.json",
+        "tags": ["endocrine", "papillary-cancer", "lymphadenopathy"]
+      },
+      {
+        "id": "endo_08",
+        "slug": "hyperaldosteronism-conn-syndrome",
+        "title": "Hyperaldosteronism (Conn Syndrome)",
+        "path": "cases/endo_08.json",
+        "tags": ["endocrine", "hyperaldosteronism", "conn-syndrome"]
+      },
+      {
+        "id": "endo_09",
+        "slug": "men2a-workup",
+        "title": "MEN2A Workup (Parathyroid, Adrenal, Thyroid)",
+        "path": "cases/endo_09.json",
+        "tags": ["endocrine", "MEN2A", "genetics"]
+      },
+      {
+        "id": "endo_10",
+        "slug": "postoperative-hypocalcemia-after-thyroidectomy",
+        "title": "Postoperative Hypocalcemia after Thyroidectomy",
+        "path": "cases/endo_10.json",
+        "tags": ["endocrine", "hypocalcemia", "thyroidectomy"]
+      },
+      {
+        "id": "gen_01",
+        "slug": "acute-appendicitis",
+        "title": "Acute Appendicitis",
+        "path": "cases/gen_01.json",
+        "tags": ["appendicitis", "acute", "appendectomy"]
+      },
+      {
+        "id": "gen_02",
+        "slug": "small-bowel-obstruction",
+        "title": "Small Bowel Obstruction",
+        "path": "cases/gen_02.json",
+        "tags": ["bowel-obstruction", "small-bowel", "nasogastric"]
+      },
+      {
+        "id": "gen_03",
+        "slug": "large-bowel-obstruction-due-to-colon-cancer",
+        "title": "Large Bowel Obstruction due to Colon Cancer",
+        "path": "cases/gen_03.json",
+        "tags": ["bowel-obstruction", "colon-cancer", "colectomy"]
+      },
+      {
+        "id": "gen_04",
+        "slug": "incarcerated-inguinal-hernia",
+        "title": "Incarcerated Inguinal Hernia",
+        "path": "cases/gen_04.json",
+        "tags": ["hernia", "inguinal", "incarcerated"]
+      },
+      {
+        "id": "gen_05",
+        "slug": "acute-diverticulitis",
+        "title": "Acute Diverticulitis",
+        "path": "cases/gen_05.json",
+        "tags": ["diverticulitis", "colon", "abscess"]
+      },
+      {
+        "id": "gen_06",
+        "slug": "non-variceal-upper-gi-bleeding",
+        "title": "Non-Variceal Upper GI Bleeding",
+        "path": "cases/gen_06.json",
+        "tags": ["upper-gi-bleeding", "peptic-ulcer", "endoscopy"]
+      },
+      {
+        "id": "gen_07",
+        "slug": "severe-acute-pancreatitis",
+        "title": "Severe Acute Pancreatitis",
+        "path": "cases/gen_07.json",
+        "tags": ["pancreatitis", "severe", "necrosis"]
+      },
+      {
+        "id": "gen_08",
+        "slug": "enterocutaneous-fistula",
+        "title": "Enterocutaneous Fistula",
+        "path": "cases/gen_08.json",
+        "tags": ["fistula", "enterocutaneous", "nutrition"]
+      },
+      {
+        "id": "gen_09",
+        "slug": "incisional-hernia",
+        "title": "Incisional Hernia",
+        "path": "cases/gen_09.json",
+        "tags": ["hernia", "incisional", "mesh"]
+      },
+      {
+        "id": "gen_10",
+        "slug": "perforated-peptic-ulcer",
+        "title": "Perforated Peptic Ulcer",
+        "path": "cases/gen_10.json",
+        "tags": ["peptic-ulcer", "perforated", "surgery"]
+      },
+      {
+        "id": "hepato_01",
+        "slug": "acute-calculous-cholecystitis",
+        "title": "Acute Calculous Cholecystitis",
+        "path": "cases/hepato_01.json",
+        "tags": ["cholecystitis", "gallstones", "laparoscopic-cholecystectomy"]
+      },
+      {
+        "id": "hepato_02",
+        "slug": "acute-cholangitis",
+        "title": "Acute Cholangitis",
+        "path": "cases/hepato_02.json",
+        "tags": ["cholangitis", "ERCP", "charcot-triad"]
+      },
+      {
+        "id": "hepato_03",
+        "slug": "gallstone-pancreatitis",
+        "title": "Gallstone Pancreatitis",
+        "path": "cases/hepato_03.json",
+        "tags": ["pancreatitis", "gallstones", "ERCP"]
+      },
+      {
+        "id": "hepato_04",
+        "slug": "pyogenic-liver-abscess",
+        "title": "Pyogenic Liver Abscess",
+        "path": "cases/hepato_04.json",
+        "tags": ["liver-abscess", "drainage", "antibiotics"]
+      },
+      {
+        "id": "hepato_05",
+        "slug": "hepatocellular-carcinoma-in-cirrhosis",
+        "title": "Hepatocellular Carcinoma in Cirrhosis",
+        "path": "cases/hepato_05.json",
+        "tags": ["hepatocellular-carcinoma", "cirrhosis", "transplant"]
+      },
+      {
+        "id": "hepato_06",
+        "slug": "choledocholithiasis",
+        "title": "Choledocholithiasis",
+        "path": "cases/hepato_06.json",
+        "tags": ["choledocholithiasis", "bile-duct", "ERCP"]
+      },
+      {
+        "id": "hepato_07",
+        "slug": "post-cholecystectomy-bile-leak",
+        "title": "Post-Cholecystectomy Bile Leak",
+        "path": "cases/hepato_07.json",
+        "tags": ["bile-leak", "post-cholecystectomy", "ERCP"]
+      },
+      {
+        "id": "hepato_08",
+        "slug": "variceal-upper-gi-bleeding",
+        "title": "Variceal Upper GI Bleeding",
+        "path": "cases/hepato_08.json",
+        "tags": ["variceal-bleeding", "cirrhosis", "endoscopy"]
+      },
+      {
+        "id": "hepato_09",
+        "slug": "gallbladder-cancer",
+        "title": "Gallbladder Cancer",
+        "path": "cases/hepato_09.json",
+        "tags": ["gallbladder-cancer", "surgery", "staging"]
+      },
+      {
+        "id": "hepato_10",
+        "slug": "primary-sclerosing-cholangitis",
+        "title": "Primary Sclerosing Cholangitis",
+        "path": "cases/hepato_10.json",
+        "tags": ["primary-sclerosing-cholangitis", "cholestasis", "transplant"]
+      },
+      {
+        "id": "ped_01",
+        "slug": "hypertrophic-pyloric-stenosis",
+        "title": "Hypertrophic Pyloric Stenosis",
+        "path": "cases/ped_01.json",
+        "tags": ["pediatric", "pyloric-stenosis", "hypertrophic"]
+      },
+      {
+        "id": "ped_02",
+        "slug": "intussusception",
+        "title": "Intussusception",
+        "path": "cases/ped_02.json",
+        "tags": ["pediatric", "intussusception", "air-enema"]
+      },
+      {
+        "id": "ped_03",
+        "slug": "pediatric-appendicitis",
+        "title": "Pediatric Appendicitis",
+        "path": "cases/ped_03.json",
+        "tags": ["pediatric", "appendicitis", "appendectomy"]
+      },
+      {
+        "id": "ped_04",
+        "slug": "hirschsprung-disease",
+        "title": "Hirschsprung Disease",
+        "path": "cases/ped_04.json",
+        "tags": ["hirschsprung", "congenital", "megacolon"]
+      },
+      {
+        "id": "ped_05",
+        "slug": "congenital-diaphragmatic-hernia",
+        "title": "Congenital Diaphragmatic Hernia",
+        "path": "cases/ped_05.json",
+        "tags": ["pediatric", "diaphragmatic-hernia", "respiratory"]
+      },
+      {
+        "id": "ped_06",
+        "slug": "midgut-volvulus-due-to-malrotation",
+        "title": "Midgut Volvulus due to Malrotation",
+        "path": "cases/ped_06.json",
+        "tags": ["malrotation", "volvulus", "neonatal"]
+      },
+      {
+        "id": "ped_07",
+        "slug": "meckel-diverticulum-bleeding",
+        "title": "Meckel Diverticulum Bleeding",
+        "path": "cases/ped_07.json",
+        "tags": ["meckel-diverticulum", "bleeding", "technetium-scan"]
+      },
+      {
+        "id": "ped_08",
+        "slug": "necrotizing-enterocolitis",
+        "title": "Necrotizing Enterocolitis",
+        "path": "cases/ped_08.json",
+        "tags": ["necrotizing-enterocolitis", "preterm", "sepsis"]
+      },
+      {
+        "id": "ped_09",
+        "slug": "anorectal-malformation",
+        "title": "Anorectal Malformation",
+        "path": "cases/ped_09.json",
+        "tags": ["pediatric", "anorectal-malformation", "colostomy"]
+      },
+      {
+        "id": "ped_10",
+        "slug": "biliary-atresia",
+        "title": "Biliary Atresia",
+        "path": "cases/ped_10.json",
+        "tags": ["pediatric", "biliary-atresia", "Kasai"]
+      },
+      {
+        "id": "sst_01",
+        "slug": "necrotizing-fasciitis",
+        "title": "Necrotizing Fasciitis",
+        "path": "cases/sst_01.json",
+        "tags": ["necrotizing-fasciitis", "soft-tissue", "emergency"]
+      },
+      {
+        "id": "sst_02",
+        "slug": "skin-abscess",
+        "title": "Skin Abscess",
+        "path": "cases/sst_02.json",
+        "tags": ["abscess", "incision-drainage", "infection"]
+      },
+      {
+        "id": "sst_03",
+        "slug": "cellulitis-vs-necrotizing-infection",
+        "title": "Cellulitis vs Necrotizing Infection",
+        "path": "cases/sst_03.json",
+        "tags": ["cellulitis", "necrotizing-infection", "diagnosis"]
+      },
+      {
+        "id": "sst_04",
+        "slug": "soft-tissue-sarcoma",
+        "title": "Soft Tissue Sarcoma",
+        "path": "cases/sst_04.json",
+        "tags": ["sarcoma", "soft-tissue", "biopsy"]
+      },
+      {
+        "id": "sst_05",
+        "slug": "basal-cell-carcinoma",
+        "title": "Basal Cell Carcinoma",
+        "path": "cases/sst_05.json",
+        "tags": ["basal-cell-carcinoma", "skin-cancer", "excision"]
+      },
+      {
+        "id": "sst_06",
+        "slug": "cutaneous-melanoma",
+        "title": "Cutaneous Melanoma",
+        "path": "cases/sst_06.json",
+        "tags": ["melanoma", "skin-cancer", "sentinel-node"]
+      },
+      {
+        "id": "sst_07",
+        "slug": "lipoma-vs-liposarcoma",
+        "title": "Lipoma vs Liposarcoma",
+        "path": "cases/sst_07.json",
+        "tags": ["lipoma", "liposarcoma", "benign"]
+      },
+      {
+        "id": "sst_08",
+        "slug": "postoperative-surgical-site-infection",
+        "title": "Postoperative Surgical Site Infection",
+        "path": "cases/sst_08.json",
+        "tags": ["surgical-site-infection", "postoperative", "wound-care"]
+      },
+      {
+        "id": "sst_09",
+        "slug": "fournier-gangrene",
+        "title": "Fournier's Gangrene",
+        "path": "cases/sst_09.json",
+        "tags": ["fournier-gangrene", "necrotizing", "urologic"]
+      },
+      {
+        "id": "sst_10",
+        "slug": "chronic-pressure-ulcer",
+        "title": "Chronic Pressure Ulcer",
+        "path": "cases/sst_10.json",
+        "tags": ["pressure-ulcer", "chronic", "wound-care"]
+      },
+      {
+        "id": "trauma_01",
+        "slug": "penetrating-abdominal-trauma",
+        "title": "Penetrating Abdominal Trauma",
+        "path": "cases/trauma_01.json",
+        "tags": ["trauma", "abdominal", "penetrating"]
+      },
+      {
+        "id": "trauma_02",
+        "slug": "unstable-pelvic-fracture",
+        "title": "Unstable Pelvic Fracture",
+        "path": "cases/trauma_02.json",
+        "tags": ["trauma", "pelvic-fracture", "hemodynamic-instability"]
+      },
+      {
+        "id": "trauma_03",
+        "slug": "penetrating-thoracic-trauma-with-hemothorax",
+        "title": "Penetrating Thoracic Trauma with Hemothorax",
+        "path": "cases/trauma_03.json",
+        "tags": ["trauma", "thoracic", "hemothorax"]
+      },
+      {
+        "id": "trauma_04",
+        "slug": "blunt-hepatic-injury",
+        "title": "Blunt Hepatic Injury",
+        "path": "cases/trauma_04.json",
+        "tags": ["trauma", "hepatic-injury", "nonoperative-management"]
+      },
+      {
+        "id": "trauma_05",
+        "slug": "penetrating-neck-injury",
+        "title": "Penetrating Neck Injury",
+        "path": "cases/trauma_05.json",
+        "tags": ["trauma", "neck-injury", "zone-ii"]
+      },
+      {
+        "id": "trauma_06",
+        "slug": "acute-compartment-syndrome",
+        "title": "Acute Compartment Syndrome",
+        "path": "cases/trauma_06.json",
+        "tags": ["trauma", "compartment-syndrome", "fasciotomy"]
+      },
+      {
+        "id": "trauma_07",
+        "slug": "cardiac-tamponade-from-penetrating-trauma",
+        "title": "Cardiac Tamponade from Penetrating Trauma",
+        "path": "cases/trauma_07.json",
+        "tags": ["trauma", "cardiac-tamponade", "pericardial-window"]
+      },
+      {
+        "id": "trauma_08",
+        "slug": "severe-thermal-burns-with-inhalation-injury",
+        "title": "Severe Thermal Burns with Inhalation Injury",
+        "path": "cases/trauma_08.json",
+        "tags": ["trauma", "burns", "inhalation-injury"]
+      },
+      {
+        "id": "trauma_09",
+        "slug": "traumatic-diaphragmatic-rupture",
+        "title": "Traumatic Diaphragmatic Rupture",
+        "path": "cases/trauma_09.json",
+        "tags": ["trauma", "diaphragmatic-rupture", "blunt-trauma"]
+      },
+      {
+        "id": "trauma_10",
+        "slug": "open-tibial-fracture",
+        "title": "Open Tibial Fracture",
+        "path": "cases/trauma_10.json",
+        "tags": ["trauma", "open-fracture", "orthopedic"]
+      },
+      {
+        "id": "vascular_01",
+        "slug": "acute-limb-ischemia",
+        "title": "Acute Limb Ischemia",
+        "path": "cases/vascular_01.json",
+        "tags": ["vascular", "acute-limb-ischemia", "revascularization"]
+      },
+      {
+        "id": "vascular_02",
+        "slug": "ruptured-abdominal-aortic-aneurysm",
+        "title": "Ruptured Abdominal Aortic Aneurysm",
+        "path": "cases/vascular_02.json",
+        "tags": ["vascular", "AAA", "emergency"]
+      },
+      {
+        "id": "vascular_03",
+        "slug": "carotid-artery-stenosis-with-tia",
+        "title": "Carotid Artery Stenosis with Transient Ischemic Attack",
+        "path": "cases/vascular_03.json",
+        "tags": ["vascular", "carotid-stenosis", "TIA"]
+      },
+      {
+        "id": "vascular_04",
+        "slug": "chronic-limb-ischemia-with-claudication",
+        "title": "Chronic Limb Ischemia with Claudication",
+        "path": "cases/vascular_04.json",
+        "tags": ["vascular", "chronic-ischemia", "claudication"]
+      },
+      {
+        "id": "vascular_05",
+        "slug": "acute-mesenteric-ischemia",
+        "title": "Acute Mesenteric Ischemia",
+        "path": "cases/vascular_05.json",
+        "tags": ["vascular", "mesenteric-ischemia", "acute"]
+      },
+      {
+        "id": "vascular_06",
+        "slug": "deep-venous-thrombosis-with-pulmonary-embolism",
+        "title": "Deep Venous Thrombosis with Pulmonary Embolism",
+        "path": "cases/vascular_06.json",
+        "tags": ["vascular", "DVT", "pulmonary-embolism"]
+      },
+      {
+        "id": "vascular_07",
+        "slug": "thoracic-outlet-syndrome",
+        "title": "Thoracic Outlet Syndrome",
+        "path": "cases/vascular_07.json",
+        "tags": ["vascular", "thoracic-outlet", "neurologic"]
+      },
+      {
+        "id": "vascular_08",
+        "slug": "type-b-aortic-dissection",
+        "title": "Type B Aortic Dissection",
+        "path": "cases/vascular_08.json",
+        "tags": ["vascular", "aortic-dissection", "type-b"]
+      },
+      {
+        "id": "vascular_09",
+        "slug": "dialysis-access-infection",
+        "title": "Dialysis Access Infection",
+        "path": "cases/vascular_09.json",
+        "tags": ["vascular", "dialysis-access", "infection"]
+      },
+      {
+        "id": "vascular_10",
+        "slug": "varicose-veins-with-venous-ulcer",
+        "title": "Varicose Veins with Venous Ulcer",
+        "path": "cases/vascular_10.json",
+        "tags": ["vascular", "varicose-veins", "venous-ulcer"]
+      }
+    ]
+  }
+  

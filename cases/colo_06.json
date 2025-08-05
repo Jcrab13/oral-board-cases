@@ -1,0 +1,198 @@
+{
+  "case_id": "colo_06",
+  "title": "Anal Fissure Not Responding to Conservative Therapy",
+  "diagnosis_topic": "Chronic anal fissure",
+  "tags": [
+    "colorectal",
+    "anal fissure",
+    "anorectal"
+  ],
+  "setup_script": "A 34-year-old man reports severe pain and bleeding during defecation for 3 months. He has tried fiber supplements and topical lidocaine without relief. Examination reveals a posterior midline fissure with sentinel pile and increased sphincter tone.",
+  "dynamic_flow": [
+    {
+      "trigger": "Take focused history on bowel habits, trauma, and risk factors such as constipation or Crohn's disease.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform careful anorectal exam confirming chronic posterior fissure; check for sentinel tag and hypertrophic papilla.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss initial management with fiber, sitz baths, topical nifedipine or diltiazem, and nitroglycerin ointment; ensure patient compliance.",
+      "reply": ""
+    },
+    {
+      "trigger": "Since conservative therapy failed, explain options: botulinum toxin injection versus lateral internal sphincterotomy (LIS).",
+      "reply": ""
+    },
+    {
+      "trigger": "Counsel patient on risks and benefits of LIS, including risk of minor incontinence; obtain informed consent.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange preoperative evaluation and plan for outpatient surgery.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform LIS under regional anesthesia; divide internal sphincter partially to lower pressure while preserving continence.",
+      "reply": ""
+    },
+    {
+      "trigger": "Inspect fissure site for healing potential; avoid overcutting to reduce risk of incontinence.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative management: recommend sitz baths, stool softeners, and analgesia; monitor for urinary retention.",
+      "reply": ""
+    },
+    {
+      "trigger": "Advise patient to maintain high-fiber diet and adequate hydration to prevent recurrence.",
+      "reply": ""
+    },
+    {
+      "trigger": "Schedule follow-up to assess healing and continence; treat any residual fissure with topical agents.",
+      "reply": ""
+    },
+    {
+      "trigger": "Educate patient on warning signs of infection or recurrence requiring reassessment.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Accurate diagnosis of chronic fissure and failure of medical therapy.",
+    "Decision to perform lateral internal sphincterotomy and discussion of risks.",
+    "Proper surgical technique to divide internal sphincter without causing incontinence.",
+    "Postoperative care and pain control.",
+    "Patient education on diet, bowel habits, and follow-up."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider anal fissure or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of anal fissure"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes anal fissure as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including anal fissure and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies anal fissure as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for anal fissure."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for anal fissure but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for anal fissure."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for anal fissure."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This case focused on chronic anal fissure management. Reflect on your escalation from medical to surgical therapy, risk discussion, and meticulous technique during sphincterotomy."
+  }
+}

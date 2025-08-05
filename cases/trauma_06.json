@@ -1,0 +1,198 @@
+{
+  "case_id": "trauma_06",
+  "title": "Acute Compartment Syndrome",
+  "diagnosis_topic": "Compartment syndrome of the leg following tibia fracture",
+  "tags": [
+    "trauma",
+    "extremity",
+    "compartment syndrome"
+  ],
+  "setup_script": "A 23-year-old man sustained a closed mid-shaft tibia fracture while snowboarding. His leg was splinted in the field. He now reports escalating pain despite analgesia and numbness in his foot.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident checks vital signs",
+      "reply": "BP 135/85 mmHg, HR 90 bpm, RR 16/min, Temp 36.8 C."
+    },
+    {
+      "trigger": "If resident assesses the injured leg",
+      "reply": "Tight swollen compartments, pain out of proportion to exam, pain with passive dorsiflexion of the foot, diminished sensation between first and second toes."
+    },
+    {
+      "trigger": "If resident measures compartment pressures",
+      "reply": "Anterior compartment pressure 45 mmHg with diastolic BP 85 mmHg (delta pressure 40 mmHg)."
+    },
+    {
+      "trigger": "If resident removes circumferential dressings and loosens splint",
+      "reply": "Pain briefly improves but remains severe."
+    },
+    {
+      "trigger": "If resident consults orthopedic surgery emergently",
+      "reply": "Taken to OR for four-compartment fasciotomy."
+    },
+    {
+      "trigger": "If resident delays diagnosis or dismisses complaints",
+      "reply": "Patient develops permanent motor deficits and contractures."
+    },
+    {
+      "trigger": "If resident orders analgesics alone without evaluation",
+      "reply": "Pain worsens; sensory deficits progress."
+    },
+    {
+      "trigger": "If resident discusses indications",
+      "reply": "Compartment pressure within 30 mmHg of diastolic BP or classic clinical signs mandate fasciotomy."
+    },
+    {
+      "trigger": "If resident addresses postoperative care",
+      "reply": "Wounds left open with negative pressure dressings; plan for delayed closure or grafting."
+    },
+    {
+      "trigger": "If resident educates patient about risk factors",
+      "reply": "High-energy fractures, reperfusion injury, tight casts increase risk."
+    },
+    {
+      "trigger": "If resident evaluates for rhabdomyolysis",
+      "reply": "Check creatine kinase and renal function; ensure adequate hydration."
+    },
+    {
+      "trigger": "If resident mentions prophylactic fasciotomy in vascular injuries",
+      "reply": "Consider in prolonged ischemia after revascularization."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of compartment syndrome based on clinical signs",
+    "Measurement and interpretation of compartment pressures",
+    "Timely consultation and performance of fasciotomy",
+    "Avoidance of delays that lead to irreversible muscle and nerve damage",
+    "Postoperative wound management and rehabilitation"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider acute compartment syndrome or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of acute compartment syndrome"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes acute compartment syndrome as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including acute compartment syndrome and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies acute compartment syndrome as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for acute compartment syndrome."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for acute compartment syndrome but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for acute compartment syndrome."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for acute compartment syndrome."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You diagnosed compartment syndrome promptly and arranged decompressive fasciotomy. To improve, focus on monitoring at-risk patients closely and discussing the pathophysiology with learners."
+  }
+}

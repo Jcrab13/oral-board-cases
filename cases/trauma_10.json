@@ -1,0 +1,198 @@
+{
+  "case_id": "trauma_10",
+  "title": "Open Tibial Fracture",
+  "diagnosis_topic": "Gustilo grade II open tibia fracture from motorcycle accident",
+  "tags": [
+    "trauma",
+    "orthopedic",
+    "open fracture"
+  ],
+  "setup_script": "A 30-year-old man has a deformed right lower leg after a motorcycle crash. Bone is visible through a wound on the anteromedial shin. He is otherwise healthy.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 130/75 mmHg, HR 98 bpm, RR 18/min, Temp 37 C."
+    },
+    {
+      "trigger": "If resident performs assessment of the extremity",
+      "reply": "5 cm laceration exposing tibial shaft, moderate contamination with dirt, palpable pedal pulses, intact sensation."
+    },
+    {
+      "trigger": "If resident administers IV antibiotics (cefazolin and gentamicin) within one hour",
+      "reply": "Reduces infection risk."
+    },
+    {
+      "trigger": "If resident updates tetanus immunization",
+      "reply": "Tdap given."
+    },
+    {
+      "trigger": "If resident covers wound with sterile saline-soaked dressing and stabilizes with temporary splint",
+      "reply": "Protects tissue and minimizes further injury."
+    },
+    {
+      "trigger": "If resident orders radiographs",
+      "reply": "Comminuted mid-shaft tibial fracture with minimal comminution."
+    },
+    {
+      "trigger": "If resident consults orthopedics for irrigation and debridement",
+      "reply": "Taken to OR within 6 hours for debridement and external fixation."
+    },
+    {
+      "trigger": "If resident delays antibiotics or debridement",
+      "reply": "Risk of osteomyelitis increases significantly."
+    },
+    {
+      "trigger": "If resident discusses Gustilo classification",
+      "reply": "Grade I: <1 cm wound; Grade II: 1-10 cm; Grade III: >10 cm or high energy with severe soft tissue damage."
+    },
+    {
+      "trigger": "If resident asks about definitive fixation",
+      "reply": "Convert to internal fixation after soft tissue condition improves."
+    },
+    {
+      "trigger": "If resident addresses rehabilitation",
+      "reply": "Early range of motion and weight-bearing when safe; physical therapy."
+    },
+    {
+      "trigger": "If resident evaluates for compartment syndrome",
+      "reply": "Monitor pain, sensory changes and pulses postoperatively."
+    }
+  ],
+  "critical_decision_points": [
+    "Early antibiotic administration and tetanus prophylaxis in open fractures",
+    "Soft tissue assessment and Gustilo classification",
+    "Timely irrigation, debridement and stabilization",
+    "Monitoring for infection and compartment syndrome",
+    "Planning for definitive fixation and rehabilitation"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider open tibial fracture or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of open tibial fracture"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes open tibial fracture as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including open tibial fracture and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies open tibial fracture as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for open tibial fracture."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for open tibial fracture but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for open tibial fracture."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for open tibial fracture."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You delivered prompt antibiotics and planned operative debridement appropriately. Continue to refine your understanding of open fracture classification and timing of definitive fixation."
+  }
+}

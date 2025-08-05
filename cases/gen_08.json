@@ -1,0 +1,198 @@
+{
+  "case_id": "gen_08",
+  "title": "Enterocutaneous Fistula",
+  "diagnosis_topic": "Abnormal connection between intestinal lumen and skin surface",
+  "tags": [
+    "general surgery",
+    "fistula",
+    "wound management"
+  ],
+  "setup_script": "A 55-year-old woman develops a draining wound on her abdomen 10 days after a complicated bowel resection for Crohn's disease. The output is high volume and appears like intestinal contents.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 110/70 mmHg, HR 105 bpm, RR 18/min, Temp 38 C."
+    },
+    {
+      "trigger": "If resident examines wound",
+      "reply": "Effluent of 800 mL/day of bilious fluid from midline incision; surrounding skin excoriated and erythematous."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Albumin low at 2.0 g/dL, electrolyte imbalances (low potassium, magnesium), WBC 14 K/uL."
+    },
+    {
+      "trigger": "If resident defines fistula output",
+      "reply": "High output >500 mL/day; determines that sepsis is present due to fever and leukocytosis."
+    },
+    {
+      "trigger": "If resident initiates sepsis control",
+      "reply": "Broad-spectrum antibiotics started, blood cultures drawn and source control achieved with drainage of intra-abdominal abscess if present (CT-guided drainage)."
+    },
+    {
+      "trigger": "If resident manages fistula output",
+      "reply": "NPO, nasogastric decompression and initiation of total parenteral nutrition; consider octreotide to reduce secretion though evidence mixed."
+    },
+    {
+      "trigger": "If resident protects skin",
+      "reply": "Apply stoma appliance or wound manager with barrier creams to prevent excoriation; coordinate with enterostomal therapy nurse."
+    },
+    {
+      "trigger": "If resident evaluates for distal obstruction",
+      "reply": "CT enterography performed to assess for distal obstruction or ongoing disease."
+    },
+    {
+      "trigger": "If fistula fails to close after 3-6 months of optimized nutrition and control",
+      "reply": "Plan for elective surgical resection and anastomosis once inflammation resolved."
+    },
+    {
+      "trigger": "If resident rushes to early surgery",
+      "reply": "High failure and recurrence due to inflamed tissue and malnutrition."
+    },
+    {
+      "trigger": "If resident provides psychological support",
+      "reply": "Discuss emotional impact and involve social work and nutrition services."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of adherence to nutritional plan, skin care and signs of complications like sepsis or electrolyte derangements."
+    }
+  ],
+  "critical_decision_points": [
+    "Assessment of fistula output, sepsis and nutritional status",
+    "Sepsis control and source identification with imaging and drainage",
+    "Optimization of nutrition and fistula management to promote spontaneous closure",
+    "Timing of definitive surgery only after optimization and absence of infection",
+    "Comprehensive wound care and psychosocial support for patient"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider enterocutaneous fistula or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of enterocutaneous fistula"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes enterocutaneous fistula as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including enterocutaneous fistula and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies enterocutaneous fistula as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for enterocutaneous fistula."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for enterocutaneous fistula but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for enterocutaneous fistula."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for enterocutaneous fistula."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You managed the enterocutaneous fistula methodically. To enhance your performance, outline criteria for fistula closure and the timing of surgical intervention in more detail."
+  }
+}

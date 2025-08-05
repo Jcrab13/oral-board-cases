@@ -1,0 +1,198 @@
+{
+  "case_id": "ped_08",
+  "title": "Necrotizing Enterocolitis",
+  "diagnosis_topic": "Intestinal ischemia and inflammation leading to necrosis in preterm neonates",
+  "tags": [
+    "pediatric",
+    "neonatal",
+    "necrotizing enterocolitis"
+  ],
+  "setup_script": "A 30-week premature neonate on day 10 of life develops abdominal distension, feeding intolerance and bloody stools. He was previously on full enteral feeds.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "Temperature instability (35.8 C), HR 175 bpm, episodes of apnea and bradycardia."
+    },
+    {
+      "trigger": "If resident evaluates abdominal exam",
+      "reply": "Distended, shiny abdomen with tenderness and decreased bowel sounds; erythema of abdominal wall may be present."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "CBC shows leukocytosis with left shift or leukopenia, thrombocytopenia; metabolic acidosis and elevated lactate."
+    },
+    {
+      "trigger": "If resident obtains abdominal radiograph",
+      "reply": "Pneumatosis intestinalis and portal venous gas; may see pneumoperitoneum if perforation occurs."
+    },
+    {
+      "trigger": "If resident discontinues enteral feeds and places nasogastric decompression",
+      "reply": "Decompress bowel and prevent further distension."
+    },
+    {
+      "trigger": "If resident initiates broad-spectrum antibiotics (ampicillin, gentamicin, metronidazole)",
+      "reply": "Cover Gram-positive, Gram-negative and anaerobic bacteria."
+    },
+    {
+      "trigger": "If resident provides fluid resuscitation and parenteral nutrition",
+      "reply": "Maintain perfusion and support growth while bowel rests."
+    },
+    {
+      "trigger": "If resident monitors for signs of perforation",
+      "reply": "Clinical deterioration, abdominal wall erythema or pneumoperitoneum necessitate emergent laparotomy."
+    },
+    {
+      "trigger": "If surgery performed",
+      "reply": "Resection of necrotic bowel with creation of ostomy; second-look surgery may be necessary."
+    },
+    {
+      "trigger": "If resident delays recognition",
+      "reply": "Rapid progression to shock, DIC and death."
+    },
+    {
+      "trigger": "If resident discusses long-term complications",
+      "reply": "Short bowel syndrome, strictures and neurodevelopmental delays."
+    },
+    {
+      "trigger": "If resident counsels parents",
+      "reply": "Explain severity, need for prolonged hospitalization and possibility of surgery."
+    }
+  ],
+  "critical_decision_points": [
+    "Early recognition of necrotizing enterocolitis in preterm infants",
+    "Management with bowel rest, gastric decompression and broad-spectrum antibiotics",
+    "Monitoring for and promptly addressing perforation or necrosis requiring surgery",
+    "Supportive care including fluid resuscitation and parenteral nutrition",
+    "Counseling families about prognosis and long-term complications"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider necrotizing enterocolitis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of necrotizing enterocolitis"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes necrotizing enterocolitis as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including necrotizing enterocolitis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies necrotizing enterocolitis as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for necrotizing enterocolitis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for necrotizing enterocolitis but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for necrotizing enterocolitis."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for necrotizing enterocolitis."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You effectively managed necrotizing enterocolitis and recognized indications for surgery. Enhance your performance by communicating long-term outcomes and nutritional strategies with the parents."
+  }
+}

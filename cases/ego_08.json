@@ -1,0 +1,198 @@
+{
+  "case_id": "ego_08",
+  "title": "Paraesophageal Hernia",
+  "diagnosis_topic": "Herniation of stomach alongside the esophagus through the hiatus",
+  "tags": [
+    "esophagogastric",
+    "paraesophageal hernia",
+    "surgery"
+  ],
+  "setup_script": "A 72-year-old woman complains of postprandial chest discomfort, early satiety and occasional dyspnea. She has a history of iron deficiency anemia.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 130/75 mmHg, HR 85 bpm, RR 18/min, Temp 36.9 C."
+    },
+    {
+      "trigger": "If resident orders chest X-ray",
+      "reply": "Retrocardiac air-fluid level suggestive of intrathoracic stomach."
+    },
+    {
+      "trigger": "If resident orders barium swallow",
+      "reply": "Large paraesophageal hernia with the gastric fundus herniated into thorax; minimal gastroesophageal junction displacement."
+    },
+    {
+      "trigger": "If resident performs endoscopy",
+      "reply": "Cameron ulcers present and mild esophagitis; biopsies taken."
+    },
+    {
+      "trigger": "If resident evaluates lab tests",
+      "reply": "Iron deficiency anemia with ferritin 10 ng/mL; stool occult blood positive."
+    },
+    {
+      "trigger": "If resident discusses indications for surgery",
+      "reply": "Symptomatic paraesophageal hernia with anemia and potential for volvulus; recommend surgical repair."
+    },
+    {
+      "trigger": "If resident plans laparoscopic reduction, hernia sac excision, crural repair and fundoplication",
+      "reply": "Describes steps including mesh reinforcement if large defect."
+    },
+    {
+      "trigger": "If resident delays surgery",
+      "reply": "Risk of gastric volvulus, strangulation, bleeding and aspiration pneumonia increases."
+    },
+    {
+      "trigger": "If resident performs preoperative manometry",
+      "reply": "Confirms normal esophageal motility; guides fundoplication choice (Nissen vs. Toupet)."
+    },
+    {
+      "trigger": "If resident outlines postoperative care",
+      "reply": "Gradual diet progression, small frequent meals, monitor for dysphagia or gas bloat syndrome."
+    },
+    {
+      "trigger": "If patient is asymptomatic with small hernia",
+      "reply": "Watchful waiting may be reasonable; counsel on warning signs."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of iron supplementation until surgery and follow-up to monitor for recurrence."
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis of paraesophageal hernia using imaging and endoscopy",
+    "Recognition of indications for surgical repair including symptoms and complications",
+    "Components of laparoscopic hernia repair and fundoplication",
+    "Preoperative assessment of esophageal motility and postoperative dietary modifications",
+    "Risks of watchful waiting versus surgery and patient counseling"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider paraesophageal hernia or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of paraesophageal hernia"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes paraesophageal hernia as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including paraesophageal hernia and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies paraesophageal hernia as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for paraesophageal hernia."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for paraesophageal hernia but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for paraesophageal hernia."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for paraesophageal hernia."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You appropriately recommended surgical repair for symptomatic paraesophageal hernia. Continue to develop your understanding of operative techniques and management of postoperative complications."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "case_id": "vascular_02",
+  "title": "Ruptured Abdominal Aortic Aneurysm",
+  "diagnosis_topic": "Hemorrhagic shock from ruptured infrarenal AAA",
+  "tags": [
+    "vascular",
+    "aneurysm",
+    "rupture"
+  ],
+  "setup_script": "A 72-year-old man with a history of smoking and hypertension collapses at home. EMS finds him pale, diaphoretic and complaining of severe back and abdominal pain. He arrives hypotensive and tachycardic.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vitals",
+      "reply": "BP 80/50 mmHg, HR 120 bpm, RR 24/min, Temp 36.5 C, SpO2 95%."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Pulsatile abdominal mass, cool extremities, abdomen tender to palpation; no peritonitis but severe discomfort."
+    },
+    {
+      "trigger": "If resident initiates two large-bore IVs and transfusion",
+      "reply": "BP improves to 90/60 mmHg after 1 unit PRBC."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Type and crossmatch, CBC shows Hgb 9 g/dL, BMP normal, lactate 5 mmol/L."
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "Focused bedside US reveals large infrarenal aneurysm with free fluid; CT angiography is not feasible due to hemodynamic instability."
+    },
+    {
+      "trigger": "If resident consults vascular surgery and activates OR",
+      "reply": "Patient taken for emergent open repair or EVAR based on anatomy."
+    },
+    {
+      "trigger": "If resident delays to obtain CT",
+      "reply": "Patient arrests from exsanguination."
+    },
+    {
+      "trigger": "If resident asks about permissive hypotension",
+      "reply": "Maintain systolic 80-90 mmHg to avoid dislodging clot prior to control."
+    },
+    {
+      "trigger": "If resident inquires about aortic cross-clamping",
+      "reply": "Supracoeliac clamping may be needed to control bleeding."
+    },
+    {
+      "trigger": "If resident asks about postoperative care",
+      "reply": "ICU with aggressive monitoring, renal perfusion management and risk of abdominal compartment syndrome."
+    },
+    {
+      "trigger": "If resident asks about risk factors",
+      "reply": "Age, smoking, hypertension, male sex; screening recommended for certain populations."
+    },
+    {
+      "trigger": "If resident discusses EVAR vs. open",
+      "reply": "EVAR preferable if anatomy allows and resources available; open repair is definitive."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of ruptured AAA as surgical emergency",
+    "Resuscitation with permissive hypotension and blood products",
+    "Avoiding delays for diagnostic imaging",
+    "Rapid coordination with vascular surgery team for repair",
+    "Postoperative critical care considerations"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider ruptured abdominal aortic aneurysm or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of ruptured abdominal aortic aneurysm"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes ruptured abdominal aortic aneurysm as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including ruptured abdominal aortic aneurysm and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies ruptured abdominal aortic aneurysm as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for ruptured abdominal aortic aneurysm."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for ruptured abdominal aortic aneurysm but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for ruptured abdominal aortic aneurysm."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for ruptured abdominal aortic aneurysm."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "During the ruptured AAA case you demonstrated [strengths] such as rapid call to the OR. To improve, focus on balancing resuscitation with permissive hypotension and minimizing diagnostic delay."
+  }
+}

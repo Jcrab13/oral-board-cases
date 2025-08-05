@@ -1,0 +1,198 @@
+{
+  "case_id": "breast_05",
+  "title": "Triple-Negative Invasive Ductal Carcinoma",
+  "diagnosis_topic": "Stage II triple-negative breast cancer",
+  "tags": [
+    "breast",
+    "triple negative",
+    "chemotherapy"
+  ],
+  "setup_script": "A 38-year-old woman discovers a 3 cm firm mass in the right upper inner quadrant. Core biopsy reveals grade 3 invasive ductal carcinoma that is triple negative (ER-/PR-/HER2-). Sentinel lymph node biopsy shows 1 of 3 positive nodes.",
+  "dynamic_flow": [
+    {
+      "trigger": "Review patient history including reproductive factors, genetic risk, and prior breast disease; perform complete exam.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order staging workup: bilateral mammography, breast MRI, and CT chest/abdomen/pelvis to rule out metastasis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss aggressive nature of triple-negative breast cancer (TNBC) and importance of systemic chemotherapy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Refer to medical oncology; plan neoadjuvant chemotherapy (anthracycline and taxane based) to downstage tumor.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor tumor response clinically and with imaging during treatment.",
+      "reply": ""
+    },
+    {
+      "trigger": "After completion of chemotherapy, reassess for breast conserving surgery versus mastectomy; consider genetic testing (BRCA1/2).",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan for lumpectomy with axillary sampling or completion axillary dissection depending on nodal involvement; discuss reconstruction if mastectomy chosen.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain informed consent; explain risk of recurrence and benefit of radiation therapy following breast conserving surgery.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform surgery with adequate margins; send sentinel nodes for pathology; proceed to axillary dissection if indicated.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative care: manage wound, drains, and lymphedema prevention; refer to physical therapy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Resume systemic therapy if indicated and arrange adjuvant radiation to the breast and regional nodes.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan surveillance and discuss lifestyle changes; provide genetic counseling and psychosocial support.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Understanding aggressive nature of TNBC and importance of neoadjuvant chemotherapy.",
+    "Deciding between lumpectomy and mastectomy after tumor response and genetic considerations.",
+    "Appropriate axillary management and reconstruction options.",
+    "Postoperative care including lymphedema prevention and radiation therapy.",
+    "Provision of genetic counseling and survivorship planning."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider triple-negative breast cancer or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of triple-negative breast cancer"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes triple-negative breast cancer as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including triple-negative breast cancer and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies triple-negative breast cancer as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for triple-negative breast cancer."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for triple-negative breast cancer but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for triple-negative breast cancer."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for triple-negative breast cancer."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You were assessed on management of TNBC, including neoadjuvant therapy, surgical decision-making, and adjuvant care. Reflect on your risk assessment, coordination of care, and discussion of genetic testing."
+  }
+}

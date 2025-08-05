@@ -1,0 +1,198 @@
+{
+  "case_id": "endo_01",
+  "title": "Palpable Thyroid Nodule with Suspicious Ultrasound",
+  "diagnosis_topic": "Papillary thyroid carcinoma workup",
+  "tags": [
+    "endocrine",
+    "thyroid nodule",
+    "oncologic surgery"
+  ],
+  "setup_script": "You are the on-call surgeon in a community hospital. A 45-year-old woman presents to clinic with a 2 cm thyroid nodule found on routine physical. She has no compressive symptoms. Ultrasound shows a hypoechoic nodule with microcalcifications in the right lobe and abnormal cervical lymph nodes. Her thyroid function tests are normal.",
+  "dynamic_flow": [
+    {
+      "trigger": "Discuss importance of history (radiation exposure, family history) and physical exam for thyroid nodules.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order complete thyroid function tests and neck ultrasound, confirming features suspicious for malignancy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Explain role of fine-needle aspiration biopsy (FNAB) and request cytology on nodule and suspicious lymph node.",
+      "reply": ""
+    },
+    {
+      "trigger": "Cytology returns as Bethesda VI (papillary carcinoma) with metastatic lymph node; counsel patient on diagnosis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review ATA guidelines for risk stratification and staging; discuss need for total thyroidectomy vs lobectomy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Decide on total thyroidectomy with central neck dissection given nodal disease; obtain preoperative vocal cord exam.",
+      "reply": ""
+    },
+    {
+      "trigger": "Explain surgical risks: recurrent laryngeal nerve injury, hypocalcemia, bleeding; obtain informed consent.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan perioperative management including referral to anesthesiology, optimization of comorbidities, and discussing postoperative hormone replacement.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform surgery; intraoperative finding of gross nodal disease prompts comprehensive central compartment dissection.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative management: monitor calcium, voice, wound; prescribe levothyroxine and consider radioactive iodine therapy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss pathology results with patient, including margins and number of positive nodes; arrange oncology referral.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan long-term follow-up with thyroglobulin monitoring and ultrasound; educate on symptoms of hypocalcemia and hypothyroidism.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Recognizing ultrasound features of malignancy and ordering FNAB.",
+    "Appropriate decision for total thyroidectomy versus lobectomy based on tumor size and nodal disease.",
+    "Safe operative technique protecting parathyroid glands and recurrent laryngeal nerves.",
+    "Postoperative calcium monitoring and hormone replacement therapy.",
+    "Counseling on long-term surveillance and need for oncology referral."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider papillary thyroid carcinoma workup or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of papillary thyroid carcinoma workup"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes papillary thyroid carcinoma workup as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including papillary thyroid carcinoma workup and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies papillary thyroid carcinoma workup as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for papillary thyroid carcinoma workup."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for papillary thyroid carcinoma workup but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for papillary thyroid carcinoma workup."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for papillary thyroid carcinoma workup."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This case assesses your evaluation of a suspicious thyroid nodule. You should have obtained a focused history and ultrasound features, ordered FNAB, interpreted Bethesda results, and recommended appropriate extent of surgery. We also looked for clear communication of risks, operative steps, and postoperative care. Please reflect on how you counseled the patient about treatment options and long-term surveillance."
+  }
+}

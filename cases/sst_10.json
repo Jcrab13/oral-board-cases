@@ -1,0 +1,198 @@
+{
+  "case_id": "sst_10",
+  "title": "Chronic Pressure Ulcer",
+  "diagnosis_topic": "Sacral pressure injury in immobile elderly patient",
+  "tags": [
+    "skin",
+    "chronic wound",
+    "pressure ulcer"
+  ],
+  "setup_script": "An 80-year-old woman residing in a nursing home is brought in for evaluation of a sacral ulcer that has not healed over two months. She is bedbound and has dementia.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews vital signs",
+      "reply": "BP 130/70 mmHg, HR 88 bpm, RR 18/min, Temp 37.3 C."
+    },
+    {
+      "trigger": "If resident examines the ulcer",
+      "reply": "4 cm x 5 cm ulcer over sacrum with exposed subcutaneous fat (stage III) and minimal exudate; surrounding skin macerated."
+    },
+    {
+      "trigger": "If resident evaluates risk factors",
+      "reply": "Prolonged immobility, incontinence, poor nutritional status and cognitive impairment identified."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Albumin 2.5 g/dL, prealbumin low; mild anemia."
+    },
+    {
+      "trigger": "If resident initiates pressure offloading",
+      "reply": "Recommend repositioning every 2 hours, use of pressure-relieving mattress and avoidance of friction/shear."
+    },
+    {
+      "trigger": "If resident arranges debridement of necrotic tissue",
+      "reply": "Sharp debridement performed; wound cleaned and dressed appropriately."
+    },
+    {
+      "trigger": "If resident starts topical therapy",
+      "reply": "Apply moist dressings such as hydrocolloid or foam; avoid cytotoxic agents."
+    },
+    {
+      "trigger": "If resident treats infection",
+      "reply": "Cultures obtained if signs of infection; systemic antibiotics started for osteomyelitis if bone involvement suspected."
+    },
+    {
+      "trigger": "If resident consults nutrition",
+      "reply": "High-protein, high-calorie diet and vitamin supplementation recommended; consider tube feeding if inadequate oral intake."
+    },
+    {
+      "trigger": "If resident considers surgical flap coverage",
+      "reply": "For stage III/IV ulcers failing conservative therapy, referral to plastic surgery for flap closure discussed."
+    },
+    {
+      "trigger": "If resident educates staff and caregivers",
+      "reply": "Importance of repositioning, skin inspection and hygiene emphasized."
+    },
+    {
+      "trigger": "If resident monitors progress",
+      "reply": "Regular assessment of ulcer size, depth and signs of healing or deterioration documented."
+    }
+  ],
+  "critical_decision_points": [
+    "Comprehensive assessment and staging of pressure ulcers",
+    "Identification and correction of contributing factors (pressure, moisture, nutrition)",
+    "Appropriate debridement and topical wound management",
+    "Recognition and treatment of infection and osteomyelitis",
+    "Consideration of surgical closure and prevention strategies"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider chronic pressure ulcer or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of chronic pressure ulcer"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes chronic pressure ulcer as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including chronic pressure ulcer and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies chronic pressure ulcer as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for chronic pressure ulcer."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for chronic pressure ulcer but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for chronic pressure ulcer."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for chronic pressure ulcer."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You provided thorough care for a chronic pressure ulcer. Future focus should include interdisciplinary coordination with nursing and nutrition services to optimize prevention and healing."
+  }
+}

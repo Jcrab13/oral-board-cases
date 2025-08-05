@@ -1,0 +1,198 @@
+{
+  "case_id": "ped_09",
+  "title": "Anorectal Malformation",
+  "diagnosis_topic": "Imperforate anus with fistula requiring staged repair",
+  "tags": [
+    "pediatric",
+    "congenital",
+    "anorectal malformation"
+  ],
+  "setup_script": "A newborn boy has no visible anal opening. He has not passed stool but voids normally. There is a distended abdomen and meconium appears at the urethral meatus.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses vital signs",
+      "reply": "HR 150 bpm, RR 40/min, Temp 37.2 C; stable."
+    },
+    {
+      "trigger": "If resident performs perineal exam",
+      "reply": "Absence of anal opening; meconium noted at urethral meatus suggesting rectourethral fistula."
+    },
+    {
+      "trigger": "If resident orders cross-table prone lateral X-ray at 24 hours",
+      "reply": "Determines distance between rectal pouch and perineal skin (high vs. low lesion)."
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "Renal ultrasound, echocardiogram and spinal ultrasound to look for VACTERL association."
+    },
+    {
+      "trigger": "If resident keeps patient NPO and places replogle tube for gastric decompression",
+      "reply": "Prevents aspiration and abdominal distension."
+    },
+    {
+      "trigger": "If resident discusses surgical management",
+      "reply": "High malformation: diverting colostomy with mucous fistula followed by posterior sagittal anorectoplasty (PSARP) at 3-6 months; low malformation: primary perineal anoplasty soon after birth."
+    },
+    {
+      "trigger": "If resident counsels parents on colostomy care",
+      "reply": "Demonstrate stoma care and signs of complications."
+    },
+    {
+      "trigger": "If resident delays creation of colostomy in high lesion",
+      "reply": "Risk of perforation and sepsis increases."
+    },
+    {
+      "trigger": "If resident addresses urinary tract evaluation",
+      "reply": "Voiding cystourethrogram to define fistula and ensure renal function."
+    },
+    {
+      "trigger": "If resident discusses postoperative complications",
+      "reply": "Constipation, soiling and strictures; requires bowel management program and dilatations."
+    },
+    {
+      "trigger": "If resident coordinates multidisciplinary care",
+      "reply": "Involve urology, nephrology, gastroenterology and physical therapy."
+    },
+    {
+      "trigger": "If resident provides long-term follow-up plan",
+      "reply": "Continence assessments throughout childhood and support for psychosocial issues."
+    }
+  ],
+  "critical_decision_points": [
+    "Identification of anorectal malformation and associated fistula",
+    "Workup for other congenital anomalies",
+    "Staged surgical management based on lesion level",
+    "Parental education on colostomy care and postoperative expectations",
+    "Long-term bowel management and multidisciplinary follow-up"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider anorectal malformation or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of anorectal malformation"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes anorectal malformation as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including anorectal malformation and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies anorectal malformation as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for anorectal malformation."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for anorectal malformation but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for anorectal malformation."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for anorectal malformation."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You formulated an appropriate plan for the anorectal malformation. Continue to refine your counseling on colostomy care and long-term functional outcomes."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "case_id": "ego_10",
+  "title": "Caustic Ingestion Injury",
+  "diagnosis_topic": "Chemical injury to the esophagus and stomach after ingestion of corrosive agents",
+  "tags": [
+    "esophagogastric",
+    "caustic ingestion",
+    "emergency"
+  ],
+  "setup_script": "A 25-year-old woman ingested an unknown quantity of drain cleaner in a suicide attempt. She has odynophagia and drooling upon arrival.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses airway",
+      "reply": "Stridor and hoarseness present; prepare for early intubation to secure airway before edema progresses."
+    },
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 115/75 mmHg, HR 105 bpm, RR 24/min, Temp 37.1 C."
+    },
+    {
+      "trigger": "If resident avoids inducing emesis or inserting NG tube blindly",
+      "reply": "Prevent further injury to the esophagus and stomach."
+    },
+    {
+      "trigger": "If resident establishes IV access, keeps patient NPO and administers IV fluids",
+      "reply": "Stabilizes patient; analgesia provided."
+    },
+    {
+      "trigger": "If resident orders chest and abdominal X-ray",
+      "reply": "No free air suggesting perforation; consider CT scan if perforation suspected."
+    },
+    {
+      "trigger": "If resident arranges endoscopy within 12-24 hours",
+      "reply": "Evaluates extent of injury using Zargar classification; avoids endoscopy if airway unstable or suspicion of perforation."
+    },
+    {
+      "trigger": "If injury is grade I-II",
+      "reply": "Supportive care with IV PPI, sucralfate and gradual advancement of diet; steroids controversial and not routinely recommended."
+    },
+    {
+      "trigger": "If injury is grade III or perforation present",
+      "reply": "Surgical intervention with esophagectomy or gastrectomy and mediastinal drainage; broad-spectrum antibiotics started."
+    },
+    {
+      "trigger": "If resident initiates psychiatric evaluation",
+      "reply": "Assess suicide risk and arrange mental health support."
+    },
+    {
+      "trigger": "If resident delays airway management",
+      "reply": "Risk of sudden airway compromise due to edema increases."
+    },
+    {
+      "trigger": "If resident plans long-term follow-up",
+      "reply": "Monitor for esophageal strictures requiring dilation and increased risk of squamous cell carcinoma; regular surveillance endoscopy recommended."
+    },
+    {
+      "trigger": "If resident educates family",
+      "reply": "Importance of safe storage of caustic substances and awareness of poisoning hotline resources."
+    }
+  ],
+  "critical_decision_points": [
+    "Immediate airway assessment and avoidance of inducing emesis in caustic ingestion",
+    "Early endoscopic evaluation to grade mucosal injury",
+    "Supportive care for minor burns and surgical intervention for deep or perforated injuries",
+    "Need for psychiatric evaluation and family education on prevention",
+    "Long-term surveillance for strictures and malignancy"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider caustic ingestion injury or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of caustic ingestion injury"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes caustic ingestion injury as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including caustic ingestion injury and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies caustic ingestion injury as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for caustic ingestion injury."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for caustic ingestion injury but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for caustic ingestion injury."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for caustic ingestion injury."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You prioritized airway management and appropriate evaluation in caustic ingestion. Continue to strengthen knowledge of injury grading and long-term monitoring for complications."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "case_id": "ego_06",
+  "title": "Barrett's Esophagus with High-Grade Dysplasia",
+  "diagnosis_topic": "Premalignant change in distal esophagus with high-grade dysplasia",
+  "tags": [
+    "esophagogastric",
+    "Barrett's esophagus",
+    "dysplasia"
+  ],
+  "setup_script": "A 48-year-old man with chronic gastroesophageal reflux disease undergoes surveillance endoscopy, which reveals a segment of salmon-colored mucosa. Biopsies show high-grade dysplasia.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident confirms pathology",
+      "reply": "Histology reviewed by two independent pathologists confirming high-grade dysplasia without invasive carcinoma."
+    },
+    {
+      "trigger": "If resident discusses management options",
+      "reply": "Endoscopic eradication therapy including endoscopic mucosal resection (EMR) for visible lesions followed by radiofrequency ablation (RFA) versus esophagectomy for extensive disease or multifocal high-grade dysplasia."
+    },
+    {
+      "trigger": "If resident evaluates patient's surgical risk",
+      "reply": "Low comorbidity; thus endoscopic therapy preferred due to lower morbidity."
+    },
+    {
+      "trigger": "If resident performs EMR on nodular areas",
+      "reply": "Resection specimen sent for pathology to rule out invasive cancer; RFA performed on remaining Barrett's segment."
+    },
+    {
+      "trigger": "If resident schedules surveillance endoscopy",
+      "reply": "Every 3 months in first year then every 6 months for the next year to detect recurrence."
+    },
+    {
+      "trigger": "If resident prescribes high-dose proton pump inhibitors",
+      "reply": "Essential to heal mucosa and prevent acid exposure; consider fundoplication if refractory."
+    },
+    {
+      "trigger": "If resident delays treatment",
+      "reply": "Risk of progression to adenocarcinoma increases substantially."
+    },
+    {
+      "trigger": "If esophagectomy chosen",
+      "reply": "Ivor Lewis or transhiatal approach based on surgeon experience; reserved for extensive or recurrent dysplasia."
+    },
+    {
+      "trigger": "If resident discusses lifestyle changes",
+      "reply": "Weight loss, smoking cessation, avoidance of alcohol and triggering foods."
+    },
+    {
+      "trigger": "If resident addresses H. pylori",
+      "reply": "Eradication does not affect Barrett's but may influence gastric cancer risk."
+    },
+    {
+      "trigger": "If resident explains pathogenesis",
+      "reply": "Chronic acid exposure leads to intestinal metaplasia and dysplasia, increasing cancer risk."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of adherence to surveillance schedule and acid suppression therapy."
+    }
+  ],
+  "critical_decision_points": [
+    "Confirmation of high-grade dysplasia by expert pathology",
+    "Selection of endoscopic eradication therapy versus surgical esophagectomy",
+    "Importance of acid suppression and lifestyle modification",
+    "Close surveillance to detect recurrence or progression",
+    "Patient education on risk of progression and need for adherence"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider barrett's esophagus with high-grade dysplasia or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of barrett's esophagus with high-grade dysplasia"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes barrett's esophagus with high-grade dysplasia as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including barrett's esophagus with high-grade dysplasia and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies barrett's esophagus with high-grade dysplasia as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for barrett's esophagus with high-grade dysplasia."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for barrett's esophagus with high-grade dysplasia but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for barrett's esophagus with high-grade dysplasia."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for barrett's esophagus with high-grade dysplasia."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You managed high-grade dysplasia appropriately with endoscopic therapy and surveillance. Strengthen your approach by discussing indications for esophagectomy and the role of fundoplication after ablation."
+  }
+}

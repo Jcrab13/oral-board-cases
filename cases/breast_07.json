@@ -1,0 +1,198 @@
+{
+  "case_id": "breast_07",
+  "title": "Recurrent Breast Cyst Requiring Evaluation",
+  "diagnosis_topic": "Fibrocystic change with complex cyst",
+  "tags": [
+    "breast",
+    "cyst",
+    "evaluation"
+  ],
+  "setup_script": "A 40-year-old woman has recurrent painful cysts in the right breast. Ultrasound now reveals a 2.5 cm complex cyst with internal echoes and septations. She has no family history of cancer.",
+  "dynamic_flow": [
+    {
+      "trigger": "Take history of cyclical breast pain, hormonal influences, and previous cyst aspirations; perform clinical breast exam.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order diagnostic mammography and targeted ultrasound to characterize the complex cyst.",
+      "reply": ""
+    },
+    {
+      "trigger": "Recognize that complex cysts warrant further evaluation due to risk of malignancy; plan for ultrasound-guided aspiration and cytology.",
+      "reply": ""
+    },
+    {
+      "trigger": "If fluid is clear and cyst resolves, reassure patient; send fluid for cytology if bloody or turbid.",
+      "reply": ""
+    },
+    {
+      "trigger": "If cyst recurs rapidly or contains solid components, arrange core needle biopsy to exclude intracystic carcinoma or papillary lesion.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss possibility of excisional biopsy if pathology is atypical or if symptoms persist.",
+      "reply": ""
+    },
+    {
+      "trigger": "Provide education on benign fibrocystic changes and reassure about low cancer risk with simple cysts.",
+      "reply": ""
+    },
+    {
+      "trigger": "Encourage regular screening mammography appropriate for age and risk factors.",
+      "reply": ""
+    },
+    {
+      "trigger": "Manage pain with NSAIDs, evening primrose oil, or hormonal modulation if severe.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor cysts with follow-up ultrasound in 6 months if benign features remain.",
+      "reply": ""
+    },
+    {
+      "trigger": "Address patient anxiety and provide resources for support.",
+      "reply": ""
+    },
+    {
+      "trigger": "Document findings and communicate with primary care provider for integrated care.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate imaging and recognition of complex cyst requiring further evaluation.",
+    "Decision for aspiration versus core biopsy based on cyst characteristics.",
+    "Management of recurrent or atypical cysts with excision.",
+    "Patient education and reassurance about benign breast changes.",
+    "Ongoing surveillance and pain management."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider breast cyst or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of breast cyst"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes breast cyst as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including breast cyst and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies breast cyst as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for breast cyst."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for breast cyst but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for breast cyst."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for breast cyst."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your ability to evaluate a complex breast cyst and plan appropriate interventions was assessed. Reflect on your use of imaging, aspiration, biopsy decisions, and patient reassurance."
+  }
+}

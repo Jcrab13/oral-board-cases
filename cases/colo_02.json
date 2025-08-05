@@ -1,0 +1,198 @@
+{
+  "case_id": "colo_02",
+  "title": "Perforated Diverticulitis with Pericolic Abscess",
+  "diagnosis_topic": "Hinchey II acute diverticulitis",
+  "tags": [
+    "colorectal",
+    "diverticulitis",
+    "abscess"
+  ],
+  "setup_script": "A 58-year-old woman presents with left lower quadrant pain, fever, and leukocytosis. CT scan shows sigmoid diverticulitis with a 4 cm pericolic abscess (Hinchey II) and no free air.",
+  "dynamic_flow": [
+    {
+      "trigger": "Assess severity of abdominal pain, fever, and previous episodes of diverticulitis; review comorbidities.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform physical exam; note localized tenderness without diffuse peritonitis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order labs (CBC, CMP, lactate) and CT to classify disease; identify pericolic abscess.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss management options: antibiotics alone, percutaneous drainage, or urgent surgery depending on size and response.",
+      "reply": ""
+    },
+    {
+      "trigger": "Initiate IV antibiotics and fluids; consult interventional radiology for percutaneous abscess drainage.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform percutaneous drainage under CT guidance; send fluid for culture and sensitivity.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor patient for improvement; repeat imaging to assess resolution; continue antibiotics for 7-10 days.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan elective sigmoid resection after inflammation subsides due to complicated diverticulitis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss options for laparoscopy versus open surgery and primary anastomosis versus Hartmann's procedure.",
+      "reply": ""
+    },
+    {
+      "trigger": "At elective surgery, perform sigmoidectomy with primary colorectal anastomosis and protective diverting loop ileostomy if risk factors present.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative care: manage stoma, monitor for anastomotic leak, and gradually advance diet.",
+      "reply": ""
+    },
+    {
+      "trigger": "Provide education on diverticular disease prevention (high-fiber diet), follow-up colonoscopy, and stoma reversal timing.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate classification of diverticulitis severity using Hinchey system.",
+    "Decision for percutaneous drainage versus immediate surgery based on abscess size and patient stability.",
+    "Timing of elective sigmoidectomy and choice of anastomosis with or without diversion.",
+    "Monitoring for complications post drainage and surgery.",
+    "Patient education about lifestyle modifications and surveillance colonoscopy."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider perforated diverticulitis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of perforated diverticulitis"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes perforated diverticulitis as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including perforated diverticulitis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies perforated diverticulitis as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for perforated diverticulitis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for perforated diverticulitis but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for perforated diverticulitis."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for perforated diverticulitis."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You should have recognized complicated diverticulitis with abscess and appropriately chosen percutaneous drainage followed by elective resection. Reflect on the timing of surgery, use of protective stoma, and patient counseling."
+  }
+}

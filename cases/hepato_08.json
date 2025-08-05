@@ -1,0 +1,198 @@
+{
+  "case_id": "hepato_08",
+  "title": "Variceal Upper Gastrointestinal Bleeding",
+  "diagnosis_topic": "Esophageal or gastric variceal hemorrhage secondary to portal hypertension",
+  "tags": [
+    "hepatobiliary",
+    "portal hypertension",
+    "variceal bleeding"
+  ],
+  "setup_script": "A 54-year-old man with known alcoholic cirrhosis presents with large volume hematemesis and melena. He is hypotensive and confused.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 85/50 mmHg, HR 120 bpm, RR 24/min, Temp 36.8 C."
+    },
+    {
+      "trigger": "If resident secures airway",
+      "reply": "Patient is altered with poor gag reflex; intubate for airway protection and resuscitation."
+    },
+    {
+      "trigger": "If resident initiates fluid resuscitation and transfusion",
+      "reply": "Two large-bore IVs placed; transfuse packed RBCs aiming for Hgb 7-8 g/dL."
+    },
+    {
+      "trigger": "If resident starts vasoactive therapy",
+      "reply": "Octreotide infusion started to reduce portal pressure."
+    },
+    {
+      "trigger": "If resident administers prophylactic antibiotics",
+      "reply": "Ceftriaxone 1 g IV to prevent infection and rebleeding."
+    },
+    {
+      "trigger": "If resident places nasogastric tube",
+      "reply": "Large clots aspirated; confirms upper GI source."
+    },
+    {
+      "trigger": "If resident coordinates emergent endoscopy",
+      "reply": "Gastroenterologist performs endoscopic variceal band ligation of bleeding varices."
+    },
+    {
+      "trigger": "If endoscopic control fails",
+      "reply": "Balloon tamponade or TIPS (transjugular intrahepatic portosystemic shunt) considered as rescue therapy."
+    },
+    {
+      "trigger": "If resident delays treatment",
+      "reply": "Patient may exsanguinate or develop aspiration pneumonia."
+    },
+    {
+      "trigger": "If resident evaluates for hepatic encephalopathy",
+      "reply": "Start lactulose if mental status deteriorates after bleeding controlled."
+    },
+    {
+      "trigger": "If resident discusses secondary prophylaxis",
+      "reply": "Non-selective beta blockers and repeat banding sessions to prevent rebleeding."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Abstinence from alcohol and referral to transplant center for evaluation."
+    }
+  ],
+  "critical_decision_points": [
+    "Airway protection and resuscitation in variceal hemorrhage",
+    "Use of vasoactive agents and prophylactic antibiotics",
+    "Prompt endoscopic intervention with banding or sclerotherapy",
+    "Rescue therapy with balloon tamponade or TIPS when endoscopy fails",
+    "Post-bleed management including secondary prophylaxis and transplant evaluation"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider variceal upper gastrointestinal bleeding or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of variceal upper gastrointestinal bleeding"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes variceal upper gastrointestinal bleeding as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including variceal upper gastrointestinal bleeding and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies variceal upper gastrointestinal bleeding as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for variceal upper gastrointestinal bleeding."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for variceal upper gastrointestinal bleeding but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for variceal upper gastrointestinal bleeding."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for variceal upper gastrointestinal bleeding."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You managed variceal bleeding effectively with airway protection, octreotide and endoscopic therapy. Continue to improve by discussing transplant evaluation and long-term prophylaxis."
+  }
+}

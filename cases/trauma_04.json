@@ -1,0 +1,199 @@
+{
+  "case_id": "trauma_04",
+  "title": "Blunt Hepatic Injury",
+  "diagnosis_topic": "Grade III liver laceration from blunt abdominal trauma",
+  "tags": [
+    "trauma",
+    "liver",
+    "blunt injury",
+    "nonoperative management"
+  ],
+  "setup_script": "A 22-year-old woman is brought in after a high-speed car crash. She was the restrained driver and denies loss of consciousness. She complains of right upper quadrant abdominal pain but is hemodynamically stable.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 120/78 mmHg, HR 92 bpm, RR 20/min, Temp 37 C, SpO2 99%."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Mild tenderness in the right upper quadrant without rebound or guarding."
+    },
+    {
+      "trigger": "If resident orders FAST exam",
+      "reply": "Positive fluid in Morrison's pouch but patient remains stable."
+    },
+    {
+      "trigger": "If resident orders CT scan with IV contrast",
+      "reply": "Grade III laceration of liver with contained subcapsular hematoma; no other injuries."
+    },
+    {
+      "trigger": "If resident initiates observation in ICU with serial exams and hematocrit checks",
+      "reply": "Patient remains stable; no drop in Hgb after 6 hours."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Hgb 12.5 g/dL, platelets 210 K/uL, liver enzymes mildly elevated."
+    },
+    {
+      "trigger": "If resident consults interventional radiology",
+      "reply": "Not needed unless active arterial blush or hemodynamic instability develops."
+    },
+    {
+      "trigger": "If resident prematurely sends patient home",
+      "reply": "Patient returns in shock from delayed hemorrhage."
+    },
+    {
+      "trigger": "If resident asks about non-operative management criteria",
+      "reply": "Hemodynamic stability, lack of peritonitis, transfusion < 2 units."
+    },
+    {
+      "trigger": "If resident discusses activity restrictions",
+      "reply": "Bed rest initially, then limited activity for 6 weeks with follow-up imaging."
+    },
+    {
+      "trigger": "If resident monitors for complications",
+      "reply": "Watch for biliary leak, hemobilia or abscess formation."
+    },
+    {
+      "trigger": "If resident counsels regarding seat belt use and traffic safety",
+      "reply": "Emphasize prevention strategies."
+    }
+  ],
+  "critical_decision_points": [
+    "Assessment of blunt abdominal trauma with focus on hepatic injury",
+    "Appropriate use of FAST and CT imaging",
+    "Criteria for non-operative management of liver injuries",
+    "Monitoring and recognizing delayed hemorrhage or complications",
+    "Counseling on activity restrictions and follow-up"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider blunt hepatic injury or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of blunt hepatic injury"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes blunt hepatic injury as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including blunt hepatic injury and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies blunt hepatic injury as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for blunt hepatic injury."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for blunt hepatic injury but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for blunt hepatic injury."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for blunt hepatic injury."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You correctly selected non-operative management for a stable hepatic injury. Improvement areas include vigilant monitoring for delayed complications and patient education on recovery."
+  }
+}

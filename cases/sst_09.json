@@ -1,0 +1,198 @@
+{
+  "case_id": "sst_09",
+  "title": "Fournier's Gangrene",
+  "diagnosis_topic": "Life-threatening necrotizing infection of the perineum",
+  "tags": [
+    "skin",
+    "necrotizing infection",
+    "Fournier's gangrene"
+  ],
+  "setup_script": "A 55-year-old man with diabetes and alcohol use disorder presents with scrotal pain and swelling for two days. He is febrile and appears ill; foul odor emanates from the genital region.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 90/50 mmHg, HR 120 bpm, RR 24/min, Temp 39 C, SpO2 95%."
+    },
+    {
+      "trigger": "If resident examines perineum",
+      "reply": "Edematous, erythematous scrotum with patches of black necrotic skin and crepitus; foul discharge present."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 25 K/uL, lactate 5 mmol/L, creatinine 2.0 mg/dL; glucose 350 mg/dL."
+    },
+    {
+      "trigger": "If resident obtains blood cultures",
+      "reply": "Two sets drawn before antibiotics."
+    },
+    {
+      "trigger": "If resident initiates broad-spectrum antibiotics",
+      "reply": "Carbapenem plus clindamycin and vancomycin started immediately."
+    },
+    {
+      "trigger": "If resident aggressively resuscitates with fluids and starts vasopressors",
+      "reply": "Hemodynamic status stabilizes."
+    },
+    {
+      "trigger": "If resident consults surgery for emergent debridement",
+      "reply": "Extensive debridement of scrotal, perineal and lower abdominal fascia performed; testicles spared if viable."
+    },
+    {
+      "trigger": "If resident delays debridement",
+      "reply": "Infection spreads rapidly with high mortality."
+    },
+    {
+      "trigger": "If resident considers fecal and urinary diversion",
+      "reply": "Diverting colostomy and suprapubic catheter may be necessary for wound healing and hygiene."
+    },
+    {
+      "trigger": "If resident asks about hyperbaric oxygen therapy",
+      "reply": "May be used as adjunct but does not replace surgery and antibiotics."
+    },
+    {
+      "trigger": "If resident discusses postoperative management",
+      "reply": "ICU care, serial debridements, glycemic control, nutritional support and wound reconstruction planning."
+    },
+    {
+      "trigger": "If resident addresses risk factor modification",
+      "reply": "Control of diabetes, abstinence from alcohol and smoking cessation recommended."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of Fournier's gangrene and rapid progression",
+    "Aggressive resuscitation and initiation of broad-spectrum antibiotics",
+    "Immediate and repeated surgical debridement",
+    "Consideration of fecal and urinary diversion for wound care",
+    "Postoperative critical care and risk factor management"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider fournier's gangrene or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of fournier's gangrene"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes fournier's gangrene as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including fournier's gangrene and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies fournier's gangrene as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for fournier's gangrene."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for fournier's gangrene but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for fournier's gangrene."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for fournier's gangrene."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You took decisive action in managing Fournier's gangrene with timely debridement and resuscitation. You can build on this by coordinating early with urology and plastic surgery for reconstruction planning."
+  }
+}

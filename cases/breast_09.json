@@ -1,0 +1,198 @@
+{
+  "case_id": "breast_09",
+  "title": "Paget Disease of the Nipple",
+  "diagnosis_topic": "Breast cancer presenting as nipple eczema",
+  "tags": [
+    "breast",
+    "Paget disease",
+    "nipple lesion"
+  ],
+  "setup_script": "A 55-year-old woman complains of persistent itchy, scaly rash on the right nipple for 6 months unresponsive to topical steroids. On exam, the nipple is eczematous with slight discharge. Palpation reveals no mass.",
+  "dynamic_flow": [
+    {
+      "trigger": "Take history of nipple changes, discharge, and any underlying breast lump or systemic symptoms.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform clinical exam; assess both breasts and axilla; note unilateral eczematous changes unresponsive to treatment.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order diagnostic mammogram and ultrasound to evaluate for underlying DCIS or invasive carcinoma.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform punch biopsy of nipple lesion to confirm Paget disease and evaluate for underlying carcinoma.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss pathology results; explain that Paget disease is often associated with underlying DCIS or invasive cancer.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan surgical management based on imaging: if no palpable mass and limited DCIS, consider central lumpectomy (nipple-areolar complex removal) with radiation; if multifocal disease, perform mastectomy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss sentinel lymph node biopsy at time of surgery due to risk of invasive component.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain informed consent; explain aesthetic outcomes and reconstruction options if mastectomy performed.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform surgery as planned; orient specimen; send sentinel nodes for pathological evaluation.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative care: manage wounds, discuss adjuvant radiation or endocrine therapy based on pathology.",
+      "reply": ""
+    },
+    {
+      "trigger": "Educate patient on prognosis, risk of recurrence, and need for surveillance on contralateral breast.",
+      "reply": ""
+    },
+    {
+      "trigger": "Provide support resources and address psychological impact of nipple loss or mastectomy.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Recognizing Paget disease and performing biopsy for diagnosis.",
+    "Appropriate imaging to detect underlying carcinoma.",
+    "Tailoring surgical approach based on presence and extent of underlying disease.",
+    "Performing sentinel lymph node biopsy for invasive component.",
+    "Providing reconstruction options and psychosocial support."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider paget disease or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of paget disease"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes paget disease as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including paget disease and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies paget disease as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for paget disease."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for paget disease but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for paget disease."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for paget disease."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This scenario assessed recognition and management of Paget disease of the nipple. Reflect on your diagnostic process, surgical planning, and patient counseling regarding cosmetic outcomes and psychological support."
+  }
+}

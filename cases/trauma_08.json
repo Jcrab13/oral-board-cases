@@ -1,0 +1,198 @@
+{
+  "case_id": "trauma_08",
+  "title": "Severe Thermal Burns",
+  "diagnosis_topic": "40% total body surface area flame burns with inhalation injury",
+  "tags": [
+    "trauma",
+    "burns",
+    "critical care"
+  ],
+  "setup_script": "A 27-year-old woman is rescued from a house fire. She has deep partial-thickness and full-thickness burns on her torso, arms and face. She is confused and coughing up soot.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses airway",
+      "reply": "Singed nasal hairs, carbonaceous sputum and hoarseness; consider early intubation."
+    },
+    {
+      "trigger": "If resident obtains vitals",
+      "reply": "BP 110/70 mmHg, HR 120 bpm, RR 26/min, Temp 36.5 C, SpO2 94%."
+    },
+    {
+      "trigger": "If resident estimates burn size",
+      "reply": "Approximately 40% TBSA using the rule of nines (anterior torso 18%, both arms 18%, face 4%)."
+    },
+    {
+      "trigger": "If resident initiates fluid resuscitation using Parkland formula",
+      "reply": "4 mL x 40% x 60 kg = 9.6 L over 24 hours, half in first 8 hours."
+    },
+    {
+      "trigger": "If resident places Foley catheter",
+      "reply": "Urine output monitored; goal 0.5 mL/kg/hr."
+    },
+    {
+      "trigger": "If resident administers IV opioids for pain",
+      "reply": "Pain controlled but vital signs must be monitored closely."
+    },
+    {
+      "trigger": "If resident orders carboxyhemoglobin level",
+      "reply": "Elevated 25%; start 100% oxygen to treat carbon monoxide poisoning."
+    },
+    {
+      "trigger": "If resident discusses escharotomy",
+      "reply": "Consider for circumferential chest or limb burns impeding ventilation or perfusion."
+    },
+    {
+      "trigger": "If resident consults burn center",
+      "reply": "Transfer for definitive management, debridement and grafting."
+    },
+    {
+      "trigger": "If resident delays airway protection",
+      "reply": "Airway edema progresses leading to failed intubation."
+    },
+    {
+      "trigger": "If resident asks about prophylactic antibiotics",
+      "reply": "Systemic prophylaxis not indicated; topical antimicrobials used."
+    },
+    {
+      "trigger": "If resident provides tetanus prophylaxis and addresses nutrition",
+      "reply": "Administer Tdap and discuss high-protein nutritional support."
+    }
+  ],
+  "critical_decision_points": [
+    "Early airway assessment and management in burn patients",
+    "Accurate estimation of burn size and fluid resuscitation using Parkland formula",
+    "Management of inhalation injury and carbon monoxide poisoning",
+    "Indications for escharotomy and transfer to burn center",
+    "Pain control, tetanus prophylaxis and nutritional considerations"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider severe thermal burns or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of severe thermal burns"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes severe thermal burns as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including severe thermal burns and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies severe thermal burns as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for severe thermal burns."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for severe thermal burns but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for severe thermal burns."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for severe thermal burns."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You calculated fluid requirements and addressed inhalation injury appropriately. Focus on decisive airway management and coordination with the burn team."
+  }
+}

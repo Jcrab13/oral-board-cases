@@ -1,0 +1,198 @@
+{
+  "case_id": "hepato_09",
+  "title": "Gallbladder Cancer",
+  "diagnosis_topic": "Malignancy of the gallbladder often discovered incidentally",
+  "tags": [
+    "hepatobiliary",
+    "gallbladder cancer",
+    "oncology"
+  ],
+  "setup_script": "A 65-year-old woman underwent laparoscopic cholecystectomy for symptomatic gallstones. Final pathology reveals an incidental pT2 gallbladder adenocarcinoma invading the perimuscular connective tissue.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews operative note",
+      "reply": "No bile spillage; gallbladder removed intact; cystic duct margin negative on frozen section."
+    },
+    {
+      "trigger": "If resident orders staging imaging",
+      "reply": "CT scan of chest, abdomen and pelvis shows no distant metastasis; MRCP shows no common bile duct involvement."
+    },
+    {
+      "trigger": "If resident discusses extended cholecystectomy",
+      "reply": "For T2 disease, hepatic bed resection (segments IVB/V) and lymphadenectomy of the hepatoduodenal ligament are recommended."
+    },
+    {
+      "trigger": "If resident refers to medical oncology",
+      "reply": "Assess need for adjuvant chemotherapy based on final pathology."
+    },
+    {
+      "trigger": "If resident delays re-operation beyond 6 weeks",
+      "reply": "Risk of tumor seeding and metastasis increases."
+    },
+    {
+      "trigger": "If resident considers simple cholecystectomy sufficient",
+      "reply": "Inadequate for T2 lesions; recurrence risk high."
+    },
+    {
+      "trigger": "If resident evaluates margins",
+      "reply": "Cystic duct margin negative; no need for extrahepatic bile duct excision unless margin positive."
+    },
+    {
+      "trigger": "If resident explains prognosis",
+      "reply": "Five-year survival 60-80% if resected early; worse for higher stage disease."
+    },
+    {
+      "trigger": "If resident outlines surveillance post-resection",
+      "reply": "CT scans every 6 months for 2 years then annually."
+    },
+    {
+      "trigger": "If resident identifies risk factors",
+      "reply": "Chronic gallstones, porcelain gallbladder, gallbladder polyps and Salmonella carriage."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Discuss need for reoperation and potential complications such as bile leak or liver insufficiency."
+    },
+    {
+      "trigger": "If resident coordinates multidisciplinary care",
+      "reply": "Involvement of hepatobiliary surgeon, medical oncologist and nutritionist."
+    }
+  ],
+  "critical_decision_points": [
+    "Interpretation of incidental gallbladder cancer pathology and staging",
+    "Indications for extended cholecystectomy with hepatic resection and lymphadenectomy",
+    "Timing of reoperation to minimize tumor spread",
+    "Postoperative surveillance and adjuvant therapy considerations",
+    "Patient counseling regarding prognosis and risk factors"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider gallbladder cancer or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of gallbladder cancer"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes gallbladder cancer as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including gallbladder cancer and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies gallbladder cancer as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for gallbladder cancer."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for gallbladder cancer but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for gallbladder cancer."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for gallbladder cancer."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You identified the need for extended resection for T2 gallbladder cancer. Enhance your plan by involving a multidisciplinary team early and discussing adjuvant therapy options."
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "case_id": "vascular_05",
+  "title": "Acute Mesenteric Ischemia",
+  "diagnosis_topic": "Embolic occlusion causing ischemia of the small intestine",
+  "tags": [
+    "vascular",
+    "mesenteric ischemia"
+  ],
+  "setup_script": "A 70-year-old woman with a history of atrial fibrillation on no anticoagulation presents with sudden severe abdominal pain out of proportion to exam findings. She is nauseated and vomited once. Her past medical history includes congestive heart failure and COPD.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vitals",
+      "reply": "BP 130/70 mmHg, HR 110 bpm irregular, RR 22/min, Temp 38 C, SpO2 95%."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Abdomen soft, non-distended with mild tenderness, no peritonitis, bowel sounds decreased."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 18 K/uL, lactate 6 mmol/L, ABG metabolic acidosis, INR 1.1."
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "CT angiography shows thrombotic occlusion of the superior mesenteric artery with non-enhancing segments of jejunum."
+    },
+    {
+      "trigger": "If resident starts resuscitation and broad-spectrum antibiotics",
+      "reply": "Stabilizes hemodynamics and reduces progression of sepsis."
+    },
+    {
+      "trigger": "If resident initiates systemic anticoagulation",
+      "reply": "Heparin bolus given."
+    },
+    {
+      "trigger": "If resident consults vascular and general surgery",
+      "reply": "Plan for emergent laparotomy with SMA embolectomy and resection of non-viable bowel."
+    },
+    {
+      "trigger": "If resident delays",
+      "reply": "Rapid progression to peritonitis and septic shock."
+    },
+    {
+      "trigger": "If resident discusses postoperative management",
+      "reply": "Second-look laparotomy in 24-48 hours to assess viability."
+    },
+    {
+      "trigger": "If resident asks about risk factors",
+      "reply": "Atrial fibrillation, low flow states, atherosclerosis."
+    },
+    {
+      "trigger": "If resident asks about prognosis",
+      "reply": "Mortality high; early diagnosis critical."
+    },
+    {
+      "trigger": "If resident asks about non-occlusive ischemia",
+      "reply": "Caused by low flow (e.g., vasopressors) and treated by restoring perfusion."
+    }
+  ],
+  "critical_decision_points": [
+    "Maintaining high index of suspicion when pain is out of proportion to exam",
+    "Timely CT angiography and interpretation",
+    "Initiating resuscitation, antibiotics and anticoagulation",
+    "Coordinating emergent revascularization and resection",
+    "Planning for second-look surgery and managing complications"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider acute mesenteric ischemia or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of acute mesenteric ischemia"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes acute mesenteric ischemia as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including acute mesenteric ischemia and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies acute mesenteric ischemia as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for acute mesenteric ischemia."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for acute mesenteric ischemia but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for acute mesenteric ischemia."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for acute mesenteric ischemia."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You demonstrated awareness of the critical nature of mesenteric ischemia. Continue to work on recognizing subtle presentations and expediting definitive therapy."
+  }
+}

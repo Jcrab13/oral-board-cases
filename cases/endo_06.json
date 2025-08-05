@@ -1,0 +1,198 @@
+{
+  "case_id": "endo_06",
+  "title": "Insulinoma Causing Hypoglycemic Episodes",
+  "diagnosis_topic": "Pancreatic neuroendocrine tumor (insulinoma)",
+  "tags": [
+    "endocrine",
+    "pancreatic neuroendocrine",
+    "hypoglycemia"
+  ],
+  "setup_script": "A 35-year-old woman experiences recurrent episodes of diaphoresis, tremor, and confusion relieved by eating. Fasting glucose is 40 mg/dL with inappropriately elevated insulin and C-peptide levels. Abdominal MRI reveals a 1 cm lesion in the pancreatic tail.",
+  "dynamic_flow": [
+    {
+      "trigger": "Recognize Whipple's triad of hypoglycemia: symptoms, low glucose, relief with glucose.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order supervised fast with measurement of insulin, C-peptide, proinsulin, and sulfonylurea levels to confirm endogenous hyperinsulinism.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss localization techniques (endoscopic ultrasound, MRI, CT, intraoperative palpation) to identify small insulinomas.",
+      "reply": ""
+    },
+    {
+      "trigger": "Explain differential diagnosis including insulinoma, nesidioblastosis, factitious hypoglycemia.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain a multidisciplinary consult (endocrinology, radiology) and counsel patient on surgical resection as definitive therapy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Decide on laparoscopic distal pancreatectomy versus enucleation depending on lesion location and proximity to pancreatic duct.",
+      "reply": ""
+    },
+    {
+      "trigger": "Prepare for surgery with preoperative glucose optimization and discuss risk of pancreatitis and pancreatic fistula.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform laparoscopic distal pancreatectomy preserving spleen when possible; confirm lesion with intraoperative ultrasound.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor intraoperative and postoperative glucose; treat with dextrose as needed.",
+      "reply": ""
+    },
+    {
+      "trigger": "Send tumor for pathology to confirm neuroendocrine tumor and evaluate for malignancy (Ki-67 index).",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative management: check amylase, drain output; manage pancreatic leak if present.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan follow-up for cure assessment, including fasting glucose and imaging; counsel patient on recurrence risk and symptoms.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Confirming diagnosis of insulinoma using fasting test and biochemical markers.",
+    "Localizing small tumors with imaging and endoscopic ultrasound.",
+    "Selecting appropriate surgical approach (enucleation vs distal pancreatectomy).",
+    "Managing perioperative glucose and preventing pancreatic fistula.",
+    "Counseling about recurrence and postoperative surveillance."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider insulinoma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of insulinoma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes insulinoma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including insulinoma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies insulinoma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for insulinoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for insulinoma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for insulinoma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for insulinoma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You were expected to identify the classic features of insulinoma, order appropriate localization, and plan operative management. Consider how thoroughly you discussed the surgical options, perioperative glucose management, and postoperative complications."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "case_id": "gen_06",
+  "title": "Non-Variceal Upper Gastrointestinal Bleeding",
+  "diagnosis_topic": "Peptic ulcer disease causing upper GI bleeding",
+  "tags": [
+    "general surgery",
+    "upper GI bleed",
+    "peptic ulcer"
+  ],
+  "setup_script": "A 65-year-old man presents with melena and lightheadedness. He takes NSAIDs for chronic knee pain. He denies alcohol use.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 95/60 mmHg, HR 110 bpm, RR 20/min, Temp 36.9 C; patient pale and diaphoretic."
+    },
+    {
+      "trigger": "If resident secures two large-bore IVs and begins fluid resuscitation",
+      "reply": "Administer crystalloid followed by transfusion to maintain Hgb >7 g/dL."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "CBC, coagulation profile, type and cross; BUN elevated disproportionately to creatinine suggesting upper GI source."
+    },
+    {
+      "trigger": "If resident starts IV proton pump inhibitor infusion",
+      "reply": "Esomeprazole bolus followed by continuous infusion to stabilize clot."
+    },
+    {
+      "trigger": "If resident considers nasogastric lavage",
+      "reply": "Large-bore NG tube placed; aspirate reveals coffee-ground material confirming upper GI source."
+    },
+    {
+      "trigger": "If resident consults gastroenterology for urgent endoscopy",
+      "reply": "Endoscopy shows bleeding duodenal ulcer; epinephrine injection and hemoclip placed achieving hemostasis."
+    },
+    {
+      "trigger": "If resident administers octreotide",
+      "reply": "Not necessary for non-variceal bleed; indicated for variceal bleeding."
+    },
+    {
+      "trigger": "If endoscopic therapy fails",
+      "reply": "Interventional radiology for arterial embolization or surgical oversewing of ulcer considered."
+    },
+    {
+      "trigger": "If resident delays endoscopy",
+      "reply": "Higher risk of rebleeding and mortality."
+    },
+    {
+      "trigger": "If resident tests for Helicobacter pylori",
+      "reply": "Send biopsy or stool antigen; start eradication therapy if positive."
+    },
+    {
+      "trigger": "If resident counsels on NSAID cessation and PPI maintenance",
+      "reply": "Discontinue NSAIDs; start long-term PPI therapy; consider COX-2 inhibitors with caution."
+    },
+    {
+      "trigger": "If resident discusses risk stratification",
+      "reply": "Use Rockall or Glasgow-Blatchford score to determine level of care and discharge timing."
+    }
+  ],
+  "critical_decision_points": [
+    "Hemodynamic stabilization and resuscitation in upper GI bleeding",
+    "Use of IV PPI and early endoscopy for diagnosis and therapy",
+    "Differentiation between variceal and non-variceal sources",
+    "Management options if endoscopic therapy fails",
+    "Long-term management including H. pylori eradication and NSAID avoidance"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider non-variceal upper gi bleeding or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of non-variceal upper gi bleeding"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes non-variceal upper gi bleeding as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including non-variceal upper gi bleeding and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies non-variceal upper gi bleeding as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for non-variceal upper gi bleeding."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for non-variceal upper gi bleeding but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for non-variceal upper gi bleeding."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for non-variceal upper gi bleeding."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You stabilized and managed the non-variceal bleed effectively. To improve, discuss risk stratification scores and clearly differentiate between variceal and non-variceal treatment protocols."
+  }
+}

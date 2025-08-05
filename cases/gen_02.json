@@ -1,0 +1,198 @@
+{
+  "case_id": "gen_02",
+  "title": "Small Bowel Obstruction",
+  "diagnosis_topic": "Mechanical obstruction of the small intestine often due to adhesions",
+  "tags": [
+    "general surgery",
+    "small bowel obstruction",
+    "adhesions"
+  ],
+  "setup_script": "A 65-year-old woman with a history of prior hysterectomy presents with crampy abdominal pain, vomiting and abdominal distension for 24 hours. She has not passed flatus or stool.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 120/80 mmHg, HR 95 bpm, RR 20/min, Temp 37.5 C."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Distended abdomen with high-pitched bowel sounds; diffuse tenderness without peritonitis."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Electrolyte imbalances with hypokalemia; WBC 12 K/uL; lactate normal."
+    },
+    {
+      "trigger": "If resident orders abdominal X-ray",
+      "reply": "Multiple dilated small bowel loops with air-fluid levels; collapsed colon."
+    },
+    {
+      "trigger": "If resident orders CT scan with contrast",
+      "reply": "Transition point in mid-jejunum with collapsed distal bowel; no bowel ischemia or free air."
+    },
+    {
+      "trigger": "If resident keeps patient NPO, places nasogastric tube for decompression and administers IV fluids",
+      "reply": "Nasogastric output is bilious; patient's pain improves."
+    },
+    {
+      "trigger": "If resident monitors closely for signs of strangulation",
+      "reply": "Persistent tachycardia, fever, leukocytosis, increasing pain or lactic acidosis prompt operative intervention."
+    },
+    {
+      "trigger": "If resident continues non-operative management",
+      "reply": "Most adhesive small bowel obstructions resolve within 24-48 hours; monitor output and electrolytes."
+    },
+    {
+      "trigger": "If resident delays surgery in presence of peritonitis or strangulation",
+      "reply": "Bowel necrosis and sepsis occur."
+    },
+    {
+      "trigger": "If resident discusses water-soluble contrast study",
+      "reply": "Can be used as diagnostic and therapeutic tool to predict resolution and stimulate motility."
+    },
+    {
+      "trigger": "If resident explains surgical options",
+      "reply": "Adhesiolysis with removal of cause of obstruction and resection of non-viable bowel if necessary."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of early presentation if symptoms recur and strategies to prevent adhesion formation."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of small bowel obstruction based on history and imaging",
+    "Initial non-operative management with NPO, NG decompression and fluids",
+    "Identification of signs of strangulation requiring urgent surgery",
+    "Use of contrast studies and timing of operative intervention",
+    "Patient counseling on prevention and recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider small bowel obstruction or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of small bowel obstruction"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes small bowel obstruction as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including small bowel obstruction and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies small bowel obstruction as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for small bowel obstruction."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for small bowel obstruction but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for small bowel obstruction."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for small bowel obstruction."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You handled the small bowel obstruction appropriately with conservative management and vigilance for strangulation. Enhance your performance by discussing use of contrast agents and criteria for surgery in more detail."
+  }
+}

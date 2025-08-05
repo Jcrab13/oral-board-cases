@@ -1,0 +1,198 @@
+{
+  "case_id": "hepato_05",
+  "title": "Hepatocellular Carcinoma in Cirrhosis",
+  "diagnosis_topic": "Primary liver tumor arising in a cirrhotic liver",
+  "tags": [
+    "hepatobiliary",
+    "hepatocellular carcinoma",
+    "cancer"
+  ],
+  "setup_script": "A 58-year-old man with chronic hepatitis C and compensated cirrhosis presents for routine surveillance. Ultrasound detects a 2.5 cm lesion in segment VI of the liver. Alpha-fetoprotein is elevated.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews liver function tests",
+      "reply": "Child-Pugh A (bilirubin 1.2 mg/dL, albumin 3.5 g/dL, INR 1.1, no ascites or encephalopathy)."
+    },
+    {
+      "trigger": "If resident orders contrast-enhanced MRI",
+      "reply": "Lesion shows arterial enhancement and washout in venous phase, meeting LI-RADS criteria for HCC."
+    },
+    {
+      "trigger": "If resident discusses treatment options",
+      "reply": "For solitary tumor <3 cm and Child-Pugh A, consider surgical resection, radiofrequency ablation or transplantation depending on portal hypertension and performance status."
+    },
+    {
+      "trigger": "If resident evaluates portal hypertension",
+      "reply": "Endoscopy shows small varices; hepatic venous pressure gradient 9 mmHg (no significant portal hypertension)."
+    },
+    {
+      "trigger": "If resident selects partial hepatectomy",
+      "reply": "Right segmentectomy planned with negative margins; patient counselled on risks."
+    },
+    {
+      "trigger": "If resident delays treatment",
+      "reply": "Tumor may grow beyond Milan criteria precluding transplant."
+    },
+    {
+      "trigger": "If resident addresses transarterial chemoembolization (TACE)",
+      "reply": "Option for unresectable lesions or as bridge to transplant."
+    },
+    {
+      "trigger": "If resident explains transplant criteria",
+      "reply": "Milan criteria: single lesion 5 cm or up to three lesions all 3 cm with no vascular invasion."
+    },
+    {
+      "trigger": "If resident outlines postoperative surveillance",
+      "reply": "Imaging and AFP every 3-6 months to detect recurrence."
+    },
+    {
+      "trigger": "If resident discusses antiviral therapy",
+      "reply": "Continues direct-acting antivirals for hepatitis C to reduce recurrence risk."
+    },
+    {
+      "trigger": "If resident considers underlying cirrhosis management",
+      "reply": "Abstinence from alcohol, vaccination for hepatitis A/B, screening for esophageal varices."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Explain prognosis, potential for recurrence and importance of adherence to surveillance."
+    }
+  ],
+  "critical_decision_points": [
+    "Interpretation of imaging criteria for hepatocellular carcinoma",
+    "Assessment of liver function and portal hypertension to guide therapy",
+    "Selection of appropriate treatment modality (resection, ablation, transplantation, TACE)",
+    "Understanding Milan criteria and timing of therapy",
+    "Postoperative and long-term surveillance and management of underlying liver disease"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider hepatocellular carcinoma or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of hepatocellular carcinoma"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes hepatocellular carcinoma as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including hepatocellular carcinoma and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies hepatocellular carcinoma as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for hepatocellular carcinoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for hepatocellular carcinoma but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for hepatocellular carcinoma."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for hepatocellular carcinoma."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You demonstrated understanding of HCC management. Work on articulating transplant criteria and discussing bridging therapies like TACE for unresectable tumors."
+  }
+}

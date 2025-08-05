@@ -1,0 +1,198 @@
+{
+  "case_id": "colo_08",
+  "title": "Sigmoid Volvulus in Elderly Patient",
+  "diagnosis_topic": "Colonic volvulus causing obstruction",
+  "tags": [
+    "colorectal",
+    "sigmoid volvulus",
+    "obstruction"
+  ],
+  "setup_script": "An 80-year-old nursing home resident presents with abdominal distension and pain. She has not passed stool or flatus for 24 hours. X-ray shows a coffee-bean sign consistent with sigmoid volvulus.",
+  "dynamic_flow": [
+    {
+      "trigger": "Assess history of constipation, psychiatric medications, neurologic disorders, and previous episodes of volvulus.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform physical exam noting distension, tympany, and signs of peritonitis; check vital signs for sepsis.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order labs including CBC, electrolytes, and lactate; obtain abdominal X-ray and CT to confirm volvulus and exclude perforation.",
+      "reply": ""
+    },
+    {
+      "trigger": "Initial management: resuscitate with IV fluids, correct electrolytes, and decompress with rectal tube via flexible sigmoidoscopy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Explain success rates of endoscopic detorsion and the need for rectal tube to prevent recurrence.",
+      "reply": ""
+    },
+    {
+      "trigger": "Evaluate for signs of ischemia or perforation (fever, leukocytosis, peritonitis) that warrant emergent surgery.",
+      "reply": ""
+    },
+    {
+      "trigger": "If endoscopic decompression fails or signs of ischemia develop, plan for emergent sigmoidectomy with primary anastomosis or Hartmann's procedure.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain informed consent and discuss risk of recurrence and mortality in elderly patients.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform sigmoid colectomy; decide on primary anastomosis versus end colostomy based on patient stability and colon viability.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative care: monitor for sepsis, anastomotic leak, and ileus; advance diet slowly.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange follow-up with gastroenterology and nutrition services; discuss risk reduction including bowel regimen and mobility.",
+      "reply": ""
+    },
+    {
+      "trigger": "Educate family about signs of recurrence and when to seek urgent care.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Prompt recognition of volvulus and initial endoscopic detorsion.",
+    "Identification of ischemia requiring emergent surgery.",
+    "Decision between primary anastomosis and Hartmann's based on patient's condition.",
+    "Postoperative management in elderly with comorbidities.",
+    "Prevention strategies and family education."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider sigmoid volvulus or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of sigmoid volvulus"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes sigmoid volvulus as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including sigmoid volvulus and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies sigmoid volvulus as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for sigmoid volvulus."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for sigmoid volvulus but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for sigmoid volvulus."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for sigmoid volvulus."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "This scenario assessed your management of sigmoid volvulus including endoscopic detorsion and surgical decision-making. Reflect on your ability to identify ischemia and choose the appropriate operative approach."
+  }
+}

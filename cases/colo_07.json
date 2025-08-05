@@ -1,0 +1,198 @@
+{
+  "case_id": "colo_07",
+  "title": "Mid-Rectal Cancer Requiring Low Anterior Resection",
+  "diagnosis_topic": "Stage II rectal adenocarcinoma",
+  "tags": [
+    "colorectal",
+    "rectal cancer",
+    "oncologic surgery"
+  ],
+  "setup_script": "A 60-year-old man presents with rectal bleeding and change in stool caliber. Colonoscopy reveals a mid-rectal mass 8 cm from the anal verge. Biopsy confirms adenocarcinoma. MRI shows T3N0 tumor without mesorectal fascia involvement.",
+  "dynamic_flow": [
+    {
+      "trigger": "Take history of bleeding, bowel habits, weight loss, and risk factors; perform digital rectal exam assessing sphincter tone and tumor mobility.",
+      "reply": ""
+    },
+    {
+      "trigger": "Order staging studies: pelvic MRI, endorectal ultrasound, CT chest/abdomen/pelvis, CEA level.",
+      "reply": ""
+    },
+    {
+      "trigger": "Discuss treatment sequencing: neoadjuvant chemoradiation for T3 tumors to downstage and improve margin status.",
+      "reply": ""
+    },
+    {
+      "trigger": "Refer to multidisciplinary tumor board; coordinate with medical and radiation oncology for neoadjuvant therapy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Monitor patient during chemoradiation; manage side effects and assess tumor response with repeat MRI.",
+      "reply": ""
+    },
+    {
+      "trigger": "Plan for low anterior resection with total mesorectal excision (TME) 6-8 weeks after completion of radiation.",
+      "reply": ""
+    },
+    {
+      "trigger": "Obtain informed consent discussing risks: anastomotic leak, need for temporary diverting ileostomy, sexual/urinary dysfunction.",
+      "reply": ""
+    },
+    {
+      "trigger": "Perform laparoscopic or robotic low anterior resection with TME; achieve negative circumferential and distal margins; create diverting ileostomy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Postoperative care: monitor hemodynamics, stoma, and pelvic drains; start enhanced recovery pathway.",
+      "reply": ""
+    },
+    {
+      "trigger": "Review pathology for tumor regression grade, lymph nodes, and margins; determine need for adjuvant chemotherapy.",
+      "reply": ""
+    },
+    {
+      "trigger": "Manage stoma and plan for reversal after completion of adjuvant therapy and confirmation of anastomotic integrity.",
+      "reply": ""
+    },
+    {
+      "trigger": "Arrange surveillance with colonoscopy, CEA every 3-6 months, and periodic imaging for recurrence.",
+      "reply": ""
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate staging and multidisciplinary management of rectal cancer.",
+    "Indication for neoadjuvant chemoradiation in T3 lesions.",
+    "Technical execution of total mesorectal excision and creation of diverting ileostomy.",
+    "Postoperative monitoring and timely stoma reversal.",
+    "Surveillance strategy to detect recurrence."
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider rectal cancer or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of rectal cancer"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes rectal cancer as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including rectal cancer and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies rectal cancer as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for rectal cancer."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for rectal cancer but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for rectal cancer."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for rectal cancer."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You were assessed on your understanding of rectal cancer staging and treatment sequence. Reflect on your coordination of neoadjuvant therapy, surgical technique for TME, and postoperative surveillance plan."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "case_id": "hepato_04",
+  "title": "Pyogenic Liver Abscess",
+  "diagnosis_topic": "Infection of hepatic parenchyma resulting in abscess formation",
+  "tags": [
+    "hepatobiliary",
+    "liver abscess",
+    "infection"
+  ],
+  "setup_script": "A 55-year-old man with a history of diabetes presents with fever, chills and right upper quadrant pain for one week. He denies jaundice.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 120/75 mmHg, HR 102 bpm, RR 18/min, Temp 38.7 C."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Tender hepatomegaly in right upper quadrant; no Murphy's sign."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 20 K/uL, alkaline phosphatase elevated, transaminases mildly elevated; blood cultures pending."
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "Ultrasound shows 5 cm hypoechoic lesion in right lobe; CT confirms multiloculated abscess."
+    },
+    {
+      "trigger": "If resident starts broad-spectrum antibiotics",
+      "reply": "Empiric coverage for enteric Gram-negatives and anaerobes (ceftriaxone plus metronidazole)."
+    },
+    {
+      "trigger": "If resident consults interventional radiology",
+      "reply": "Percutaneous drainage catheter placed; pus culture guides antibiotics."
+    },
+    {
+      "trigger": "If abscess is small (<3 cm)",
+      "reply": "May treat with antibiotics alone but close monitoring needed."
+    },
+    {
+      "trigger": "If resident delays drainage",
+      "reply": "Abscess may rupture causing peritonitis and sepsis."
+    },
+    {
+      "trigger": "If resident evaluates for underlying source",
+      "reply": "Search for biliary obstruction, portal vein bacteremia from diverticulitis or appendicitis."
+    },
+    {
+      "trigger": "If resident discusses follow-up imaging",
+      "reply": "Repeat ultrasound to ensure resolution after 2 weeks."
+    },
+    {
+      "trigger": "If resident outlines duration of antibiotics",
+      "reply": "Typically 4-6 weeks depending on culture results and clinical response."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Emphasize completing antibiotic course and monitoring for recurrent symptoms."
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis of liver abscess via imaging and clinical suspicion",
+    "Empiric and culture-directed antibiotic therapy",
+    "Indications for percutaneous drainage versus antibiotics alone",
+    "Evaluation for underlying source of infection",
+    "Monitoring treatment response with imaging and prolonged antibiotics"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider pyogenic liver abscess or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of pyogenic liver abscess"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes pyogenic liver abscess as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including pyogenic liver abscess and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies pyogenic liver abscess as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for pyogenic liver abscess."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for pyogenic liver abscess but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for pyogenic liver abscess."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for pyogenic liver abscess."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You correctly treated the liver abscess with antibiotics and drainage. Further refinement should include evaluating for potential sources such as biliary obstruction or portal sepsis."
+  }
+}

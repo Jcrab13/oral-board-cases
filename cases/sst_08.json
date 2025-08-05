@@ -1,0 +1,199 @@
+{
+  "case_id": "sst_08",
+  "title": "Postoperative Surgical Site Infection",
+  "diagnosis_topic": "Superficial and deep surgical site infection following abdominal surgery",
+  "tags": [
+    "skin",
+    "postoperative",
+    "infection",
+    "surgical site"
+  ],
+  "setup_script": "A 50-year-old man is postoperative day 7 after a sigmoid colectomy. He develops fever and redness around his midline incision. He complains of increasing incisional pain and foul-smelling drainage.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident checks vital signs",
+      "reply": "BP 122/78 mmHg, HR 104 bpm, RR 18/min, Temp 38.5 C."
+    },
+    {
+      "trigger": "If resident inspects the incision",
+      "reply": "Erythema extending 3 cm from the wound edges, warmth, fluctuance in lower aspect with purulent drainage."
+    },
+    {
+      "trigger": "If resident evaluates for fascial integrity",
+      "reply": "Cough test shows intact fascia; no evisceration."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 15 K/uL, CRP elevated; blood cultures obtained."
+    },
+    {
+      "trigger": "If resident opens the lower portion of incision for drainage",
+      "reply": "Pus evacuated; wound probed and irrigated; culture sent."
+    },
+    {
+      "trigger": "If resident begins empiric IV antibiotics",
+      "reply": "Start coverage targeting skin flora and enteric organisms (cefazolin + metronidazole)."
+    },
+    {
+      "trigger": "If resident orders CT abdomen/pelvis",
+      "reply": "No deep abscess; fluid collection limited to subcutaneous space."
+    },
+    {
+      "trigger": "If resident delays opening the wound",
+      "reply": "Infection may extend to fascia causing dehiscence or sepsis."
+    },
+    {
+      "trigger": "If resident consults wound care",
+      "reply": "Negative pressure wound therapy considered to promote healing."
+    },
+    {
+      "trigger": "If resident optimizes risk factors",
+      "reply": "Glycemic control, smoking cessation, adequate nutrition addressed."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Instruct on wound care, signs of worsening infection and follow-up visits."
+    },
+    {
+      "trigger": "If resident discusses prevention",
+      "reply": "Perioperative antibiotics, sterile technique and normothermia reduce infection risk."
+    }
+  ],
+  "critical_decision_points": [
+    "Early recognition of postoperative surgical site infection",
+    "Assessment of fascial integrity and need for emergent intervention",
+    "Appropriate drainage, culture and antibiotic therapy",
+    "Imaging to evaluate for deep abscess or anastomotic leak",
+    "Optimization of patient factors and wound care to promote healing"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider postoperative surgical site infection or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of postoperative surgical site infection"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes postoperative surgical site infection as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including postoperative surgical site infection and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies postoperative surgical site infection as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for postoperative surgical site infection."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for postoperative surgical site infection but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for postoperative surgical site infection."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for postoperative surgical site infection."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You promptly opened the incision and started appropriate antibiotics. Further improvement includes comprehensive patient education on wound care and close follow-up."
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "case_id": "ped_06",
+  "title": "Midgut Volvulus due to Malrotation",
+  "diagnosis_topic": "Twisting of the midgut around the superior mesenteric artery causing obstruction and ischemia",
+  "tags": [
+    "pediatric",
+    "malrotation",
+    "volvulus"
+  ],
+  "setup_script": "A 2-week-old infant presents with bilious vomiting and abdominal distension. Parents report the baby becoming increasingly lethargic.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "HR 170 bpm, RR 50/min, BP 70/40 mmHg, Temp 36.5 C."
+    },
+    {
+      "trigger": "If resident evaluates abdomen",
+      "reply": "Distended, tender abdomen with visible peristalsis; bilious gastric aspirate present via NG tube."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Metabolic acidosis (pH 7.25), elevated lactate, electrolyte imbalances due to dehydration."
+    },
+    {
+      "trigger": "If resident orders upper GI contrast study",
+      "reply": "Shows corkscrew appearance of duodenum with abnormal location of ligament of Treitz, consistent with malrotation with volvulus."
+    },
+    {
+      "trigger": "If resident initiates resuscitation with IV fluids and antibiotics",
+      "reply": "Stabilizes patient for urgent surgery."
+    },
+    {
+      "trigger": "If resident consults pediatric surgery",
+      "reply": "Emergent laparotomy performed; Ladd's bands divided, counterclockwise detorsion, broadening of mesenteric base and appendectomy."
+    },
+    {
+      "trigger": "If resident delays surgery",
+      "reply": "Rapid progression to bowel necrosis, sepsis and death."
+    },
+    {
+      "trigger": "If resident asks about malrotation presentation",
+      "reply": "Bilious vomiting in neonates should be considered volvulus until proven otherwise."
+    },
+    {
+      "trigger": "If resident discusses postoperative concerns",
+      "reply": "Monitor for short bowel syndrome if resection needed; recurrent volvulus is rare."
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "Screen for heterotaxy and cardiac anomalies."
+    },
+    {
+      "trigger": "If resident explains Ladd's procedure steps",
+      "reply": "Divide Ladd's bands, widen mesenteric pedicle and place small intestine on right, colon on left."
+    },
+    {
+      "trigger": "If resident provides parental counseling",
+      "reply": "Educate on signs of bowel obstruction and ensure follow-up with pediatric surgery."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of bilious vomiting as surgical emergency suggesting malrotation",
+    "Use of upper GI contrast study to diagnose volvulus",
+    "Urgent surgical correction via Ladd's procedure",
+    "Avoidance of delays that lead to bowel necrosis",
+    "Postoperative monitoring and parental education"
+  ],
+  "rubric": {
+    "domains": {
+      "Diagnostic Reasoning": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider midgut volvulus or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of midgut volvulus"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes midgut volvulus as a possibility but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including midgut volvulus and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies midgut volvulus as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ]
+      },
+      "Clinical Judgement": {
+        "weight": 0.25,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic work-up and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing and definitive therapy appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgement by anticipating complications, coordinating multidisciplinary care and making timely decisions."
+          }
+        ]
+      },
+      "Communication": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Communication is disorganized, confusing, or lacks empathy toward the patient and team."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure or fails to engage patient/team."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically and empathetically with patient and interdisciplinary team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate and anticipates information needs of patient and team."
+          }
+        ]
+      },
+      "Surgical Knowledge": {
+        "weight": 0.2,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of the operative or procedural management for midgut volvulus."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option for midgut volvulus but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes the key operative steps with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, potential complications and alternatives for midgut volvulus."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances and peri-operative considerations for midgut volvulus."
+          }
+        ]
+      },
+      "Professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches patient confidentiality or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability and honesty."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "You urgently diagnosed malrotation with volvulus and pursued surgical correction. Further improvement includes clear explanation of the Ladd's procedure and postoperative expectations to the parents."
+  }
+}
