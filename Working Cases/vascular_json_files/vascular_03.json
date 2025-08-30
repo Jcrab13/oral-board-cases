@@ -1,0 +1,225 @@
+{
+  "case_id": "vascular_03",
+  "title": "Carotid Artery Stenosis with TIA",
+  "diagnosis_topic": "Symptomatic carotid stenosis causing transient ischemic attack",
+  "tags": [
+    "vascular",
+    "carotid_stenosis",
+    "tia",
+    "stroke_prevention"
+  ],
+  "setup_script": "A 68-year-old woman presents to your clinic after an episode of sudden left-sided weakness and slurred speech lasting about 30 minutes. Her symptoms resolved spontaneously. She has hypertension, hyperlipidemia, and a 40 pack-year smoking history. On examination, she is neurologically intact. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "BP 150/85 mmHg, HR 78 bpm, RR 16/min, Temp 36.7 \u00b0C, SpO\u2082 98% on room air."
+    },
+    {
+      "trigger": "If resident performs neurologic exam",
+      "reply": "Normal strength and sensation; no cranial nerve deficits; carotid bruit on the right side."
+    },
+    {
+      "trigger": "If resident orders initial labs",
+      "reply": "CBC and BMP are normal; LDL 160 mg/dL."
+    },
+    {
+      "trigger": "If resident requests brain imaging",
+      "reply": "Non-contrast CT shows no acute infarct or hemorrhage."
+    },
+    {
+      "trigger": "If resident orders carotid duplex",
+      "reply": "80% stenosis of the right internal carotid artery."
+    },
+    {
+      "trigger": "If resident asks for confirmatory imaging",
+      "reply": "CTA neck confirms high-grade right ICA stenosis, patent intracranial vessels."
+    },
+    {
+      "trigger": "If resident initiates medical therapy",
+      "reply": "Aspirin and high-dose statin are started."
+    },
+    {
+      "trigger": "If resident delays intervention",
+      "reply": "Patient develops recurrent TIA with left arm weakness lasting 2 hours."
+    },
+    {
+      "trigger": "If resident refers to vascular surgery promptly",
+      "reply": "Patient is evaluated for carotid endarterectomy vs.\u00a0carotid stenting."
+    },
+    {
+      "trigger": "If resident asks about timing of surgery",
+      "reply": "Surgery recommended within 2 weeks for symptomatic patients."
+    },
+    {
+      "trigger": "If resident discusses perioperative risks",
+      "reply": "Risk of stroke, MI, cranial nerve injury, hematoma; emphasize blood pressure control and continuation of aspirin."
+    },
+    {
+      "trigger": "If resident explores anesthesia options",
+      "reply": "Both regional and general anesthesia are acceptable, depends on institutional and patient factors."
+    },
+    {
+      "trigger": "If resident proceeds to operative discussion",
+      "reply": "Carotid endarterectomy is performed; intraoperative findings confirm 80% ICA stenosis."
+    },
+    {
+      "trigger": "If resident is asked to describe the operative technique",
+      "reply": "Resident should describe incision along anterior border of sternocleidomastoid, exposure of carotid bifurcation, control of common, internal, and external carotid arteries, arteriotomy, plaque removal, patch closure, and hemostasis."
+    },
+    {
+      "trigger": "If resident asks about postoperative monitoring",
+      "reply": "Admit to step-down/ICU for neurologic checks and blood pressure control."
+    },
+    {
+      "trigger": "If resident inquires about long-term follow-up",
+      "reply": "Surveillance with carotid duplex at 1 month, then annually."
+    },
+    {
+      "trigger": "If resident discusses risk factor modification",
+      "reply": "Smoking cessation, hypertension control, diabetes management, and statin therapy."
+    },
+    {
+      "trigger": "If resident fails to initiate medical therapy or delays referral",
+      "reply": "Patient suffers a completed stroke with persistent left hemiparesis."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of TIA as a warning sign for stroke",
+    "Appropriate use of brain and vascular imaging",
+    "Initiation of best medical therapy (antiplatelet, statin)",
+    "Timely referral for carotid endarterectomy or stenting",
+    "Understanding perioperative risks and anesthesia considerations",
+    "Ability to describe operative technique for carotid endarterectomy",
+    "Counseling on long-term risk factor modification and surveillance"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider carotid artery stenosis or attributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key vascular pathology."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes carotid stenosis but omits alternative considerations."
+          },
+          {
+            "score": 4,
+            "description": "Develops a complete differential, systematically evaluates with imaging."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies carotid stenosis as leading diagnosis, integrates imaging and clinical features effectively."
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or need for intervention."
+          },
+          {
+            "score": 2,
+            "description": "Acknowledges urgency but delays key actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates reasonable workup and management but misses timing."
+          },
+          {
+            "score": 4,
+            "description": "Appropriately prioritizes medical therapy and timely referral for surgery."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, ensures timely intervention."
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but without clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Communicates findings and plans clearly but misses confirmation of understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates logically and empathetically with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary clarity, organization, anticipates patient/team needs."
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of operative or procedural management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies carotid surgery as an option but with major gaps in indications or technique."
+          },
+          {
+            "score": 3,
+            "description": "Describes some steps of carotid endarterectomy but with omissions or errors."
+          },
+          {
+            "score": 4,
+            "description": "Thoroughly describes key operative steps, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances, and perioperative considerations for carotid endarterectomy."
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or dismissive, breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Professional but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model professionalism, demonstrates humility and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this carotid artery stenosis with tia scenario demonstrated You demonstrated strong diagnostic reasoning by recognizing symptomatic carotid stenosis as an indication for urgent intervention. Your communication was structured and clear when discussing operative planning and perioperative risks.. Areas for improvement include Earlier initiation of medical therapy and timely referral could have been emphasized more strongly. A more detailed step-by-step description of the carotid endarterectomy technique, including plaque removal and patch closure, would further demonstrate surgical mastery.. Suggested reading includes Symptomatic Carotid Artery Stenosis (SCORE); Carotid Endarterectomy vs.\u00a0Carotid Artery Stenting (ACS/ASE Review Manual); Secondary Stroke Prevention Guidelines (AHA/ASA)"
+  }
+}

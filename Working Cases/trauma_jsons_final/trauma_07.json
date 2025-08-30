@@ -1,0 +1,145 @@
+{
+  "case_id": "trauma_07",
+  "title": "Penetrating Neck Injury",
+  "diagnosis_topic": "Zone II neck stab wound with potential vascular and aerodigestive injury",
+  "tags": [
+    "trauma",
+    "penetrating",
+    "neck",
+    "vascular_injury"
+  ],
+  "setup_script": "\u201cA 40-year-old man presents after being stabbed in the right side of his neck. There is active bleeding controlled with direct pressure. He is speaking in a hoarse voice. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident secures airway",
+      "reply": "Patient remains alert; airway is patent but intubation equipment should be prepared in case of deterioration."
+    },
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 110/70 mmHg, HR 105 bpm, RR 22/min, SpO\u2082 97%."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Wound located in Zone II anterior to the sternocleidomastoid; no expanding hematoma; tracheal deviation absent."
+    },
+    {
+      "trigger": "If resident requests additional history",
+      "reply": "Patient denies dysphagia or hematemesis; reports hoarse voice and pain localized to wound."
+    },
+    {
+      "trigger": "If resident orders CT angiography of the neck",
+      "reply": "Shows near circumferential laceration of external jugular vein without arterial injury; esophagus and trachea intact."
+    },
+    {
+      "trigger": "If resident delays imaging and exploration",
+      "reply": "Patient develops an expanding hematoma with airway compromise; SpO\u2082 drops to 82%."
+    },
+    {
+      "trigger": "If resident performs emergent airway intervention",
+      "reply": "Airway secured with endotracheal intubation; oxygen saturation improves to 99%."
+    },
+    {
+      "trigger": "If resident consults vascular surgery and otolaryngology",
+      "reply": "Plan made for operative exploration and ligation of injured vein."
+    },
+    {
+      "trigger": "If resident administers broad-spectrum antibiotics",
+      "reply": "Coverage initiated for oral flora."
+    },
+    {
+      "trigger": "If resident discusses selective vs.\u00a0mandatory exploration",
+      "reply": "Hemodynamically stable Zone II injuries may undergo CT angiography to guide management."
+    },
+    {
+      "trigger": "If resident orders esophagram",
+      "reply": "Not necessary given CT findings but could be considered if suspicion for esophageal injury persists."
+    },
+    {
+      "trigger": "If resident explores the wound surgically",
+      "reply": "Operative findings confirm external jugular vein injury, no arterial or aerodigestive injury. Vein is ligated successfully."
+    },
+    {
+      "trigger": "If resident is asked to describe operative steps",
+      "reply": "Please describe your approach to surgical exploration and control of the vascular injury."
+    },
+    {
+      "trigger": "If resident outlines postoperative care",
+      "reply": "Monitor for bleeding, airway compromise, wound infection, and vocal cord dysfunction."
+    },
+    {
+      "trigger": "If resident addresses hoarse voice",
+      "reply": "Postoperative laryngoscopy shows mild left vocal cord paresis, likely recurrent laryngeal nerve neuropraxia."
+    },
+    {
+      "trigger": "If resident does not address postoperative complication",
+      "reply": "Patient later presents with stridor on POD 1, requiring ENT re-evaluation."
+    }
+  ],
+  "critical_decision_points": [
+    "Airway management and hemodynamic stabilization in penetrating neck injuries",
+    "Use of CT angiography for evaluation of Zone II injuries",
+    "Recognition of indications for operative exploration vs.\u00a0observation",
+    "Antibiotic administration and subspecialty consultation",
+    "Postoperative surveillance for complications"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to recognize penetrating neck injury; misattributes symptoms to unrelated causes",
+          "2": "Delayed or incomplete differential; overlooks key features",
+          "3": "Recognizes penetrating neck injury but omits important alternatives",
+          "4": "Develops comprehensive differential including penetrating neck injury, rules out other causes",
+          "5": "Rapidly identifies penetrating neck injury as primary diagnosis; articulates complete differential with supporting/refuting data"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to recognize instability or need for timely intervention",
+          "2": "Recognizes urgency but delays critical actions or orders inappropriate tests",
+          "3": "Initiates workup and management but with missed steps or delays",
+          "4": "Prioritizes resuscitation, imaging, and definitive therapy appropriately",
+          "5": "Anticipates complications, coordinates multidisciplinary care, and makes timely, appropriate decisions"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Disorganized, confusing, lacks empathy",
+          "2": "Provides information but unclear or incomplete",
+          "3": "Communicates findings and plan clearly but without verification",
+          "4": "Clear, logical, empathetic communication with team and patient",
+          "5": "Succinct, compassionate, anticipates needs of patient and team"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Lacks understanding of operative management for penetrating neck injury",
+          "2": "Identifies operative option but with major gaps in technique or indications",
+          "3": "Describes key operative steps with minor omissions",
+          "4": "Describes operative management, complications, and alternatives appropriately",
+          "5": "Demonstrates mastery of current evidence, operative nuances, and perioperative considerations"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "Displays disrespect, breaches confidentiality, or fails to recognize limitations",
+          "2": "Inconsistent respect or accountability",
+          "3": "Maintains respect and integrity but needs prompting for reflection",
+          "4": "Consistently respectful, accountable, receptive to feedback",
+          "5": "Role model: humility, cultural sensitivity, ethical behavior"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing the implications of a Zone II penetrating neck injury. Your airway management preparation was appropriate, and you effectively incorporated imaging and surgical decision-making. Communication of your plan was clear and confident.\nAreas for Improvement: Earlier recognition of the potential for rapid airway compromise would improve clinical urgency. Incorporation of structured postoperative surveillance, including vocal cord evaluation, would strengthen your management.\nSuggested Reading Topics: - Penetrating Neck Trauma (SCORE) - Airway Management in Trauma (ACS/ASE Review Manual) - Selective vs.\u00a0Mandatory Exploration in Neck Injuries"
+}

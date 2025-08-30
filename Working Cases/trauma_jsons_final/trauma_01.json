@@ -1,0 +1,132 @@
+{
+  "case_id": "trauma_01",
+  "title": "Acute Compartment Syndrome",
+  "diagnosis_topic": "Compartment syndrome of the leg following tibia fracture",
+  "tags": [
+    "trauma",
+    "extremity",
+    "compartment_syndrome"
+  ],
+  "setup_script": "\u201cA 23-year-old man sustained a closed midshaft tibia fracture while snowboarding. His leg was splinted in the field. He now reports escalating pain despite analgesia and numbness in his foot. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident checks vital signs",
+      "reply": "BP 135/85 mmHg, HR 90 bpm, RR 16/min, Temp 36.8 \u00b0C."
+    },
+    {
+      "trigger": "If resident assesses the injured leg",
+      "reply": "Tight swollen compartments, pain out of proportion to exam, pain with passive dorsiflexion of the foot, diminished sensation between first and second toes."
+    },
+    {
+      "trigger": "If resident removes circumferential dressings and loosens splint",
+      "reply": "Pain briefly improves but remains severe."
+    },
+    {
+      "trigger": "If resident measures compartment pressures",
+      "reply": "Anterior compartment pressure 45 mmHg with diastolic BP 85 mmHg (\u0394 pressure 40 mmHg)."
+    },
+    {
+      "trigger": "If resident delays evaluation or dismisses complaints",
+      "reply": "Patient develops worsening pain, progressive numbness, and motor deficits."
+    },
+    {
+      "trigger": "If resident orders only analgesics without further evaluation",
+      "reply": "Pain worsens; sensory deficits progress."
+    },
+    {
+      "trigger": "If resident recognizes compartment syndrome and consults orthopedic surgery emergently",
+      "reply": "Patient is taken to the OR for four-compartment fasciotomy."
+    },
+    {
+      "trigger": "If resident describes operative steps",
+      "reply": "Skin incisions along medial and lateral aspects of the leg, release of all four compartments, bulging muscle noted."
+    },
+    {
+      "trigger": "If resident asks about postoperative care",
+      "reply": "Wounds left open with negative pressure dressings; plan for delayed closure or skin grafting."
+    },
+    {
+      "trigger": "If resident evaluates for rhabdomyolysis",
+      "reply": "Labs show CK 15,000 U/L, creatinine 1.9 mg/dL. IV fluids and urine output monitoring are indicated."
+    },
+    {
+      "trigger": "If resident educates patient on risk factors",
+      "reply": "High-energy fractures, reperfusion injury, and tight casts increase risk."
+    },
+    {
+      "trigger": "If resident mentions prophylactic fasciotomy in vascular injury",
+      "reply": "Appropriate consideration in setting of prolonged ischemia following revascularization."
+    },
+    {
+      "trigger": "If resident fails to intervene in timely fashion",
+      "reply": "Patient suffers permanent motor deficits, contractures, and chronic pain."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of compartment syndrome based on clinical signs",
+    "Measurement and interpretation of compartment pressures",
+    "Timely consultation and performance of fasciotomy",
+    "Avoidance of delays that lead to irreversible muscle and nerve damage",
+    "Postoperative wound management and rehabilitation"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to consider acute compartment syndrome or misattributes symptoms to unrelated diagnoses",
+          "2": "Delayed or incomplete consideration of acute compartment syndrome; overlooks key features",
+          "3": "Recognizes compartment syndrome as a possibility but omits important alternative diagnoses",
+          "4": "Identifies acute compartment syndrome as leading diagnosis and considers differential systematically",
+          "5": "Rapidly identifies compartment syndrome, articulates supporting and refuting findings, integrates into complete diagnostic framework"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to recognize urgency or need for timely intervention",
+          "2": "Recognizes urgency but delays fasciotomy or orders inappropriate tests",
+          "3": "Initiates evaluation and management but with timing errors or omissions",
+          "4": "Prioritizes diagnosis and definitive fasciotomy appropriately with timely actions",
+          "5": "Anticipates complications, coordinates multidisciplinary care, makes precise and timely decisions"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Disorganized, unclear, or dismissive communication",
+          "2": "Provides information but with poor clarity or limited engagement of team/patient",
+          "3": "Clear communication of findings and plan, but misses confirmation of understanding",
+          "4": "Communicates logically and empathetically with team and patient",
+          "5": "Exemplary communication: succinct, compassionate, anticipates needs of patient and team"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Lacks knowledge of fasciotomy or compartment syndrome management",
+          "2": "Identifies fasciotomy as treatment but with major gaps in understanding of technique or indications",
+          "3": "Describes operative management with some omissions or uncertainties",
+          "4": "Clearly explains operative steps, complications, and alternatives for fasciotomy",
+          "5": "Demonstrates mastery of current evidence, operative nuances, and perioperative considerations"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "Disrespectful, dismissive, or breaches confidentiality",
+          "2": "Inconsistent respect or lapses in accountability",
+          "3": "Professional but requires prompting for self-reflection",
+          "4": "Consistently respectful, accountable, receptive to feedback",
+          "5": "Role model for professionalism, demonstrating humility, cultural sensitivity, and ethical behavior"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing the clinical features of compartment syndrome. You communicated your plan clearly and appropriately escalated care with orthopedic consultation. Your operative description showed solid understanding of fasciotomy principles.\nAreas for Improvement: Earlier recognition and measurement of compartment pressures would have strengthened your clinical judgment. Ensure that you always discuss the risk of delays in diagnosis and the potential for long-term disability.\nSuggested Reading: - SCORE Curriculum: Compartment Syndrome and Fasciotomy - ACS/ASE Review Manual: Extremity Trauma - Orthopedic Trauma Association: Principles of Compartment Syndrome Management"
+}

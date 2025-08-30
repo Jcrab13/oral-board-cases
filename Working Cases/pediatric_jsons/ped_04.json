@@ -1,0 +1,206 @@
+{
+  "case_id": "ped_04",
+  "title": "Hirschsprung\u2019s Disease",
+  "diagnosis_topic": "Congenital aganglionosis causing functional intestinal obstruction",
+  "tags": [
+    "pediatric",
+    "congenital",
+    "hirschsprung\u2019s_disease"
+  ],
+  "setup_script": "\u201cA term newborn fails to pass meconium within 48 hours of birth. The infant has progressive abdominal distension and bilious vomiting. There is no family history of gastrointestinal disease. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses vital signs",
+      "reply": "HR 150 bpm, RR 50/min, Temp 37 \u00b0C; mildly tachycardic."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Distended abdomen with palpable intestinal loops; explosive passage of stool following digital rectal exam."
+    },
+    {
+      "trigger": "If resident orders abdominal X-ray",
+      "reply": "Dilated bowel loops with air\u2013fluid levels; absence of gas in distal rectum."
+    },
+    {
+      "trigger": "If resident requests contrast enema",
+      "reply": "Transition zone between dilated proximal colon and narrow distal aganglionic segment."
+    },
+    {
+      "trigger": "If resident arranges rectal suction biopsy",
+      "reply": "Histology shows absence of ganglion cells confirming Hirschsprung\u2019s disease."
+    },
+    {
+      "trigger": "If resident initiates decompression with rectal irrigations and keeps NPO",
+      "reply": "Decompression relieves distension; broad-spectrum antibiotics started if enterocolitis suspected."
+    },
+    {
+      "trigger": "If resident delays diagnosis",
+      "reply": "Risk of enterocolitis, sepsis and perforation increases. Infant becomes febrile and lethargic with worsening abdominal distension."
+    },
+    {
+      "trigger": "If resident recognizes deterioration and escalates care",
+      "reply": "Patient is stabilized with IV fluids, rectal irrigations, and antibiotics."
+    },
+    {
+      "trigger": "If resident discusses operative management",
+      "reply": "Options include staged approach with diverting colostomy followed by pull-through procedure, or primary pull-through depending on stability."
+    },
+    {
+      "trigger": "If resident describes operative steps",
+      "reply": "Mobilization of colon, resection of aganglionic segment, and pull-through of ganglionic colon to the anus."
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "Notes possibility of Down syndrome, congenital heart disease, and genitourinary anomalies."
+    },
+    {
+      "trigger": "If resident plans postoperative management",
+      "reply": "Monitor for anastomotic leak, stricture, constipation, enterocolitis, and adequate weight gain."
+    },
+    {
+      "trigger": "If resident addresses long-term outcomes",
+      "reply": "Possible issues include constipation, incontinence, and recurrent enterocolitis; requires ongoing follow-up."
+    },
+    {
+      "trigger": "If resident educates parents about colostomy care",
+      "reply": "Provides instructions for stoma care and signs of complications."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of delayed meconium passage and suspicion for Hirschsprung\u2019s disease",
+    "Use of contrast enema and rectal biopsy to confirm diagnosis",
+    "Initial decompression and management of enterocolitis",
+    "Surgical planning for pull-through procedure with or without diversion",
+    "Postoperative follow-up and management of long-term sequelae"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider Hirschsprung\u2019s disease or misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes Hirschsprung\u2019s as a possibility but omits important alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including Hirschsprung\u2019s and rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies Hirschsprung\u2019s as leading diagnosis; articulates full differential with supporting and refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup/management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing, and therapy appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacking empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure, or engagement."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings/plans but misses confirming understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, and empathetically with team and family."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary: succinct, compassionate, anticipates patient/family/team needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps in technique/indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of evidence, operative nuances, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful and honest but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, cultural sensitivity, ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing delayed meconium passage and proceeding to appropriate imaging and biopsy. Your operative planning reflected good understanding of pull-through procedures. Communication with the family and attention to long-term care were appropriate.Areas for Improvement:Earlier escalation when the infant deteriorated with enterocolitis would improve clinical urgency. You could also expand on postoperative complication management, such as strictures and recurrent enterocolitis.Suggested Reading:- SCORE: Hirschsprung\u2019s Disease and Anorectal Malformations- Pediatric Surgery NaT: Operative management of Hirschsprung\u2019s Disease- ACS/ASE Core Curriculum: Neonatal intestinal obstruction"
+}

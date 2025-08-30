@@ -1,0 +1,216 @@
+{
+  "case_id": "ped_08",
+  "title": "Midgut Volvulus due to Malrotation",
+  "diagnosis_topic": "Malrotation with Midgut Volvulus",
+  "tags": [
+    "pediatric",
+    "malrotation",
+    "volvulus",
+    "neonatal_emergency"
+  ],
+  "setup_script": "\u201cA 2-week-old infant presents with bilious vomiting and abdominal distension. Parents report the baby becoming increasingly lethargic. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "HR 170 bpm, RR 50/min, BP 70/40 mmHg, Temp 36.5 \u00b0C."
+    },
+    {
+      "trigger": "If resident evaluates abdomen",
+      "reply": "Distended, tender abdomen with visible peristalsis; bilious gastric aspirate present via NG tube."
+    },
+    {
+      "trigger": "If resident places NG tube and decompresses stomach",
+      "reply": "50 mL bilious fluid returns, abdomen slightly less tense."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Metabolic acidosis (pH 7.25), elevated lactate, electrolyte imbalances due to dehydration."
+    },
+    {
+      "trigger": "If resident orders abdominal x-ray",
+      "reply": "Non-specific bowel gas pattern; possible double bubble with paucity of distal gas."
+    },
+    {
+      "trigger": "If resident orders abdominal ultrasound",
+      "reply": "Whirlpool sign of twisted mesentery around SMA."
+    },
+    {
+      "trigger": "If resident orders upper GI contrast study",
+      "reply": "Corkscrew appearance of duodenum with abnormal position of ligament of Treitz, consistent with malrotation with volvulus."
+    },
+    {
+      "trigger": "If resident delays diagnostic studies and management",
+      "reply": "Infant becomes increasingly hypotensive (BP 55/30), tachycardic (HR 190), and poorly responsive."
+    },
+    {
+      "trigger": "If resident initiates resuscitation with IV fluids and broad-spectrum antibiotics",
+      "reply": "Improved perfusion; HR decreases to 160, BP rises to 80/45."
+    },
+    {
+      "trigger": "If resident consults pediatric surgery and proceeds with urgent laparotomy",
+      "reply": "Ladd\u2019s bands divided, counterclockwise detorsion performed, mesenteric base broadened, appendectomy completed."
+    },
+    {
+      "trigger": "If examiner asks resident to describe operative technique",
+      "reply": "Resident should explain: counterclockwise detorsion of volvulus, division of Ladd\u2019s bands, broadening of mesenteric base, placement of small intestine on right and colon on left, and appendectomy."
+    },
+    {
+      "trigger": "If operative findings show viable bowel only",
+      "reply": "Bowel reperfuses after detorsion; abdomen closed primarily."
+    },
+    {
+      "trigger": "If operative findings show necrotic bowel",
+      "reply": "Resection of gangrenous bowel performed; remaining length measured; abdomen left open if concern for borderline bowel viability."
+    },
+    {
+      "trigger": "If resident delays surgery",
+      "reply": "Rapid progression to bowel necrosis, peritonitis, septic shock, and death."
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "Cardiac evaluation reveals a small VSD; no heterotaxy noted."
+    },
+    {
+      "trigger": "If resident provides postoperative plan",
+      "reply": "Monitors for bowel obstruction, short bowel syndrome if resection needed; ensures parental counseling and follow-up with pediatric surgery."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of bilious vomiting in a neonate as a surgical emergency",
+    "Ordering appropriate imaging (upper GI contrast study, ultrasound)",
+    "Prompt initiation of resuscitation and antibiotics",
+    "Urgent surgical intervention with Ladd\u2019s procedure",
+    "Intraoperative decision-making (bowel viability, resection if necessary)",
+    "Postoperative care and parental counseling"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider midgut volvulus; attributes vomiting to benign cause."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; misses key signs of obstruction."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes volvulus as possibility but omits alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including volvulus and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies volvulus as leading diagnosis and supports with clinical/imaging findings."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability; delays critical actions."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays surgery or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but timing suboptimal."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, imaging, and definitive surgery appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely, effective decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information with poor clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings but incomplete explanations."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly and empathetically with team and family."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary : succinct, compassionate, anticipatory of family/team needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of Ladd\u2019s procedure and management principles."
+          },
+          {
+            "score": 2,
+            "description": "Identifies need for surgery but with major gaps in technique/indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Accurately describes operative management and complications."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, including detorsion, division of Ladd\u2019s bands, broadening mesenteric base, appendectomy, and management of necrotic bowel."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or ignores limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but limited reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model of ; demonstrates humility, sensitivity, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing bilious vomiting as a surgical emergency. Your resuscitation and timely decision to proceed with laparotomy were appropriate. You communicated clearly with the surgical team.Areas for Improvement:Further improvement includes articulating the operative steps of the Ladd\u2019s procedure in detail and addressing intraoperative decision-making when faced with necrotic bowel. Consider reinforcing postoperative care and long-term parental counseling.Suggested Reading:- SCORE Curriculum: Malrotation and Midgut Volvulus- Pediatric Surgery NaT: Neonatal Intestinal Obstruction- ACS/ASE Review Manual: Pediatric Surgical Emergencies"
+}

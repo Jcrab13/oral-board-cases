@@ -1,0 +1,211 @@
+{
+  "case_id": "end_08",
+  "title": "Primary Hyperparathyroidism with Nephrolithiasis",
+  "diagnosis_topic": "Symptomatic Primary Hyperparathyroidism",
+  "tags": [
+    "endocrine",
+    "hyperparathyroidism",
+    "parathyroidectomy"
+  ],
+  "setup_script": "A 55-year-old man presents with recurrent kidney stones and mild hypercalcemia. Serum calcium is 11.5 mg/dL (normal 8.5\u201310.5), PTH is elevated, and bone density T-score is \u22122.6. Neck ultrasound shows a 1.5 cm parathyroid adenoma behind the left inferior thyroid pole. How would you proceed?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks about symptoms and history",
+      "reply": "Patient reports recurrent nephrolithiasis and bone pain. No family history of MEN syndromes."
+    },
+    {
+      "trigger": "If resident orders labs beyond calcium and PTH",
+      "reply": "24-hour urinary calcium is elevated; vitamin D is normal; renal function is preserved."
+    },
+    {
+      "trigger": "If resident inquires about bone health",
+      "reply": "Bone density scan confirms osteoporosis with T-score \u22122.6."
+    },
+    {
+      "trigger": "If resident asks about indications for surgery",
+      "reply": "Patient meets criteria due to kidney stones, osteoporosis, and elevated calcium."
+    },
+    {
+      "trigger": "If resident discusses localization studies",
+      "reply": "Sestamibi scan confirms uptake in the left inferior gland, correlating with ultrasound findings."
+    },
+    {
+      "trigger": "If resident asks about surgical approach",
+      "reply": "Options include focused parathyroidectomy with intraoperative PTH monitoring vs.\u00a0four-gland exploration. Patient is otherwise healthy and prefers minimally invasive approach."
+    },
+    {
+      "trigger": "If resident discusses preoperative considerations",
+      "reply": "Vocal cord function is documented as normal on preoperative laryngoscopy."
+    },
+    {
+      "trigger": "If resident proceeds with surgery",
+      "reply": "Focused left inferior parathyroidectomy is performed."
+    },
+    {
+      "trigger": "If resident asks about intraoperative monitoring",
+      "reply": "Intraoperative PTH drops more than 50% from baseline at 10 minutes post-excision."
+    },
+    {
+      "trigger": "If resident discusses pathology",
+      "reply": "Pathology confirms a parathyroid adenoma weighing 1.2 grams. No evidence of carcinoma."
+    },
+    {
+      "trigger": "If resident asks about immediate postoperative management",
+      "reply": "Serum calcium is checked every 6 hours; calcium supplementation initiated for mild hypocalcemia symptoms."
+    },
+    {
+      "trigger": "If resident inquires about complications",
+      "reply": "Patient monitored for hypocalcemia and hungry bone syndrome. Symptoms improve with supplementation."
+    },
+    {
+      "trigger": "If resident asks about long-term follow-up",
+      "reply": "Patient referred to endocrinology and nephrology for stone prevention, bone health, and periodic calcium monitoring."
+    },
+    {
+      "trigger": "If resident discusses patient education",
+      "reply": "Counsel patient on hydration, dietary calcium intake, and need for ongoing monitoring."
+    },
+    {
+      "trigger": "If resident is asked to describe technical details of the operation",
+      "reply": "Please describe your incision, dissection technique to identify the adenoma, handling of surrounding structures (including recurrent laryngeal nerve), and methods used to preserve the remaining parathyroid glands."
+    }
+  ],
+  "critical_decision_points": [
+    "Identifying indications for surgery based on calcium level, kidney stones, and bone density.",
+    "Selecting appropriate localization studies and surgical approach.",
+    "Using intraoperative PTH monitoring to confirm excision.",
+    "Managing postoperative calcium and recognizing hungry bone syndrome.",
+    "Describing operative technique and handling of key anatomical structures.",
+    "Educating the patient on long-term follow-up and recurrence monitoring."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider primary hyperparathyroidism or misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete recognition; overlooks key features."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes primary hyperparathyroidism but omits important alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential and rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies hyperparathyroidism with a complete differential and supporting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize surgical indications or delays care."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but orders inappropriate or incomplete tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses key steps."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes diagnostics and definitive therapy appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized or confusing ; lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings but misses confirmation of understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates logically and empathetically with team and patient."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, and anticipates needs of patient/team."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management for hyperparathyroidism."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps in technique."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, including technical details and complications."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of anatomy, evidence-based operative technique, intraoperative decision-making, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but needs prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, cultural sensitivity, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "StrengthsYou demonstrated strong diagnostic reasoning by recognizing the surgical indications for primary hyperparathyroidism. Your communication of the surgical plan was structured and clear, and you appropriately considered intraoperative and postoperative management.Areas for ImprovementA more detailed description of the operative steps, including dissection, protection of the recurrent laryngeal nerve, and preservation of other glands, would strengthen your surgical knowledge domain. Review localization strategies and their role in surgical planning.Suggested Reading Topics- SCORE: Primary Hyperparathyroidism- ACS/ASE Review Manual: Endocrine Surgery- Operative Techniques in Parathyroid Surgery- Management of Postoperative Hypocalcemia and Hungry Bone Syndrome"
+}

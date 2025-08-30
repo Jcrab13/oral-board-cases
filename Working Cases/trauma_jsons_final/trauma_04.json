@@ -1,0 +1,142 @@
+{
+  "case_id": "trauma_04",
+  "title": "Cardiac Tamponade from Penetrating Trauma",
+  "diagnosis_topic": "Pericardial tamponade secondary to stab wound to the chest",
+  "tags": [
+    "trauma",
+    "cardiac_tamponade",
+    "penetrating_chest"
+  ],
+  "setup_script": "\u201cA 32-year-old male is brought to the emergency department after being stabbed in the left precordium. He is lethargic and complains of chest pressure. There is a 3 cm stab wound over the fifth intercostal space. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 85/60 mmHg, HR 130 bpm, RR 30/min, SpO\u2082 92% on oxygen."
+    },
+    {
+      "trigger": "If resident examines the patient further",
+      "reply": "Distended neck veins and muffled heart sounds are noted."
+    },
+    {
+      "trigger": "If resident requests FAST exam",
+      "reply": "Pericardial view demonstrates large pericardial effusion with right atrial collapse."
+    },
+    {
+      "trigger": "If resident initiates IV fluid resuscitation",
+      "reply": "Blood pressure transiently improves to 95/65."
+    },
+    {
+      "trigger": "If resident requests chest X-ray instead of FAST",
+      "reply": "Chest X-ray shows enlarged cardiac silhouette but patient becomes increasingly hypotensive."
+    },
+    {
+      "trigger": "If resident delays intervention",
+      "reply": "Patient deteriorates to pulseless electrical activity."
+    },
+    {
+      "trigger": "If resident performs ED pericardiocentesis",
+      "reply": "Needle aspiration yields non-clotting dark blood; blood pressure improves temporarily."
+    },
+    {
+      "trigger": "If resident asks about definitive management",
+      "reply": "Patient requires operative exploration for repair of cardiac injury."
+    },
+    {
+      "trigger": "If resident calls for operating room thoracotomy",
+      "reply": "Median sternotomy reveals right ventricular laceration with active bleeding; clot evacuated."
+    },
+    {
+      "trigger": "If resident is asked to describe operative steps",
+      "reply": "Please describe your operative approach to repair this cardiac injury."
+    },
+    {
+      "trigger": "If resident provides correct repair steps",
+      "reply": "Hemodynamics stabilize after repair of right ventricular laceration and pericardial decompression."
+    },
+    {
+      "trigger": "If resident provides incomplete or delayed repair",
+      "reply": "Persistent hypotension and bleeding continue, requiring further operative intervention."
+    },
+    {
+      "trigger": "If resident inquires about ED thoracotomy indications",
+      "reply": "Penetrating chest trauma with witnessed signs of life and loss of pulses is an indication."
+    },
+    {
+      "trigger": "If resident discusses postoperative management",
+      "reply": "Patient is admitted to ICU; monitored for arrhythmias, bleeding, and recurrent tamponade."
+    },
+    {
+      "trigger": "If resident considers blood use",
+      "reply": "Contaminated pericardial blood is not reinfused; cross-matched blood transfusion is required."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of obstructive shock due to cardiac tamponade",
+    "Use of FAST to identify pericardial effusion",
+    "Appropriate temporizing measures (fluids, pericardiocentesis)",
+    "Timely definitive surgical repair with sternotomy",
+    "Ability to describe operative steps for cardiac repair",
+    "Recognition of ED thoracotomy indications",
+    "Postoperative ICU management considerations"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to recognize tamponade, misattributes symptoms",
+          "2": "Delayed or incomplete differential, overlooks key findings",
+          "3": "Considers tamponade but omits important alternatives",
+          "4": "Comprehensive differential including tamponade with systematic reasoning",
+          "5": "Rapidly identifies tamponade, articulates complete differential with supporting/refuting data"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to act on instability, inappropriate delays",
+          "2": "Recognizes urgency but delays or orders inappropriate tests",
+          "3": "Initiates management but misses timing or steps",
+          "4": "Prioritizes resuscitation, diagnostics, and operative therapy appropriately",
+          "5": "Anticipates complications, coordinates care, makes timely decisions throughout"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Disorganized, unclear, or lacking empathy",
+          "2": "Provides information but lacks clarity or structure",
+          "3": "Clear communication of findings and plan, but incomplete engagement",
+          "4": "Logical, structured, empathetic communication with team and patient",
+          "5": "Succinct, compassionate, anticipates information needs of all parties"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "No knowledge of operative management for tamponade",
+          "2": "Identifies operative options but with major errors in approach",
+          "3": "Describes some operative steps but with omissions (e.g., exposure, control, repair technique)",
+          "4": "Correctly details operative steps for sternotomy, evacuation, and ventricular repair with good technical sequence",
+          "5": "Mastery of operative technique, including exposure, cardiac control, repair methods (pledgeted sutures, temporary control), perioperative considerations, and complication management"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "Disrespectful, breaches confidentiality, or unsafe behavior",
+          "2": "Lapses in respect, accountability, or honesty",
+          "3": "Respectful and professional but needs prompting for self-reflection",
+          "4": "Consistently respectful, accountable, receptive to feedback",
+          "5": "Role model professionalism, culturally sensitive, ethical, humble"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "Strengths:You promptly recognized obstructive shock and used the FAST exam appropriately. Your ability to initiate temporizing measures and progress to definitive operative management was appropriate. You described key operative steps in cardiac repair clearly.\nAreas for Improvement:In future, ensure that you consistently outline the complete sequence of operative management, including exposure, bleeding control, and repair technique. Earlier discussion of ED thoracotomy indications would also strengthen your performance.\nSuggested Reading Topics:- Operative Repair of Penetrating Cardiac Trauma (SCORE)- Techniques in Cardiac Injury Management (ACS/ASE Trauma Manual)- Emergency Department Thoracotomy: Indications and Outcomes (EAST Guidelines)"
+}

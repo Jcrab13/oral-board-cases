@@ -1,0 +1,203 @@
+{
+  "case_id": "gen_12",
+  "title": "Small Bowel Obstruction",
+  "diagnosis_topic": "Mechanical small bowel obstruction, most commonly due to adhesions",
+  "tags": [
+    "general_surgery",
+    "bowel_obstruction",
+    "adhesions"
+  ],
+  "setup_script": "\u201cA 65-year-old woman with a prior history of hysterectomy presents with 24 hours of crampy abdominal pain, vomiting, and abdominal distension. She has not passed stool or flatus during this time. How would you proceed in her evaluation and management?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "\u201cVital signs show BP 120/80 mmHg, HR 95 bpm, RR 20/min, Temp 37.5\u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "\u201cThe abdomen is distended with high-pitched bowel sounds and diffuse tenderness, but no peritoneal signs.\u201d"
+    },
+    {
+      "trigger": "If resident orders laboratory studies",
+      "reply": "\u201cLabs reveal WBC 12,000/\u00b5L, potassium 3.0 mmol/L, creatinine 1.0 mg/dL, and normal lactate.\u201d"
+    },
+    {
+      "trigger": "If resident orders abdominal X-ray",
+      "reply": "\u201cPlain film shows multiple dilated small bowel loops with air\u2013fluid levels and a collapsed colon.\u201d"
+    },
+    {
+      "trigger": "If resident orders CT scan with contrast",
+      "reply": "\u201cCT demonstrates a transition point in the mid-jejunum with collapsed distal bowel. No pneumatosis, ischemia, or free air is seen.\u201d"
+    },
+    {
+      "trigger": "If resident initiates nonoperative management with NPO, nasogastric decompression, and IV fluids",
+      "reply": "\u201cThe NG tube produces bilious output, and her pain improves.\u201d"
+    },
+    {
+      "trigger": "If resident asks about monitoring",
+      "reply": "\u201cYou observe her closely for signs of strangulation: tachycardia, worsening pain, fever, leukocytosis, or rising lactate.\u201d"
+    },
+    {
+      "trigger": "If resident continues conservative management",
+      "reply": "\u201cAfter 24\u201348 hours, most adhesive obstructions resolve. Her NG output remains high but stable, and she is hemodynamically normal.\u201d"
+    },
+    {
+      "trigger": "If resident delays operative intervention despite new peritonitis or systemic instability",
+      "reply": "\u201cShe deteriorates with hypotension, fever, and leukocytosis, consistent with bowel necrosis and sepsis.\u201d"
+    },
+    {
+      "trigger": "If resident discusses water-soluble contrast study",
+      "reply": "\u201cA contrast study can be both diagnostic and therapeutic, predicting resolution and sometimes stimulating motility.\u201d"
+    },
+    {
+      "trigger": "If resident proceeds with operative exploration",
+      "reply": "\u201cOn laparotomy, dense adhesions are encountered. A segment of ischemic bowel is noted requiring resection and anastomosis. Please describe your operative steps in detail.\u201d"
+    },
+    {
+      "trigger": "If resident describes technical details of adhesiolysis and resection",
+      "reply": "\u201cAdhesions are carefully divided to relieve obstruction, ischemic bowel is resected with adequate margins, and a primary anastomosis is performed. Mesenteric defects are closed to prevent internal hernia.\u201d"
+    },
+    {
+      "trigger": "If resident describes postoperative care",
+      "reply": "\u201cShe requires continued NG decompression, fluid/electrolyte replacement, and advancement of diet when bowel function returns.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of small bowel obstruction from history, exam, and imaging",
+    "Institution of appropriate nonoperative management (NPO, NG tube, IV fluids)",
+    "Identification of clinical signs of strangulation requiring urgent surgery",
+    "Appropriate use of water-soluble contrast as diagnostic/therapeutic adjunct",
+    "Operative decision-making, including adhesiolysis, resection, and anastomosis",
+    "Postoperative care and prevention of recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize small bowel obstruction; considers unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential, missing key features of SBO."
+          },
+          {
+            "score": 3,
+            "description": "Identifies SBO but misses important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential, appropriately rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly and correctly identifies SBO with a complete, well-supported differential."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or instability."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays or mismanages key actions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates reasonable workup/management but with errors in timing or priority."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and therapy with appropriate timing."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, and demonstrates excellent timing."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but with poor clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan and findings clearly but incompletely."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, and empathetically with patient/team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, and anticipates patient/team information needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of operative management of SBO."
+          },
+          {
+            "score": 2,
+            "description": "Identifies need for surgery but with major gaps in technique/indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Fully describes operative management, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, evidence-based care, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unaware of limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful and honest, but needs prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: humble, culturally sensitive, and ethically exemplary."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing small bowel obstruction early and initiating appropriate conservative management. Your communication of the management plan was clear and structured.Areas for Improvement: Earlier discussion of operative thresholds and explicit recognition of warning signs for strangulation would strengthen your clinical judgment. Providing more technical detail in operative description\u2014including adhesiolysis technique, bowel resection, anastomotic construction, and closure of mesenteric defects\u2014would enhance your surgical knowledge.Suggested Reading: - SCORE Curriculum: Small Bowel Obstruction - ACS/ASE Review: Management of Adhesive SBO - Operative Techniques in General Surgery: Adhesiolysis and Bowel Resection"
+}

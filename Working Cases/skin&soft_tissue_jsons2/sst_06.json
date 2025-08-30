@@ -1,0 +1,161 @@
+{
+  "case_id": "sst_06",
+  "title": "Facial Lentigo Maligna Melanoma",
+  "diagnosis_topic": "Lentigo Maligna Melanoma of the Cheek \u2013 Oncologic Resection & Reconstruction",
+  "tags": [
+    "melanoma",
+    "head_&_neck",
+    "surgical_oncology",
+    "reconstruction",
+    "multidisciplinary_care"
+  ],
+  "setup_script": "\u201cA 74-year-old woman is referred by her dermatologist for a pigmented patch on her left lateral cheek. She first noticed it two years ago, but over the last six months it has grown darker and slightly larger. She has no prior biopsies or relevant past medical history. What would you like to do next?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for additional history",
+      "reply": "\u201cPatient reports gradual enlargement, no pain, no prior melanoma or family history. No immunosuppression.\u201d"
+    },
+    {
+      "trigger": "If resident requests vitals and exam",
+      "reply": "\u201cVitals are normal. Exam reveals a 1.3 cm irregular pigmented macule on the lateral cheek anterior to the tragus. No palpable nodes.\u201d"
+    },
+    {
+      "trigger": "If resident requests biopsy",
+      "reply": "\u201cPathology shows invasive lentigo maligna melanoma, Breslow depth 0.9 mm, non-ulcerated, BRAF negative.\u201d"
+    },
+    {
+      "trigger": "If resident stages the melanoma",
+      "reply": "\u201cAccording to AJCC 8th edition, this is T1a disease.\u201d"
+    },
+    {
+      "trigger": "If resident discusses SLNB",
+      "reply": "\u201cSentinel lymph node biopsy is optional for depth 0.8\u20131.0 mm. Patient is medically fit.\u201d"
+    },
+    {
+      "trigger": "If resident proposes excision",
+      "reply": "\u201cWhat surgical margins would you recommend for this lesion?\u201d"
+    },
+    {
+      "trigger": "If resident recommends wide local excision with 1 cm margin",
+      "reply": "\u201cHow would you balance oncologic clearance with cosmetic and functional considerations?\u201d"
+    },
+    {
+      "trigger": "If resident proposes staged excision or Mohs",
+      "reply": "\u201cHow would you coordinate care for this patient?\u201d"
+    },
+    {
+      "trigger": "If resident describes multidisciplinary plan (Mohs, plastic surgery)",
+      "reply": "\u201cPlease describe your reconstructive approach.\u201d"
+    },
+    {
+      "trigger": "If resident describes reconstruction (local advancement/rotation flap)",
+      "reply": "\u201cHow would you protect the facial nerve branches during reconstruction?\u201d"
+    },
+    {
+      "trigger": "If resident addresses surveillance",
+      "reply": "\u201cHow will you follow this patient after surgery?\u201d"
+    },
+    {
+      "trigger": "If resident summarizes plan",
+      "reply": "\u201cPlease provide a concise summary of your management and counseling for this patient.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Obtain a full-thickness biopsy to establish Breslow depth.",
+    "Correctly stage melanoma using AJCC 8th edition.",
+    "Consider SLNB for depth 0.8\u20131.0 mm.",
+    "Choose margin-controlled excision (Mohs or staged excision) in cosmetically sensitive zones.",
+    "Coordinate multidisciplinary care (dermatology, Mohs surgery, plastics, pathology).",
+    "Provide clear surveillance and counseling plan."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to obtain tissue diagnosis or misinterprets staging."
+          },
+          {
+            "score": 3,
+            "description": "Obtains biopsy and basic staging, misses optional SLNB discussion."
+          },
+          {
+            "score": 5,
+            "description": "Accurately interprets pathology, stages correctly, discusses SLNB appropriately."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Proposes wide local excision without consideration of cosmesis."
+          },
+          {
+            "score": 3,
+            "description": "Proposes excision but lacks structured plan for margins and reconstruction."
+          },
+          {
+            "score": 5,
+            "description": "Logical plan with appropriate staging, multidisciplinary approach, and reconstruction."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear plan, no patient counseling."
+          },
+          {
+            "score": 3,
+            "description": "Communicates steps but omits cosmetic/functional considerations."
+          },
+          {
+            "score": 5,
+            "description": "Clear, structured explanation including risks, surveillance, and patient-centered concerns."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Incorrect margins or inappropriate excision method."
+          },
+          {
+            "score": 3,
+            "description": "Basic knowledge of excision but vague on technical details."
+          },
+          {
+            "score": 5,
+            "description": "Excellent understanding of margin-controlled excision, reconstructive techniques, and nerve preservation."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Ignores multidisciplinary input or patient factors."
+          },
+          {
+            "score": 3,
+            "description": "Discusses team but superficially."
+          },
+          {
+            "score": 5,
+            "description": "Engages full team, counsels on cosmetic/functional outcomes, and maintains patient-centered approach."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "StrengthsYou demonstrated strong diagnostic reasoning by obtaining appropriate biopsy and staging the melanoma correctly. You effectively recognized the importance of margin-controlled excision in a cosmetically sensitive zone and integrated multidisciplinary planning into your management.Areas for ImprovementYour discussion of sentinel lymph node biopsy could be expanded with specific thresholds and risks in head and neck melanoma. Clarifying operative details, such as nerve preservation strategies during flap reconstruction, would strengthen your surgical planning.Suggested Reading Topics- NCCN Melanoma Guidelines (2025 update)- Sentinel Lymph Node Biopsy in Head & Neck Melanoma (SCORE)- Local Flap Reconstruction for Facial Defects (ASE Core Curriculum)"
+}

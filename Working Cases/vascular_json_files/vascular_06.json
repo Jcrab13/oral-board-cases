@@ -1,0 +1,203 @@
+{
+  "case_id": "vascular_06",
+  "title": "Deep Vein Thrombosis and Pulmonary Embolism",
+  "diagnosis_topic": "Venous Thromboembolism Following Surgery",
+  "tags": [
+    "vascular",
+    "venous",
+    "dvt",
+    "pe"
+  ],
+  "setup_script": "A 45-year-old woman, one week after total knee replacement, presents with swelling and pain in her left calf. Today, she developed shortness of breath and pleuritic chest pain. She has been receiving prophylactic low-molecular-weight heparin. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for vital signs",
+      "reply": "BP 110/70 mmHg, HR 115 bpm, RR 24/min, Temp 37.2 \u00b0C, SpO\u2082 90% on room air."
+    },
+    {
+      "trigger": "If resident performs exam",
+      "reply": "Left calf circumference greater than right, tender to palpation, Homan\u2019s sign positive; lungs clear; tachycardic."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "D-dimer 2.0 \u00b5g/mL (elevated), CBC normal, creatinine 1.0 mg/dL."
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "Venous duplex shows occlusive thrombus in the popliteal vein; CT pulmonary angiography demonstrates segmental pulmonary emboli."
+    },
+    {
+      "trigger": "If resident delays treatment",
+      "reply": "Patient becomes hypotensive (BP 85/55), SpO\u2082 drops to 82% on RA, HR increases to 130 bpm."
+    },
+    {
+      "trigger": "If resident initiates anticoagulation promptly",
+      "reply": "Therapeutic heparin infusion started; patient stabilizes with improved oxygenation."
+    },
+    {
+      "trigger": "If resident considers thrombolysis",
+      "reply": "Reserved for hemodynamic instability; patient currently stable, so anticoagulation is appropriate."
+    },
+    {
+      "trigger": "If resident evaluates contraindications",
+      "reply": "Recent surgery noted; weigh bleeding risk. If anticoagulation contraindicated, IVC filter placement is an option."
+    },
+    {
+      "trigger": "If resident requests risk stratification",
+      "reply": "PESI score calculated; patient is low risk, appropriate for anticoagulation and close monitoring."
+    },
+    {
+      "trigger": "If resident investigates hypercoagulability",
+      "reply": "Not indicated at this time since this is a provoked event."
+    },
+    {
+      "trigger": "If resident educates the patient",
+      "reply": "Patient counseled on symptoms of recurrent PE and the importance of adherence to anticoagulation."
+    },
+    {
+      "trigger": "If resident asks about duration",
+      "reply": "3 months of anticoagulation for provoked DVT/PE; extended if ongoing risk factors persist."
+    },
+    {
+      "trigger": "If resident discusses prevention",
+      "reply": "Early mobilization, mechanical prophylaxis, and proper chemoprophylaxis in future high-risk surgical settings."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of signs and symptoms of DVT and PE",
+    "Appropriate diagnostic testing (duplex ultrasound, CTPA)",
+    "Initiation of therapeutic anticoagulation",
+    "Differentiating when thrombolysis or IVC filter is indicated",
+    "Patient education and preventive strategies"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider venous thromboembolism"
+          },
+          {
+            "score": 2,
+            "description": "Delayed recognition; attributes to unrelated diagnosis"
+          },
+          {
+            "score": 3,
+            "description": "Considers VTE but misses key features"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including VTE and rules out others"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies VTE as leading diagnosis with full differential"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or delays critical action"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but orders inappropriate or delayed testing"
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup but misses timing or critical steps"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and therapy appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but with poor clarity or structure"
+          },
+          {
+            "score": 3,
+            "description": "Clear communication but misses confirming understanding"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic communication with team and patient"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication, anticipates information needs, succinct and compassionate"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of VTE management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies options but with major gaps in knowledge"
+          },
+          {
+            "score": 3,
+            "description": "Describes key steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Thoroughly describes management, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of evidence-based management, nuances, and perioperative considerations"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, unaware of limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect, integrity, but needs prompting"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrates humility, cultural sensitivity, ethical behavior"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this deep vein thrombosis and pulmonary embolism scenario demonstrated You demonstrated strong diagnostic reasoning by promptly identifying venous thromboembolism. Your management decisions were timely, and you communicated clearly with the team.. Areas for improvement include Refine your decision-making regarding when thrombolysis or IVC filters are appropriate. Ensure you consistently assess contraindications before initiating anticoagulation.. Suggested reading includes SCORE: Venous Thromboembolism; ACCP Guidelines on Antithrombotic Therapy; Perioperative Management of Anticoagulation"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "case_id": "vascular_10",
+  "title": "Varicose Veins with Venous Ulcer",
+  "diagnosis_topic": "Chronic Venous Insufficiency Leading to Ulceration",
+  "tags": [
+    "vascular",
+    "venous_insufficiency",
+    "varicose_veins"
+  ],
+  "setup_script": "A 54-year-old woman presents with a painful ulcer on the medial aspect of her left ankle. She has a history of longstanding varicose veins and works in an occupation that requires prolonged standing. She reports leg swelling and heaviness by the end of the day. On exam, you notice venous stasis changes around the ankle. How would you proceed?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for vitals",
+      "reply": "BP 125/78 mmHg, HR 80 bpm, RR 16/min, Temp 36.9 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Dilated tortuous varicosities on the left leg, hyperpigmented skin, pitting edema, shallow exudative ulcer at medial malleolus."
+    },
+    {
+      "trigger": "If resident orders venous duplex",
+      "reply": "Reflux in the great saphenous vein; deep venous system patent."
+    },
+    {
+      "trigger": "If resident delays compression therapy",
+      "reply": "Ulcer enlarges with surrounding erythema and drainage."
+    },
+    {
+      "trigger": "If resident initiates compression and wound care",
+      "reply": "Ulcer gradually begins to decrease in size, drainage decreases."
+    },
+    {
+      "trigger": "If resident asks about infection",
+      "reply": "Wound swab shows mixed skin flora; if cellulitis develops, culture grows Staphylococcus aureus."
+    },
+    {
+      "trigger": "If resident treats infection with antibiotics",
+      "reply": "Erythema resolves, drainage improves."
+    },
+    {
+      "trigger": "If resident fails to treat infection",
+      "reply": "Patient becomes febrile, ulcer develops purulent drainage."
+    },
+    {
+      "trigger": "If resident discusses endovenous ablation",
+      "reply": "Appropriate after ulcer healing for symptomatic reflux."
+    },
+    {
+      "trigger": "If resident asks about surgical options",
+      "reply": "Stripping, phlebectomy, or perforator ligation if incompetent."
+    },
+    {
+      "trigger": "If resident monitors healing",
+      "reply": "Regular follow-up shows slow epithelialization; if healing stalls after 3 months, consider skin graft."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of weight management, avoiding prolonged standing, and daily calf exercises."
+    },
+    {
+      "trigger": "If resident discusses recurrence",
+      "reply": "Recurrence is common; lifelong compression therapy recommended."
+    }
+  ],
+  "critical_decision_points": [
+    "Identification of chronic venous insufficiency signs",
+    "Use of duplex ultrasound to assess reflux",
+    "Initiation of compression therapy and wound care",
+    "Management of infection if present",
+    "Selection of endovenous or surgical treatment after ulcer healing",
+    "Patient education and recurrence prevention"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize venous etiology, attributes ulcer to unrelated causes"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete diagnosis; overlooks key venous disease features"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes venous ulcer as a possibility but omits alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops appropriate differential and confirms with duplex"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies venous ulcer with comprehensive differential and supporting data"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Misses urgency of treatment, no plan for compression or wound care"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes need but delays critical interventions"
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic management but omits key elements"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes compression, wound care, infection control appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, ensures timely interventions, coordinates multidisciplinary care"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information without clarity or engagement"
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plan but incomplete"
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly and logically with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary, compassionate, and anticipates patient/team needs"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of venous procedures"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical options but with major gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes key procedures with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Explains operative options, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative nuances, current evidence, and perioperative considerations"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, ignores limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Respectful and honest but requires prompting"
+          },
+          {
+            "score": 4,
+            "description": "Consistently professional and receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, integrity, cultural sensitivity, and ethics"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this varicose veins with venous ulcer scenario demonstrated You demonstrated strong diagnostic reasoning by recognizing venous insufficiency as the etiology of the ulcer. You appropriately initiated compression therapy and wound care. Communication of your plan was clear and patient-centered.. Areas for improvement include Earlier recognition and treatment of infection would improve outcomes. Further refinement is needed in determining when to recommend surgical or endovenous interventions following ulcer healing.. Suggested reading includes SCORE: Venous Disease and Varicose Veins; ACS/ASE Review Manual: Chronic Venous Insufficiency and Ulcer Management; Current Guidelines on Endovenous Ablation and Surgical Management of Varicose Veins"
+  }
+}

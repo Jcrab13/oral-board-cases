@@ -1,0 +1,202 @@
+{
+  "case_id": "hep_08",
+  "title": "Primary Sclerosing Cholangitis",
+  "diagnosis_topic": "Primary Sclerosing Cholangitis (PSC)",
+  "tags": [
+    "hepatobiliary",
+    "psc",
+    "cholestasis"
+  ],
+  "setup_script": "A 35-year-old man with a history of ulcerative colitis presents with fatigue, pruritus, and elevated liver enzymes. He denies alcohol use. On physical exam, he is in no acute distress but reports persistent itching. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 118/75 mmHg, HR 90 bpm, RR 16/min, Temp 36.6 \u00b0C."
+    },
+    {
+      "trigger": "If resident orders liver function tests",
+      "reply": "Alkaline phosphatase and gamma-glutamyl transferase are elevated. Bilirubin is mildly elevated. AST/ALT are normal to mildly elevated."
+    },
+    {
+      "trigger": "If resident requests autoimmune serologies",
+      "reply": "pANCA positive. Antimitochondrial antibody negative."
+    },
+    {
+      "trigger": "If resident orders MRCP",
+      "reply": "MRCP demonstrates multifocal strictures and segmental dilatations of intrahepatic and extrahepatic bile ducts, producing a beaded appearance."
+    },
+    {
+      "trigger": "If resident discusses diagnosis",
+      "reply": "Findings are consistent with primary sclerosing cholangitis."
+    },
+    {
+      "trigger": "If resident asks about management",
+      "reply": "There is no curative medical therapy. Pruritus can be treated symptomatically with cholestyramine. Fat-soluble vitamin levels should be monitored."
+    },
+    {
+      "trigger": "If resident addresses surveillance for complications",
+      "reply": "Annual MRCP or ultrasound and CA 19-9 screening are recommended due to risk of cholangiocarcinoma."
+    },
+    {
+      "trigger": "If resident considers IBD management",
+      "reply": "Patients with PSC and ulcerative colitis require colonoscopy every 1\u20132 years due to increased risk of colorectal cancer."
+    },
+    {
+      "trigger": "If resident discusses dominant strictures",
+      "reply": "Symptomatic dominant strictures can be managed with endoscopic dilation and stenting."
+    },
+    {
+      "trigger": "If resident addresses transplant candidacy",
+      "reply": "Liver transplantation is indicated in cases of liver failure, recurrent cholangitis, or intractable pruritus."
+    },
+    {
+      "trigger": "If resident explains prognosis",
+      "reply": "Median survival from diagnosis is approximately 10\u201315 years without transplantation."
+    },
+    {
+      "trigger": "If resident discusses patient counseling",
+      "reply": "Counseling includes vaccination against hepatitis A and B and avoidance of hepatotoxic medications."
+    },
+    {
+      "trigger": "If resident asks about research/clinical trials",
+      "reply": "Referral to a hepatology center for investigational therapies (e.g., high-dose ursodeoxycholic acid, obeticholic acid) may be considered."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of PSC diagnosis using cholestatic labs and MRCP findings",
+    "Awareness that no curative medical therapy exists; focus on symptomatic management",
+    "Screening for complications such as cholangiocarcinoma and colorectal cancer",
+    "Recognition of indications for liver transplantation",
+    "Patient education including vaccination and avoidance of hepatotoxins"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider PSC; attributes findings to unrelated causes"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; misses key features of PSC"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes PSC as a possibility but omits alternative diagnoses"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including PSC and excludes alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies PSC as leading diagnosis, articulating a complete differential with supporting/refuting data"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize need for surveillance or timely intervention"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes need but delays actions or selects inappropriate tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses key steps or timing"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes surveillance, diagnosis, and management appropriately with good timing"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely decisions"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity and structure"
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and plan clearly but misses confirmation of understanding"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, and empathetic communication with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate, anticipates patient/team needs"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of surgical/procedural management for PSC"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical option (transplant) but with major gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes transplant indications with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Fully describes surgical management, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of transplant indications, operative considerations, and perioperative management"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect or breaches confidentiality"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Respectful and professional but requires prompting"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism; demonstrates humility, cultural sensitivity, and ethical behavior"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing PSC using both laboratory and imaging findings. You appropriately emphasized long-term surveillance and identified the importance of colonoscopy in the setting of ulcerative colitis. Communication of your plan was clear and structured. Areas for Improvement: Earlier recognition of the role of cholangiocarcinoma screening and the specific criteria for liver transplantation would improve your management approach. Greater emphasis on patient counseling regarding lifestyle modifications and hepatotoxin avoidance is recommended. Suggested Reading Topics: - Primary Sclerosing Cholangitis (SCORE curriculum) - Surveillance for Cholangiocarcinoma (ACS/ASE Review Manual) - Indications for Liver Transplantation in Chronic Liver Disease"
+  }
+}

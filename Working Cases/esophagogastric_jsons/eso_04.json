@@ -1,0 +1,209 @@
+{
+  "case_id": "eso_04",
+  "title": "Esophageal Carcinoma",
+  "diagnosis_topic": "Locally advanced esophageal adenocarcinoma requiring multimodal therapy and surgical management",
+  "tags": [
+    "esophagogastric",
+    "esophageal_cancer",
+    "oncology",
+    "esophagectomy"
+  ],
+  "setup_script": "\u201cA 60-year-old man with a history of long-term smoking and alcohol use presents with progressive dysphagia, initially to solids and now to liquids. He has lost 15 pounds over the past 3 months. On physical exam, he appears thin and somewhat cachectic. Vital signs are stable, and abdominal exam is benign. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "\u201cBP 115/70 mmHg, HR 95 bpm, RR 18/min, Temp 37.2\u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident orders initial workup with endoscopy",
+      "reply": "\u201cUpper endoscopy reveals a circumferential mass in the distal third of the esophagus. Biopsies confirm adenocarcinoma.\u201d"
+    },
+    {
+      "trigger": "If resident requests staging with EUS and CT/PET",
+      "reply": "\u201cEndoscopic ultrasound shows a T3 lesion with suspected periesophageal nodes. PET/CT shows no evidence of distant metastasis.\u201d"
+    },
+    {
+      "trigger": "If resident evaluates nutritional status",
+      "reply": "\u201cBMI is 19 kg/m\u00b2, serum albumin 3.0 g/dL. Patient reports difficulty maintaining oral intake. What would you consider next?\u201d"
+    },
+    {
+      "trigger": "If resident proposes feeding jejunostomy",
+      "reply": "\u201cFeeding jejunostomy is placed laparoscopically, and patient is optimized nutritionally before therapy.\u201d"
+    },
+    {
+      "trigger": "If resident discusses neoadjuvant therapy",
+      "reply": "\u201cPatient receives 5 weeks of carboplatin/paclitaxel with concurrent radiotherapy (CROSS regimen). He tolerates treatment well.\u201d"
+    },
+    {
+      "trigger": "If resident asks for restaging",
+      "reply": "\u201cRestaging PET/CT shows stable disease without metastasis; primary tumor appears decreased in thickness.\u201d"
+    },
+    {
+      "trigger": "If resident recommends surgery",
+      "reply": "\u201cPatient undergoes transthoracic (Ivor Lewis) esophagectomy with gastric pull-up and two-field lymphadenectomy. Please describe your operative steps.\u201d"
+    },
+    {
+      "trigger": "If resident describes operative approach",
+      "reply": "\u201cAbdominal phase: mobilization of the stomach with preservation of right gastroepiploic artery, division of left gastric artery, creation of gastric conduit. Thoracic phase: right thoracotomy, en bloc esophagectomy, mediastinal lymphadenectomy, esophagogastric anastomosis in the chest. What are potential intraoperative complications?\u201d"
+    },
+    {
+      "trigger": "If resident discusses intraoperative risks",
+      "reply": "\u201cRisks include injury to thoracic duct (chyle leak), recurrent laryngeal nerve injury, bleeding, and gastric conduit ischemia.\u201d"
+    },
+    {
+      "trigger": "If resident asks about postoperative course",
+      "reply": "\u201cPatient is admitted to ICU, extubated on day 1, started on jejunal feeds. On POD 5, he develops tachycardia and fever. What would you do?\u201d"
+    },
+    {
+      "trigger": "If resident evaluates",
+      "reply": "\u201cCT chest shows peri-anastomotic collection with air and contrast leak.\u201d"
+    },
+    {
+      "trigger": "If resident manages leak",
+      "reply": "\u201cPatient undergoes endoscopic stent placement and drainage; he gradually improves. What is your long-term follow-up plan?\u201d"
+    },
+    {
+      "trigger": "If resident outlines surveillance",
+      "reply": "\u201cCT and endoscopy every 6 months for 2 years, then annually; nutritional monitoring and lifestyle modification including smoking/alcohol cessation.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate diagnostic workup including endoscopy, biopsy, staging with EUS and PET/CT",
+    "Nutritional assessment and support prior to therapy",
+    "Neoadjuvant chemoradiation for locally advanced disease",
+    "Surgical planning: Ivor Lewis esophagectomy, gastric conduit creation, lymphadenectomy",
+    "Recognition and management of perioperative complications (leak, chyle leak, pneumonia)",
+    "Postoperative ICU care and nutrition",
+    "Long-term surveillance and survivorship care"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider esophageal carcinoma, attributes symptoms to benign disease"
+          },
+          {
+            "score": 2,
+            "description": "Considers carcinoma but omits essential staging studies"
+          },
+          {
+            "score": 3,
+            "description": "Appropriately orders endoscopy and biopsy but incomplete staging"
+          },
+          {
+            "score": 4,
+            "description": "Comprehensive diagnostic approach including EUS and PET/CT"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly recognizes esophageal carcinoma, executes full staging, and anticipates nutritional considerations"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Misses urgency, delays staging or treatment"
+          },
+          {
+            "score": 2,
+            "description": "Identifies cancer but delays or mis-sequences therapy"
+          },
+          {
+            "score": 3,
+            "description": "Proposes neoadjuvant therapy but with gaps in timing or coordination"
+          },
+          {
+            "score": 4,
+            "description": "Correctly sequences neoadjuvant chemoradiation, surgery, and surveillance"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, integrates multidisciplinary care, optimizes patient for best outcomes"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, confusing explanations"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or patient-centered discussion"
+          },
+          {
+            "score": 3,
+            "description": "Clear  of diagnosis and plan but misses key details"
+          },
+          {
+            "score": 4,
+            "description": "Communicates systematically, explains rationale, engages team/patient"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary clarity, empathy, and anticipation of patient/team concerns"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of operative management of esophageal cancer"
+          },
+          {
+            "score": 2,
+            "description": "Identifies esophagectomy but with major errors in technique/indications"
+          },
+          {
+            "score": 3,
+            "description": "Describes basic steps of Ivor Lewis esophagectomy but omits key elements"
+          },
+          {
+            "score": 4,
+            "description": "Provides detailed description: gastric conduit creation, anastomotic techniques, lymphadenectomy, complication recognition"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative and perioperative management, including advanced techniques (e.g., minimally invasive esophagectomy, leak management, conduit ischemia strategies)"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, dismissive, or breaches patient confidentiality"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability, limited self-awareness"
+          },
+          {
+            "score": 3,
+            "description": "Professional but requires prompting for reflection and thoroughness"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, collaborative, and receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model : humility, cultural sensitivity, and ethical conduct"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by promptly ordering endoscopy and staging studies. Your understanding of multimodal therapy and surgical planning was well structured, and you clearly articulated operative steps and potential complications.Areas for Improvement:Further detail in describing management of postoperative complications, particularly handling of anastomotic leaks and nutritional support, would strengthen your performance. Greater emphasis on discussing surveillance protocols and survivorship considerations would also be beneficial.Suggested Reading:- SCORE Curriculum: Esophageal Cancer- NCCN Guidelines: Esophageal and Esophagogastric Junction Cancers- Review: Operative Techniques in Esophagectomy"
+}

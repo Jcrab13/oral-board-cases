@@ -1,0 +1,203 @@
+{
+  "case_id": "gen_09",
+  "title": "Paraesophageal Hernia",
+  "diagnosis_topic": "Symptomatic Paraesophageal Hernia with Anemia",
+  "tags": [
+    "esophagogastric",
+    "paraesophageal_hernia",
+    "laparoscopic_surgery"
+  ],
+  "setup_script": "\u201cA 72-year-old woman presents with postprandial chest discomfort, early satiety, and occasional dyspnea. She also has a history of iron deficiency anemia. On initial evaluation, she appears comfortable. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 130/75 mmHg, HR 85 bpm, RR 18/min, Temp 36.9 \u00b0C."
+    },
+    {
+      "trigger": "If resident orders chest X-ray",
+      "reply": "Retrocardiac air\u2013fluid level suggestive of intrathoracic stomach."
+    },
+    {
+      "trigger": "If resident orders barium swallow",
+      "reply": "Large paraesophageal hernia with gastric fundus in thorax; minimal GE junction displacement."
+    },
+    {
+      "trigger": "If resident performs endoscopy",
+      "reply": "Cameron ulcers present with mild esophagitis; biopsies obtained."
+    },
+    {
+      "trigger": "If resident evaluates labs",
+      "reply": "Iron deficiency anemia with ferritin 10 ng/mL; stool occult blood positive."
+    },
+    {
+      "trigger": "If resident discusses surgical indications",
+      "reply": "Symptomatic paraesophageal hernia with anemia and risk of volvulus; surgical repair recommended."
+    },
+    {
+      "trigger": "If resident outlines surgical plan",
+      "reply": "Laparoscopic reduction, sac excision, crural repair, and fundoplication; mesh reinforcement if defect is large."
+    },
+    {
+      "trigger": "If resident is asked to describe technical steps of operation",
+      "reply": "Resident should detail trocar placement, hernia sac dissection, reduction of stomach, mobilization of esophagus, crural approximation, and fundoplication. Examiner may ask: \u201cPlease describe your operative steps in detail.\u201d"
+    },
+    {
+      "trigger": "If resident delays surgery",
+      "reply": "Patient at risk for volvulus, strangulation, bleeding, or aspiration pneumonia."
+    },
+    {
+      "trigger": "If resident performs manometry",
+      "reply": "Normal esophageal motility confirmed; guides choice between Nissen vs.\u00a0Toupet fundoplication."
+    },
+    {
+      "trigger": "If resident addresses postoperative care",
+      "reply": "Gradual diet progression, small frequent meals, monitor for dysphagia and gas-bloat syndrome."
+    },
+    {
+      "trigger": "If resident asks about asymptomatic small hernia",
+      "reply": "Observation with counseling on warning signs is reasonable."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Advises iron supplementation until surgery and importance of follow-up for recurrence."
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis of paraesophageal hernia using imaging and endoscopy",
+    "Recognition of surgical indications (symptoms, anemia, risk of volvulus)",
+    "Key components of laparoscopic repair and fundoplication",
+    "Ability to describe operative steps in detail",
+    "Preoperative manometry and tailoring fundoplication type",
+    "Postoperative management and counseling on recurrence risk"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider paraesophageal hernia or misattributes symptoms"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; misses key features"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes paraesophageal hernia but omits alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential and rules out other causes"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies paraesophageal hernia, articulates thorough differential"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize need for timely surgery"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays or orders inappropriate tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic workup but misses key timing/steps"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes testing and surgery appropriately with good timing"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, makes timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but unclear or incomplete"
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and plan clearly but without confirmation of understanding"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic  with team/patient"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , anticipates needs of patient/team"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of paraesophageal hernia management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgery but with major gaps in technique/indications"
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps but with omissions or uncertainty"
+          },
+          {
+            "score": 4,
+            "description": "Clearly and completely describes operative steps, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances: trocar placement, sac dissection, stomach reduction, esophageal mobilization, crural repair, fundoplication, and perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, unaware of limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability lapses"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect/integrity but needs prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for , humility, and ethical behavior"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths\u201cYou demonstrated strong diagnostic reasoning by recognizing paraesophageal hernia and recommending surgical repair. Your operative plan was logical and comprehensive, and your communication was structured and clear.\u201dAreas for Improvement\u201cConsider expanding your operative description with attention to technical sequence and potential pitfalls. Enhance your discussion of postoperative complications and long-term counseling.\u201dSuggested Reading Topics- Paraesophageal Hernia: Pathophysiology and Management (SCORE)- Laparoscopic Hiatal Hernia Repair Techniques (ASE Core Curriculum)- Fundoplication: Indications and Outcomes (ACS Review Manual)"
+}

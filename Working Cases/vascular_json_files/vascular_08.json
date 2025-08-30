@@ -1,0 +1,205 @@
+{
+  "case_id": "vascular_08",
+  "title": "Type B Aortic Dissection",
+  "diagnosis_topic": "Acute Type B Aortic Dissection \u2014 Medical vs.\u00a0Endovascular Repair",
+  "tags": [
+    "vascular",
+    "aortic_dissection"
+  ],
+  "setup_script": "A 55-year-old man with poorly controlled hypertension presents with sudden sharp chest and back pain. He is diaphoretic but alert. He has no history of Marfan syndrome or prior aortic disease. On exam, his pulses are asymmetric. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "BP 180/110 mmHg, HR 100 bpm, RR 20/min, Temp 36.9 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs focused physical exam",
+      "reply": "Unequal blood pressures in arms, decreased right femoral pulse, neurologic exam intact."
+    },
+    {
+      "trigger": "If resident orders ECG and troponin",
+      "reply": "Normal ECG, troponin negative."
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "CT angiography shows Stanford type B dissection starting distal to the left subclavian artery extending to renal arteries; no rupture or malperfusion."
+    },
+    {
+      "trigger": "If resident initiates blood pressure control promptly",
+      "reply": "IV beta-blocker given, systolic BP lowered <120 mmHg, patient\u2019s pain improves."
+    },
+    {
+      "trigger": "If resident delays blood pressure control",
+      "reply": "Dissection propagates, patient develops oliguria and rising creatinine."
+    },
+    {
+      "trigger": "If resident consults vascular surgery early",
+      "reply": "Discussion regarding indications for TEVAR vs.\u00a0medical management."
+    },
+    {
+      "trigger": "If resident asks about TEVAR indications",
+      "reply": "Indicated if malperfusion, rupture, uncontrolled hypertension, or rapid expansion."
+    },
+    {
+      "trigger": "If resident manages with antihypertensives only",
+      "reply": "Patient stabilizes, pain controlled, renal function preserved."
+    },
+    {
+      "trigger": "If resident asks about pain control",
+      "reply": "IV opioids provided, pain decreases, sympathetic tone reduced."
+    },
+    {
+      "trigger": "If resident monitors for complications",
+      "reply": "Assessment includes renal perfusion, bowel ischemia, lower extremity pulses, spinal cord function."
+    },
+    {
+      "trigger": "If resident ignores monitoring",
+      "reply": "Patient develops worsening abdominal pain and lactic acidosis suggesting mesenteric ischemia."
+    },
+    {
+      "trigger": "If resident addresses follow-up",
+      "reply": "Surveillance plan includes CTA at 3, 6, and 12 months, then annually."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Counseling provided on strict lifelong blood pressure control and adherence to imaging follow-up."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of aortic dissection symptoms and development of appropriate differential.",
+    "Timely initiation of imaging and antihypertensive therapy.",
+    "Determining when TEVAR is indicated versus when medical management suffices.",
+    "Monitoring for complications including malperfusion syndromes.",
+    "Providing appropriate patient education and surveillance planning."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider aortic dissection; misattributes to unrelated diagnosis."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; misses key features."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes aortic dissection but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including dissection, rules out alternatives systematically."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies dissection as leading diagnosis with thorough differential and data support."
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or initiate timely management."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and definitive therapy appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely, well-sequenced decisions."
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks clarity or empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks structure and engagement."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plan but incomplete."
+          },
+          {
+            "score": 4,
+            "description": "Logical, clear, empathetic communication with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary clarity, compassionate, anticipates patient and team needs."
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of type B dissection management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps in indications/technique."
+          },
+          {
+            "score": 3,
+            "description": "Describes key steps with minor omissions or uncertainty."
+          },
+          {
+            "score": 4,
+            "description": "Fully describes operative and medical management with complications/alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of evidence-based management, operative nuances, and perioperative considerations."
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unsafe behavior."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model in professionalism, cultural sensitivity, and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this type b aortic dissection scenario demonstrated You demonstrated strong diagnostic reasoning by recognizing dissection early and initiating appropriate blood pressure control. Communication with consultants and emphasis on patient education were well-structured.. Areas for improvement include Earlier recognition of complications such as malperfusion syndromes could improve your overall management. Ensure that you consistently articulate the surveillance and follow-up strategy clearly to the patient."
+  }
+}

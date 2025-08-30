@@ -1,0 +1,202 @@
+{
+  "case_id": "end_02",
+  "title": "Cushing Disease due to ACTH-Secreting Pituitary Adenoma",
+  "diagnosis_topic": "Endocrine evaluation for hypercortisolism",
+  "tags": [
+    "endocrine",
+    "pituitary",
+    "hypercortisolism"
+  ],
+  "setup_script": "\u201cA 35-year-old woman presents with progressive weight gain, facial rounding, purple abdominal striae, and hypertension. Laboratory evaluation shows elevated 24-hour urinary cortisol and lack of suppression with low-dose dexamethasone. ACTH is elevated. Pituitary MRI reveals a 6 mm microadenoma. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident discusses differential diagnosis",
+      "reply": "\u201cWhat etiologies of hypercortisolism would you consider?\u201d"
+    },
+    {
+      "trigger": "If resident orders confirmatory testing",
+      "reply": "\u201cMidnight salivary cortisol is elevated, high-dose dexamethasone suppression test shows suppression, and CRH stimulation increases ACTH levels. How do you interpret these results?\u201d"
+    },
+    {
+      "trigger": "If resident identifies pituitary source",
+      "reply": "\u201cWhat is your management plan?\u201d"
+    },
+    {
+      "trigger": "If resident recommends medical optimization before surgery",
+      "reply": "\u201cEndocrinology recommends ketoconazole for temporary cortisol control. What other preoperative evaluations are needed?\u201d"
+    },
+    {
+      "trigger": "If resident requests ophthalmology evaluation",
+      "reply": "\u201cVisual fields are intact. How do you counsel the patient regarding surgery?\u201d"
+    },
+    {
+      "trigger": "If resident discusses surgical risks",
+      "reply": "\u201cThe patient consents after counseling about potential complications including CSF leak, hypopituitarism, and diabetes insipidus. What are your next steps?\u201d"
+    },
+    {
+      "trigger": "If resident performs transsphenoidal resection",
+      "reply": "\u201cIntraoperatively, you resect a small pituitary lesion. Pathology confirms ACTH-secreting corticotroph adenoma. What is your postoperative management?\u201d"
+    },
+    {
+      "trigger": "If resident monitors cortisol levels",
+      "reply": "\u201cPostoperative morning cortisol is 2 \u03bcg/dL. The patient is fatigued and hypotensive. How do you manage this?\u201d"
+    },
+    {
+      "trigger": "If resident initiates steroid replacement",
+      "reply": "\u201cThe patient improves on hydrocortisone. What complications will you monitor for in the immediate postoperative period?\u201d"
+    },
+    {
+      "trigger": "If resident mentions visual changes, diabetes insipidus, or infection",
+      "reply": "\u201cNo acute complications develop. What is your follow-up plan with endocrinology?\u201d"
+    },
+    {
+      "trigger": "If resident mentions surveillance",
+      "reply": "\u201cCortisol monitoring and periodic MRI are arranged. How would you manage residual or recurrent disease?\u201d"
+    },
+    {
+      "trigger": "If resident discusses adjuvant therapy",
+      "reply": "\u201cEndocrinology reviews options including repeat surgery, radiation, or medical therapy. What education will you provide to the patient before discharge?\u201d"
+    },
+    {
+      "trigger": "If resident mentions adrenal insufficiency education",
+      "reply": "\u201cThe patient is given a medical alert bracelet and stress dosing instructions. Case concludes.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Differentiating causes of hypercortisolism and confirming pituitary source.",
+    "Planning and coordinating transsphenoidal surgery with the multidisciplinary team.",
+    "Managing perioperative adrenal insufficiency.",
+    "Recognizing and treating postoperative complications.",
+    "Establishing long-term surveillance for recurrence and hypopituitarism."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize hypercortisolism or misattributes findings."
+          },
+          {
+            "score": 2,
+            "description": "Considers Cushing disease but omits important alternatives."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes Cushing disease and begins appropriate workup."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential and interprets confirmatory testing."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies pituitary Cushing\u2019s and integrates clinical, lab, and imaging findings."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or delays critical decisions."
+          },
+          {
+            "score": 2,
+            "description": "Identifies need for intervention but with major delays or inappropriate choices."
+          },
+          {
+            "score": 3,
+            "description": "Initiates correct management but with gaps in timing or prioritization."
+          },
+          {
+            "score": 4,
+            "description": "Appropriately sequences diagnostic, medical, and surgical care."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, demonstrates timely decisions, and coordinates care effectively."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacking clarity with team/patient."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks structure or patient engagement."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of plan but occasionally incomplete."
+          },
+          {
+            "score": 4,
+            "description": "Communicates logically, clearly, and empathetically."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, confident, and anticipates information needs of both patient and team."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "No understanding of surgical management of Cushing disease."
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgery but with major errors in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes essential steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Explains operative approach, complications, and alternatives appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative nuances, perioperative care, and evidence-based indications."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unprofessional."
+          },
+          {
+            "score": 2,
+            "description": "Occasional lapses in respect, integrity, or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful and professional but requires prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently professional, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model in , humility, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing features of hypercortisolism and pursuing confirmatory testing. Your clinical judgment in planning transsphenoidal surgery was timely and well-structured. Communication with the multidisciplinary team was clear and professional.Areas for Improvement: Earlier discussion of alternative etiologies of ACTH-dependent Cushing syndrome would strengthen your differential. Consider refining your approach to postoperative endocrine complications and long-term surveillance strategies.Suggested Reading: - SCORE Curriculum: Pituitary Disorders and Hypercortisolism - ACS/ASE Review: Perioperative Endocrine Management - Endocrine Society Clinical Practice Guidelines on Cushing Syndrome"
+}

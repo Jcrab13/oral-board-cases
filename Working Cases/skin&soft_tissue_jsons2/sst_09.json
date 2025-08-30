@@ -1,0 +1,111 @@
+{
+  "case_id": "sst_09",
+  "title": "Lipomatous mass",
+  "diagnosis_topic": "Lipomatous mass \u2014 lipoma vs atypical lipomatous tumor / well-differentiated liposarcoma (WDLPS).",
+  "tags": [
+    "skin_and_soft_tissue"
+  ],
+  "setup_script": "\u201cA 57-year-old man is referred to your clinic for a slowly enlarging, painless lump on the medial aspect of his left thigh that he first noticed 18 months ago.\u201dNo additional vitals, history, exam details, or imaging are provided until the resident requests them. 3.",
+  "dynamic_flow": [
+    {
+      "trigger": "Step 1 \u2014 History Gathering- Expected resident actions",
+      "reply": "Clarify growth rate, pain, trauma, constitutional symptoms, family history of soft-tissue tumors.-"
+    },
+    {
+      "trigger": "If asked",
+      "reply": "\u201cMass grew from \u2018marble\u2019 to \u2018plum\u2019; no pain/trauma, no B-symptoms, no relevant family history.\u201d- Rescue prompt: \u201cAnything else you\u2019d like to ask?\u201d- Critical failure: Omits growth-rate assessment."
+    },
+    {
+      "trigger": "Step 2 \u2014 Focused Exam- Expected",
+      "reply": "Request vitals and targeted extremity exam (location, depth to fascia, mobility, neurovascular status, regional nodes).-"
+    },
+    {
+      "trigger": "If asked",
+      "reply": "\u201cVitals normal. 5 \u00d7 4 cm soft but deep, minimally mobile intramuscular mass in the adductor compartment; skin normal; no inguinal nodes.\u201d- Rescue prompt: \u201cWould you like to examine the mass?\u201d- Critical failure: Neglects compartment or nodal exam."
+    },
+    {
+      "trigger": "Step 3 \u2014 Initial Imaging Decision- Expected",
+      "reply": "Order MRI with/without contrast, including fat-suppressed sequences.-"
+    },
+    {
+      "trigger": "If ordered",
+      "reply": "\u201cMRI: 5.4 cm intramuscular fatty lesion with thick (>2 mm) septa, focal nodular non-adipose areas, mild enhancement.\u201d- Rescue prompt: \u201cDo you want any imaging?\u201d- Critical failure: Chooses ultrasound only and stops."
+    },
+    {
+      "trigger": "Step 4 \u2014 Tissue Diagnosis- Expected",
+      "reply": "Interpret MRI as suspicious for atypical lipomatous tumor/WDLPS; plan core-needle biopsy along the future surgical corridor.-"
+    },
+    {
+      "trigger": "If done",
+      "reply": "Pathology returns atypical lipomatous tumor/WDLPS with MDM2 amplification.- Rescue prompt: \u201cHow will you obtain tissue?\u201d- Critical failure: Excisional biopsy via transverse incision."
+    },
+    {
+      "trigger": "Step 5 \u2014 Staging- Expected",
+      "reply": "Order chest CT for staging (metastases uncommon but guideline-concordant).-"
+    },
+    {
+      "trigger": "If ordered",
+      "reply": "Chest CT is clear.- Rescue prompt: \u201cAny staging?\u201d- Critical failure: Omits metastatic workup."
+    },
+    {
+      "trigger": "Step 6 \u2014 Operative Management Selection- Expected",
+      "reply": "Offer wide local excision (1\u20132 cm margins) for WDLPS; contrast with marginal excision or observation if benign lipoma. Discuss limb-sparing approach, specimen orientation, drain use.- Examiner stance: Accepts appropriate plan.- Rescue prompt: \u201cWhat operation will you offer?\u201d- Critical failure: Treats as simple lipoma and plans shell-out."
+    },
+    {
+      "trigger": "Step 7 \u2014 Operative Technique- Expected",
+      "reply": "Longitudinal incision; resect tumor with a cuff of fascia/muscle; avoid capsular rupture; orient specimen with tags (proximal/distal/deep).- Examiner stance: Accepts detailed, oncologic technique.- Rescue prompt: \u201cDescribe your operative plan.\u201d- Critical failure: Leaves tumor capsule behind."
+    },
+    {
+      "trigger": "Step 8 \u2014 Post-Op Care & Surveillance- Expected",
+      "reply": "MRI and chest imaging every 6 months for 5 years; present at sarcoma tumor board; consider adjuvant RT if margins <1 cm.- Examiner stance: Accepts comprehensive plan.- Rescue prompt: \u201cHow will you follow him?\u201d- Critical failure: No surveillance strategy."
+    },
+    {
+      "trigger": "Step 9 \u2014 Benign Pathway Variant- Expected",
+      "reply": ""
+    },
+    {
+      "trigger": "If biopsy shows benign lipoma, offer marginal excision in clinic vs observation; explain reasoning and risks.- Examiner stance",
+      "reply": "Accepts clear differentiation.- Rescue prompt: \u201cHow would benign pathology change things?\u201d- Critical failure: Cannot articulate difference between WDLPS and lipoma management."
+    },
+    {
+      "trigger": "Step 10 \u2014 Synthesis & Counseling- Expected",
+      "reply": "Concise summary; counsel on recurrence (<10%) and dedifferentiation risk (<5%). Examiner ends case.- Critical failure: Cannot synthesize a final plan."
+    },
+    {
+      "trigger": "Exam-management note",
+      "reply": "\u2265 3 rescue prompts = automatic Borderline."
+    }
+  ],
+  "critical_decision_points": [
+    "Order MRI (fat-suppressed sequences) to characterize a lipomatous lesion.",
+    "Perform core-needle biopsy along the future surgical corridor prior to definitive excision.",
+    "Distinguish operative approach: wide local excision for WDLPS vs marginal excision/observation for lipoma.",
+    "Engage multidisciplinary sarcoma tumor board and establish surveillance.",
+    "5."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [],
+        "weight": 0.3
+      },
+      "surgical_knowledge": {
+        "anchors": [],
+        "weight": 0.15
+      },
+      "communication": {
+        "anchors": [],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths (examples):- Recognized MRI features concerning for WDLPS.- Selected core-needle biopsy correctly.Areas for Improvement (examples):- Provide precise specimen orientation tags.- Quote recurrence and dedifferentiation risks during counseling.- Clarify staging CT indications.Suggested Reading:- NCCN Soft Tissue Sarcoma Guidelines (current).- \u201cMRI Criteria for Lipomatous Tumors,\u201d Radiology.- ACS Video: Atypical Lipomatous Tumor Resection."
+}

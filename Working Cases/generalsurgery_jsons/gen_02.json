@@ -1,0 +1,217 @@
+{
+  "case_id": "gen_02",
+  "title": "Bleeding Gastric Ulcer",
+  "diagnosis_topic": "Hemorrhage from a gastric ulcer requiring endoscopic and medical management",
+  "tags": [
+    "esophagogastric",
+    "gastric_ulcer",
+    "upper_gi_bleed",
+    "endoscopy"
+  ],
+  "setup_script": "\u201cA 50-year-old man presents to the emergency department with hematemesis and melena. He reports multiple episodes of vomiting blood over the past 6 hours and several days of black stools. He has a history of chronic NSAID use for back pain. On arrival, he appears pale and fatigued. How would you proceed in managing this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 100/60 mmHg, HR 110 bpm, RR 20/min, Temp 37 \u00b0C; patient appears pale and diaphoretic."
+    },
+    {
+      "trigger": "If resident establishes large-bore IV access and initiates resuscitation",
+      "reply": "Crystalloid given, 1 unit PRBC transfused, Hgb 7.2 g/dL."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "CBC: Hgb 8 g/dL, platelets 200K/\u00b5L; INR 1.0; BUN 40 mg/dL, Cr 1.2 mg/dL."
+    },
+    {
+      "trigger": "If resident starts IV proton pump inhibitor",
+      "reply": "Pantoprazole bolus followed by continuous infusion is administered."
+    },
+    {
+      "trigger": "If resident places NG tube",
+      "reply": "Aspirates bright red blood confirming ongoing upper GI bleeding."
+    },
+    {
+      "trigger": "If resident consults gastroenterology for urgent endoscopy",
+      "reply": "Endoscopy reveals a 1 cm gastric ulcer with a visible vessel. Epinephrine injection and clipping performed."
+    },
+    {
+      "trigger": "If resident delays endoscopy",
+      "reply": "Patient develops worsening hypotension and requires escalation of transfusion."
+    },
+    {
+      "trigger": "If resident requests repeat endoscopy after rebleeding",
+      "reply": "Repeat endoscopic therapy performed with thermal coagulation."
+    },
+    {
+      "trigger": "If resident escalates to interventional radiology",
+      "reply": "Angiographic embolization of left gastric artery performed with stabilization."
+    },
+    {
+      "trigger": "If resident opts for surgery after failed interventions",
+      "reply": "Exploratory laparotomy performed; bleeding ulcer oversewn with truncal vagotomy and pyloroplasty. Examiner prompt: \u201cPlease describe in detail the technical steps of this operative procedure.\u201d"
+    },
+    {
+      "trigger": "If resident provides operative steps",
+      "reply": "Resident describes laparotomy, exposure, identification of bleeding ulcer, oversewing of bleeding vessel, vagotomy and pyloroplasty."
+    },
+    {
+      "trigger": "If resident omits critical operative steps",
+      "reply": "Patient remains unstable with continued bleeding; examiner asks: \u201cIs there anything else you would include in your operative management?\u201d"
+    },
+    {
+      "trigger": "If resident orders H. pylori testing",
+      "reply": "Biopsy taken; positive result confirmed; eradication therapy initiated."
+    },
+    {
+      "trigger": "If resident advises discontinuation of NSAIDs and initiation of PPI maintenance",
+      "reply": "Patient counseled on alternative analgesics and long-term PPI therapy."
+    },
+    {
+      "trigger": "If resident evaluates for malignancy",
+      "reply": "Biopsies obtained from ulcer edge; pathology pending."
+    },
+    {
+      "trigger": "If resident provides discharge instructions",
+      "reply": "Patient advised on medication adherence, avoidance of NSAIDs, completion of H. pylori therapy, and follow-up endoscopy."
+    }
+  ],
+  "critical_decision_points": [
+    "Initial hemodynamic stabilization and transfusion strategy",
+    "Early initiation of IV PPI therapy",
+    "Appropriate use of urgent endoscopy for diagnosis and hemostasis",
+    "Recognition of rebleeding and escalation to embolization or surgery",
+    "Ability to describe operative steps for surgical management of bleeding gastric ulcer",
+    "Testing for and treating H. pylori infection",
+    "Long-term ulcer prevention and surveillance for malignancy"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize bleeding gastric ulcer; attributes symptoms to unrelated causes."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete consideration of upper GI bleeding."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes bleeding gastric ulcer but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential, includes gastric ulcer and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies gastric ulcer bleeding as leading diagnosis; provides thorough differential with supporting/refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or delays intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but orders inappropriate or delayed tests/interventions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic management but misses key steps or appropriate sequencing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes stabilization, appropriate workup, and timely endoscopy."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, and escalates appropriately to IR or surgery."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, or lacks empathy with patient/team."
+          },
+          {
+            "score": 2,
+            "description": "Provides some information but lacks clarity or organization."
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and plan clearly but misses opportunities for confirmation."
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, and empathetic  with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary : concise, compassionate, anticipates team and patient information needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of procedural or operative options."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative intervention but with major gaps in indications/technique."
+          },
+          {
+            "score": 3,
+            "description": "Describes some operative steps but omits key technical details."
+          },
+          {
+            "score": 4,
+            "description": "Accurately explains operative management with most steps included, minor omissions only."
+          },
+          {
+            "score": 5,
+            "description": "Provides detailed and accurate operative description with excellent understanding of surgical anatomy, technical steps, and alternatives."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or disregards limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model : humility, cultural sensitivity, ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing bleeding gastric ulcer early and initiating appropriate resuscitation. You communicated your plan for urgent endoscopy clearly and prioritized stabilization.Areas for Improvement:Further improvement can be made in providing a detailed description of the operative steps during surgical management. Ensure you articulate technical details and postoperative considerations clearly.Suggested Reading Topics:- Upper GI Bleeding and Endoscopic Hemostasis (SCORE Curriculum)- Surgical Management of Peptic Ulcer Disease (ACS/ASE Review Manual)- Technical Approaches to Oversewing Bleeding Ulcers and Vagotomy/Pyloroplasty (Surgical Textbook Reference)- H. pylori Testing and Eradication Guidelines (ACG Clinical Guideline)"
+}

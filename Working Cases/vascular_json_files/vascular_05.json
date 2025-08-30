@@ -1,0 +1,216 @@
+{
+  "case_id": "vascular_05",
+  "title": "Acute Mesenteric Ischemia",
+  "diagnosis_topic": "Embolic occlusion of the superior mesenteric artery causing ischemia of the small intestine",
+  "tags": [
+    "vascular",
+    "mesenteric_ischemia",
+    "embolism",
+    "abdominal_emergency"
+  ],
+  "setup_script": "A 70-year-old woman with a history of atrial fibrillation, not on anticoagulation, presents with sudden onset of severe abdominal pain that she describes as 10/10. She reports nausea and one episode of vomiting. On physical examination, her abdomen is soft with mild diffuse tenderness but no peritoneal signs. Her past medical history is significant for congestive heart failure and COPD. How would you proceed in evaluating and managing this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "BP 130/70 mmHg, HR 110 bpm irregular, RR 22/min, Temp 38.0 \u00b0C, SpO\u2082 95%."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Abdomen soft, nondistended, with mild tenderness, no guarding or rebound, bowel sounds decreased."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 18,000/\u00b5L, lactate 6 mmol/L, ABG shows metabolic acidosis, INR 1.1."
+    },
+    {
+      "trigger": "If resident delays initial resuscitation",
+      "reply": "The patient becomes hypotensive to BP 85/50 mmHg, HR 125 bpm, cool extremities, worsening abdominal tenderness."
+    },
+    {
+      "trigger": "If resident initiates IV fluids and broad-spectrum antibiotics",
+      "reply": "Hemodynamics stabilize modestly, lactate improves slightly."
+    },
+    {
+      "trigger": "If resident initiates systemic anticoagulation",
+      "reply": "Heparin bolus given."
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "CT angiography demonstrates occlusion of the superior mesenteric artery with non-enhancing jejunal loops consistent with ischemia."
+    },
+    {
+      "trigger": "If resident delays imaging and operative planning",
+      "reply": "Patient deteriorates into septic shock with peritonitis."
+    },
+    {
+      "trigger": "If resident consults vascular and general surgery",
+      "reply": "The decision is made for emergent laparotomy with SMA embolectomy and resection of nonviable bowel."
+    },
+    {
+      "trigger": "If resident performs laparotomy",
+      "reply": "You encounter dusky segments of jejunum with patchy necrosis and thrombotic occlusion of the SMA. What are your operative steps?"
+    },
+    {
+      "trigger": "If resident describes operative technique",
+      "reply": "Please describe your operative approach to SMA embolectomy and resection of nonviable bowel, including exposure, thrombectomy, assessment of viability, and resection technique."
+    },
+    {
+      "trigger": "If resident resects nonviable bowel and restores SMA flow",
+      "reply": "Perfusion improves to remaining bowel. The abdomen is closed with a plan for second-look laparotomy in 24\u201348 hours."
+    },
+    {
+      "trigger": "If resident neglects second-look laparotomy",
+      "reply": "The patient develops worsening acidosis and ileus in the ICU."
+    },
+    {
+      "trigger": "If resident discusses postoperative care",
+      "reply": "Nutritional support, anticoagulation, and close monitoring for short bowel syndrome are initiated."
+    },
+    {
+      "trigger": "If resident asks about risk factors",
+      "reply": "Atrial fibrillation, low-flow states, atherosclerosis."
+    },
+    {
+      "trigger": "If resident asks about prognosis",
+      "reply": "Mortality remains high; early diagnosis and revascularization are critical."
+    }
+  ],
+  "critical_decision_points": [
+    "Maintaining suspicion for mesenteric ischemia when pain is out of proportion to exam findings",
+    "Prompt initiation of resuscitation, antibiotics, and anticoagulation",
+    "Timely CT angiography and interpretation",
+    "Coordinating emergent laparotomy with revascularization and bowel resection",
+    "Accurate description of operative steps for SMA embolectomy and bowel resection",
+    "Planning for second-look laparotomy and anticipating complications"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize acute mesenteric ischemia, attributes symptoms to benign causes"
+          },
+          {
+            "score": 2,
+            "description": "Considers ischemia only after significant deterioration"
+          },
+          {
+            "score": 3,
+            "description": "Includes mesenteric ischemia in differential but incomplete workup"
+          },
+          {
+            "score": 4,
+            "description": "Promptly recognizes acute mesenteric ischemia, orders appropriate labs and imaging"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies acute mesenteric ischemia, demonstrates comprehensive differential with supporting evidence"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Delays resuscitation and definitive care, inappropriate prioritization"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but misses key steps or delays intervention"
+          },
+          {
+            "score": 3,
+            "description": "Initiates resuscitation and basic workup but timing suboptimal"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes stabilization, imaging, and surgical consultation appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates superb judgment, anticipates complications, and ensures timely revascularization and resection"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, fails to articulate plan"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or engagement"
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and management plan"
+          },
+          {
+            "score": 4,
+            "description": "Communicates logically, empathetically, and involves interdisciplinary team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary, succinct, compassionate communication anticipating patient/team needs"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical option but demonstrates major gaps in indications/technique"
+          },
+          {
+            "score": 3,
+            "description": "Describes basic operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Accurately describes operative management, including exposure, embolectomy, viability assessment, and resection"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, perioperative considerations, and complications of SMA embolectomy and bowel resection"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, fails to recognize limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains professionalism but requires prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, ethics, and cultural sensitivity"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this acute mesenteric ischemia scenario demonstrated You demonstrated strong diagnostic reasoning by recognizing abdominal pain out of proportion to exam and pursuing advanced imaging. You prioritized surgical consultation and accurately described appropriate operative steps for SMA embolectomy and bowel resection. Your communication was clear and structured.. Areas for improvement include Earlier initiation of resuscitation and anticoagulation would improve outcomes. Ensure second-look laparotomy is consistently part of your operative plan. Anticipating complications such as short bowel syndrome and ongoing sepsis would strengthen your management.. Suggested reading includes Acute Mesenteric Ischemia (SCORE Curriculum); Principles of Vascular Emergencies (ACS/ASE Review Manual); Operative Strategies for Bowel Ischemia and Short Bowel Syndrome"
+  }
+}

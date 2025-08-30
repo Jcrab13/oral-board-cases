@@ -1,0 +1,208 @@
+{
+  "case_id": "vascular_01",
+  "title": "Acute Limb Ischemia",
+  "diagnosis_topic": "Acute Arterial Occlusion with Limb Ischemia",
+  "tags": [
+    "vascular",
+    "arterial",
+    "acute_limb_ischemia",
+    "embolism",
+    "revascularization"
+  ],
+  "setup_script": "A 65-year-old woman with a history of atrial fibrillation and hypertension presents with sudden onset of severe pain, pallor, and numbness in her right leg that began 4 hours ago. She reports no trauma. She takes warfarin but admits to missing doses. Current medications include metoprolol and lisinopril. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for vital signs",
+      "reply": "BP 130/75 mmHg, HR 95 bpm irregularly irregular, RR 18, Temp 36.8 \u00b0C, SpO\u2082 97% on room air."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Right leg is cool and pale with mottling to mid-calf, capillary refill >4 sec, absent Doppler signals distally, diminished sensation, motor weakness present."
+    },
+    {
+      "trigger": "If resident orders laboratory studies",
+      "reply": "CBC and BMP normal, INR 1.4, lactate 3.2 mmol/L."
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "Bedside Doppler shows absent arterial flow; duplex ultrasound confirms acute occlusion of the common femoral artery."
+    },
+    {
+      "trigger": "If resident initiates systemic anticoagulation with heparin",
+      "reply": "Pain stabilizes, though motor deficit persists."
+    },
+    {
+      "trigger": "If resident delays anticoagulation or intervention",
+      "reply": "The limb becomes progressively mottled with fixed staining, and numbness worsens, suggesting impending necrosis."
+    },
+    {
+      "trigger": "If resident consults vascular surgery and plans emergent revascularization",
+      "reply": "Patient is taken to the OR for embolectomy versus catheter-directed thrombolysis, depending on limb viability."
+    },
+    {
+      "trigger": "If resident asks about causes",
+      "reply": "Atrial fibrillation predisposes to emboli. Other causes include in-situ thrombosis and trauma."
+    },
+    {
+      "trigger": "If resident asks about alternative imaging",
+      "reply": "CT angiography may define anatomy but should not delay intervention."
+    },
+    {
+      "trigger": "If resident assesses six P\u2019s",
+      "reply": "Pain, pallor, pulselessness, paresthesia, poikilothermia, and paralysis are all present."
+    },
+    {
+      "trigger": "If resident describes operative steps",
+      "reply": "Fogarty catheter embolectomy removes clot, with restoration of pulsatile flow distally."
+    },
+    {
+      "trigger": "If resident monitors postoperatively",
+      "reply": "Monitor for reperfusion injury and compartment syndrome; continue anticoagulation and evaluate for cardiac source of embolus."
+    },
+    {
+      "trigger": "If resident considers fasciotomy",
+      "reply": "Fasciotomy is indicated if compartment pressures rise after reperfusion."
+    },
+    {
+      "trigger": "If resident misses reperfusion complications",
+      "reply": "Postoperatively, potassium rises to 6.5 mmol/L and urine output declines, suggesting reperfusion syndrome."
+    }
+  ],
+  "critical_decision_points": [
+    "Rapid recognition of acute limb ischemia and six P\u2019s.",
+    "Immediate anticoagulation and vascular consultation.",
+    "Imaging to define anatomy without delaying intervention.",
+    "Timely selection of embolectomy versus thrombolysis.",
+    "Anticipation and management of reperfusion injury and compartment syndrome."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider acute limb ischemia, misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Delayed recognition, misses key features of acute limb ischemia."
+          },
+          {
+            "score": 3,
+            "description": "Considers acute limb ischemia but omits important alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Comprehensive differential including acute limb ischemia, rules out other causes systematically."
+          },
+          {
+            "score": 5,
+            "description": "Immediately identifies acute limb ischemia as leading diagnosis, articulates full differential with supporting and refuting data."
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or instability."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes anticoagulation, consultation, and therapy appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, makes timely and appropriate decisions."
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity and structure."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication of findings and plan but incomplete."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, empathetically with team and patient."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates needs of patient and team."
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, complications, alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, nuances, perioperative considerations."
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, humility, ethics, cultural sensitivity."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this acute limb ischemia scenario demonstrated You demonstrated strong diagnostic reasoning by promptly recognizing acute limb ischemia. You initiated anticoagulation early and considered the need for vascular intervention. Communication of your management plan was clear and structured.. Areas for improvement include Earlier anticipation of reperfusion complications, including hyperkalemia and compartment syndrome, would strengthen your management. Review the operative decision-making process between embolectomy and catheter-directed thrombolysis in different clinical scenarios."
+  }
+}

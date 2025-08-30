@@ -1,0 +1,107 @@
+{
+  "case_id": "vascular_09",
+  "title": "Dialysis Access Infection",
+  "diagnosis_topic": "Infected arteriovenous fistula in a hemodialysis patient",
+  "tags": [
+    "vascular",
+    "dialysis_access",
+    "infection",
+    "sepsis"
+  ],
+  "setup_script": "A 60-year-old woman with end-stage renal disease on hemodialysis via a left forearm AV fistula presents with erythema, warmth, and purulent drainage at the fistula site. She reports chills and fever.",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vitals",
+      "reply": "BP 100/60 mmHg, HR 105 bpm, RR 18/min, Temp 38.5 \u00b0C."
+    },
+    {
+      "trigger": "If resident inspects fistula",
+      "reply": "Erythematous, indurated area over the fistula with purulent discharge; bruit still palpable; no hemorrhage."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 14 K/\u00b5L, CRP elevated, blood cultures pending, creatinine 6.0 mg/dL (baseline)."
+    },
+    {
+      "trigger": "If resident starts broad-spectrum antibiotics",
+      "reply": "Coverage includes staphylococci including MRSA (e.g., vancomycin)."
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "Ultrasound shows localized abscess and patent fistula; no pseudoaneurysm."
+    },
+    {
+      "trigger": "If resident consults vascular surgery",
+      "reply": "Plan for incision and drainage of abscess with possible fistula ligation if infected segment extensive."
+    },
+    {
+      "trigger": "If resident delays treatment",
+      "reply": "Infection spreads leading to sepsis and potential loss of access."
+    },
+    {
+      "trigger": "If resident inquires about timing of dialysis",
+      "reply": "Dialysis arranged via temporary catheter if access is compromised."
+    },
+    {
+      "trigger": "If resident asks about prevention",
+      "reply": "Strict aseptic technique during cannulation, patient education."
+    },
+    {
+      "trigger": "If resident asks about salvage procedures",
+      "reply": "Interposition graft may salvage access if limited segment infected."
+    },
+    {
+      "trigger": "If resident discusses systemic complications",
+      "reply": "Endocarditis should be considered in bacteremic patients."
+    },
+    {
+      "trigger": "If resident discusses culture results",
+      "reply": "Tailor antibiotics based on sensitivities; typical pathogens include Staphylococcus aureus."
+    },
+    {
+      "trigger": "If resident fails to escalate when unstable",
+      "reply": "Patient becomes hypotensive (BP 80/40), tachycardic (HR 125), requiring ICU transfer."
+    },
+    {
+      "trigger": "If resident proceeds with appropriate source control",
+      "reply": "Patient improves, blood cultures clear, and dialysis via catheter continues while fistula is reassessed."
+    },
+    {
+      "trigger": "If resident is asked to describe operative technique",
+      "reply": "Resident should describe incision and drainage of abscess, debridement of infected tissue, assessment of fistula involvement, decision for fistula ligation vs.\u00a0salvage, placement of interposition graft if feasible, and coordination of alternate dialysis access."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of access infection and sepsis risk",
+    "Empiric antibiotic therapy targeting staphylococci",
+    "Imaging to assess extent of infection and patency",
+    "Decision regarding fistula salvage vs.\u00a0ligation",
+    "Description of operative management steps",
+    "Coordination of dialysis access during treatment"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": []
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": []
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": []
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": []
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": []
+      }
+    },
+    "resident_feedback_template": "Your performance on this dialysis access infection scenario demonstrated You demonstrated strong diagnostic reasoning by promptly identifying the infected fistula. You initiated appropriate antibiotics and considered source control options. Communication of your management plan was clear and structured.. Areas for improvement include At times, escalation of care decisions were delayed. Continued work is needed in balancing access salvage with eradication of infection and arranging alternate dialysis access in a timely manner. More detail in operative planning and technical description would strengthen performance.. Suggested reading includes Infected Hemodialysis Access: Diagnosis and Management (SCORE); Sepsis and Source Control (ACS/ASE Review Manual); Vascular Access Surgery and Salvage Procedures"
+  }
+}

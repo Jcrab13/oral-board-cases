@@ -1,0 +1,198 @@
+{
+  "case_id": "sst_10",
+  "title": "Necrotizing Soft Tissue Infection",
+  "diagnosis_topic": "Necrotizing Soft Tissue Infection \u2013 Fournier\u2019s Gangrene",
+  "tags": [
+    "emergency_general_surgery",
+    "soft_tissue_infection",
+    "sepsis",
+    "urologic/perineal_surgery",
+    "critical_care"
+  ],
+  "setup_script": "\u201cA 62-year-old male with diabetes, obesity, and chronic alcohol use presents to the emergency department with 36 hours of perineal pain and swelling. He reports rapidly increasing pain, foul-smelling drainage, and difficulty urinating. On arrival, he is febrile to 39.0\u00b0C, HR 140, BP 85/50, and RR 30. Exam shows necrotic skin with crepitus and foul odor involving the scrotum and perineum, with erythema extending onto the lower abdominal wall. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident begins resuscitation and antibiotics",
+      "reply": "- \u201cAfter 2L crystalloid and initiation of broad-spectrum antibiotics, BP improves slightly to 92/55. Labs: WBC 32,000/\u00b5L, creatinine 3.0 mg/dL, lactate 7.2 mmol/L. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident delays surgery",
+      "reply": "- \u201cOver the next 30 minutes, the patient becomes more unstable with BP 70/40 despite fluids and requires norepinephrine. What is your management now?\u201d"
+    },
+    {
+      "trigger": "If resident prioritizes emergent surgery",
+      "reply": "- \u201cYou take the patient urgently to the OR. Please describe your operative plan.\u201d"
+    },
+    {
+      "trigger": "If resident performs aggressive debridement",
+      "reply": "- \u201cOn exploration, there is necrosis of the scrotum, perineum, and lower abdominal wall. What specific steps will you take?\u201d"
+    },
+    {
+      "trigger": "If resident addresses testicular viability",
+      "reply": "- \u201cBoth testes appear viable after debridement. What do you do with them?\u201d"
+    },
+    {
+      "trigger": "If resident misses testicular management",
+      "reply": "- \u201cThe testes remain viable but exposed after scrotectomy. How do you manage them?\u201d"
+    },
+    {
+      "trigger": "If resident performs orchiectomy unnecessarily",
+      "reply": "- \u201cThe patient\u2019s testes were viable but removed. He survives the operation. What are the implications of this management decision?\u201d"
+    },
+    {
+      "trigger": "If resident performs appropriate wound care and diversion procedures",
+      "reply": "- \u201cYou leave the wounds open with VAC therapy. There is perineal contamination with stool. How would you address this?\u201d"
+    },
+    {
+      "trigger": "If resident discusses fecal diversion",
+      "reply": "- \u201cYou create a diverting colostomy. The patient is transferred to the ICU. What additional postoperative measures will you implement?\u201d"
+    },
+    {
+      "trigger": "If resident fails to plan staged re-explorations",
+      "reply": "- \u201cOver the next 24 hours, necrosis progresses along the lower abdominal wall. What would you do now?\u201d"
+    },
+    {
+      "trigger": "If resident plans staged re-explorations",
+      "reply": "- \u201cYou return to the OR every 24\u201348 hours until all necrosis is controlled. Reconstruction will be needed. What reconstructive options are considered once infection is controlled?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of Fournier\u2019s gangrene as a surgical emergency",
+    "Resuscitation and empiric broad-spectrum antibiotics",
+    "Early operative source control with aggressive debridement",
+    "Management of testicular viability and coverage",
+    "Consideration of fecal and urinary diversion",
+    "Postoperative ICU care and staged re-explorations",
+    "Planning for reconstruction after infection control"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize Fournier\u2019s gangrene, treats as cellulitis"
+          },
+          {
+            "score": 2,
+            "description": "Delayed recognition, incomplete assessment"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes necrotizing infection, initiates antibiotics and consults surgery"
+          },
+          {
+            "score": 4,
+            "description": "Prompt diagnosis with correct interpretation of systemic toxicity"
+          },
+          {
+            "score": 5,
+            "description": "Excellent , integrates risk factors, physical findings, and systemic signs for early recognition"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Delays surgery, focuses only on medical management"
+          },
+          {
+            "score": 2,
+            "description": "Partial management but fails to prioritize source control"
+          },
+          {
+            "score": 3,
+            "description": "Proceeds with urgent surgical debridement"
+          },
+          {
+            "score": 4,
+            "description": "Good prioritization of debridement, ICU care, and consideration of diversion procedures"
+          },
+          {
+            "score": 5,
+            "description": "Excellent sequencing of resuscitation, debridement, diversion, and reconstructive planning"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear plan"
+          },
+          {
+            "score": 2,
+            "description": "Some organization but incomplete explanation"
+          },
+          {
+            "score": 3,
+            "description": "Clear  of management priorities"
+          },
+          {
+            "score": 4,
+            "description": "Well-structured, concise presentation with appropriate prioritization"
+          },
+          {
+            "score": 5,
+            "description": "Exceptionally clear and systematic presentation, communicates urgency and team coordination"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inadequate understanding of Fournier\u2019s gangrene management"
+          },
+          {
+            "score": 2,
+            "description": "Basic knowledge but incomplete operative plan"
+          },
+          {
+            "score": 3,
+            "description": "Adequate surgical debridement and postoperative management plan"
+          },
+          {
+            "score": 4,
+            "description": "Good knowledge of diversion procedures, wound management, and reconstructive needs"
+          },
+          {
+            "score": 5,
+            "description": "Excellent knowledge of multidisciplinary approach, orchiectomy indications, complex reconstruction options"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Poor engagement of multidisciplinary team"
+          },
+          {
+            "score": 2,
+            "description": "Minimal collaboration, defensive responses"
+          },
+          {
+            "score": 3,
+            "description": "Appropriate team involvement"
+          },
+          {
+            "score": 4,
+            "description": "Good leadership, communicates effectively with ICU, urology, and plastic surgery teams"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , clear delegation, multidisciplinary coordination, compassionate family discussions"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:\u201cYou recognized Fournier\u2019s gangrene promptly and prioritized surgical intervention. Your operative plan and communication of postoperative management were clear and well-organized.\u201dAreas for Improvement:\u201cEarlier incorporation of urinary or fecal diversion in your plan would strengthen your management. Consider a more structured discussion of reconstructive strategies after infection control.\u201dSuggested Reading Topics:- Fournier\u2019s Gangrene and Necrotizing Infections (SCORE)- Sepsis and Source Control (ACS/ASE Review Manual)- Principles of Reconstruction after Necrotizing Infections"
+}

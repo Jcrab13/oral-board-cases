@@ -1,0 +1,207 @@
+{
+  "case_id": "vascular_07",
+  "title": "Thoracic Outlet Syndrome",
+  "diagnosis_topic": "Compression of neurovascular structures at the thoracic outlet",
+  "tags": [
+    "vascular",
+    "thoracic_outlet",
+    "neurovascular_compression"
+  ],
+  "setup_script": "A 29-year-old competitive swimmer presents to your clinic with numbness and weakness in her right arm during training. Symptoms worsen with overhead activity and are sometimes associated with swelling and discoloration of the hand. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for vital signs",
+      "reply": "BP 118/70 mmHg, HR 72 bpm, RR 16/min, Temp 36.8 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Adson\u2019s and Roos tests reproduce her symptoms. The radial pulse is absent when the head is turned to the right. There is mild thenar atrophy."
+    },
+    {
+      "trigger": "If resident requests further neurologic exam",
+      "reply": "Strength is reduced in intrinsic hand muscles, with sensory changes in the ulnar distribution."
+    },
+    {
+      "trigger": "If resident asks for imaging",
+      "reply": "Duplex ultrasound shows subclavian vein compression during provocative maneuvers. CTA demonstrates a cervical rib and venous congestion."
+    },
+    {
+      "trigger": "If resident orders nerve conduction studies",
+      "reply": "These reveal brachial plexus compression at the thoracic outlet."
+    },
+    {
+      "trigger": "If resident initiates conservative therapy",
+      "reply": "Physical therapy focused on postural correction and first-rib mobilization is started. Symptoms improve initially."
+    },
+    {
+      "trigger": "If resident delays escalation of care",
+      "reply": "Her symptoms progress, with worsening hand weakness and swelling."
+    },
+    {
+      "trigger": "If resident asks about acute complications",
+      "reply": "She develops arm swelling consistent with venous thrombosis (Paget-Schroetter syndrome)."
+    },
+    {
+      "trigger": "If resident considers thrombolysis",
+      "reply": "Catheter-directed thrombolysis restores venous patency."
+    },
+    {
+      "trigger": "If resident refers to vascular surgery",
+      "reply": "Vascular surgery discusses first rib resection and scalenectomy for persistent neurovascular compromise."
+    },
+    {
+      "trigger": "If resident proceeds with surgical decompression",
+      "reply": "Surgery is performed. Postoperatively, she begins physical therapy for range of motion and strengthening."
+    },
+    {
+      "trigger": "If resident asks about anatomy",
+      "reply": "Compression may involve the brachial plexus, subclavian vein, or subclavian artery."
+    },
+    {
+      "trigger": "If resident asks about risk factors",
+      "reply": "Overhead athletes, cervical ribs, and repetitive trauma are common risk factors."
+    },
+    {
+      "trigger": "If resident outlines postoperative care",
+      "reply": "She undergoes physical therapy, avoids overhead exertion for 6 weeks, and gradually resumes training."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of neurovascular compression symptoms",
+    "Use of provocative maneuvers and targeted imaging",
+    "Initiation of conservative therapy",
+    "Recognition of indications for surgical decompression",
+    "Management of acute thrombosis when present",
+    "Patient education on activity modification and postoperative care"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider thoracic outlet syndrome or misattributes symptoms"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential, overlooks key findings"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes thoracic outlet syndrome but omits important alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential and rules out other causes"
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies thoracic outlet syndrome as leading diagnosis, articulates complete differential with supporting/refuting data"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or need for intervention"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions"
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic management but misses key steps or timing"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes diagnostic testing and definitive therapy appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely decisions"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or engagement"
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan clearly but incompletely"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, and empathetic communication with patient/team"
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipatory communication addressing all stakeholders"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of operative management of thoracic outlet syndrome"
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps in technique/indications"
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, evidence, and perioperative care"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or fails to recognize limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but needs prompting for self-reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, demonstrating humility, cultural sensitivity, and ethical behavior"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this thoracic outlet syndrome scenario demonstrated You demonstrated strong diagnostic reasoning by recognizing neurovascular compression and ordering appropriate confirmatory studies. Your management plan showed good sequencing of conservative and operative strategies.. Areas for improvement include Work on clarifying the specific indications for surgical decompression versus prolonged conservative therapy. Further detail in your description of postoperative rehabilitation would strengthen your performance.. Suggested reading includes Thoracic Outlet Syndrome (SCORE); Paget; Schroetter Syndrome and Effort Thrombosis (ACS/ASE Review Manual); Surgical Approaches to First Rib Resection and Scalenectomy"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "case_id": "trauma_06",
+  "title": "Penetrating Abdominal Trauma",
+  "diagnosis_topic": "Stab wound with peritoneal violation and potential organ injury",
+  "tags": [
+    "trauma",
+    "penetrating",
+    "abdominal",
+    "hemorrhage"
+  ],
+  "setup_script": "\u201cA 28-year-old man arrives to the emergency department after being stabbed in the left lower abdomen. He is alert but anxious. There is a single 2 cm stab wound just below the umbilicus with minimal external bleeding. He has no significant past medical history. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBP 100/60 mmHg, HR 110 bpm, RR 22/min, Temp 37.2\u00b0C, SpO\u2082 98% on room air.\u201d"
+    },
+    {
+      "trigger": "If resident performs focused abdominal exam",
+      "reply": "\u201cSoft abdomen with tenderness around the wound, mild distension, no diffuse peritonitis.\u201d"
+    },
+    {
+      "trigger": "If resident asks about other injuries",
+      "reply": "\u201cNo chest wounds, no pelvic instability, extremities are unremarkable.\u201d"
+    },
+    {
+      "trigger": "If resident orders FAST exam",
+      "reply": "\u201cFAST shows free fluid in Morrison\u2019s pouch and pelvis.\u201d"
+    },
+    {
+      "trigger": "If resident orders CBC and type and screen",
+      "reply": "\u201cHgb 12 g/dL, Hct 36%, platelets 250,000/\u03bcL.\u201d"
+    },
+    {
+      "trigger": "If resident initiates resuscitation with two large-bore IVs and crystalloid",
+      "reply": "\u201cBP improves to 105/65 but HR remains 108.\u201d"
+    },
+    {
+      "trigger": "If resident inserts NG tube and Foley",
+      "reply": "\u201cNG returns gastric contents; urine output is 40 mL/hr.\u201d"
+    },
+    {
+      "trigger": "If resident requests tetanus prophylaxis and antibiotics",
+      "reply": "\u201cTdap given and piperacillin\u2013tazobactam started.\u201d"
+    },
+    {
+      "trigger": "If resident calls for emergent exploratory laparotomy without delay",
+      "reply": "\u201cThe patient is taken to the OR. Please describe your operative steps.\u201d"
+    },
+    {
+      "trigger": "If resident describes operative approach",
+      "reply": "\u201cYou perform a midline laparotomy, identify hemoperitoneum, and find a small bowel injury requiring resection and anastomosis.\u201d"
+    },
+    {
+      "trigger": "If resident delays management for CT scan",
+      "reply": "\u201cThe patient becomes hypotensive (BP 80/50), develops peritonitis, requiring urgent damage control surgery.\u201d"
+    },
+    {
+      "trigger": "If resident explores postoperative management",
+      "reply": "\u201cThe abdomen is left open with temporary closure. Patient is transferred to ICU for ongoing resuscitation, infection monitoring, and nutritional support.\u201d"
+    },
+    {
+      "trigger": "If resident asks about penetrating abdominal trauma protocols",
+      "reply": "\u201cAbsolute indications for OR include hemodynamic instability, peritonitis, evisceration, or impalement; stable patients may undergo CT scan for evaluation.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Rapid assessment and resuscitation of penetrating abdominal trauma",
+    "Recognition of indications for emergent laparotomy vs.\u00a0imaging",
+    "Avoiding unnecessary delays in unstable patients",
+    "Initiation of broad-spectrum antibiotics and tetanus prophylaxis",
+    "Operative approach, including injury identification and repair",
+    "Postoperative management including open abdomen and sepsis prevention"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to consider penetrating trauma, misattributes findings",
+          "2": "Recognizes trauma but misses key features or alternatives",
+          "3": "Identifies abdominal trauma as possible, but incomplete differential",
+          "4": "Develops systematic differential including penetrating abdominal trauma",
+          "5": "Rapidly identifies penetrating trauma as leading diagnosis with complete supporting reasoning"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to recognize instability or delays critical actions",
+          "2": "Recognizes urgency but orders inappropriate/delayed tests",
+          "3": "Initiates workup and management but with missed steps",
+          "4": "Prioritizes resuscitation, testing, and operative therapy appropriately",
+          "5": "Anticipates complications, coordinates care, and demonstrates excellent timing"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Disorganized, confusing, or lacking empathy",
+          "2": "Provides information but lacks clarity or structure",
+          "3": "Communicates plan but misses confirming understanding",
+          "4": "Clear, logical, and empathetic with patient/team",
+          "5": "Exemplary: succinct, compassionate, anticipates team and patient needs"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Lacks understanding of operative management of penetrating trauma",
+          "2": "Identifies need for OR but with major knowledge gaps",
+          "3": "Describes basic operative steps with omissions or errors",
+          "4": "Accurately describes operative exposure, injury identification, resection/repair, and closure options",
+          "5": "Mastery of operative principles, technical nuances, and perioperative considerations for penetrating trauma"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "Disrespectful, breaches confidentiality, or unaware of limitations",
+          "2": "Inconsistent respect, lapses in accountability",
+          "3": "Respectful, requires prompting for reflection",
+          "4": "Consistently respectful, accountable, receptive to feedback",
+          "5": "Role model: humility, cultural sensitivity, and ethical behavior"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "Strengths:You demonstrated effective diagnostic reasoning by recognizing the implications of a positive FAST and the patient\u2019s persistent tachycardia. Your decision to proceed with operative management showed sound clinical judgment. Communication with the team was clear and structured.\nAreas for Improvement:Earlier prioritization of operative intervention without delay for CT imaging would have optimized care. Postoperative considerations such as nutritional support and staged abdominal closure should be more thoroughly discussed.\nSuggested Reading Topics:- Management of Penetrating Abdominal Trauma (SCORE)- ATLS Principles: Hemodynamic Instability in Trauma (ACS)- Damage Control Surgery and Open Abdomen Management (ASE Core Curriculum)"
+}

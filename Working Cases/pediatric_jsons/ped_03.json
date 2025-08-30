@@ -1,0 +1,198 @@
+{
+  "case_id": "ped_03",
+  "title": "Congenital Diaphragmatic Hernia",
+  "diagnosis_topic": "Neonatal diaphragmatic defect causing pulmonary hypoplasia and respiratory distress",
+  "tags": [
+    "pediatric",
+    "congenital",
+    "diaphragmatic_hernia"
+  ],
+  "setup_script": "A full-term newborn develops severe respiratory distress immediately after birth. The abdomen appears scaphoid and bowel sounds are heard in the chest. The infant was delivered after an uncomplicated pregnancy. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses vital signs",
+      "reply": "\u201cHR 170 bpm, RR 60/min, SpO\u2082 80% on blow-by oxygen; the baby is cyanotic.\u201d"
+    },
+    {
+      "trigger": "If resident evaluates physical exam",
+      "reply": "\u201cThe infant has a barrel-shaped chest, scaphoid abdomen, decreased breath sounds on the left, and heart sounds shifted to the right.\u201d"
+    },
+    {
+      "trigger": "If resident obtains chest X-ray",
+      "reply": "\u201cLoops of bowel are seen in the left hemithorax with mediastinal shift; the diaphragmatic dome is not visualized.\u201d"
+    },
+    {
+      "trigger": "If resident immediately intubates and avoids bag\u2013mask ventilation",
+      "reply": "\u201cThe airway is secured without gastric insufflation. An NG tube is placed for decompression.\u201d"
+    },
+    {
+      "trigger": "If resident starts gentle ventilation with permissive hypercapnia",
+      "reply": "\u201cThe infant is oxygenated with improved but still low saturations; barotrauma is avoided.\u201d"
+    },
+    {
+      "trigger": "If resident obtains arterial blood gas",
+      "reply": "\u201cResults show respiratory acidosis and hypoxemia. Ventilator adjustments may be necessary.\u201d"
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "\u201cAn echocardiogram is obtained to assess pulmonary hypertension and structural heart disease.\u201d"
+    },
+    {
+      "trigger": "If resident consults pediatric surgery",
+      "reply": "\u201cSurgical repair is planned but delayed until stabilization of pulmonary hypertension, typically within the first week of life.\u201d"
+    },
+    {
+      "trigger": "If patient deteriorates despite maximal ventilatory support",
+      "reply": "\u201cThe infant remains hypoxemic. ECMO is considered as a bridge to surgery.\u201d"
+    },
+    {
+      "trigger": "If resident delays intubation and uses bag\u2013mask",
+      "reply": "\u201cThe stomach distends and the respiratory status worsens with increased cyanosis.\u201d"
+    },
+    {
+      "trigger": "If resident discusses postoperative care",
+      "reply": "\u201cThe infant requires prolonged ventilatory support, management of pulmonary hypertension, and attention to feeding intolerance.\u201d"
+    },
+    {
+      "trigger": "If resident counsels parents",
+      "reply": "\u201cDiscussion includes long-term outcomes such as chronic lung disease, gastroesophageal reflux, and potential developmental delays.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Immediate airway management and avoidance of bag\u2013mask ventilation",
+    "Diagnosis via chest X-ray and recognition of physical signs",
+    "Stabilization of pulmonary hypertension prior to surgical repair",
+    "Consideration of ECMO for refractory respiratory failure",
+    "Comprehensive parental counseling and long-term follow-up"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider congenital diaphragmatic hernia or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features of congenital diaphragmatic hernia."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes congenital diaphragmatic hernia as a possibility but omits important alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including congenital diaphragmatic hernia and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies congenital diaphragmatic hernia as the leading diagnosis and articulates a complete differential with supporting and refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and definitive therapy with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacking empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity, structure, or engagement."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings and plans but misses opportunities for confirmation."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, and empathetically with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary: succinct, compassionate, anticipates patient and team needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative or procedural management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Accurately describes operative management, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, perioperative considerations, and current evidence."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches confidentiality, or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for , demonstrating humility, sensitivity, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing congenital diaphragmatic hernia from exam and imaging findings. You appropriately prioritized airway management with intubation and NG decompression, and considered multidisciplinary consultation and ECMO in severe cases.Areas for Improvement: Work on articulating the timing of surgery and balancing stabilization versus urgent intervention. Expand postoperative planning, including long-term complications such as pulmonary hypertension and feeding challenges.Suggested Reading Topics: - Congenital Diaphragmatic Hernia: Pathophysiology and Management (SCORE Curriculum) - Neonatal Airway and Ventilation Strategies (ACS/ASE Review Manual) - Extracorporeal Membrane Oxygenation in Neonates (Pediatric Surgery NaT)"
+}

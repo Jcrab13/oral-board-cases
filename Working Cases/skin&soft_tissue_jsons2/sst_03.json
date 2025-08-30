@@ -1,0 +1,208 @@
+{
+  "case_id": "sst_03",
+  "title": "Cutaneous Melanoma",
+  "diagnosis_topic": "Pigmented skin lesion concerning for melanoma with staging and management considerations",
+  "tags": [
+    "melanoma",
+    "skin_cancer",
+    "surgical_oncology",
+    "sentinel_lymph_node",
+    "excision"
+  ],
+  "setup_script": "\u201cA 38-year-old man presents to your clinic with a dark mole on his upper back that he has had for several years. Over the past few months, he has noticed that it has grown in size, become more irregular in color, and occasionally itches. He denies bleeding, ulceration, or systemic symptoms. His past medical history is unremarkable, but his father had a history of melanoma. On exam, you see a pigmented lesion with asymmetric borders and irregular color. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "\u201cVital signs are within normal limits.\u201d"
+    },
+    {
+      "trigger": "If resident inspects the lesion",
+      "reply": "\u201cYou see a 9 mm asymmetric pigmented plaque with irregular borders and variegated pigmentation.\u201d"
+    },
+    {
+      "trigger": "If resident requests dermoscopy",
+      "reply": "\u201cFindings are suspicious for melanoma with irregular pigment network and atypical dots.\u201d"
+    },
+    {
+      "trigger": "If resident performs excisional biopsy with narrow margin",
+      "reply": "\u201cThe lesion is completely excised. Pathology shows superficial spreading melanoma with Breslow depth 1.2 mm, no ulceration, mitotic rate 2/mm\u00b2.\u201d"
+    },
+    {
+      "trigger": "If resident plans wide local excision",
+      "reply": "\u201cBased on Breslow depth, you plan a 1\u20132 cm margin excision. How would you close the defect?\u201d"
+    },
+    {
+      "trigger": "If resident considers sentinel lymph node biopsy",
+      "reply": "\u201cSentinel lymph node biopsy is performed concurrently. Pathology reveals one sentinel lymph node positive for metastatic melanoma.\u201d"
+    },
+    {
+      "trigger": "If resident delays definitive excision",
+      "reply": "\u201cThe patient returns after 6 months with enlargement of the excision site and new pigmented nodules. What would you do now?\u201d"
+    },
+    {
+      "trigger": "If resident orders staging scans at initial diagnosis",
+      "reply": "\u201cCT chest/abdomen/pelvis and PET/CT are negative for metastatic disease.\u201d"
+    },
+    {
+      "trigger": "If resident discusses nodal management after positive sentinel node",
+      "reply": "\u201cYou discuss options of completion lymphadenectomy versus active nodal surveillance with imaging, along with referral to medical oncology for adjuvant immunotherapy.\u201d"
+    },
+    {
+      "trigger": "If resident addresses adjuvant therapy",
+      "reply": "\u201cMedical oncology recommends adjuvant nivolumab. How do you counsel the patient regarding treatment and follow-up?\u201d"
+    },
+    {
+      "trigger": "If resident discusses patient education",
+      "reply": "\u201cYou counsel on skin self-examination, sun protection, and avoidance of tanning beds.\u201d"
+    },
+    {
+      "trigger": "If resident discusses genetic testing",
+      "reply": "\u201cGenetic counseling is considered given family history of melanoma; CDKN2A mutation testing is offered.\u201d"
+    },
+    {
+      "trigger": "If resident outlines follow-up schedule",
+      "reply": "\u201cYou recommend dermatology and surgical follow-up every 3\u20136 months for 2 years, then annually.\u201d"
+    },
+    {
+      "trigger": "If resident fails to provide surveillance plan",
+      "reply": "\u201cThe patient is lost to follow-up and returns with multiple cutaneous and pulmonary metastases. How would you approach management now?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Choice of biopsy technique for suspicious pigmented lesions",
+    "Use of Breslow depth to guide excision margins and sentinel lymph node biopsy",
+    "Management decisions based on sentinel node results",
+    "Indications for adjuvant therapy",
+    "Patient education and long-term surveillance planning"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider melanoma, attributes lesion to benign nevus"
+          },
+          {
+            "score": 2,
+            "description": "Considers melanoma but does incomplete workup"
+          },
+          {
+            "score": 3,
+            "description": "Identifies melanoma as likely diagnosis, obtains tissue diagnosis"
+          },
+          {
+            "score": 4,
+            "description": "Recognizes melanoma, interprets pathology correctly, integrates staging"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly and comprehensively identifies melanoma, stages appropriately, considers differential"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Delays biopsy or definitive management"
+          },
+          {
+            "score": 2,
+            "description": "Performs inappropriate or incomplete workup"
+          },
+          {
+            "score": 3,
+            "description": "Orders correct biopsy and considers wide excision"
+          },
+          {
+            "score": 4,
+            "description": "Makes timely decisions regarding sentinel node biopsy and margins"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, integrates oncology referral, sequences care appropriately"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear explanation to patient/team"
+          },
+          {
+            "score": 2,
+            "description": "Provides some information but lacks clarity or empathy"
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and plan clearly to patient/team"
+          },
+          {
+            "score": 4,
+            "description": "Communicates in structured, empathetic, logical manner"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , anticipates concerns, involves patient in decision-making"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Does not know appropriate excision margins or lymph node management"
+          },
+          {
+            "score": 2,
+            "description": "Basic knowledge of surgical excision but incomplete understanding of margins or sentinel biopsy"
+          },
+          {
+            "score": 3,
+            "description": "Adequate knowledge of melanoma excision and sentinel node biopsy"
+          },
+          {
+            "score": 4,
+            "description": "Good knowledge of surgical options, complications, and adjuvant treatment indications"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative principles, nuances of margins, sentinel node, and evidence-based adjuvant therapy"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, dismissive, or breaches confidentiality"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or"
+          },
+          {
+            "score": 3,
+            "description": "Respectful and professional, requires prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently professional, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model  with humility, sensitivity, and ethical standards"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated solid diagnostic reasoning by recognizing melanoma as a likely diagnosis and ordering the correct biopsy. Your explanation of surgical margins and the role of sentinel lymph node biopsy was clear and well-structured. Communication with the patient about diagnosis and follow-up was empathetic and organized.Areas for Improvement: Earlier recognition of the need for sentinel node biopsy and clear articulation of its indications would strengthen your management plan. You could also improve by integrating discussion of adjuvant immunotherapy and surveillance into your primary plan without prompting.Suggested Reading Topics: - NCCN Guidelines on Melanoma - Sentinel Lymph Node Biopsy in Melanoma (SCORE Curriculum) - Principles of Wide Local Excision and Surgical Margins in Melanoma"
+}

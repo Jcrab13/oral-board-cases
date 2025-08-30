@@ -1,0 +1,208 @@
+{
+  "case_id": "end_07",
+  "title": "Pheochromocytoma in MEN 2A",
+  "diagnosis_topic": "Catecholamine-secreting adrenal tumor",
+  "tags": [
+    "endocrine",
+    "adrenal",
+    "pheochromocytoma",
+    "men_2a"
+  ],
+  "setup_script": "\u201cA 40-year-old man with multiple endocrine neoplasia type 2A presents with episodic headaches, palpitations, and paroxysmal hypertension. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests labs",
+      "reply": "\u201cPlasma and urinary metanephrines are markedly elevated. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "\u201cCT scan shows a 5 cm left adrenal mass. MRI confirms localization to the adrenal. MIBG scan is negative for extra-adrenal disease. What would you like to do next?\u201d"
+    },
+    {
+      "trigger": "If resident begins preoperative preparation",
+      "reply": "\u201cHow would you optimize this patient prior to surgery?\u201d"
+    },
+    {
+      "trigger": "If resident initiates alpha blockade",
+      "reply": "\u201cThe patient is started on phenoxybenzamine for 14 days. Blood pressure stabilizes but remains elevated at times. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident adds beta-blockade after alpha-blockade",
+      "reply": "\u201cThe patient\u2019s heart rate improves. What additional preoperative measures would you recommend?\u201d"
+    },
+    {
+      "trigger": "If resident discusses volume expansion",
+      "reply": "\u201cThe patient is started on a high-sodium diet and hydration. He is scheduled for surgery. What surgical approach would you consider?\u201d"
+    },
+    {
+      "trigger": "If resident selects laparoscopic adrenalectomy",
+      "reply": "\u201cThe patient is taken to the operating room. Please describe the key operative steps you would perform.\u201d"
+    },
+    {
+      "trigger": "If resident describes surgical approach",
+      "reply": "\u201cDuring dissection, there are significant blood pressure fluctuations. How would you manage this intraoperatively?\u201d"
+    },
+    {
+      "trigger": "If resident explains hemodynamic management",
+      "reply": "\u201cThe anesthesiologist manages hypertension with short-acting vasodilators. Bleeding is controlled, and the adrenal vein is ligated. What are your next operative steps?\u201d"
+    },
+    {
+      "trigger": "If resident completes gland removal",
+      "reply": "\u201cThe adrenal gland is removed laparoscopically. What is your immediate postoperative management?\u201d"
+    },
+    {
+      "trigger": "If resident monitors hemodynamics and glucose",
+      "reply": "\u201cThe patient has transient hypotension postoperatively, which stabilizes with fluids. Blood glucose levels are elevated. How will you continue management?\u201d"
+    },
+    {
+      "trigger": "If resident considers steroid replacement",
+      "reply": "\u201cThis patient only had unilateral adrenalectomy, and adrenal function is preserved. What additional follow-up is required?\u201d"
+    },
+    {
+      "trigger": "If resident discusses pathology and genetic evaluation",
+      "reply": "\u201cPathology confirms pheochromocytoma. Genetic counseling is arranged. Family members are being screened. How would you structure long-term follow-up for this patient?\u201d"
+    },
+    {
+      "trigger": "If resident does not address recurrence or surveillance",
+      "reply": "\u201cGiven the patient\u2019s MEN 2A syndrome, what is your long-term surveillance strategy?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Correct preoperative preparation with alpha blockade and volume expansion.",
+    "Appropriate timing and choice of surgical approach.",
+    "Technical performance of adrenalectomy, including control of adrenal vein.",
+    "Recognition and management of intraoperative hemodynamic instability.",
+    "Postoperative monitoring for hypotension, glucose disturbances, and adrenal insufficiency.",
+    "Genetic counseling and long-term MEN 2A surveillance."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize pheochromocytoma; misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Delayed recognition or incomplete differential."
+          },
+          {
+            "score": 3,
+            "description": "Identifies pheochromocytoma but omits alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential and confirms diagnosis."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly recognizes pheochromocytoma with complete supporting and refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency; no timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates management but misses key steps."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes care appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or engagement."
+          },
+          {
+            "score": 3,
+            "description": "Clear  but misses confirmation of understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, empathetically with patient/team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates needs of patient/team."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of surgical management of pheochromocytoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Accurately explains operative management, including adrenal vein control and perioperative considerations."
+          },
+          {
+            "score": 5,
+            "description": "Mastery of current evidence, technical nuances, and intraoperative management strategies for pheochromocytoma."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model of , humility, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing pheochromocytoma based on classic clinical features and confirming with biochemical testing. You showed good judgment by discussing appropriate preoperative alpha blockade and intraoperative collaboration with anesthesia. Communication of your management plan was structured and clear.Areas for Improvement: Further detail regarding the technical steps of adrenalectomy, particularly early adrenal vein control, would strengthen your surgical knowledge. Earlier emphasis on lifelong surveillance and family screening in MEN 2A would also improve your management.Suggested Reading Topics: - Pheochromocytoma and Paraganglioma (SCORE Curriculum) - Preoperative Management of Endocrine Tumors (ACS/ASE Review Manual) - MEN 2 Syndromes and Surveillance Guidelines (NCCN/Endocrine Society) - Operative Techniques in Adrenalectomy"
+}

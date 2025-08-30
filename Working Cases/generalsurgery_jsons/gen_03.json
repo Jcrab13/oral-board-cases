@@ -1,0 +1,78 @@
+{
+  "case_id": "gen_03",
+  "title": "Deteriorating abdominal sepsis",
+  "diagnosis_topic": "Deteriorating Patient with Abdominal Sepsis",
+  "tags": [
+    "general_surgery"
+  ],
+  "setup_script": "\"You are called to the ICU to see a 68-year-old male with a history of hypertension, COPD, and known diverticulosis who was admitted 12 hours ago with abdominal pain. Despite IV antibiotics and fluid resuscitation, he has deteriorated. Current vital signs: Temperature 39.2\u00b0C, HR 128, BP 75/40, RR 28, O2 saturation 91% on 2L nasal cannula. Physical exam shows diffuse abdominal tenderness with involuntary guarding and rebound, worse in the left lower quadrant. Lab results show: WBC 22,000/\u03bcL, Hgb 10.5 g/dL, lactate 5.6 mmol/L, creatinine 2.1 mg/dL (baseline 1.0). Recent CT scan shows perforated sigmoid diverticulitis with free air and fluid collections in the pelvis. How would you manage this patient?\"",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident prioritizes hemodynamic stabilization",
+      "reply": "\"After 2L of crystalloid, the patient remains hypotensive with BP 80/45. How will you proceed?\""
+    },
+    {
+      "trigger": "If resident initiates vasopressors",
+      "reply": "\"You start norepinephrine. The BP improves to 90/55. What's your next step in management?\""
+    },
+    {
+      "trigger": "If resident doesn't mention immediate surgical intervention",
+      "reply": "\"The patient continues to deteriorate despite medical management. What definitive treatment does this patient need?\""
+    },
+    {
+      "trigger": "If resident prepares for surgery",
+      "reply": "\"What is your specific operative plan for this patient with perforated diverticulitis and septic shock?\""
+    },
+    {
+      "trigger": "If resident suggests Hartmann's procedure",
+      "reply": "\"During surgery, you find diffuse fecal peritonitis, a 2cm perforation in the sigmoid colon with surrounding inflammation and induration. How will you complete the operation?\""
+    },
+    {
+      "trigger": "If resident doesn't mention damage control approach",
+      "reply": "\"The patient is becoming increasingly unstable on the operating table with worsening acidosis (pH 7.15) and hypothermia (temperature 35.2\u00b0C). How does this change your operative approach?\""
+    },
+    {
+      "trigger": "If resident describes damage control surgery",
+      "reply": "\"You perform a Hartmann's procedure with end colostomy, leave the abdomen open with a temporary closure device, and transfer the patient to the ICU. What specific postoperative ICU management will you order?\""
+    },
+    {
+      "trigger": "If resident doesn't address source control adequately",
+      "reply": "\"The patient remains febrile and vasopressor-dependent 48 hours postoperatively. What concerns do you have and what would you do next?\""
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition and management of septic shock",
+    "Appropriate fluid resuscitation and vasopressor initiation",
+    "Decision for emergency surgical intervention",
+    "Choice of appropriate surgical procedure (Hartmann's vs. primary anastomosis)",
+    "Recognition of need for damage control surgery in unstable patient",
+    "Postoperative critical care management",
+    "Recognition and management of ongoing sepsis",
+    "ICU management including ventilator settings, nutrition, and renal support if needed"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "\"Your performance on this septic shock scenario demonstrated [strengths in resuscitation/surgical decision-making/critical care management]. You correctly [specific positive actions]. Areas for improvement include [specific areas needing improvement]. Consider reviewing the management of septic shock and perforated diverticulitis, particularly regarding [specific knowledge gap]. Recommended reading includes the Surviving Sepsis Campaign guidelines, damage control surgery principles, and management options for complicated diverticulitis.\""
+}

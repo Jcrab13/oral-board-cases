@@ -1,0 +1,199 @@
+{
+  "case_id": "sst_05",
+  "title": "Extremity Soft Tissue Sarcoma",
+  "diagnosis_topic": "Extremity Soft Tissue Sarcoma \u2013 Diagnosis, Staging, and Surgical Management",
+  "tags": [
+    "surgical_oncology",
+    "soft_tissue_sarcoma",
+    "biopsy_technique",
+    "limb-sparing_surgery",
+    "multidisciplinary_management"
+  ],
+  "setup_script": "\u201cA 52-year-old woman presents with a painless enlarging mass in her left thigh that she first noticed 3 months ago. It has grown steadily and now measures about 7 cm by her report. On exam, there is a firm, deep, non-mobile mass in the anterior thigh. There is no overlying skin change. Distal neurovascular exam is normal. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for imaging",
+      "reply": "- \u201cMRI of the thigh shows a 7.5 cm deep intramuscular mass abutting but not encasing the femur. No bone involvement is seen. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident proposes excisional biopsy",
+      "reply": "- \u201cExcisional biopsy is performed through a transverse incision. Final pathology: high-grade pleomorphic sarcoma. The margins are positive. What are the implications of this?\u201d"
+    },
+    {
+      "trigger": "If resident recommends core needle biopsy",
+      "reply": "- \u201cCore needle biopsy shows a high-grade pleomorphic sarcoma. What is your management plan?\u201d"
+    },
+    {
+      "trigger": "If resident recommends staging workup",
+      "reply": "- \u201cCT chest shows no evidence of metastatic disease. What surgical options would you consider?\u201d"
+    },
+    {
+      "trigger": "If resident suggests wide local excision with appropriate margins",
+      "reply": "- \u201cYou perform wide local excision with negative margins. How do you manage the surgical bed postoperatively?\u201d"
+    },
+    {
+      "trigger": "If resident fails to mention radiation therapy",
+      "reply": "- \u201cGiven a 7.5 cm high-grade sarcoma resected with negative margins, what is the role of adjuvant therapy?\u201d"
+    },
+    {
+      "trigger": "If resident mentions preoperative vs postoperative radiation",
+      "reply": "- \u201cWhat factors influence your choice between preoperative and postoperative radiation in this setting?\u201d"
+    },
+    {
+      "trigger": "If resident considers amputation unnecessarily",
+      "reply": "- \u201cAmputation is generally not indicated here. What are the current principles of limb-sparing surgery in soft tissue sarcoma?\u201d"
+    },
+    {
+      "trigger": "If resident appropriately follows multidisciplinary care",
+      "reply": "- \u201cThe patient recovers well from surgery and completes postoperative radiation. How would you structure surveillance?\u201d"
+    },
+    {
+      "trigger": "If resident delays staging or adjuvant planning",
+      "reply": "- \u201cThe patient re-presents 18 months later with a new lung mass. How do you proceed?\u201d"
+    },
+    {
+      "trigger": "If resident addresses pulmonary metastasectomy",
+      "reply": "- \u201cCT chest shows an isolated 2.5 cm lung metastasis. Would you consider surgical resection?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Correct biopsy technique (core needle preferred, avoid poorly placed excisional biopsy)",
+    "Use of MRI for local staging",
+    "Role of CT chest for metastatic staging",
+    "Principles of wide local excision with negative margins",
+    "Role of radiation (pre- vs postoperative)",
+    "Multidisciplinary approach (surgical oncology, medical oncology, radiation oncology)",
+    "Surveillance protocols after treatment",
+    "Management of pulmonary metastasis"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to order appropriate imaging or biopsy"
+          },
+          {
+            "score": 2,
+            "description": "Incomplete or inappropriate workup (excisional biopsy in wrong setting)"
+          },
+          {
+            "score": 3,
+            "description": "Orders correct imaging and biopsy, recognizes sarcoma diagnosis"
+          },
+          {
+            "score": 4,
+            "description": "Interprets pathology and staging appropriately, integrates systemic workup"
+          },
+          {
+            "score": 5,
+            "description": "Excellent  with complete workup, anticipates multidisciplinary needs"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inappropriate management (simple excision, no staging)"
+          },
+          {
+            "score": 2,
+            "description": "Suboptimal management, omits radiation or staging"
+          },
+          {
+            "score": 3,
+            "description": "Recommends wide excision and staging appropriately"
+          },
+          {
+            "score": 4,
+            "description": "Good judgment with limb-sparing surgery and integration of radiation therapy"
+          },
+          {
+            "score": 5,
+            "description": "Excellent sequencing of biopsy, imaging, surgery, adjuvant therapy, and surveillance"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear plan"
+          },
+          {
+            "score": 2,
+            "description": "Partially clear but incomplete explanation"
+          },
+          {
+            "score": 3,
+            "description": "Clear  of diagnosis and treatment plan"
+          },
+          {
+            "score": 4,
+            "description": "Well-structured, systematic explanation with rationale"
+          },
+          {
+            "score": 5,
+            "description": "Exceptionally clear, organized, and multidisciplinary"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inadequate knowledge of sarcoma workup and margins"
+          },
+          {
+            "score": 2,
+            "description": "Basic knowledge, incomplete understanding of radiation or biopsy pitfalls"
+          },
+          {
+            "score": 3,
+            "description": "Adequate knowledge of surgical margins and radiation principles"
+          },
+          {
+            "score": 4,
+            "description": "Good knowledge of multidisciplinary approach, limb-sparing surgery"
+          },
+          {
+            "score": 5,
+            "description": "Excellent knowledge of biopsy principles, resection margins, radiation timing, and management of metastasis"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Does not involve oncology team appropriately"
+          },
+          {
+            "score": 2,
+            "description": "Minimal collaboration with multidisciplinary care"
+          },
+          {
+            "score": 3,
+            "description": "Appropriate referral to oncology colleagues"
+          },
+          {
+            "score": 4,
+            "description": "Good leadership in multidisciplinary coordination"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , coordinates multidisciplinary care, addresses patient-centered concerns and long-term survivorship"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:\u201cYou demonstrated strong diagnostic reasoning by obtaining appropriate imaging and core biopsy, and you correctly recommended wide excision with negative margins. Your communication of the multidisciplinary plan was clear and systematic.\u201dAreas for Improvement:\u201cConsider emphasizing the importance of preoperative planning for biopsy and radiation timing. A more detailed discussion of long-term surveillance and management of pulmonary metastasis would strengthen your performance.\u201dSuggested Reading Topics:- Soft Tissue Sarcoma (SCORE Curriculum)- Principles of Biopsy and Surgical Margins in Sarcoma (NCCN Guidelines)- Role of Radiation and Chemotherapy in Sarcoma Management"
+}

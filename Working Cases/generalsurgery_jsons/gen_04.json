@@ -1,0 +1,208 @@
+{
+  "case_id": "gen_04",
+  "title": "Enterocutaneous Fistula",
+  "diagnosis_topic": "Enterocutaneous Fistula after Bowel Resection",
+  "tags": [
+    "general_surgery",
+    "fistula",
+    "sepsis",
+    "nutrition",
+    "wound_management"
+  ],
+  "setup_script": "\u201cA 55-year-old woman develops a draining wound on her abdomen 10 days after a complicated bowel resection for Crohn\u2019s disease. The output is high volume and appears like intestinal contents. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "BP 110/70 mmHg, HR 105 bpm, RR 18/min, Temp 38 \u00b0C."
+    },
+    {
+      "trigger": "If resident examines wound",
+      "reply": "Effluent of 800 mL/day of bilious fluid from midline incision; surrounding skin excoriated and erythematous."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Albumin 2.0 g/dL, potassium 2.8, magnesium 1.4, WBC 14K/\u00b5L."
+    },
+    {
+      "trigger": "If resident asks about fistula output",
+      "reply": "High-output fistula (>500 mL/day)."
+    },
+    {
+      "trigger": "If resident initiates sepsis workup",
+      "reply": "Blood cultures obtained, broad-spectrum antibiotics started."
+    },
+    {
+      "trigger": "If resident asks for imaging",
+      "reply": "CT scan shows intra-abdominal collection adjacent to anastomosis."
+    },
+    {
+      "trigger": "If resident requests source control",
+      "reply": "CT-guided drainage performed; fever improves."
+    },
+    {
+      "trigger": "If resident manages nutrition",
+      "reply": "NPO, NG decompression, TPN initiated."
+    },
+    {
+      "trigger": "If resident asks about adjuncts",
+      "reply": "Octreotide may be considered though evidence is mixed."
+    },
+    {
+      "trigger": "If resident addresses wound care",
+      "reply": "Stoma appliance and skin barrier applied; enterostomal therapy nurse consulted."
+    },
+    {
+      "trigger": "If resident evaluates distal obstruction",
+      "reply": "CT enterography shows no distal obstruction."
+    },
+    {
+      "trigger": "If resident asks about timing of surgery",
+      "reply": "Fistula persists after 4 months of optimization; elective resection/anastomosis is planned."
+    },
+    {
+      "trigger": "If resident rushes to early surgery",
+      "reply": "Operation complicated by dense adhesions and malnutrition; recurrence risk is high."
+    },
+    {
+      "trigger": "If resident provides psychosocial support",
+      "reply": "Patient counseled regarding long-term plan, nutritional support, and emotional impact."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of high-output enterocutaneous fistula.",
+    "Sepsis control and source identification with imaging/drainage.",
+    "Nutritional optimization with TPN.",
+    "Timing of definitive surgery after resolution of inflammation and optimization.",
+    "Comprehensive wound care and psychosocial support."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize enterocutaneous fistula, attributes symptoms incorrectly."
+          },
+          {
+            "score": 2,
+            "description": "Delayed recognition; incomplete differential."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes fistula but omits alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including fistula; rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies fistula; articulates complete differential with supporting/refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or urgency."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but with gaps."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and therapy appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan clearly but misses confirmation."
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic  with team/patient."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates team/patient needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative/procedural management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical option but with major gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence and operative nuances."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but needs prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for , humility, cultural sensitivity, ethical conduct."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing the high-output enterocutaneous fistula promptly. Your management of sepsis and initiation of nutritional optimization were appropriate. Communication with the patient and interdisciplinary team was clear and compassionate.Areas for Improvement:Earlier emphasis on evaluating distal obstruction and establishing criteria for surgical timing would strengthen your clinical judgment. Consider reinforcing the indications for delayed versus early operative management.Suggested Reading Topics:- SCORE: Enterocutaneous Fistulas- Sepsis and Source Control (ACS/ASE Review Manual)- Nutritional Optimization in Surgical Patients"
+}

@@ -1,0 +1,207 @@
+{
+  "case_id": "gen_05",
+  "title": "Hiatal Hernia with Reflux Disease",
+  "diagnosis_topic": "Sliding hiatal hernia associated with GERD symptoms",
+  "tags": [
+    "esophagogastric",
+    "hiatal_hernia",
+    "gerd"
+  ],
+  "setup_script": "\u201cA 55-year-old overweight woman presents with chronic heartburn, regurgitation, and chest discomfort that worsens when lying down. She has been taking proton pump inhibitors for two years with only partial relief. She also reports occasional nocturnal cough, hoarseness, and dysphagia. Her BMI is 32 kg/m\u00b2. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident checks vital signs",
+      "reply": "\u201cVital signs are unremarkable.\u201d"
+    },
+    {
+      "trigger": "If resident takes further history",
+      "reply": "\u201cShe reports typical GERD symptoms, nocturnal cough, hoarseness, and occasional dysphagia.\u201d"
+    },
+    {
+      "trigger": "If resident orders upper endoscopy",
+      "reply": "\u201cEndoscopy shows erosive esophagitis with Los Angeles grade B changes and a 3 cm sliding hiatal hernia.\u201d"
+    },
+    {
+      "trigger": "If resident orders barium swallow",
+      "reply": "\u201cStudy confirms a sliding hiatal hernia with reflux of contrast into the esophagus.\u201d"
+    },
+    {
+      "trigger": "If resident orders esophageal pH monitoring and manometry",
+      "reply": "\u201cResults show increased acid exposure time, normal peristalsis, and a low LES pressure.\u201d"
+    },
+    {
+      "trigger": "If resident recommends lifestyle modifications and optimizes PPI therapy",
+      "reply": "\u201cYou counsel on weight loss, head of bed elevation, avoidance of late meals and acidic foods, and increase PPI dosing.\u201d"
+    },
+    {
+      "trigger": "If symptoms persist despite medical therapy",
+      "reply": "\u201cShe remains symptomatic and is now a candidate for surgical repair. What options would you consider?\u201d"
+    },
+    {
+      "trigger": "If resident discusses fundoplication",
+      "reply": "\u201cYou discuss laparoscopic Nissen fundoplication (360\u00b0) versus a partial wrap depending on motility findings.\u201d"
+    },
+    {
+      "trigger": "If paraesophageal component or hernia >5 cm is identified",
+      "reply": "\u201cSurgical repair is recommended even if asymptomatic to prevent risk of strangulation.\u201d"
+    },
+    {
+      "trigger": "If resident performs preoperative evaluation",
+      "reply": "\u201cManometry confirms adequate esophageal peristalsis to tolerate a complete wrap.\u201d"
+    },
+    {
+      "trigger": "If resident discusses postoperative expectations",
+      "reply": "\u201cYou explain that transient dysphagia is common, and she should avoid carbonated beverages and large meals, advancing diet gradually.\u201d"
+    },
+    {
+      "trigger": "If resident delays surgery in symptomatic hiatal hernia",
+      "reply": "\u201cShe remains at risk for chronic esophagitis, Barrett\u2019s esophagus, and pulmonary aspiration.\u201d"
+    },
+    {
+      "trigger": "If resident provides patient education",
+      "reply": "\u201cShe is counseled on the importance of adherence to PPI therapy and lifestyle measures even after surgery for long-term control.\u201d"
+    },
+    {
+      "trigger": "If resident describes technical operative steps",
+      "reply": "\u201cPlease describe in detail your operative approach for laparoscopic fundoplication.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Evaluation of hiatal hernia and GERD with endoscopy, pH monitoring, and manometry",
+    "Initial management with lifestyle modification and optimized medical therapy",
+    "Recognition of indications for surgical repair and appropriate fundoplication technique",
+    "Technical steps of laparoscopic hiatal hernia repair and fundoplication",
+    "Preoperative assessment of esophageal motility to guide surgical planning",
+    "Postoperative care, including dietary expectations and dysphagia management"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize hiatal hernia with reflux disease; misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Incomplete differential diagnosis; overlooks key features."
+          },
+          {
+            "score": 3,
+            "description": "Considers hiatal hernia with reflux but omits alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential; systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies hiatal hernia with reflux; articulates a thorough differential."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic workup and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes diagnostic testing and therapy appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, and makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacking empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings and plans but incomplete."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly and empathetically with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates patient/team needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management for hiatal hernia with reflux."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative options but with major gaps in knowledge."
+          },
+          {
+            "score": 3,
+            "description": "Describes some operative steps but omits key elements."
+          },
+          {
+            "score": 4,
+            "description": "Accurately describes major technical steps and perioperative considerations."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates comprehensive understanding of operative management, complications, and long-term considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unaware of limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for , humility, cultural sensitivity, ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing hiatal hernia with reflux disease and appropriately pursuing endoscopic and physiologic evaluation. Communication of management options, including surgical approaches, was clear and structured.Areas for Improvement: Earlier discussion of manometry findings and their implications for choice of fundoplication would improve surgical planning. More detailed description of the operative steps would strengthen your demonstration of surgical knowledge.Suggested Reading Topics: - SCORE Curriculum: Gastroesophageal Reflux Disease and Hiatal Hernia - ACS/ASE Review Manual: Esophageal Surgery - Operative Approaches to Antireflux Surgery"
+}

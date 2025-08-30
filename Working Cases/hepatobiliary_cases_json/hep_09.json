@@ -1,0 +1,206 @@
+{
+  "case_id": "hep_09",
+  "title": "Pyogenic Liver Abscess",
+  "diagnosis_topic": "Infection of hepatic parenchyma resulting in abscess formation",
+  "tags": [
+    "hepatobiliary",
+    "liver_abscess",
+    "infection"
+  ],
+  "setup_script": "A 55-year-old man with a history of diabetes presents to the emergency department with fever, chills, and right upper quadrant abdominal pain for one week. He denies jaundice. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "Vital signs are BP 120/75 mmHg, HR 102 bpm, RR 18/min, Temp 38.7 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Exam shows tender hepatomegaly in the right upper quadrant. No Murphy\u2019s sign is elicited."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Labs reveal WBC 20,000/\u00b5L, alkaline phosphatase elevated, mild transaminase elevation. Blood cultures are pending."
+    },
+    {
+      "trigger": "If resident requests initial imaging",
+      "reply": "Right upper quadrant ultrasound demonstrates a 5 cm hypoechoic lesion in the right lobe of the liver."
+    },
+    {
+      "trigger": "If resident requests cross-sectional imaging",
+      "reply": "CT abdomen confirms a multiloculated abscess in the right lobe of the liver."
+    },
+    {
+      "trigger": "If resident initiates empiric antibiotics",
+      "reply": "Broad-spectrum antibiotics are started covering enteric Gram-negative organisms and anaerobes (ceftriaxone plus metronidazole)."
+    },
+    {
+      "trigger": "If resident consults interventional radiology for drainage",
+      "reply": "A percutaneous catheter is placed, and pus cultures are sent."
+    },
+    {
+      "trigger": "If resident delays drainage",
+      "reply": "The patient develops worsening abdominal pain, fever spikes to 40 \u00b0C, and he becomes hypotensive at BP 85/50 mmHg."
+    },
+    {
+      "trigger": "If resident initiates resuscitation at this point",
+      "reply": "Patient improves hemodynamically after IV fluids and antibiotics, but remains tachycardic at HR 115."
+    },
+    {
+      "trigger": "If resident evaluates for underlying source of infection",
+      "reply": "No evidence of biliary obstruction is found. Colonoscopy later reveals diverticulosis but no active diverticulitis."
+    },
+    {
+      "trigger": "If resident requests culture results",
+      "reply": "Abscess fluid grows Klebsiella pneumoniae, sensitive to ceftriaxone and metronidazole."
+    },
+    {
+      "trigger": "If resident asks about follow-up imaging",
+      "reply": "A repeat ultrasound after 2 weeks shows reduction of abscess size from 5 cm to 2 cm."
+    },
+    {
+      "trigger": "If resident outlines antibiotic duration",
+      "reply": "Antibiotics are continued for a total of 6 weeks, tailored to culture results."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "The patient is counseled on completing antibiotics, recognizing recurrence symptoms, and the need for follow-up imaging."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of liver abscess based on clinical presentation and imaging",
+    "Initiation of empiric antibiotics and culture-directed therapy",
+    "Appropriate use of percutaneous drainage vs.\u00a0antibiotics alone",
+    "Evaluation for underlying source of infection",
+    "Monitoring treatment response with follow-up imaging and prolonged antibiotic therapy"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider liver abscess or attributes findings incorrectly."
+          },
+          {
+            "score": 2,
+            "description": "Considers infection but misses liver abscess as a key diagnosis."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes possibility of liver abscess but differential is incomplete."
+          },
+          {
+            "score": 4,
+            "description": "Identifies liver abscess with appropriate differential and supporting evidence."
+          },
+          {
+            "score": 5,
+            "description": "Quickly and comprehensively identifies liver abscess with thorough reasoning and differential."
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or need for intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical steps."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses key elements or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes testing and treatment appropriately with timely decisions."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, and demonstrates excellent decision-making."
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized or confusing, lacks clarity with team/patient."
+          },
+          {
+            "score": 2,
+            "description": "Provides partial or unclear information."
+          },
+          {
+            "score": 3,
+            "description": "Communicates findings and plan adequately but misses confirmation of understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, and empathetically with patient/team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate, anticipates team and patient needs."
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of procedural management of abscess."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes drainage as an option but with major gaps in knowledge."
+          },
+          {
+            "score": 3,
+            "description": "Describes drainage and antibiotic management with some omissions."
+          },
+          {
+            "score": 4,
+            "description": "Explains drainage, antibiotic therapy, complications, and alternatives completely."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, technical nuances, and perioperative considerations."
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, accountability, or honesty."
+          },
+          {
+            "score": 3,
+            "description": "Respectful and maintains integrity but needs prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: demonstrates humility, cultural sensitivity, and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing liver abscess early and pursuing appropriate imaging. You prioritized empiric antibiotics and drainage appropriately. Communication with the care team was clear and structured. Areas for Improvement:Earlier evaluation for potential sources of infection would have strengthened your approach. Timely escalation when the patient deteriorated could have been more immediate. Review the criteria for when antibiotics alone may suffice versus when drainage is required. Suggested Reading Topics:- Pyogenic Liver Abscess (SCORE)- Sepsis and Source Control (ACS/ASE Review Manual)- Management of Intra-abdominal Infections (SIS Guidelines)"
+  }
+}

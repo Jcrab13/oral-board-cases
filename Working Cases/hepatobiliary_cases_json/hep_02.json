@@ -1,0 +1,206 @@
+{
+  "case_id": "hep_02",
+  "title": "Acute Cholangitis",
+  "diagnosis_topic": "Ascending infection of the biliary tree secondary to obstruction",
+  "tags": [
+    "hepatobiliary",
+    "cholangitis",
+    "sepsis"
+  ],
+  "setup_script": "A 60-year-old man presents with fever, jaundice, and right upper quadrant pain. He has a history of gallstones but no prior surgeries. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 95/55 mmHg, HR 118 bpm, RR 22/min, Temp 39 \u00b0C, SpO\u2082 95%."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Icteric sclera, right upper quadrant tenderness; may have hypotension and confusion (Reynolds pentad)."
+    },
+    {
+      "trigger": "If resident orders lab tests",
+      "reply": "WBC 18 K/\u00b5L, bilirubin 5 mg/dL, alkaline phosphatase 300 U/L, AST/ALT mildly elevated."
+    },
+    {
+      "trigger": "If resident obtains ultrasound",
+      "reply": "Dilated common bile duct with gallstones; gallbladder with stones but no wall thickening."
+    },
+    {
+      "trigger": "If resident initiates aggressive IV fluids and broad-spectrum antibiotics",
+      "reply": "Piperacillin\u2013tazobactam started; blood cultures drawn."
+    },
+    {
+      "trigger": "If resident consults gastroenterology for emergent ERCP",
+      "reply": "ERCP performed; bile duct decompressed and stone removed."
+    },
+    {
+      "trigger": "If ERCP unavailable or unsuccessful",
+      "reply": "What operative approach would you perform to decompress the biliary tree? Please describe your operative steps."
+    },
+    {
+      "trigger": "If resident proceeds to operative decompression (e.g., choledochotomy, T-tube drainage, biliary bypass)",
+      "reply": "Patient stabilizes postoperatively with improved hemodynamics."
+    },
+    {
+      "trigger": "If resident delays biliary decompression",
+      "reply": "Patient develops septic shock and multiple organ failure."
+    },
+    {
+      "trigger": "If resident discusses Charcot\u2019s triad and Reynolds pentad",
+      "reply": "Fever, jaundice, and RUQ pain; pentad adds hypotension and altered mental status."
+    },
+    {
+      "trigger": "If resident addresses timing of cholecystectomy",
+      "reply": "Interval cholecystectomy performed after cholangitis resolves."
+    },
+    {
+      "trigger": "If resident describes cholecystectomy technique",
+      "reply": "Standard laparoscopic cholecystectomy performed; intraoperative cholangiogram considered to confirm ductal clearance."
+    },
+    {
+      "trigger": "If resident outlines postoperative care",
+      "reply": "Monitor for post-ERCP pancreatitis; continue antibiotics until sepsis resolves."
+    },
+    {
+      "trigger": "If resident counsels patient",
+      "reply": "Discuss lifestyle modifications and gallstone prevention."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of acute cholangitis using Charcot\u2019s triad/Reynolds pentad",
+    "Initial resuscitation with fluids and antibiotics",
+    "Urgent biliary decompression (ERCP or alternative surgical methods)",
+    "Avoiding delay that leads to septic shock",
+    "Planning for interval cholecystectomy and patient counseling"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider acute cholangitis or misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Delayed/incomplete recognition of acute cholangitis."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes cholangitis but omits key differentials."
+          },
+          {
+            "score": 4,
+            "description": "Develops appropriate differential, systematically rules out alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies cholangitis, articulates full differential with supporting data."
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays or mis-prioritizes actions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Appropriately prioritizes resuscitation, diagnostics, and decompression."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions."
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks clarity."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks structure or engagement."
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan but misses opportunities for confirmation."
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic with team/patient."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates information needs."
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative or procedural management for acute cholangitis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative options but omits critical steps or has major gaps in technique."
+          },
+          {
+            "score": 3,
+            "description": "Describes essential operative steps (ERCP, decompression, or cholecystectomy) but with minor omissions or uncertainties."
+          },
+          {
+            "score": 4,
+            "description": "Fully describes operative management options, including ERCP, open decompression, and interval cholecystectomy, with attention to indications and complications."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances (ERCP vs surgical decompression, choledochotomy technique, use of T-tube, bile duct exploration, and cholecystectomy with intraoperative cholangiogram), as well as perioperative considerations."
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains professionalism but needs prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, cultural sensitivity, ethics."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing acute cholangitis using Charcot\u2019s triad and Reynolds pentad. You appropriately prioritized resuscitation and urgent biliary decompression. Communication of your management plan was structured and clear. Areas for Improvement:Consider discussing alternative decompression strategies more consistently (percutaneous drainage or surgical exploration) when ERCP is unavailable. Earlier anticipation of complications such as septic shock would further strengthen your clinical judgment. Suggested Reading Topics:- SCORE Curriculum: Acute Cholangitis- Sepsis and Source Control (ACS/ASE Review Manual)- Management of Biliary Tract Disease (SCORE/ABSITE Review)"
+  }
+}

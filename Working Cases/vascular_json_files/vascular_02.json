@@ -1,0 +1,210 @@
+{
+  "case_id": "vascular_02",
+  "title": "Ruptured Abdominal Aortic Aneurysm",
+  "diagnosis_topic": "Hemorrhagic Shock from Ruptured Infrarenal AAA",
+  "tags": [
+    "vascular",
+    "aneurysm",
+    "rupture",
+    "hemorrhagic_shock",
+    "resuscitation",
+    "emergency_surgery"
+  ],
+  "setup_script": "A 72-year-old man with a history of hypertension and heavy smoking collapses at home. EMS reports that he was pale, diaphoretic, and complaining of severe abdominal and back pain. On arrival to the emergency department, he is hypotensive and tachycardic. How would you proceed?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "BP 80/50 mmHg, HR 120 bpm, RR 24, Temp 36.5 \u00b0C, SpO\u2082 95%."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "You find a tender abdomen with a pulsatile midline mass, cool extremities, and significant discomfort but no peritonitis."
+    },
+    {
+      "trigger": "If resident initiates large-bore IV access and blood transfusion",
+      "reply": "After 1 unit PRBCs, blood pressure improves slightly to 90/60 mmHg."
+    },
+    {
+      "trigger": "If resident requests labs",
+      "reply": "CBC shows Hgb 9 g/dL, BMP is normal, lactate 5 mmol/L. Type and crossmatch is in process."
+    },
+    {
+      "trigger": "If resident orders bedside imaging",
+      "reply": "FAST exam demonstrates free fluid. Focused ultrasound shows a large infrarenal aneurysm."
+    },
+    {
+      "trigger": "If resident asks for CT angiography",
+      "reply": "Due to hemodynamic instability, the patient arrests before the scan can be performed."
+    },
+    {
+      "trigger": "If resident activates OR and consults vascular surgery",
+      "reply": "The patient is transferred immediately to the operating room for repair."
+    },
+    {
+      "trigger": "If resident discusses operative approach",
+      "reply": "EVAR is possible if anatomy is favorable and resources are available; otherwise, emergent open repair is required."
+    },
+    {
+      "trigger": "If resident is asked to describe operative steps",
+      "reply": "Please describe your operative steps for open repair of a ruptured infrarenal AAA."
+    },
+    {
+      "trigger": "If resident details operative approach",
+      "reply": "Midline laparotomy is performed. Aortic control is obtained with supraceliac or infrarenal clamping, the aneurysm sac is opened, thrombus evacuated, and graft repair is performed."
+    },
+    {
+      "trigger": "If resident delays operative management",
+      "reply": "The patient becomes pulseless and cannot be resuscitated."
+    },
+    {
+      "trigger": "If resident asks about fluid management strategy",
+      "reply": "Permissive hypotension is maintained with a systolic goal of 80\u201390 mmHg until hemorrhage is controlled."
+    },
+    {
+      "trigger": "If resident inquires about postoperative care",
+      "reply": "The patient requires ICU-level care with close monitoring for renal perfusion, ongoing resuscitation, and vigilance for abdominal compartment syndrome."
+    },
+    {
+      "trigger": "If resident discusses risk factors and screening",
+      "reply": "Age, male sex, hypertension, smoking history; screening is recommended in high-risk groups."
+    }
+  ],
+  "critical_decision_points": [
+    "Early recognition of ruptured AAA as a surgical emergency",
+    "Appropriate resuscitation with blood products and permissive hypotension",
+    "Avoidance of delay for unnecessary imaging",
+    "Immediate transfer to OR with vascular surgery for repair",
+    "Ability to describe operative steps for open repair",
+    "Knowledge of postoperative ICU management and complications"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize ruptured AAA, misattributes symptoms"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential, misses key features"
+          },
+          {
+            "score": 3,
+            "description": "Considers ruptured AAA but omits important differentials"
+          },
+          {
+            "score": 4,
+            "description": "Recognizes ruptured AAA and develops systematic differential"
+          },
+          {
+            "score": 5,
+            "description": "Immediately identifies ruptured AAA, articulates complete differential with supporting data"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or urgency"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions"
+          },
+          {
+            "score": 3,
+            "description": "Initiates management but with gaps in timing or steps"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and surgery appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates superb judgment, anticipates complications, coordinates care"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks clarity"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but unclear or incomplete"
+          },
+          {
+            "score": 3,
+            "description": "Clear communication but misses opportunities for confirmation"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic communication with team and patient"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication, succinct, anticipates needs, highly organized"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "No knowledge of operative management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgery but lacks understanding of indications/technique"
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Thorough knowledge of management, complications, alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative approach: includes incision, aortic control, aneurysm sac opening, graft placement, and perioperative considerations"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Respectful but requires prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model professionalism: humility, cultural sensitivity, ethical integrity"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this ruptured abdominal aortic aneurysm scenario demonstrated You demonstrated strong diagnostic reasoning by promptly recognizing ruptured AAA and initiating timely operative intervention. Your communication of the plan to the team was clear and organized. You were able to describe the operative approach in detail.. Areas for improvement include Earlier recognition of the importance of avoiding CT angiography in unstable patients would improve efficiency. Continue refining your description of operative steps, especially graft selection and postoperative considerations.. Suggested reading includes Management of Ruptured Abdominal Aortic Aneurysm (SCORE); Damage Control Resuscitation and Permissive Hypotension (ACS/ASE); Operative Techniques for Open AAA Repair; Postoperative Critical Care for Vascular Emergencies"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "case_id": "trauma_08",
+  "title": "Penetrating Neck Trauma",
+  "diagnosis_topic": "Penetrating Neck Injury (Zone II) \u2013 Stable vs.\u00a0Unstable Management, Aerodigestive Evaluation",
+  "tags": [
+    "trauma",
+    "emergency_surgery",
+    "neck_injury",
+    "airway_management",
+    "esophagoscopy",
+    "flexible_bronchoscopy"
+  ],
+  "setup_script": "\u201cA 32-year-old male is brought to the emergency department after being stabbed in the left side of the neck during an altercation. On arrival, he is agitated and bleeding from a 4 cm transverse wound in Zone II of the neck. His vital signs are: BP 100/60, HR 122, RR 28, O2 saturation 92% on room air. On exam, there is active venous bleeding, subcutaneous emphysema, and hoarseness of voice. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident begins with ATLS survey",
+      "reply": "\u201cPrimary survey shows airway threatened with stridor, expanding hematoma, and ongoing bleeding.\u201d"
+    },
+    {
+      "trigger": "If resident asks about hemodynamic status",
+      "reply": "\u201cCurrently, the patient is tachycardic at 122 with BP 100/60 and saturating 92% on room air.\u201d"
+    },
+    {
+      "trigger": "If resident classifies patient as unstable (airway threatened and active bleeding)",
+      "reply": "\u201cThis patient is unstable and requires immediate operative exploration. How will you secure the airway?\u201d"
+    },
+    {
+      "trigger": "If resident attempts orotracheal intubation",
+      "reply": "\u201cThe airway is distorted with bleeding obscuring the cords. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident performs a surgical airway",
+      "reply": "\u201cYou perform a cricothyroidotomy successfully. The patient is oxygenating. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident delays exploration in the unstable patient",
+      "reply": "\u201cWhat is the definitive management for an unstable patient with penetrating Zone II neck trauma?\u201d"
+    },
+    {
+      "trigger": "If resident classifies patient as stable (no airway compromise, bleeding controlled)",
+      "reply": "\u201c"
+    },
+    {
+      "trigger": "If the patient were stable, what diagnostic studies would you obtain prior to operative intervention?\u201d",
+      "reply": ""
+    },
+    {
+      "trigger": "If resident obtains CT angiography",
+      "reply": "\u201cCT angiography shows contrast extravasation adjacent to the left internal jugular vein and subcutaneous emphysema tracking toward the hypopharynx. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident proceeds to operative neck exploration",
+      "reply": "\u201cWhat incision and exposure will you use to explore Zone II?\u201d"
+    },
+    {
+      "trigger": "If resident identifies venous injury intraoperatively",
+      "reply": "\u201cOn exploration, there is a partial transection of the left internal jugular vein with ongoing bleeding. How will you manage this?\u201d"
+    },
+    {
+      "trigger": "After vascular control is achieved",
+      "reply": "\u201cThere is a 2 cm laceration of the left thyroid cartilage with subcutaneous emphysema. How will you evaluate for associated aerodigestive injury?\u201d"
+    },
+    {
+      "trigger": "If resident does not mention intraoperative endoscopy",
+      "reply": "\u201cIs there anything else you would like to do intraoperatively to assess the airway and esophagus?\u201d"
+    },
+    {
+      "trigger": "If resident performs flexible bronchoscopy and esophagoscopy",
+      "reply": "\u201cFlexible bronchoscopy shows no tracheobronchial injury. Esophagoscopy reveals a 1 cm mucosal tear in the cervical esophagus. How will you manage this injury?\u201d"
+    },
+    {
+      "trigger": "If resident repairs the esophagus",
+      "reply": "\u201cAfter primary repair and drainage, what are your postoperative priorities regarding antibiotics, nutrition, airway management, and monitoring for complications?\u201d"
+    },
+    {
+      "trigger": "Postoperative day 1 scenario",
+      "reply": "\u201cThe patient develops fever and increasing neck tenderness with purulent drain output. What concerns do you have and what will you do next?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Differentiation of stable vs.\u00a0unstable patient management in penetrating neck trauma",
+    "Airway control in the unstable patient (surgical airway vs.\u00a0failed intubation)",
+    "Immediate operative exploration for unstable patient",
+    "Use of CT angiography and selective operative management in stable patient",
+    "Mandatory flexible bronchoscopy and esophagoscopy intraoperatively to exclude aerodigestive injury",
+    "Technical management of vascular and esophageal injuries",
+    "Postoperative ICU and multidisciplinary management"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "1: Fails to differentiate stable vs.\u00a0unstable pathways",
+          "2": "3: Recognizes instability but incomplete reasoning for stable patient workup",
+          "3": "5: Correctly distinguishes unstable patient (immediate OR) vs.\u00a0stable patient (CTA, selective exploration) and identifies need for intraoperative esophagoscopy + bronchoscopy"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "1: Delays exploration in unstable patient",
+          "2": "3: Secures airway and bleeding control but misses endoscopic evaluation",
+          "3": "5: Excellent judgment throughout with appropriate triage, airway, operative decision-making, and adjunctive studies"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "1: Disorganized, unable to articulate trauma priorities",
+          "2": "3: Communicates plan but misses sequence or rationale",
+          "3": "5: Clear, systematic ATLS-based communication, explains reasoning and anticipates complications"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "1: Inadequate understanding of neck zones and workup",
+          "2": "3: Understands exposures and vascular control but misses aerodigestive evaluation",
+          "3": "5: Excellent knowledge of stable vs.\u00a0unstable pathways, exposures, vascular/airway/esophageal repair principles, and mandatory intraoperative endoscopic adjuncts"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "1: Ignores trauma team input, poor leadership",
+          "2": "3: Adequate teamwork and patient-centered decision-making",
+          "3": "5: Excellent leadership, collaboration with trauma/ENT/ICU teams, patient-centered approach"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "\u201cYour performance on this penetrating neck trauma scenario demonstrated [strengths in airway management/vascular control/operative planning]. You correctly [specific positive actions]. Areas for improvement include [specific gaps]. Consider reviewing the principles of penetrating neck trauma management, particularly stable vs.\u00a0unstable pathways, airway control strategies, and the role of intraoperative esophagoscopy and bronchoscopy. Recommended reading includes the EAST guidelines on penetrating neck trauma and ATLS airway management protocols.\u201d"
+}

@@ -1,0 +1,193 @@
+{
+  "case_id": "sst_11",
+  "title": "Necrotizing Soft Tissue Infection (NSTI)",
+  "diagnosis_topic": "Necrotizing Soft Tissue Infection (NSTI) \u2013 Sepsis & Source Control",
+  "tags": [
+    "emergency_general_surgery",
+    "soft_tissue_infection",
+    "sepsis",
+    "critical_care",
+    "operative_decision-making"
+  ],
+  "setup_script": "\u201cA 57-year-old male with poorly controlled diabetes and chronic kidney disease presents to the emergency department with rapidly progressive pain, swelling, and erythema of his right thigh. He reports the symptoms began 24 hours ago but have worsened dramatically in the past 6 hours. He is febrile to 39.5\u00b0C, tachycardic to 135 bpm, hypotensive at 85/50 mmHg, and tachypneic at 28/min. On exam, his right thigh is erythematous with tense swelling, violaceous discoloration, crepitus, and exquisite tenderness out of proportion to exam. What would you like to do next?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident orders resuscitation and broad-spectrum antibiotics",
+      "reply": "- \u201cAfter 2L crystalloid, his BP improves to 95/55. Labs show WBC 28,000/\u00b5L, creatinine 2.8 mg/dL, lactate 6.8 mmol/L. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident delays operative source control",
+      "reply": "- \u201cOver the next hour, the patient becomes more hypotensive (BP 70/40) despite fluids and requires norepinephrine. What is your management plan now?\u201d"
+    },
+    {
+      "trigger": "If resident prioritizes surgical intervention",
+      "reply": "- \u201cYou take him to the OR urgently. What is your operative plan?\u201d"
+    },
+    {
+      "trigger": "If resident describes wide surgical debridement",
+      "reply": "- \u201cOn incision, foul-smelling \u2018dishwater\u2019 fluid drains, with gray necrotic fascia and noncontractile muscle. How do you proceed?\u201d"
+    },
+    {
+      "trigger": "If resident performs adequate debridement",
+      "reply": "- \u201cYou debride extensively until healthy bleeding tissue is seen. The wound is left open with temporary dressings. What is your plan for postoperative management?\u201d"
+    },
+    {
+      "trigger": "If resident fails to mention ICU care and re-exploration",
+      "reply": "- \u201cThe patient remains intubated and on vasopressors in the ICU. What additional measures will you order for his postoperative care?\u201d"
+    },
+    {
+      "trigger": "If resident addresses repeat debridement",
+      "reply": "- \u201cYou return him to the OR 24 hours later. Residual necrosis is found and further debridement is performed. What reconstructive considerations might arise once infection is controlled?\u201d"
+    },
+    {
+      "trigger": "If resident proposes amputation for uncontrolled disease",
+      "reply": "- \u201cDespite repeated debridements, the infection continues to spread proximally into the pelvis. What would you do now?\u201d"
+    },
+    {
+      "trigger": "If resident delays amputation in unstable setting",
+      "reply": "- \u201cThe patient arrests intraoperatively from refractory septic shock. Resuscitation efforts are unsuccessful.\u201d"
+    },
+    {
+      "trigger": "If resident performs amputation appropriately",
+      "reply": "- \u201cYou proceed with hip disarticulation. The patient survives and gradually improves with ongoing ICU support and wound care. What is your long-term plan for rehabilitation and infection monitoring?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of necrotizing infection as a surgical emergency",
+    "Appropriate early resuscitation and empiric antibiotics",
+    "Prioritization of urgent operative debridement",
+    "Adequacy of surgical source control (wide debridement, possible amputation)",
+    "Postoperative critical care and repeated explorations",
+    "Recognition of reconstructive needs after infection control"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize necrotizing infection, attributes to cellulitis"
+          },
+          {
+            "score": 2,
+            "description": "Delayed recognition, incomplete workup"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes necrotizing infection, orders antibiotics and consults surgery"
+          },
+          {
+            "score": 4,
+            "description": "Prompt diagnosis with correct interpretation of systemic toxicity"
+          },
+          {
+            "score": 5,
+            "description": "Excellent , integrates risk factors, exam findings, and labs for early recognition"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Does not prioritize source control, delays surgery"
+          },
+          {
+            "score": 2,
+            "description": "Initiates partial management but delays operative intervention"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes urgency of surgical debridement, proceeds appropriately"
+          },
+          {
+            "score": 4,
+            "description": "Good prioritization of resuscitation, antibiotics, and surgical intervention"
+          },
+          {
+            "score": 5,
+            "description": "Excellent judgment, immediate operative management with anticipation of repeat debridements and possible amputation"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear management plan"
+          },
+          {
+            "score": 2,
+            "description": "Some organization but incomplete explanation"
+          },
+          {
+            "score": 3,
+            "description": "Clear  of resuscitation and surgical plan"
+          },
+          {
+            "score": 4,
+            "description": "Well-structured, concise explanation with appropriate priorities"
+          },
+          {
+            "score": 5,
+            "description": "Exceptionally clear , systematic presentation, anticipates team needs"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inadequate understanding of debridement principles"
+          },
+          {
+            "score": 2,
+            "description": "Limited understanding of surgical management of NSTI"
+          },
+          {
+            "score": 3,
+            "description": "Adequate operative plan with staged debridements"
+          },
+          {
+            "score": 4,
+            "description": "Good knowledge of debridement, reconstruction principles, ICU management"
+          },
+          {
+            "score": 5,
+            "description": "Excellent knowledge of operative management, damage control, amputation decisions, and reconstructive considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Does not engage ICU/multidisciplinary team"
+          },
+          {
+            "score": 2,
+            "description": "Minimal collaboration, defensive communication"
+          },
+          {
+            "score": 3,
+            "description": "Appropriate team involvement"
+          },
+          {
+            "score": 4,
+            "description": "Good leadership and effective communication with ICU/ID/rehab teams"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , clear delegation, compassionate family communication, patient-centered approach"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:\u201cYou demonstrated strong diagnostic reasoning by recognizing the necrotizing soft tissue infection early and prioritizing surgical intervention. Your communication of the resuscitation and operative plan was clear and well-structured.\u201dAreas for Improvement:\u201cConsider a more detailed discussion of postoperative critical care needs and the importance of planned re-explorations. Earlier recognition of the potential need for amputation in uncontrolled infection would further strengthen your management plan.\u201dSuggested Reading Topics:- Necrotizing Soft Tissue Infections (SCORE Curriculum)- Sepsis and Source Control (ACS/ASE Review Manual)- Principles of Surgical Debridement and Reconstruction"
+}

@@ -1,0 +1,206 @@
+{
+  "case_id": "hep_07",
+  "title": "Post-Cholecystectomy Bile Leak",
+  "diagnosis_topic": "Bile leak from cystic duct stump or accessory duct after gallbladder removal",
+  "tags": [
+    "hepatobiliary",
+    "postoperative_complication",
+    "bile_leak"
+  ],
+  "setup_script": "A 52-year-old woman is postoperative day 3 after laparoscopic cholecystectomy for acute cholecystitis. She reports worsening abdominal pain and nausea. Her surgical drain output has increased and appears bilious. How would you proceed in evaluating and managing this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 115/75 mmHg, HR 110 bpm, RR 20/min, Temp 38 \u00b0C."
+    },
+    {
+      "trigger": "If resident examines abdomen",
+      "reply": "Mild distension, right upper quadrant tenderness, no frank peritonitis."
+    },
+    {
+      "trigger": "If resident measures drain output",
+      "reply": "300 mL bilious output in past 24 hours."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 14,000/\u00b5L, total bilirubin 2.2 mg/dL, stable liver enzymes."
+    },
+    {
+      "trigger": "If resident orders abdominal ultrasound",
+      "reply": "Nonspecific fluid near liver bed, drain in place."
+    },
+    {
+      "trigger": "If resident orders CT scan with IV and oral contrast",
+      "reply": "Fluid collection near gallbladder fossa; no evidence of major duct transection."
+    },
+    {
+      "trigger": "If resident requests HIDA scan",
+      "reply": "Demonstrates bile leak near cystic duct stump."
+    },
+    {
+      "trigger": "If resident consults GI for ERCP",
+      "reply": "ERCP identifies cystic duct stump leak; sphincterotomy and biliary stent placed."
+    },
+    {
+      "trigger": "If resident keeps patient NPO and starts broad-spectrum antibiotics",
+      "reply": "Patient stabilizes, prevents infection."
+    },
+    {
+      "trigger": "If resident asks about percutaneous drainage",
+      "reply": "IR drains biloma under image guidance."
+    },
+    {
+      "trigger": "If resident delays intervention",
+      "reply": "Patient develops worsening abdominal pain, hypotension, bile peritonitis requiring reoperation."
+    },
+    {
+      "trigger": "If resident explains etiology",
+      "reply": "Mentions inadequate cystic duct clip, accessory duct of Luschka, or clip slippage."
+    },
+    {
+      "trigger": "If resident discusses timing of stent removal",
+      "reply": "Typically 4\u20136 weeks after ERCP once leak healed."
+    },
+    {
+      "trigger": "If resident outlines follow-up",
+      "reply": "Ongoing drain monitoring, serial LFTs, monitoring for recurrent leak or cholangitis."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of postoperative bile leak via drain output and symptoms",
+    "Use of imaging and ERCP to diagnose and treat leak",
+    "Decision for biliary stenting and percutaneous drainage",
+    "Prevention of bile peritonitis through early intervention",
+    "Post-procedural monitoring and stent management"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider bile leak; attributes symptoms incorrectly."
+          },
+          {
+            "score": 2,
+            "description": "Considers bile leak but incomplete differential."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes bile leak as likely but omits alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Develops full differential, rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies bile leak with comprehensive reasoning."
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Misses instability, delays intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but orders inappropriate/delayed tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup but misses key steps."
+          },
+          {
+            "score": 4,
+            "description": "Orders appropriate imaging, timely ERCP, and antibiotics."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care seamlessly."
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or engagement."
+          },
+          {
+            "score": 3,
+            "description": "Clear explanation of findings and plan."
+          },
+          {
+            "score": 4,
+            "description": "Organized, logical, and empathetic with team/patient."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates patient/team needs."
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of bile leak management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative/procedural options but with major gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with omissions."
+          },
+          {
+            "score": 4,
+            "description": "Completes description of ERCP/stenting, drainage, complications."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances and perioperative care."
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, lacks insight."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, accountability issues."
+          },
+          {
+            "score": 3,
+            "description": "Respectful but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, open to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, ethical, culturally sensitive."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "StrengthsYou demonstrated strong diagnostic reasoning by identifying a bile leak based on drain output and symptoms. You appropriately utilized imaging and ERCP for diagnosis and treatment, and your management plan incorporated multidisciplinary care. Areas for ImprovementYou should further refine your discussion of the mechanisms of bile leak and expand on long-term monitoring and stent management. Clarifying your sequence of interventions in unstable patients would improve your clinical judgment. Suggested Reading Topics- SCORE: Management of Post-Cholecystectomy Complications- ACS/ASE Review Manual: Biliary Injuries and Bile Leak- Techniques in ERCP and Postoperative Endoscopic Management"
+  }
+}

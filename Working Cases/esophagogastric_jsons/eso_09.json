@@ -1,0 +1,206 @@
+{
+  "case_id": "eso_09",
+  "title": "Variceal Upper Gastrointestinal Bleeding",
+  "diagnosis_topic": "Esophageal or gastric variceal hemorrhage secondary to portal hypertension",
+  "tags": [
+    "hepatobiliary",
+    "portal_hypertension",
+    "variceal_bleeding"
+  ],
+  "setup_script": "\u201cA 54-year-old man with known alcoholic cirrhosis presents with large-volume hematemesis and melena. He is hypotensive and confused. How would you manage this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBP 85/50 mmHg, HR 120 bpm, RR 24/min, Temp 36.8 \u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident secures airway",
+      "reply": "\u201cPatient is altered with poor gag reflex; intubated for airway protection and resuscitation.\u201d"
+    },
+    {
+      "trigger": "If resident initiates fluid resuscitation and transfusion",
+      "reply": "\u201cTwo large-bore IVs placed; transfusion initiated; Hgb goal 7\u20138 g/dL.\u201d"
+    },
+    {
+      "trigger": "If resident delays resuscitation",
+      "reply": "\u201cPatient becomes increasingly hypotensive to 70/40 mmHg and tachycardic to 140 bpm.\u201d"
+    },
+    {
+      "trigger": "If resident starts vasoactive therapy",
+      "reply": "\u201cOctreotide infusion started; blood pressure stabilizes modestly.\u201d"
+    },
+    {
+      "trigger": "If resident administers prophylactic antibiotics",
+      "reply": "\u201cCeftriaxone 1 g IV administered.\u201d"
+    },
+    {
+      "trigger": "If resident places nasogastric tube",
+      "reply": "\u201cLarge clots aspirated; confirms upper GI source.\u201d"
+    },
+    {
+      "trigger": "If resident coordinates emergent endoscopy",
+      "reply": "\u201cEndoscopic variceal band ligation performed; bleeding controlled.\u201d"
+    },
+    {
+      "trigger": "If resident delays endoscopy",
+      "reply": "\u201cPatient continues to bleed with hemodynamic instability.\u201d"
+    },
+    {
+      "trigger": "If endoscopic control fails",
+      "reply": "\u201cPersistent bleeding; balloon tamponade placed temporarily; TIPS considered.\u201d"
+    },
+    {
+      "trigger": "If resident evaluates for hepatic encephalopathy",
+      "reply": "\u201cAfter bleeding controlled, patient develops confusion; lactulose initiated.\u201d"
+    },
+    {
+      "trigger": "If resident discusses secondary prophylaxis",
+      "reply": "\u201cNonselective beta blockers and repeat banding recommended.\u201d"
+    },
+    {
+      "trigger": "If resident addresses long-term plan",
+      "reply": "\u201cReferral to transplant center initiated.\u201d"
+    },
+    {
+      "trigger": "If resident provides inadequate management",
+      "reply": "\u201cPatient develops aspiration pneumonia and recurrent bleeding.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Airway protection and hemodynamic resuscitation",
+    "Initiation of vasoactive therapy and prophylactic antibiotics",
+    "Timely endoscopic intervention",
+    "Rescue therapy if endoscopy fails (balloon tamponade, TIPS)",
+    "Post-bleed management: secondary prophylaxis and transplant evaluation"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize variceal bleeding; attributes to other causes"
+          },
+          {
+            "score": 2,
+            "description": "Delayed recognition; incomplete differential"
+          },
+          {
+            "score": 3,
+            "description": "Identifies variceal bleed but misses alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential; considers other causes of GI bleed"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly recognizes variceal bleeding; complete differential with supporting/refuting evidence"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to act on unstable patient"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays or orders inappropriate tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses key timing"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation and therapy appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, makes timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacking empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity and structure"
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings and plan, minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Logical, empathetic, clear with team/patient"
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates needs of patient/team"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of operative/procedural management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies options but with major gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes key steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Explains operative/procedural management, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of evidence, techniques, and perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, fails to recognize limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Respectful and ethical but requires prompting"
+          },
+          {
+            "score": 4,
+            "description": "Consistently professional and receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, sensitivity, ethical behavior"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths\u201cYou demonstrated strong diagnostic reasoning by promptly recognizing variceal hemorrhage. Your prioritization of airway protection, resuscitation, and timely endoscopic therapy reflected good clinical judgment. Communication of your management sequence was clear and structured.\u201dAreas for Improvement\u201cEarlier escalation to rescue therapy (TIPS or tamponade) in uncontrolled bleeding would strengthen your management. Additionally, transplant evaluation and long-term secondary prophylaxis should be emphasized more consistently.\u201dSuggested Reading Topics- Portal Hypertension and Variceal Hemorrhage (SCORE)- AASLD Guidelines on Management of Variceal Bleeding- Perioperative Considerations in Cirrhotic Patients"
+}

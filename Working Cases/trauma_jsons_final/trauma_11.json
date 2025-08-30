@@ -1,0 +1,128 @@
+{
+  "case_id": "trauma_11",
+  "title": "Unstable Pelvic Fracture",
+  "diagnosis_topic": "High-energy pelvic fracture with massive hemorrhage",
+  "tags": [
+    "trauma",
+    "pelvic_fracture",
+    "hemorrhagic_shock"
+  ],
+  "setup_script": "\u201cA 35-year-old motorcyclist is brought in after a high-speed collision. He was intubated in the field. On arrival, he is pale and diaphoretic with gross deformity of the pelvis. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident checks vital signs",
+      "reply": "BP 70/40 mmHg, HR 140 bpm, RR 24/min on ventilator, Temp 36 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs primary survey",
+      "reply": "Airway secured, breath sounds equal, pelvis unstable with crepitus; long bone deformity of left leg noted."
+    },
+    {
+      "trigger": "If resident applies pelvic binder at the greater trochanters",
+      "reply": "Hemodynamics improve modestly."
+    },
+    {
+      "trigger": "If resident obtains FAST exam",
+      "reply": "Negative for intraperitoneal fluid but poor window due to bowel gas."
+    },
+    {
+      "trigger": "If resident initiates massive transfusion protocol with balanced blood products",
+      "reply": "BP rises to 90/60 mmHg after four units transfused."
+    },
+    {
+      "trigger": "If resident orders AP pelvis X-ray",
+      "reply": "Open-book fracture with pubic symphysis diastasis and sacroiliac joint disruption."
+    },
+    {
+      "trigger": "If resident consults interventional radiology for pelvic angioembolization",
+      "reply": "IR arranges emergent pelvic embolization to control venous bleeding."
+    },
+    {
+      "trigger": "If resident discusses external fixation",
+      "reply": "Orthopedics applies temporary external fixator after embolization to stabilize pelvis."
+    },
+    {
+      "trigger": "If resident delays binder placement and resuscitation",
+      "reply": "Patient develops profound shock and cardiac arrest."
+    },
+    {
+      "trigger": "If resident assesses for associated injuries",
+      "reply": "Once stable, CT head and chest reveal left femur shaft fracture requiring later repair."
+    },
+    {
+      "trigger": "If resident addresses DVT prophylaxis",
+      "reply": "Begin once bleeding controlled and patient stabilized."
+    },
+    {
+      "trigger": "If resident discusses definitive management",
+      "reply": "Pelvic reconstruction once resuscitated; address associated orthopedic injuries."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of pelvic fracture as source of life-threatening hemorrhage",
+    "Application of pelvic binder and initiation of massive transfusion protocol",
+    "Appropriate sequencing of imaging and intervention (angioembolization vs.\u00a0external fixation)",
+    "Assessment for associated injuries and secondary survey",
+    "Timing of definitive fixation and postoperative care"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Does not recognize pelvic fracture as a potential source of shock",
+          "2": "Delayed recognition; incomplete consideration of pelvic hemorrhage",
+          "3": "Identifies pelvic fracture as possible cause but omits key alternatives",
+          "4": "Recognizes unstable pelvic fracture as likely cause; considers differential appropriately",
+          "5": "Excellent diagnostic reasoning with prompt identification and systematic exclusion of other causes"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to initiate resuscitation or binder placement; dangerously delayed actions",
+          "2": "Recognizes urgency but delays critical steps or orders inappropriate tests",
+          "3": "Initiates resuscitation and workup but with errors in timing or prioritization",
+          "4": "Appropriately prioritizes binder placement, transfusion, imaging, and interventions",
+          "5": "Excellent judgment anticipating complications, coordinating care, and ensuring timely sequencing"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Disorganized, unclear, or confusing communication",
+          "2": "Provides information but lacks structure or clarity",
+          "3": "Communicates findings and plan clearly but incompletely",
+          "4": "Clear, structured, empathetic communication with team",
+          "5": "Exemplary, succinct, and anticipates team/patient needs"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Lacks understanding of operative or procedural management of pelvic fractures",
+          "2": "Identifies operative options but with significant knowledge gaps",
+          "3": "Describes key steps of management with some omissions",
+          "4": "Comprehensive description of management, complications, and alternatives",
+          "5": "Mastery of current evidence, operative nuances, and perioperative care of pelvic fractures"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "Disrespectful or breaches confidentiality",
+          "2": "Inconsistent respect or accountability",
+          "3": "Respectful but requires prompting for reflection",
+          "4": "Consistently respectful, accountable, receptive to feedback",
+          "5": "Role model professionalism; demonstrates humility, cultural sensitivity, and ethical conduct"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing the pelvic fracture as a source of life-threatening hemorrhage. You appropriately applied a binder and activated the massive transfusion protocol. Your sequencing of interventions showed sound prioritization.\nAreas for Improvement:At times, decisions regarding when to escalate to angiography or external fixation could have been more clearly articulated. Continue working on integrating multidisciplinary coordination with trauma, orthopedic, and interventional teams in real time.\nSuggested Reading Topics:- Management of Unstable Pelvic Fractures (EAST Guidelines)- Massive Transfusion Protocols in Trauma (ACS Resources for Optimal Care of the Injured Patient)- Operative and Non-Operative Management of Pelvic Ring Injuries (SCORE Curriculum)"
+}

@@ -1,0 +1,198 @@
+{
+  "case_id": "ped_01",
+  "title": "Anorectal Malformation",
+  "diagnosis_topic": "Imperforate anus with fistula requiring staged repair",
+  "tags": [
+    "pediatric",
+    "congenital",
+    "anorectal_malformation"
+  ],
+  "setup_script": "\u201cA newborn boy has no visible anal opening. He has not passed stool but voids normally. The abdomen is distended and meconium appears at the urethral meatus. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses vital signs",
+      "reply": "HR 150 bpm, RR 40/min, Temp 37.2 \u00b0C; stable."
+    },
+    {
+      "trigger": "If resident performs perineal exam",
+      "reply": "Absence of anal opening; meconium noted at urethral meatus suggesting rectourethral fistula."
+    },
+    {
+      "trigger": "If resident orders cross-table prone lateral X-ray at 24 hours",
+      "reply": "Determines distance between rectal pouch and perineal skin (high vs.\u00a0low lesion)."
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "Renal ultrasound, echocardiogram, and spinal ultrasound obtained to look for VACTERL association."
+    },
+    {
+      "trigger": "If resident keeps patient NPO and places replogle tube for gastric decompression",
+      "reply": "Abdominal distension improves; risk of aspiration decreases."
+    },
+    {
+      "trigger": "If resident discusses surgical management",
+      "reply": "High malformation \u2014 diverting colostomy with mucous fistula followed by posterior sagittal anorectoplasty (PSARP) at 3\u20136 months; low malformation \u2014 primary perineal anoplasty soon after birth."
+    },
+    {
+      "trigger": "If resident counsels parents on colostomy care",
+      "reply": "Parents demonstrate understanding of stoma care and potential complications."
+    },
+    {
+      "trigger": "If resident delays creation of colostomy in high lesion",
+      "reply": "Patient develops abdominal distension, perforation risk, and possible sepsis."
+    },
+    {
+      "trigger": "If resident addresses urinary tract evaluation",
+      "reply": "Voiding cystourethrogram shows rectourethral fistula; renal function intact."
+    },
+    {
+      "trigger": "If resident discusses postoperative complications",
+      "reply": "Constipation, soiling, and strictures are discussed; requires bowel management program and dilatations."
+    },
+    {
+      "trigger": "If resident coordinates multidisciplinary care",
+      "reply": "Urology, nephrology, gastroenterology, and physical therapy become involved in care plan."
+    },
+    {
+      "trigger": "If resident provides long-term follow-up plan",
+      "reply": "Continence assessments are scheduled throughout childhood with psychosocial support."
+    }
+  ],
+  "critical_decision_points": [
+    "Identification of anorectal malformation and associated fistula",
+    "Workup for associated congenital anomalies",
+    "Staged surgical management based on lesion level",
+    "Parental education on colostomy care and postoperative expectations",
+    "Long-term bowel management and multidisciplinary follow-up"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize anorectal malformation or misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete recognition; misses key features."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes anorectal malformation but omits alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including anorectal malformation; rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies anorectal malformation as leading diagnosis with full supporting/refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing, and therapy appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacking empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or engagement."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings and plans but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, and empathetically with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary, succinct, compassionate, and anticipates information needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical options but with major gaps in technique/indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of evidence, operative nuances, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, cultural sensitivity, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths You demonstrated strong diagnostic reasoning by promptly recognizing the anorectal malformation. You clearly outlined a management plan and included multidisciplinary coordination. Communication of parental counseling was structured and empathetic.Areas for Improvement Consider refining your explanation of long-term bowel management and functional outcomes. Earlier discussion of complications such as strictures and soiling would strengthen your management plan.Suggested Reading Topics - SCORE Curriculum: Anorectal Malformations in Neonates - Pediatric Surgery NaT: Management of Imperforate Anus - Long-term Outcomes after Posterior Sagittal Anorectoplasty"
+}

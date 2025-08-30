@@ -1,0 +1,141 @@
+{
+  "case_id": "trauma_10",
+  "title": "Severe Thermal Burns",
+  "diagnosis_topic": "40% total body surface area flame burns with inhalation injury",
+  "tags": [
+    "trauma",
+    "burns",
+    "critical_care"
+  ],
+  "setup_script": "\u201cA 27-year-old woman is rescued from a house fire. She has deep partial-thickness and full-thickness burns on her torso, arms, and face. She is confused and coughing up soot. How would you proceed in her initial evaluation and management?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses airway",
+      "reply": "\u201cYou note singed nasal hairs, carbonaceous sputum, and hoarseness. What would you like to do next?\u201d"
+    },
+    {
+      "trigger": "If resident delays airway protection",
+      "reply": "\u201cAirway edema progresses rapidly, resulting in failed intubation attempt. The patient desaturates to 75%. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident performs early intubation",
+      "reply": "\u201cAirway secured successfully. Oxygen saturation improves to 98% on ventilator settings.\u201d"
+    },
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBP 110/70 mmHg, HR 120 bpm, RR 26/min, Temp 36.5 \u00b0C, SpO\u2082 94%.\u201d"
+    },
+    {
+      "trigger": "If resident estimates burn size",
+      "reply": "\u201cUsing the rule of nines, estimated burn size is approximately 40% TBSA (anterior torso 18%, both arms 18%, face 4%).\u201d"
+    },
+    {
+      "trigger": "If resident initiates fluid resuscitation using Parkland formula",
+      "reply": "\u201cCalculated requirement is 9.6 L over 24 hours for a 60 kg patient. You begin half over the first 8 hours. What monitoring will you use?\u201d"
+    },
+    {
+      "trigger": "If resident delays or provides inadequate resuscitation",
+      "reply": "\u201cUrine output declines to 10 mL/hr, heart rate rises to 140 bpm, blood pressure drops to 90/60 mmHg.\u201d"
+    },
+    {
+      "trigger": "If resident places Foley catheter",
+      "reply": "\u201cUrine output can now be monitored. Target is 0.5 mL/kg/hr. Current urine output is 30 mL/hr.\u201d"
+    },
+    {
+      "trigger": "If resident orders carboxyhemoglobin level",
+      "reply": "\u201cResult returns elevated at 25%. What is your management?\u201d"
+    },
+    {
+      "trigger": "If resident administers 100% oxygen",
+      "reply": "\u201cCarboxyhemoglobin level decreases, patient remains hemodynamically stable.\u201d"
+    },
+    {
+      "trigger": "If resident addresses pain control",
+      "reply": "\u201cIV opioids are administered. Pain is improved, vitals remain stable.\u201d"
+    },
+    {
+      "trigger": "If resident asks about escharotomy",
+      "reply": "\u201cCircumferential burns on the chest wall are limiting expansion, and peak inspiratory pressures on the ventilator are rising. What do you want to do?\u201d"
+    },
+    {
+      "trigger": "If resident performs escharotomy",
+      "reply": "\u201cVentilation improves, oxygen saturation stabilizes at 99%.\u201d"
+    },
+    {
+      "trigger": "If resident consults burn center",
+      "reply": "\u201cTransfer is arranged for definitive burn care, debridement, and grafting.\u201d"
+    },
+    {
+      "trigger": "If resident addresses tetanus and nutrition",
+      "reply": "\u201cTetanus prophylaxis administered and nutrition plan initiated with high-protein diet recommendations.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Early airway assessment and protection in inhalation injury",
+    "Accurate estimation of burn size and calculation of fluid resuscitation (Parkland formula)",
+    "Recognition and management of carbon monoxide poisoning",
+    "Indications for and performance of escharotomy",
+    "Pain control, tetanus prophylaxis, and nutritional support",
+    "Transfer to a burn center for definitive care"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to recognize severe burns or inhalation injury",
+          "2": "Delayed or incomplete recognition, misses key features",
+          "3": "Recognizes severe burns but misses elements of inhalation injury or systemic impact",
+          "4": "Accurately identifies severe thermal burns, inhalation injury, and their implications",
+          "5": "Rapidly identifies full spectrum of burn pathology, articulates comprehensive differential and diagnostic plan"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to prioritize airway or resuscitation, unsafe management",
+          "2": "Recognizes urgency but delays critical interventions",
+          "3": "Initiates management but misses timing or key steps",
+          "4": "Prioritizes airway, resuscitation, and transfer appropriately",
+          "5": "Anticipates complications, coordinates multidisciplinary care, executes timely decisions"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Disorganized, unclear, lacks engagement with team",
+          "2": "Provides information but lacks clarity or structure",
+          "3": "Communicates findings and plan clearly but without refinement",
+          "4": "Clear, logical, empathetic communication with patient and team",
+          "5": "Exemplary communication, anticipates information needs, concise and compassionate"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Lacks knowledge of burn management principles",
+          "2": "Identifies some management steps but with major omissions",
+          "3": "Describes key steps with minor gaps",
+          "4": "Comprehensive knowledge of fluid resuscitation, airway management, and escharotomy",
+          "5": "Mastery of burn management, including evidence-based operative and perioperative considerations"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "Disrespectful, breaches ethics or confidentiality",
+          "2": "Inconsistent respect or accountability",
+          "3": "Professional behavior but requires prompting for self-reflection",
+          "4": "Consistently respectful, accountable, receptive to feedback",
+          "5": "Role model professionalism, humility, and ethical conduct"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "StrengthsYou demonstrated strong diagnostic reasoning by promptly recognizing the need for airway protection and fluid resuscitation. Your clinical judgment in addressing inhalation injury and initiating transfer to a burn center showed good prioritization. Communication of your plan was clear and structured.\nAreas for ImprovementEarlier recognition and decisive management of the airway would improve outcomes in burn patients with inhalation injury. Consider reinforcing knowledge on monitoring adequacy of resuscitation and recognizing when escharotomy is required.\nSuggested Reading Topics- Inhalation Injury and Airway Management (SCORE)- Parkland Formula and Burn Resuscitation (ACS/ASE Review Manual)- Escharotomy Indications and Technique (SCORE Curriculum)"
+}

@@ -1,0 +1,147 @@
+{
+  "case_id": "trauma_05",
+  "title": "Open Tibial Fracture",
+  "diagnosis_topic": "Gustilo Grade II Open Tibial Fracture from Motorcycle Accident",
+  "tags": [
+    "trauma",
+    "orthopedic",
+    "open_fracture"
+  ],
+  "setup_script": "\u201cA 30-year-old man is brought to the emergency department after a motorcycle crash. He has a visibly deformed right lower leg with bone protruding through a wound on the anteromedial shin. He is otherwise healthy, with no significant past medical history. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "\u201cBP 130/75 mmHg, HR 98 bpm, RR 18/min, Temp 37 \u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident performs extremity assessment",
+      "reply": "\u201cYou see a 5 cm laceration with visible tibial shaft, moderate contamination with dirt. Pedal pulses are palpable, sensation is intact.\u201d"
+    },
+    {
+      "trigger": "If resident addresses hemorrhage control",
+      "reply": "\u201cThere is no active arterial bleeding, oozing only from wound edges.\u201d"
+    },
+    {
+      "trigger": "If resident administers IV antibiotics",
+      "reply": "\u201cYou administer cefazolin and gentamicin within the first hour. What do you want to do next?\u201d"
+    },
+    {
+      "trigger": "If resident updates tetanus immunization",
+      "reply": "\u201cTdap booster is given.\u201d"
+    },
+    {
+      "trigger": "If resident covers wound with saline-soaked sterile dressing and immobilizes",
+      "reply": "\u201cYou place a saline-soaked dressing and apply a temporary splint, protecting the tissue.\u201d"
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "\u201cPlain radiographs show a comminuted midshaft tibial fracture with minimal displacement.\u201d"
+    },
+    {
+      "trigger": "If resident classifies the fracture",
+      "reply": "\u201cHow would you classify this open fracture?\u201d"
+    },
+    {
+      "trigger": "If resident discusses Gustilo classification",
+      "reply": "\u201cCorrect\u2014this would be classified as a Gustilo-Anderson Grade II open tibia fracture.\u201d"
+    },
+    {
+      "trigger": "If resident consults orthopedics",
+      "reply": "\u201cOrthopedics plans to take the patient to the OR within 6 hours for irrigation, debridement, and external fixation.\u201d"
+    },
+    {
+      "trigger": "If resident delays antibiotics or operative intervention",
+      "reply": "\u201cThe risk of infection and osteomyelitis increases significantly.\u201d"
+    },
+    {
+      "trigger": "If resident asks about compartment syndrome",
+      "reply": "\u201cPostoperatively, you are monitoring for worsening pain, tense compartments, sensory changes, and diminished pulses.\u201d"
+    },
+    {
+      "trigger": "If resident addresses definitive fixation",
+      "reply": "\u201cPlan is staged: conversion to intramedullary nailing after soft tissue condition improves.\u201d"
+    },
+    {
+      "trigger": "If resident discusses wound management",
+      "reply": "\u201cOptions include repeat irrigation/debridement, delayed closure, or negative pressure wound therapy.\u201d"
+    },
+    {
+      "trigger": "If resident addresses rehabilitation",
+      "reply": "\u201cPhysical therapy and early range of motion are initiated when safe; weight-bearing is advanced gradually.\u201d"
+    },
+    {
+      "trigger": "If resident inquires about long-term outcome",
+      "reply": "\u201cRisk of infection, delayed union, and functional impairment remain. Patient will require prolonged rehabilitation.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Early administration of appropriate antibiotics and tetanus prophylaxis",
+    "Proper classification of the open fracture (Gustilo",
+    "Anderson)",
+    "Timely irrigation, debridement, and external stabilization",
+    "Monitoring for compartment syndrome and infection",
+    "Planning for staged conversion to definitive fixation",
+    "Postoperative wound management strategies",
+    "Rehabilitation and long-term functional outcomes"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to recognize open fracture or misattributes findings",
+          "2": "Delayed or incomplete assessment of soft tissue and bone injury",
+          "3": "Recognizes open tibial fracture but misses key associated risks",
+          "4": "Identifies open tibial fracture, classifies appropriately, considers complications",
+          "5": "Comprehensive evaluation with clear classification, complication awareness, and rationale"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to prioritize antibiotics or operative intervention",
+          "2": "Recognizes urgency but delays critical management",
+          "3": "Provides partial management plan with gaps in timing or priorities",
+          "4": "Timely antibiotics, tetanus, resuscitation, and orthopedic consultation",
+          "5": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Disorganized, unclear, or dismissive communication",
+          "2": "Provides basic information but lacks clarity or structure",
+          "3": "Clear communication of plan but misses some opportunities to engage team/patient",
+          "4": "Communicates clearly, logically, and empathetically with patient and team",
+          "5": "Exemplary communication, anticipates information needs, concise and compassionate"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Lacks understanding of open fracture management",
+          "2": "Identifies need for surgery but omits key steps/indications",
+          "3": "Describes operative steps with minor omissions",
+          "4": "Describes irrigation, debridement, staged fixation, and potential complications",
+          "5": "Demonstrates mastery of operative principles, staging, and perioperative considerations"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "Disrespectful, breaches confidentiality, or unsafe behavior",
+          "2": "Inconsistent respect or accountability",
+          "3": "Respectful but requires prompting for reflection",
+          "4": "Consistently respectful, accountable, receptive to feedback",
+          "5": "Role model: demonstrates humility, cultural sensitivity, and ethical behavior"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "Strengths:You promptly identified the need for antibiotics and tetanus prophylaxis and correctly prioritized early orthopedic consultation for operative management. Your communication with the team was clear and structured.\nAreas for Improvement:Further refinement is needed in discussing classification systems, compartment syndrome monitoring, and staged fixation planning. Be more explicit about postoperative wound management options.\nSuggested Reading Topics:- Gustilo-Anderson Classification of Open Fractures (SCORE)- Management of Open Tibial Fractures (ACS/ASE Review Manual)- Compartment Syndrome: Diagnosis and Surgical Management"
+}

@@ -1,0 +1,204 @@
+{
+  "case_id": "end_09",
+  "title": "Recurrent Laryngeal Nerve Injury After Thyroidectomy",
+  "diagnosis_topic": "Postoperative Airway Complication",
+  "tags": [
+    "endocrine",
+    "complication",
+    "nerve_injury",
+    "airway",
+    "thyroidectomy"
+  ],
+  "setup_script": "\u201cOn postoperative day 1, you are called to evaluate a 45-year-old female who underwent total thyroidectomy yesterday for multinodular goiter. She is now hoarse and has developed inspiratory stridor. Her calcium level is normal, and her surgical drain has minimal serosanguinous output. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses airway and examines the patient",
+      "reply": "\u201cThe patient appears anxious, with stridor at rest and mild suprasternal retractions. Vital signs: HR 112, BP 135/80, SpO2 92% on room air. What do you want to do next?\u201d"
+    },
+    {
+      "trigger": "If resident calls for anesthesiology and prepares for airway intervention",
+      "reply": "\u201cAnesthesia arrives and the patient is placed on oxygen via facemask. SpO2 improves to 96%. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident performs or requests bedside laryngoscopy",
+      "reply": "\u201cFlexible laryngoscopy shows bilateral vocal cord immobility with cords in paramedian position. What do you want to do now?\u201d"
+    },
+    {
+      "trigger": "If resident secures airway with reintubation or tracheostomy",
+      "reply": "\u201cThe airway is secured and the patient stabilizes. What additional evaluations should you consider?\u201d"
+    },
+    {
+      "trigger": "If resident evaluates for compressive hematoma",
+      "reply": "\u201cNeck exam is soft without significant swelling. Ultrasound shows no evidence of hematoma or seroma. What else will you assess?\u201d"
+    },
+    {
+      "trigger": "If resident reviews calcium and electrolyte status",
+      "reply": "\u201cSerum calcium is 9.2 mg/dL, magnesium normal. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident involves ENT for further evaluation",
+      "reply": "\u201cENT recommends laryngeal EMG to assess nerve function. How will you counsel the patient and family at this time?\u201d"
+    },
+    {
+      "trigger": "If resident explains prognosis and recovery",
+      "reply": "\u201cYou inform the patient and family that bilateral recurrent laryngeal nerve injury has occurred, that recovery may be possible over 6\u201312 months, and that speech therapy will be initiated. What additional steps do you take before discharge?\u201d"
+    },
+    {
+      "trigger": "If resident discusses documentation and disclosure",
+      "reply": "\u201cYou document the complication, your discussion with the patient and family, and notify risk management. What is your follow-up plan?\u201d"
+    },
+    {
+      "trigger": "If resident arranges follow-up",
+      "reply": "\u201cYou schedule ENT and speech therapy follow-up. At 6 months, the patient has persistent bilateral cord paralysis with significant voice dysfunction. What is your next management option?\u201d"
+    },
+    {
+      "trigger": "If resident considers medialization or further surgical options",
+      "reply": "\u201cYou discuss surgical medialization procedures with ENT. The patient elects to proceed.\u201d"
+    },
+    {
+      "trigger": "If resident delays airway intervention initially",
+      "reply": "\u201cThe patient desaturates to 78%, becomes cyanotic, and loses consciousness. CPR is initiated. What is your immediate next action?\u201d"
+    },
+    {
+      "trigger": "If resident fails to secure airway",
+      "reply": "\u201cThe patient cannot be resuscitated. The case ends here.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Immediate recognition and management of airway compromise.",
+    "Differentiation between bilateral versus unilateral recurrent laryngeal nerve injury.",
+    "Evaluation for compressive hematoma as a reversible cause.",
+    "Counseling and involvement of ENT and speech therapy.",
+    "Clear documentation and disclosure of complication."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider recurrent laryngeal nerve injury or airway emergency."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes stridor but misattributes cause; incomplete differential."
+          },
+          {
+            "score": 3,
+            "description": "Considers recurrent laryngeal nerve injury but misses alternative causes."
+          },
+          {
+            "score": 4,
+            "description": "Identifies recurrent laryngeal nerve injury, rules out hematoma, evaluates airway."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies bilateral nerve injury, considers full differential, anticipates complications."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Does not secure airway despite stridor."
+          },
+          {
+            "score": 2,
+            "description": "Delays critical airway management."
+          },
+          {
+            "score": 3,
+            "description": "Takes steps to stabilize patient but with delays or omissions."
+          },
+          {
+            "score": 4,
+            "description": "Appropriately prioritizes airway, evaluation, and consultation."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates excellent judgment, timely airway intervention, anticipates next steps."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or insensitive ."
+          },
+          {
+            "score": 2,
+            "description": "Provides minimal information without clarity."
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan adequately but without structure."
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic  with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , anticipates patient/family concerns, precise and empathetic."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of RLN injury management."
+          },
+          {
+            "score": 2,
+            "description": "Limited understanding of operative considerations."
+          },
+          {
+            "score": 3,
+            "description": "Basic knowledge of airway management and RLN injury."
+          },
+          {
+            "score": 4,
+            "description": "Good understanding of operative and postoperative options including medialization."
+          },
+          {
+            "score": 5,
+            "description": "Mastery of perioperative management, surgical techniques, and complication prevention."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or fails to disclose complication."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent , limited accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful, discloses complication but limited self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently professional, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model , transparent, ethical, patient-centered."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing the potential airway emergency. Your communication with the anesthesia and ENT teams was clear and collaborative, and you appropriately disclosed the complication to the patient and family.Areas for Improvement:Consider earlier escalation to airway intervention in cases of stridor to avoid deterioration. Ensure consistent evaluation for reversible causes such as hematoma. Expand counseling to include long-term expectations for recovery and possible interventions.Suggested Reading Topics:- Recurrent Laryngeal Nerve Injury After Thyroidectomy (SCORE)- Airway Emergencies in Postoperative Patients (ACS/ASE Review Manual)- Surgical and Non-Surgical Management of Bilateral Vocal Cord Paralysis"
+}

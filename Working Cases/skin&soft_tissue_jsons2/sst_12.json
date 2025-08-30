@@ -1,0 +1,211 @@
+{
+  "case_id": "sst_12",
+  "title": "Postoperative Surgical Site Infection",
+  "diagnosis_topic": "Superficial and Deep Surgical Site Infection Following Abdominal Surgery",
+  "tags": [
+    "postoperative",
+    "wound",
+    "infection",
+    "abdominal_surgery"
+  ],
+  "setup_script": "\u201cA 50-year-old man is on postoperative day 7 following a sigmoid colectomy for diverticulitis. He develops fever and redness around his midline incision. He complains of increasing pain at the incision site and notes foul-smelling drainage. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident checks vital signs",
+      "reply": "BP 122/78 mmHg, HR 104 bpm, RR 18/min, Temp 38.5 \u00b0C."
+    },
+    {
+      "trigger": "If resident inspects the incision",
+      "reply": "Erythema extends 3 cm from wound edges, warmth, fluctuance in lower wound with purulent drainage."
+    },
+    {
+      "trigger": "If resident evaluates fascial integrity",
+      "reply": "Cough test shows intact fascia; no evisceration."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 15,000/\u00b5L, CRP elevated; blood cultures obtained."
+    },
+    {
+      "trigger": "If resident opens lower portion of incision for drainage",
+      "reply": "Purulent material evacuated; wound probed and irrigated; culture sent."
+    },
+    {
+      "trigger": "If resident delays opening the wound",
+      "reply": "Infection progresses, erythema spreads, fascial dehiscence develops with seropurulent drainage."
+    },
+    {
+      "trigger": "If resident initiates empiric IV antibiotics",
+      "reply": "Started, covering skin flora and enteric organisms."
+    },
+    {
+      "trigger": "If resident delays antibiotics",
+      "reply": "Patient becomes febrile to 39.2 \u00b0C, tachycardic to 120 bpm."
+    },
+    {
+      "trigger": "If resident orders CT abdomen/pelvis",
+      "reply": "No deep abscess; fluid limited to subcutaneous tissue."
+    },
+    {
+      "trigger": "If resident ignores possible deeper source",
+      "reply": "Patient develops worsening abdominal pain and peritoneal signs. Repeat CT reveals fluid tracking to the anastomosis suggesting a leak."
+    },
+    {
+      "trigger": "If resident consults wound care",
+      "reply": "Negative pressure wound therapy initiated to assist granulation."
+    },
+    {
+      "trigger": "If resident optimizes comorbidities",
+      "reply": "Glycemic control, nutrition, and smoking cessation addressed."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Instructions provided on wound care, infection signs, and importance of follow-up."
+    },
+    {
+      "trigger": "If resident discusses prevention strategies",
+      "reply": "Notes perioperative antibiotics, sterile technique, normothermia."
+    },
+    {
+      "trigger": "If resident discharges patient without education",
+      "reply": "Patient returns with worsening infection and poor wound care compliance."
+    }
+  ],
+  "critical_decision_points": [
+    "Early recognition of postoperative surgical site infection",
+    "Assessment of fascial integrity and need for intervention",
+    "Timely drainage, wound exploration, and initiation of antibiotics",
+    "Imaging to rule out deep abscess or anastomotic leak",
+    "Optimization of risk factors and wound care planning"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider postoperative surgical site infection or misattributes symptoms"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key signs"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes infection but omits important alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Comprehensive differential including infection; systematically rules out causes"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies infection with complete differential, supporting/refuting data"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize need for timely intervention"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions"
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses steps or timing"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes drainage, antibiotics, diagnostics appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacking empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or engagement"
+          },
+          {
+            "score": 3,
+            "description": "Clear  but misses opportunities for confirmation"
+          },
+          {
+            "score": 4,
+            "description": "Logical, clear, empathetic with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary: succinct, compassionate, anticipates needs of patient and team"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of infection management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies options but with major knowledge gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes management steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Fully describes operative and perioperative management"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of evidence-based management, operative nuances, perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unaware of limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect but requires prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for , cultural sensitivity, ethical conduct"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated solid diagnostic reasoning by recognizing the infection early. Your decision to open and drain the wound with appropriate cultures showed sound judgment. Communication with the team and patient was clear and organized.Areas for Improvement:Earlier initiation of antibiotics and more comprehensive patient education would strengthen your management. Ensure you consistently evaluate for deeper sources, such as an anastomotic leak, when infections progress despite initial intervention.Suggested Reading Topics:- Surgical Site Infections (SCORE)- Principles of Wound Management and Negative Pressure Therapy (ACS/ASE Manual)- Anastomotic Leak Recognition and Management"
+}

@@ -1,0 +1,213 @@
+{
+  "case_id": "ped_06",
+  "title": "Intussusception",
+  "diagnosis_topic": "Ileocolic intussusception in infants",
+  "tags": [
+    "pediatric",
+    "intussusception",
+    "bowel_obstruction",
+    "pediatric_surgery"
+  ],
+  "setup_script": "\u201cA 12-month-old previously healthy boy is brought to the emergency department with a history of episodic inconsolable crying and drawing up of his legs. His mother reports several episodes of vomiting and noticed a dark, jelly-like stool in his diaper earlier today. On arrival, the child appears intermittently lethargic between episodes of distress. How would you proceed in evaluating and managing this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 90/50 mmHg, HR 140 bpm, RR 30/min, Temp 37.8 \u00b0C."
+    },
+    {
+      "trigger": "If resident observes patient during an episode",
+      "reply": "Child cries inconsolably with knees drawn to chest, then becomes lethargic between episodes."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Sausage-shaped mass palpated in the right upper quadrant; abdomen otherwise soft."
+    },
+    {
+      "trigger": "If resident orders abdominal ultrasound",
+      "reply": "Target and pseudokidney signs consistent with ileocolic intussusception."
+    },
+    {
+      "trigger": "If resident delays diagnosis or intervention",
+      "reply": "Child becomes more lethargic, tachycardic, and develops abdominal distension; risk of ischemia and perforation increases."
+    },
+    {
+      "trigger": "If resident orders laboratory studies",
+      "reply": "CBC shows mild leukocytosis; type and cross obtained."
+    },
+    {
+      "trigger": "If resident initiates IV access, fluids, and nasogastric decompression",
+      "reply": "Child stabilizes; ongoing episodes persist but perfusion improves."
+    },
+    {
+      "trigger": "If resident proceeds with pneumatic (air) enema reduction under radiologic guidance",
+      "reply": "Successful reduction; passage of air into terminal ileum; child\u2019s symptoms resolve."
+    },
+    {
+      "trigger": "If enema fails or signs of perforation occur",
+      "reply": "Exploratory laparotomy performed; reduction achieved, with inspection for lead point such as Meckel\u2019s diverticulum."
+    },
+    {
+      "trigger": "If resident is asked to describe operative steps",
+      "reply": "Examiner requests description of laparotomy, manual reduction techniques, and inspection of bowel for ischemia or lead points."
+    },
+    {
+      "trigger": "If resident delays reduction despite signs of deterioration",
+      "reply": "Patient progresses to peritonitis and septic shock."
+    },
+    {
+      "trigger": "If resident inquires about recurrence risk",
+      "reply": "Recurrence occurs in ~10%, most within 24 hours; observation overnight warranted."
+    },
+    {
+      "trigger": "If resident educates parents",
+      "reply": "Provides instructions on signs of recurrence and when to return for medical attention."
+    },
+    {
+      "trigger": "If resident asks about typical lead points",
+      "reply": "Meckel\u2019s diverticulum, polyps, lymphoma, Henoch\u2013Sch\u00f6nlein purpura (more common in older children)."
+    },
+    {
+      "trigger": "If resident addresses discharge planning",
+      "reply": "Child remains stable, tolerates feeds, discharged with parental education and follow-up arranged."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of intussusception based on history, exam, and ultrasound",
+    "Appropriate resuscitation and stabilization measures",
+    "Use of nonoperative enema reduction as first-line therapy",
+    "Recognition of failure or perforation requiring surgical intervention",
+    "Ability to describe operative reduction and inspection for lead point",
+    "Awareness of risks of delay leading to ischemia and perforation",
+    "Post-reduction monitoring and parental education on recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider intussusception; misattributes symptoms to unrelated diagnoses"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features"
+          },
+          {
+            "score": 3,
+            "description": "Considers intussusception but omits important alternative diagnoses"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential, recognizes key features, interprets data appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies intussusception, articulates thorough differential with supporting/refuting data"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or delays necessary intervention"
+          },
+          {
+            "score": 2,
+            "description": "Acknowledges urgency but delays action or orders inappropriate tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses critical steps or timing"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing, and therapy appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, makes timely and well-sequenced decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information with poor clarity or engagement"
+          },
+          {
+            "score": 3,
+            "description": "Communicates findings and plan clearly but misses opportunities to confirm understanding"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic  with team and family"
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipatory  addressing patient and family needs"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of nonoperative and operative management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies enema or surgery but with major gaps in knowledge"
+          },
+          {
+            "score": 3,
+            "description": "Describes basic operative and nonoperative management with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Fully describes management options, operative steps for reduction, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, current evidence, and perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unsafe behavior"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for self-reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for , cultural sensitivity, humility, and ethical conduct"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing the classic features of intussusception and appropriately ordering confirmatory imaging. Your management prioritized resuscitation and timely enema reduction. Communication with the family was clear and empathetic.Areas for Improvement: Consider refining the sequence of stabilization and diagnosis to minimize delays. Review the operative management, including technical steps of manual reduction and inspection for lead points. Continue developing efficiency in articulating recurrence risk and post-reduction care.Suggested Reading Topics: - SCORE: Intussusception in Infants and Children - Pediatric bowel obstruction and management strategies - Operative and nonoperative management of intussusception"
+}

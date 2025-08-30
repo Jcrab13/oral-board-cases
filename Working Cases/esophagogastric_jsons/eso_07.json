@@ -1,0 +1,98 @@
+{
+  "case_id": "eso_07",
+  "title": "Gastric Outlet Obstruction",
+  "diagnosis_topic": "Obstruction of the distal stomach due to peptic ulcer or malignancy",
+  "tags": [
+    "esophagogastric",
+    "gastric_outlet_obstruction",
+    "obstruction"
+  ],
+  "setup_script": "\u201cA 70-year-old man reports persistent vomiting of partially digested food several hours after meals, early satiety, and weight loss. He has a history of peptic ulcer disease but has not taken proton pump inhibitors. On exam, he appears thin and fatigued. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 110/65 mmHg, HR 100 bpm, RR 18/min, Temp 36.8 \u00b0C."
+    },
+    {
+      "trigger": "If resident takes history",
+      "reply": "Nonbilious vomiting of undigested food, early satiety, bloating, and weight loss of 12 lbs; no hematemesis or melena."
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "Emaciated appearance, succussion splash in epigastrium, and visible peristalsis."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Metabolic alkalosis with hypokalemia and hypochloremia; BUN/Cr elevated due to dehydration."
+    },
+    {
+      "trigger": "If resident places nasogastric tube",
+      "reply": "Aspirates 1 L of foul-smelling gastric contents; relieves pain temporarily."
+    },
+    {
+      "trigger": "If resident orders upper GI series or CT",
+      "reply": "Shows markedly dilated stomach with narrow passage at pylorus; no mass on imaging."
+    },
+    {
+      "trigger": "If resident performs endoscopy",
+      "reply": "Ulcerated pyloric channel with edema causing obstruction; biopsies obtained to rule out malignancy."
+    },
+    {
+      "trigger": "If obstruction secondary to benign ulcer",
+      "reply": "Treat with IV PPI, H. pylori eradication, and consider endoscopic balloon dilation; definitive surgery (vagotomy and pyloroplasty) if refractory."
+    },
+    {
+      "trigger": "If obstruction due to malignancy",
+      "reply": "Staging and surgical planning for distal gastrectomy or gastrojejunostomy bypass; palliative stenting for unresectable cases."
+    },
+    {
+      "trigger": "If resident delays decompression and rehydration",
+      "reply": "Progressive dehydration, worsening electrolyte imbalance, and increased aspiration risk."
+    },
+    {
+      "trigger": "If resident discusses operative management",
+      "reply": "Ask resident to describe the technical details of their chosen operation, including incision, exposure, resection or bypass steps, reconstruction method, and management of margins or anastomosis."
+    },
+    {
+      "trigger": "If resident discusses postoperative care",
+      "reply": "Nutritional support, gradual advancement of diet, and monitoring for dumping syndrome in surgical patients."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Importance of adhering to PPI therapy, avoiding NSAIDs, and following up for repeat endoscopy to confirm healing."
+    }
+  ],
+  "critical_decision_points": [
+    "Evaluation of gastric outlet obstruction with history, physical exam, and imaging",
+    "Resuscitation with nasogastric decompression and correction of electrolyte abnormalities",
+    "Endoscopic assessment to differentiate benign ulcer from malignancy",
+    "Medical, endoscopic, and surgical management options based on etiology",
+    "Technical execution of operative management",
+    "Postoperative nutritional management and prevention of recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:Summarize specific strong points such as clear diagnostic reasoning, timely resuscitation, effective operative planning, or clear communication with the team/patient.Areas for Improvement:Highlight missed or delayed interventions, incomplete differential diagnosis, gaps in operative planning, insufficient detail in technical operative description, or vague communication.Suggested Reading Topics:- Gastric Outlet Obstruction: SCORE Curriculum- Peptic Ulcer Disease and Complications: ACS/ASE Review Manual- Surgical Management of Gastric Malignancy"
+}

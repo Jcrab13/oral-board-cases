@@ -1,0 +1,202 @@
+{
+  "case_id": "ped_07",
+  "title": "Meckel\u2019s Diverticulum Bleeding",
+  "diagnosis_topic": "Ectopic gastric mucosa in Meckel\u2019s diverticulum causing painless lower GI bleeding",
+  "tags": [
+    "pediatric",
+    "meckel\u2019s_diverticulum",
+    "gastrointestinal_bleeding"
+  ],
+  "setup_script": "\u201cA 2-year-old boy presents with passage of bright red stools for one day. He is otherwise active and has no abdominal pain or fever. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBP 90/55 mmHg, HR 110 bpm, RR 24/min, Temp 37 \u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident assesses stools",
+      "reply": "\u201cMaroon and blood-tinged stools with no mucus; digital rectal exam confirms blood without fissures.\u201d"
+    },
+    {
+      "trigger": "If resident orders CBC and type and cross",
+      "reply": "\u201cHemoglobin 9 g/dL, platelets normal; blood bank prepares units for transfusion.\u201d"
+    },
+    {
+      "trigger": "If resident initiates IV fluids and keeps NPO",
+      "reply": "\u201cThe patient stabilizes hemodynamically while awaiting further management.\u201d"
+    },
+    {
+      "trigger": "If resident consults pediatric surgery",
+      "reply": "\u201cPediatric surgery evaluates the patient for operative intervention.\u201d"
+    },
+    {
+      "trigger": "If resident requests technetium-99m pertechnetate (Meckel) scan",
+      "reply": "\u201cUptake in the right lower quadrant consistent with ectopic gastric mucosa.\u201d"
+    },
+    {
+      "trigger": "If resident delays intervention and bleeding continues",
+      "reply": "\u201cThe patient becomes hypotensive with BP 75/40, HR 140, requiring blood transfusion.\u201d"
+    },
+    {
+      "trigger": "If resident recognizes ongoing bleeding",
+      "reply": "\u201cPatient requires urgent operative management.\u201d"
+    },
+    {
+      "trigger": "If resident proceeds with operative intervention",
+      "reply": "\u201cLaparoscopic diverticulectomy is performed, and the bleeding diverticulum is excised.\u201d"
+    },
+    {
+      "trigger": "If resident asks about intraoperative findings",
+      "reply": "\u201cA 2.5 cm Meckel\u2019s diverticulum with ulcerated ectopic gastric mucosa is identified.\u201d"
+    },
+    {
+      "trigger": "If resident monitors postoperative recovery",
+      "reply": "\u201cPatient resumes feeds once bowel function returns; vitals remain stable.\u201d"
+    },
+    {
+      "trigger": "If resident educates parents",
+      "reply": "\u201cExplains cause, surgical procedure, and low risk of recurrence.\u201d"
+    },
+    {
+      "trigger": "If resident evaluates for associated anomalies",
+      "reply": "\u201cConsider screening for other omphalomesenteric duct remnants or malrotation.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Evaluation of painless lower gastrointestinal bleeding in children",
+    "Use of Meckel scan to detect ectopic gastric mucosa",
+    "Resuscitation and surgical removal of Meckel\u2019s diverticulum",
+    "Recognition of ongoing bleeding necessitating transfusion and urgent surgery",
+    "Postoperative care and parent education"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider Meckel\u2019s diverticulum; misattributes bleeding."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features."
+          },
+          {
+            "score": 3,
+            "description": "Considers Meckel\u2019s diverticulum but omits alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential including Meckel\u2019s and systematically rules out others."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies Meckel\u2019s diverticulum as leading diagnosis with complete differential and supporting/refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or need for intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic workup and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing, and definitive therapy appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, and makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacks empathy toward patient/family."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Communicates clearly but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates logically and empathetically with family and team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates family/team information needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management for Meckel\u2019s diverticulum."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Describes operative management, potential complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, evidence, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches confidentiality, or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for , demonstrating humility, sensitivity, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by identifying Meckel\u2019s diverticulum as a likely source of painless GI bleeding. You appropriately ordered confirmatory testing and coordinated operative management. Communication with the team and family was clear and structured.Areas for Improvement:Earlier recognition of the hemodynamic instability and timely transfusion planning could be improved. Consider broadening the differential diagnosis when the Meckel scan is negative to include other causes of lower GI bleeding in children.Suggested Reading Topics:- Pediatric Lower GI Bleeding (SCORE Curriculum)- Meckel\u2019s Diverticulum and Omphalomesenteric Duct Anomalies (ASE Core Curriculum)- Perioperative Management in Pediatric Surgery (ACS/ASE Review Manual)"
+}

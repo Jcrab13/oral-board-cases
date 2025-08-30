@@ -1,0 +1,211 @@
+{
+  "case_id": "hep_04",
+  "title": "Gallstone Pancreatitis",
+  "diagnosis_topic": "Acute pancreatitis triggered by transient obstruction of the common bile duct by gallstones",
+  "tags": [
+    "hepatobiliary",
+    "pancreatitis",
+    "gallstones"
+  ],
+  "setup_script": "A 40-year-old woman presents to the emergency department with sudden onset of severe epigastric pain radiating to her back. She reports associated nausea and several episodes of vomiting. She has a known history of gallstones. On exam, she appears uncomfortable. How would you proceed?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 110/70 mmHg, HR 105 bpm, RR 20/min, Temp 37.9 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "Epigastric tenderness without rebound; no jaundice initially."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "Serum lipase 800 U/L (elevated), AST/ALT moderately elevated, bilirubin 2.0 mg/dL."
+    },
+    {
+      "trigger": "If resident requests abdominal ultrasound",
+      "reply": "Gallstones present in gallbladder, common bile duct slightly dilated, no stone visualized."
+    },
+    {
+      "trigger": "If resident initiates IV hydration and analgesia",
+      "reply": "Lactated Ringer\u2019s infusion started, pain managed with opioids; patient reports improvement in pain."
+    },
+    {
+      "trigger": "If resident keeps patient NPO",
+      "reply": "NG tube placed for persistent vomiting; symptoms partially improve."
+    },
+    {
+      "trigger": "If resident consults GI for ERCP",
+      "reply": "GI notes no evidence of cholangitis; ERCP not performed immediately."
+    },
+    {
+      "trigger": "If resident delays cholecystectomy until pancreatitis resolves",
+      "reply": "Patient improves clinically; early laparoscopic cholecystectomy during index admission is planned."
+    },
+    {
+      "trigger": "If resident prematurely attempts cholecystectomy during acute attack",
+      "reply": "Patient\u2019s pain worsens, requiring procedure to be postponed."
+    },
+    {
+      "trigger": "If resident monitors for complications",
+      "reply": "No necrosis or pseudocyst seen on imaging; systemic inflammatory response resolves."
+    },
+    {
+      "trigger": "If resident prescribes antibiotics empirically",
+      "reply": "No infection identified; antibiotics discontinued."
+    },
+    {
+      "trigger": "If resident discusses severity scoring",
+      "reply": "Ranson criteria calculated; predicts mild disease, no ICU required."
+    },
+    {
+      "trigger": "If resident initiates diet prematurely",
+      "reply": "Patient has recurrent pain and vomiting; diet is held and restarted once symptoms resolve."
+    },
+    {
+      "trigger": "If resident provides discharge counseling",
+      "reply": "Patient advised on low-fat diet and alcohol avoidance; counseled on recurrence risk."
+    },
+    {
+      "trigger": "If resident proceeds to surgery and is asked to describe operative details",
+      "reply": "Please describe your operative approach for laparoscopic cholecystectomy, including critical steps, intraoperative cholangiography considerations, and management of potential complications."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of gallstone pancreatitis based on history, labs, and imaging.",
+    "Early fluid resuscitation and pain control.",
+    "Assessment of need for ERCP versus conservative management.",
+    "Appropriate timing of laparoscopic cholecystectomy.",
+    "Monitoring for complications and avoiding unnecessary antibiotics.",
+    "Knowledge and description of operative steps in laparoscopic cholecystectomy."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize pancreatitis; misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks biliary cause."
+          },
+          {
+            "score": 3,
+            "description": "Considers pancreatitis but omits key alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Recognizes gallstone pancreatitis and rules out alternatives systematically."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies gallstone pancreatitis with complete differential supported by data."
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to initiate resuscitation or recognize urgent interventions."
+          },
+          {
+            "score": 2,
+            "description": "Delayed fluid resuscitation; inappropriate or untimely decisions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic management but with errors in timing or scope."
+          },
+          {
+            "score": 4,
+            "description": "Appropriately prioritizes fluids, pain control, and surgical planning."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and demonstrates excellent timing of interventions."
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides incomplete or unclear explanations."
+          },
+          {
+            "score": 3,
+            "description": "Clear communication but limited in detail."
+          },
+          {
+            "score": 4,
+            "description": "Organized, logical, and empathetic communication with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates patient and team information needs."
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative and procedural options."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative steps with significant gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes operative management with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Demonstrates knowledge of operative management, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Mastery of evidence-based management, operative nuances, perioperative considerations, and technical details of laparoscopic cholecystectomy."
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or dismissive."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains professionalism with occasional prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism; demonstrates humility, cultural sensitivity, and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by promptly identifying gallstone pancreatitis and initiating appropriate resuscitation. Your plan for early laparoscopic cholecystectomy during the index admission was appropriate. Communication of your management approach was clear and organized. Areas for Improvement: Further clarity is needed in distinguishing which patients require urgent ERCP. Ensure dietary advancement is based on clinical recovery rather than timing alone. Review the role of antibiotics and avoid unnecessary use unless infection is documented. Provide more detail when describing the operative steps of laparoscopic cholecystectomy. Suggested Reading: - SCORE Curriculum: Gallstone Pancreatitis - ACS/ASE Review: Acute Pancreatitis Management - AGA Clinical Practice Guidelines on Pancreatitis - Operative Techniques in Laparoscopic Cholecystectomy"
+  }
+}

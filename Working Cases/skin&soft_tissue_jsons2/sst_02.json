@@ -1,0 +1,213 @@
+{
+  "case_id": "sst_02",
+  "title": "Cellulitis vs.\u00a0Necrotizing Infection",
+  "diagnosis_topic": "Differentiating simple cellulitis from early necrotizing fasciitis",
+  "tags": [
+    "skin",
+    "cellulitis",
+    "necrotizing_infection",
+    "soft_tissue_infection",
+    "emergency_surgery"
+  ],
+  "setup_script": "\u201cA 50-year-old woman presents to the emergency department with a rapidly enlarging area of redness and swelling on her right thigh. She reports severe pain that she describes as much worse than the appearance of the skin would suggest. She has had fevers and malaise over the past day. On exam, the erythematous area extends broadly across the anterior thigh and is exquisitely tender to palpation. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 125/80 mmHg, HR 102 bpm, RR 20/min, Temp 38 \u00b0C."
+    },
+    {
+      "trigger": "If resident inspects the leg",
+      "reply": "Erythematous plaque extending 10 cm with indistinct borders; no bullae or crepitus present; severe tenderness out of proportion to exam."
+    },
+    {
+      "trigger": "If resident orders lab work",
+      "reply": "WBC 16,000/\u00b5L, CRP elevated, sodium 131 mEq/L."
+    },
+    {
+      "trigger": "If resident initiates empiric IV antibiotics",
+      "reply": "Vancomycin plus piperacillin\u2013tazobactam started."
+    },
+    {
+      "trigger": "If resident marks the edges of erythema and monitors progression",
+      "reply": "Erythema expands 2 cm within 1 hour."
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "CT scan shows fascial thickening with small foci of gas in the soft tissues."
+    },
+    {
+      "trigger": "If resident calls for emergent surgical evaluation",
+      "reply": "Operative exploration reveals gray, necrotic fascia with dishwater fluid confirming necrotizing fasciitis."
+    },
+    {
+      "trigger": "If resident is asked to describe operative technique",
+      "reply": "Examiner requests details of incision, exposure, identification of viable versus non-viable tissue, extent of debridement, wound management, and plans for return to the operating room."
+    },
+    {
+      "trigger": "If resident delays consultation thinking it is cellulitis",
+      "reply": "Patient deteriorates into septic shock requiring pressors."
+    },
+    {
+      "trigger": "If resident discusses diagnostic criteria",
+      "reply": "Pain out of proportion, systemic toxicity, rapid progression, and imaging findings support necrotizing infection."
+    },
+    {
+      "trigger": "If resident states cellulitis typically responds to oral antibiotics",
+      "reply": "Correct for cellulitis without systemic features, but not appropriate for this case."
+    },
+    {
+      "trigger": "If resident discusses the LRINEC score",
+      "reply": "A useful risk stratification tool but not a substitute for surgical exploration when suspicion is high."
+    },
+    {
+      "trigger": "If resident describes postoperative care",
+      "reply": "Patient requires ICU admission, ongoing broad-spectrum antibiotics, and return to the OR for repeat debridements."
+    },
+    {
+      "trigger": "If resident neglects follow-up care",
+      "reply": "Patient remains critically ill with recurrent necrosis and progressive organ dysfunction."
+    },
+    {
+      "trigger": "If resident emphasizes multidisciplinary care",
+      "reply": "ICU, infectious disease, and surgical teams coordinate ongoing management."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognizing pain out of proportion as a red flag for necrotizing infection",
+    "Using labs and imaging to support diagnosis without delaying surgery",
+    "Early initiation of broad-spectrum antibiotics",
+    "Urgent surgical consultation and operative exploration",
+    "Ability to describe operative technique in detail",
+    "Postoperative management including repeat debridement and ICU care"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider cellulitis vs.\u00a0necrotizing infection"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes cellulitis vs.\u00a0necrotizing infection but misses alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential, considers key features"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies necrotizing infection as leading diagnosis with supporting/refuting data"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or need for timely intervention"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical actions"
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic workup and management but misses key steps"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and surgery appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or structure"
+          },
+          {
+            "score": 3,
+            "description": "Communicates findings and plan clearly but incompletely"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, and empathetic  with patient/team"
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates information needs"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of management of necrotizing infections"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical option but with major gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Explains operative management and complications thoroughly"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative technique including incision, debridement principles, wound management, and perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or breaches confidentiality"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity with prompting"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model in , humility, and ethical behavior"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing the features concerning for necrotizing fasciitis. Your communication of the plan was clear and well-structured, and you prioritized surgical consultation appropriately.Areas for Improvement: Earlier recognition of rapid progression and disproportionate pain could have improved urgency in decision-making. A more detailed description of the operative technique would strengthen your surgical knowledge and management approach.Suggested Reading: - Necrotizing Soft Tissue Infections (SCORE) - Sepsis and Source Control (ACS/ASE Review Manual) - Principles of Surgical Infection Management (ASE Core Curriculum)"
+}

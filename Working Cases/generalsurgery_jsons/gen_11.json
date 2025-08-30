@@ -1,0 +1,213 @@
+{
+  "case_id": "gen_11",
+  "title": "Severe Acute Pancreatitis",
+  "diagnosis_topic": "Severe acute pancreatitis with systemic inflammatory response",
+  "tags": [
+    "general_surgery",
+    "pancreatitis",
+    "critical_care",
+    "abdominal_emergencies"
+  ],
+  "setup_script": "\u201cA 45-year-old man with a history of heavy alcohol use presents with severe epigastric pain radiating to the back. He has persistent vomiting and appears febrile. On examination, he is diaphoretic and appears acutely ill.\u00a0How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBlood pressure is 100/60 mmHg, heart rate 120 bpm, respiratory rate 24/min, temperature 38.5 \u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident assesses history",
+      "reply": "\u201cPain started suddenly yesterday, worsens after meals, radiates to the back. He denies gallstones but reports drinking six beers daily.\u201d"
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "\u201cSerum lipase 1,200 U/L, amylase elevated, WBC 18,000/\u00b5L, BUN 25 mg/dL, calcium 7.5 mg/dL.\u201d"
+    },
+    {
+      "trigger": "If resident calculates severity score",
+      "reply": "\u201cRanson score 4 and BISAP score 3, consistent with severe pancreatitis.\u201d"
+    },
+    {
+      "trigger": "If resident requests CT scan early",
+      "reply": "\u201cInitial CT scan shows peripancreatic inflammation but no necrosis. Repeat CT at 72 hours reveals necrosis of the pancreatic body.\u201d"
+    },
+    {
+      "trigger": "If resident initiates fluid resuscitation and pain control",
+      "reply": "\u201cPatient receives lactated Ringer\u2019s at 250 mL/hr and opioids. He is kept NPO. Blood pressure improves to 110/70 mmHg.\u201d"
+    },
+    {
+      "trigger": "If resident initiates enteral nutrition",
+      "reply": "\u201cA nasojejunal feeding tube is placed within 48 hours. Patient tolerates feeds.\u201d"
+    },
+    {
+      "trigger": "If resident delays fluid resuscitation",
+      "reply": "\u201cThe patient becomes hypotensive, develops acute kidney injury, and requires ICU transfer.\u201d"
+    },
+    {
+      "trigger": "If resident initiates prophylactic antibiotics",
+      "reply": "\u201cThe patient develops diarrhea and C. difficile infection. No evidence of infected pancreatic necrosis is found.\u201d"
+    },
+    {
+      "trigger": "If resident monitors for complications",
+      "reply": "\u201cOver the next week, a pancreatic pseudocyst is identified on imaging.\u201d"
+    },
+    {
+      "trigger": "If patient develops infected necrosis",
+      "reply": "\u201cBlood cultures are positive for gram-negative rods. CT-guided percutaneous drainage is performed. The patient remains febrile.\u201d"
+    },
+    {
+      "trigger": "If resident proceeds with surgical necrosectomy early (<4 weeks)",
+      "reply": "\u201cOperation is technically difficult due to lack of walling-off. Patient develops postoperative bleeding and worsening organ failure.\u201d"
+    },
+    {
+      "trigger": "If resident delays necrosectomy until after 4 weeks",
+      "reply": "\u201cOperation proceeds with well-defined necrotic collection. Patient improves clinically. Please describe your operative steps in detail.\u201d"
+    },
+    {
+      "trigger": "If resident describes operative steps",
+      "reply": "\u201cYou perform an open transperitoneal approach to the necrotic cavity. Debridement is carried out until viable tissue is reached, drains are placed, and the abdomen is closed.\u201d"
+    },
+    {
+      "trigger": "If resident addresses alcohol cessation",
+      "reply": "\u201cReferral to addiction services is made. Patient expresses willingness to stop drinking.\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of severe pancreatitis and application of severity scoring systems",
+    "Early aggressive fluid resuscitation and supportive management",
+    "Appropriate use and timing of imaging",
+    "Avoidance of prophylactic antibiotics",
+    "Correct timing and method of intervention for infected necrosis",
+    "Ability to describe operative steps for pancreatic necrosectomy",
+    "Long-term management including nutrition and alcohol cessation"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize severe pancreatitis, misattributes symptoms"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential, overlooks severity indicators"
+          },
+          {
+            "score": 3,
+            "description": "Identifies pancreatitis but omits key alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops complete differential, interprets labs and scoring systems appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies severe pancreatitis, integrates scoring, imaging, and clinical findings comprehensively"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or delays resuscitation"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays key actions"
+          },
+          {
+            "score": 3,
+            "description": "Initiates management but misses timing or key steps"
+          },
+          {
+            "score": 4,
+            "description": "Appropriately prioritizes fluids, imaging, monitoring, and interventions"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates ICU care, and makes timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, or lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but without clarity or structure"
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan clearly but misses confirmation of understanding"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, and empathetic  with patient/team"
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, and anticipates team/patient needs"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of management of severe pancreatitis"
+          },
+          {
+            "score": 2,
+            "description": "Aware of interventions but with major knowledge gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes management with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Demonstrates good knowledge of evidence-based management including necrosectomy timing"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative and non-operative management including detailed operative steps and perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or unprofessional, breaches confidentiality"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect but requires prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model behavior, culturally sensitive, ethically sound"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated solid diagnostic reasoning by recognizing severe acute pancreatitis and applying scoring systems appropriately. Your prioritization of fluid resuscitation and ICU-level care was timely and appropriate. Communication of your management plan was clear and structured.Areas for Improvement:Earlier clarification of criteria for intervention in infected necrosis would strengthen your management approach. Avoiding premature antibiotic use and providing a clear, detailed operative description of necrosectomy would improve clinical judgment and surgical knowledge.Suggested Reading Topics:- SCORE: Acute Pancreatitis- ACS/ASE: Sepsis and Source Control- Operative Techniques in Pancreatic Necrosectomy and Postoperative Management"
+}

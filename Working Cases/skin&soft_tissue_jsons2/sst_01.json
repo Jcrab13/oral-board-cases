@@ -1,0 +1,214 @@
+{
+  "case_id": "sst_01",
+  "title": "Basal Cell Carcinoma",
+  "diagnosis_topic": "Pearly, slow-growing skin lesion consistent with basal cell carcinoma",
+  "tags": [
+    "skin",
+    "cancer",
+    "basal_cell_carcinoma"
+  ],
+  "setup_script": "\u201cA 60-year-old woman with fair skin presents with a 5 mm pearly papule with telangiectasia on the bridge of her nose. It has been present for one year and has slowly enlarged. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews vital signs",
+      "reply": "Within normal limits."
+    },
+    {
+      "trigger": "If resident examines the lesion",
+      "reply": "Translucent nodule with rolled borders and central depression; no ulceration."
+    },
+    {
+      "trigger": "If resident asks about sun exposure and risk factors",
+      "reply": "Patient reports years of outdoor work without sunscreen."
+    },
+    {
+      "trigger": "If resident orders dermatoscopic evaluation",
+      "reply": "Shows arborizing vessels typical of basal cell carcinoma."
+    },
+    {
+      "trigger": "If resident delays workup or does not address lesion",
+      "reply": "Over next 6 months, lesion doubles in size and begins ulcerating."
+    },
+    {
+      "trigger": "If resident performs shave or punch biopsy",
+      "reply": "Pathology confirms nodular basal cell carcinoma."
+    },
+    {
+      "trigger": "If resident does not biopsy",
+      "reply": "Lesion continues to enlarge, with progressive local tissue involvement."
+    },
+    {
+      "trigger": "If resident discusses treatment options",
+      "reply": "Options include surgical excision with 4 mm margins or Mohs micrographic surgery for cosmetic areas."
+    },
+    {
+      "trigger": "If resident recommends wide local excision with 4 mm margins",
+      "reply": "Appropriate, but may risk cosmetic defect on nasal bridge."
+    },
+    {
+      "trigger": "If resident recommends Mohs micrographic surgery",
+      "reply": "Preferred for lesions on the face to maximize tissue conservation and ensure clear margins."
+    },
+    {
+      "trigger": "If resident performs inappropriate management (e.g., cryotherapy only)",
+      "reply": "Lesion recurs within months and enlarges."
+    },
+    {
+      "trigger": "If resident provides postoperative care instructions",
+      "reply": "Wound care, suture removal and scar management discussed."
+    },
+    {
+      "trigger": "If resident addresses recurrence risk",
+      "reply": "Recurrence is low after complete excision but higher with positive margins or certain subtypes."
+    },
+    {
+      "trigger": "If resident educates about sun protection",
+      "reply": "Regular sunscreen use, protective clothing, and avoidance of tanning beds."
+    },
+    {
+      "trigger": "If resident screens for other skin lesions",
+      "reply": "Full skin exam performed to look for additional actinic damage or lesions."
+    },
+    {
+      "trigger": "If resident differentiates from squamous cell carcinoma and melanoma",
+      "reply": "Examiner requests resident to compare differences in appearance and metastatic potential."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition and biopsy of suspicious skin lesions",
+    "Selection of appropriate treatment modality (excision vs.\u00a0Mohs)",
+    "Patient counseling on sun protection and surveillance",
+    "Understanding recurrence risk and histologic subtypes",
+    "Performing a full skin examination to identify additional lesions"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider basal cell carcinoma or misattributes findings"
+          },
+          {
+            "score": 2,
+            "description": "Incomplete or delayed differential, overlooks key features"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes basal cell carcinoma as possibility but omits important alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including basal cell carcinoma, rules out others systematically"
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies basal cell carcinoma as leading diagnosis and articulates complete differential with supporting/refuting data"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize need for biopsy or timely management"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes importance but delays critical actions or chooses inappropriate tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates biopsy or management but misses key steps or timing"
+          },
+          {
+            "score": 4,
+            "description": "Appropriately prioritizes diagnostic testing and definitive therapy with good timing"
+          },
+          {
+            "score": 5,
+            "description": "Displays superb judgment by anticipating complications, selecting optimal therapy, and making timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacking empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or engagement"
+          },
+          {
+            "score": 3,
+            "description": "Clear  but misses opportunities to confirm understanding"
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, empathetically with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary : succinct, compassionate, anticipates needs of patient and team"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of management of basal cell carcinoma"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical options but with major gaps in indications or technique"
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances, and perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches confidentiality, or fails to recognize limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model , demonstrating humility, cultural sensitivity, ethical behavior"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing the characteristic features of basal cell carcinoma and confirming the diagnosis with biopsy. You appropriately discussed surgical management options and emphasized the role of Mohs surgery for cosmetically sensitive areas.Areas for Improvement: Earlier recognition of the importance of timely biopsy and more detailed explanation of recurrence risks and histologic subtypes would strengthen your management. Comprehensive counseling on sun protection and secondary lesion screening should be consistently included.Suggested Reading Topics: - SCORE: Non-melanoma Skin Cancer - American Cancer Society: Surgical Management of Basal Cell Carcinoma - ACS/ASE Review Manual: Principles of Skin Cancer Excision and Mohs Surgery"
+}

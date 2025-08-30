@@ -1,0 +1,208 @@
+{
+  "case_id": "eso_03",
+  "title": "Caustic Ingestion Injury",
+  "diagnosis_topic": "Chemical injury to the esophagus and stomach after ingestion of corrosive agents",
+  "tags": [
+    "esophagogastric",
+    "caustic_ingestion",
+    "emergency"
+  ],
+  "setup_script": "\u201cA 25-year-old woman presents after ingesting an unknown quantity of drain cleaner in a suicide attempt. She has odynophagia and drooling on arrival.\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses airway",
+      "reply": "Patient has stridor and hoarseness. Edema appears to be progressing."
+    },
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 115/75 mmHg, HR 105 bpm, RR 24/min, Temp 37.1\u00b0C."
+    },
+    {
+      "trigger": "If resident delays airway management",
+      "reply": "Patient develops acute respiratory distress with worsening stridor."
+    },
+    {
+      "trigger": "If resident establishes IV access, keeps patient NPO, and administers IV fluids",
+      "reply": "Patient stabilizes; pain is managed."
+    },
+    {
+      "trigger": "If resident avoids inducing emesis or placing NG tube blindly",
+      "reply": "No additional mucosal injury occurs."
+    },
+    {
+      "trigger": "If resident orders chest and abdominal X-ray",
+      "reply": "No free air is seen."
+    },
+    {
+      "trigger": "If resident requests CT scan due to suspected perforation",
+      "reply": "CT abdomen/pelvis shows no free perforation."
+    },
+    {
+      "trigger": "If resident arranges endoscopy within 12\u201324 hours",
+      "reply": "Endoscopy shows mucosal injury graded by Zargar classification."
+    },
+    {
+      "trigger": "If injury is grade I\u2013II",
+      "reply": "Patient managed with IV PPI, sucralfate, and gradual advancement of diet."
+    },
+    {
+      "trigger": "If injury is grade III or perforation present",
+      "reply": "Surgical exploration is indicated."
+    },
+    {
+      "trigger": "If resident proceeds to operative management",
+      "reply": "Ask resident to describe operative approach and key steps for esophagectomy or gastrectomy with mediastinal/abdominal drainage."
+    },
+    {
+      "trigger": "If resident initiates psychiatric evaluation",
+      "reply": "Psychiatric consultation performed for suicide risk."
+    },
+    {
+      "trigger": "If resident plans long-term follow-up",
+      "reply": "Patient is counseled regarding surveillance for esophageal strictures and risk of squamous cell carcinoma."
+    },
+    {
+      "trigger": "If resident educates family",
+      "reply": "Family instructed on safe storage of caustic substances and provided with poison control resources."
+    }
+  ],
+  "critical_decision_points": [
+    "Immediate airway assessment and protection",
+    "Avoidance of emesis or blind NG tube placement",
+    "Early endoscopic evaluation to grade mucosal injury",
+    "Differentiating supportive vs.\u00a0operative management",
+    "Ability to describe operative management in detail when indicated",
+    "Psychiatric evaluation and family education",
+    "Long-term surveillance for strictures and malignancy"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider caustic ingestion injury or misattributes symptoms"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; misses key features"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes caustic ingestion injury but omits alternative diagnoses"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including caustic ingestion"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies caustic ingestion and articulates full differential with supporting/refuting data"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or urgency"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays or orders inappropriate tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates management but misses key steps/timing"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostic testing, and therapy appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, or lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity/structure"
+          },
+          {
+            "score": 3,
+            "description": "Clear  but misses confirmation opportunities"
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, empathetically with team/patient"
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates needs of patient/team"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative/procedural management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option with major gaps in technique or indications"
+          },
+          {
+            "score": 3,
+            "description": "Describes some operative steps but omits important details or rationale"
+          },
+          {
+            "score": 4,
+            "description": "Accurately describes full operative management including exposure, resection, reconstruction options, drainage, and postoperative considerations"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, complications, alternatives, and perioperative management for caustic injury surgery"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or breaches confidentiality"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Respectful, maintains integrity with prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for  with humility, cultural sensitivity, ethics"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "StrengthsYou demonstrated strong diagnostic reasoning by prioritizing airway management and systematically assessing injury severity. Your ability to outline management for both minor and severe injuries reflected good clinical judgment.Areas for ImprovementMore detailed description of operative management, including exposure, resection, reconstruction, and drainage, would strengthen your surgical knowledge. Anticipating long-term complications earlier in your discussion would enhance your completeness.Suggested Reading Topics- SCORE: Caustic Ingestion and Esophageal Injuries- Operative Approaches for Esophagectomy and Gastrectomy in Emergency Settings- Long-term Management of Caustic Injury: Strictures and Malignancy"
+}

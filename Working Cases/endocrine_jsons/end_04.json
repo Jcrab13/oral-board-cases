@@ -1,0 +1,98 @@
+{
+  "case_id": "end_04",
+  "title": "Large Goiter Causing Airway Compression",
+  "diagnosis_topic": "Multinodular goiter with tracheal deviation",
+  "tags": [
+    "endocrine",
+    "goiter",
+    "airway_compromise"
+  ],
+  "setup_script": "\u201cA 65-year-old woman presents with progressive shortness of breath and difficulty swallowing. She has a longstanding multinodular goiter that has been enlarging. A CT scan shows a large substernal goiter compressing and deviating the trachea. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests additional history",
+      "reply": "\u201cShe reports worsening dyspnea when lying flat, some hoarseness, and progressive dysphagia. No history of radiation exposure.\u201d"
+    },
+    {
+      "trigger": "If resident performs physical exam",
+      "reply": "\u201cNeck exam shows a large, firm multinodular goiter with tracheal deviation to the right. No stridor. No evidence of superior vena cava syndrome.\u201d"
+    },
+    {
+      "trigger": "If resident orders thyroid function tests",
+      "reply": "\u201cTSH and free T4 are within normal limits.\u201d"
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "\u201cCT scan confirms a large multinodular goiter with substernal extension compressing and deviating the trachea.\u201d"
+    },
+    {
+      "trigger": "If resident discusses indications for surgery",
+      "reply": "\u201cWhat are your surgical indications in this patient?\u201d"
+    },
+    {
+      "trigger": "If resident proposes thyroidectomy",
+      "reply": "\u201cWhat extent of thyroidectomy would you recommend? How does the substernal component influence your surgical approach?\u201d"
+    },
+    {
+      "trigger": "If resident discusses airway management",
+      "reply": "\u201cThe anesthesiologist is concerned about a potentially difficult airway. How would you manage this situation?\u201d"
+    },
+    {
+      "trigger": "If resident delays airway planning",
+      "reply": "\u201cThe patient develops stridor while awaiting surgery. What would you do next?\u201d"
+    },
+    {
+      "trigger": "If resident addresses intraoperative steps",
+      "reply": "\u201cDuring surgery, you encounter a large retrosternal component. Please describe your operative steps.\u201d"
+    },
+    {
+      "trigger": "If resident mentions risks",
+      "reply": "\u201cWhat are the major risks of this operation that you would discuss with the patient?\u201d"
+    },
+    {
+      "trigger": "If resident ensures hemostasis",
+      "reply": "\u201cAfter thyroidectomy, the patient develops neck swelling in recovery. What is your immediate management?\u201d"
+    },
+    {
+      "trigger": "If resident discusses postoperative care",
+      "reply": "\u201cThe patient stabilizes. Calcium is 7.2 mg/dL the following morning and she reports tingling in her fingers. How will you manage this?\u201d"
+    },
+    {
+      "trigger": "If resident discusses pathology",
+      "reply": "\u201cFinal pathology shows nodular hyperplasia with no evidence of malignancy. What is your follow-up plan?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition and management of airway compromise.",
+    "Surgical planning: extent of resection, approach to substernal goiter.",
+    "Airway strategy with anesthesia.",
+    "Intraoperative protection of parathyroids and recurrent laryngeal nerves.",
+    "Immediate recognition and management of postoperative hematoma.",
+    "Postoperative management of hypocalcemia."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing airway compression and planning surgery appropriately. Your surgical plan showed good knowledge of thyroidectomy indications and steps. Communication with the anesthesia team and emphasis on airway management was clear.Areas for Improvement: Earlier recognition of the urgency of airway compromise could be improved. Greater detail in postoperative monitoring and calcium management is recommended. Reinforce knowledge of emergent management of neck hematoma.Suggested Reading Topics: - SCORE Curriculum: Thyroid Disease and Surgery - Airway Management in Large Goiters (ASA Guidelines) - Postoperative Complications of Thyroid Surgery (hypocalcemia, hematoma, RLN injury)"
+}

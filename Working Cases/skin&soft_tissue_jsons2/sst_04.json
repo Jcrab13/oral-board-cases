@@ -1,0 +1,197 @@
+{
+  "case_id": "sst_04",
+  "title": "Cutaneous Melanoma",
+  "diagnosis_topic": "Cutaneous Melanoma \u2013 Diagnosis, Staging, and Surgical Management",
+  "tags": [
+    "surgical_oncology",
+    "skin_cancer",
+    "lymph_node_management",
+    "oncologic_surgery"
+  ],
+  "setup_script": "\u201cA 45-year-old male presents to your clinic after his dermatologist biopsied a pigmented lesion on his upper back. The pathology confirmed melanoma. He has no significant past medical history. The biopsy site is healing well, and there is no palpable lymphadenopathy on exam. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for biopsy details",
+      "reply": "- \u201cThe pathology report shows malignant melanoma with Breslow depth 2.2 mm, non-ulcerated, mitotic rate 2/mm\u00b2.\u201d"
+    },
+    {
+      "trigger": "If resident fails to ask for biopsy details",
+      "reply": "- \u201cThe pathology report confirms melanoma, but you have not yet reviewed the histologic characteristics. Would you like that information?\u201d"
+    },
+    {
+      "trigger": "If resident recommends wide local excision",
+      "reply": "- \u201cWhat surgical margins are appropriate for this melanoma?\u201d"
+    },
+    {
+      "trigger": "If resident specifies 2 cm margin",
+      "reply": "- \u201cYou schedule him for wide local excision with a 2 cm margin. What additional procedure should you consider at the time of surgery?\u201d"
+    },
+    {
+      "trigger": "If resident mentions sentinel lymph node biopsy (SLNB)",
+      "reply": "- \u201cYou perform SLNB. Pathology reveals 1 of 3 sentinel nodes positive for melanoma. How does this change management?\u201d"
+    },
+    {
+      "trigger": "If resident fails to mention SLNB",
+      "reply": "- \u201cFinal pathology shows a 2.2 mm melanoma with no lymph node evaluation performed. What is the implication of this omission?\u201d"
+    },
+    {
+      "trigger": "If resident discusses completion lymph node dissection",
+      "reply": "- \u201cCurrent guidelines recommend against routine completion dissection. What alternative management should be offered?\u201d"
+    },
+    {
+      "trigger": "If resident mentions adjuvant immunotherapy",
+      "reply": "- \u201cThe patient is referred to medical oncology and started on adjuvant PD-1 inhibitor therapy. What follow-up strategy do you recommend?\u201d"
+    },
+    {
+      "trigger": "If resident delays or mismanages staging",
+      "reply": "- \u201cThe patient presents 6 months later with a new palpable axillary mass. What would you do now?\u201d"
+    },
+    {
+      "trigger": "If resident appropriately stages recurrence",
+      "reply": "- \u201cPET/CT shows isolated axillary nodal disease without distant metastasis. How would you manage this?\u201d"
+    },
+    {
+      "trigger": "If resident suggests lymphadenectomy",
+      "reply": "- \u201cYou perform a therapeutic lymph node dissection. Pathology shows 3 of 12 nodes positive. What adjuvant options are available now?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Interpretation of pathology (Breslow depth, ulceration, mitotic rate)",
+    "Selection of surgical margins for excision",
+    "Recognition of sentinel lymph node biopsy indication",
+    "Management of positive sentinel node (no longer routine completion dissection)",
+    "Knowledge of adjuvant systemic therapy (immunotherapy, targeted therapy)",
+    "Appropriate surveillance and follow-up strategies",
+    "Management of nodal recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize key pathology features or staging importance"
+          },
+          {
+            "score": 2,
+            "description": "Partial interpretation, misses sentinel node indication"
+          },
+          {
+            "score": 3,
+            "description": "Correctly interprets melanoma depth and staging"
+          },
+          {
+            "score": 4,
+            "description": "Accurate staging, integrates pathology and physical exam"
+          },
+          {
+            "score": 5,
+            "description": "Excellent , comprehensive staging including nodal evaluation and systemic risk factors"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inappropriate margins, omits sentinel node biopsy"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete management decisions"
+          },
+          {
+            "score": 3,
+            "description": "Recommends appropriate excision and SLNB"
+          },
+          {
+            "score": 4,
+            "description": "Good judgment incorporating adjuvant therapy and surveillance"
+          },
+          {
+            "score": 5,
+            "description": "Excellent sequencing of surgery, nodal staging, systemic therapy, and surveillance planning"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized or unclear plan"
+          },
+          {
+            "score": 2,
+            "description": "Partially clear, but incomplete explanation"
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan for excision and SLNB clearly"
+          },
+          {
+            "score": 4,
+            "description": "Well-organized, systematic explanation with rationale"
+          },
+          {
+            "score": 5,
+            "description": "Exceptionally clear, structured  of multidisciplinary management and follow-up"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Poor knowledge of excision margins and SLNB indications"
+          },
+          {
+            "score": 2,
+            "description": "Basic understanding, incomplete or outdated approach"
+          },
+          {
+            "score": 3,
+            "description": "Adequate knowledge of surgical margins and sentinel node biopsy"
+          },
+          {
+            "score": 4,
+            "description": "Good understanding of nodal management and adjuvant therapy principles"
+          },
+          {
+            "score": 5,
+            "description": "Excellent knowledge of current melanoma guidelines, systemic therapies, and recurrence management"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Does not discuss multidisciplinary approach"
+          },
+          {
+            "score": 2,
+            "description": "Minimal collaboration with oncology team"
+          },
+          {
+            "score": 3,
+            "description": "Appropriate referral to oncology and dermatology colleagues"
+          },
+          {
+            "score": 4,
+            "description": "Good team communication, involves multidisciplinary care"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , coordinates multidisciplinary care, addresses patient-centered concerns and survivorship"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:\u201cYou demonstrated strong diagnostic reasoning in interpreting the melanoma pathology and appropriately recommending wide excision and sentinel lymph node biopsy. Your communication of the surgical plan was clear and systematic.\u201dAreas for Improvement:\u201cConsider earlier integration of adjuvant therapy and long-term surveillance into your management plan. A more detailed discussion of recurrence management and evolving guideline changes for nodal disease would strengthen your performance.\u201dSuggested Reading Topics:- Surgical Management of Melanoma (SCORE Curriculum)- NCCN Guidelines for Melanoma- Sentinel Lymph Node Biopsy and Adjuvant Therapy in Melanoma"
+}

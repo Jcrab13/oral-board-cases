@@ -1,0 +1,193 @@
+{
+  "case_id": "sst_13",
+  "title": "Retroperitoneal Sarcoma",
+  "diagnosis_topic": "Retroperitoneal Sarcoma \u2013 Diagnosis, Staging, and Surgical Management",
+  "tags": [
+    "surgical_oncology",
+    "retroperitoneal_sarcoma",
+    "biopsy_technique",
+    "multidisciplinary_management"
+  ],
+  "setup_script": "\u201cA 60-year-old man presents with progressive abdominal fullness and early satiety. He reports a 15-pound weight loss over the past 2 months. On exam, you palpate a large, firm, non-tender abdominal mass extending across the left flank and abdomen. Bowel sounds are present. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "- \u201cCT abdomen/pelvis with contrast shows a 20 cm heterogeneous retroperitoneal mass displacing the left kidney and descending colon, without clear invasion. No distant metastases are seen. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If resident proposes excisional biopsy",
+      "reply": "- \u201cAn open biopsy is performed, traversing multiple tissue planes. Pathology: high-grade liposarcoma. What are the implications of this biopsy approach?\u201d"
+    },
+    {
+      "trigger": "If resident suggests image-guided core biopsy",
+      "reply": "- \u201cCT-guided core needle biopsy shows high-grade dedifferentiated liposarcoma. What is your management plan?\u201d"
+    },
+    {
+      "trigger": "If resident proceeds directly to surgery without biopsy",
+      "reply": "- \u201cYou proceed with laparotomy. You encounter a massive retroperitoneal tumor adherent to the left kidney and descending colon. What is your operative plan?\u201d"
+    },
+    {
+      "trigger": "If resident performs en bloc resection",
+      "reply": "- \u201cYou perform complete en bloc resection including the left kidney and segment of colon. Margins are negative. What is your plan for postoperative management?\u201d"
+    },
+    {
+      "trigger": "If resident fails to mention multidisciplinary planning",
+      "reply": "- \u201cGiven the complexity of this case, how should multidisciplinary care be incorporated?\u201d"
+    },
+    {
+      "trigger": "If resident asks about role of radiation therapy",
+      "reply": "- \u201cWhat is the role of preoperative vs postoperative radiation therapy in retroperitoneal sarcoma?\u201d"
+    },
+    {
+      "trigger": "If resident mentions systemic therapy",
+      "reply": "- \u201cWhat is the role of chemotherapy in primary retroperitoneal sarcoma?\u201d"
+    },
+    {
+      "trigger": "If resident fails to discuss surveillance",
+      "reply": "- \u201cHow would you structure surveillance following complete resection of a 20 cm retroperitoneal sarcoma?\u201d"
+    },
+    {
+      "trigger": "If resident delays management",
+      "reply": "- \u201cThe patient re-presents 12 months later with recurrent disease involving the retroperitoneum and new pulmonary nodules. How would you manage this?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of retroperitoneal mass as possible sarcoma",
+    "Use of CT imaging for diagnosis and surgical planning",
+    "Appropriate biopsy technique (image-guided core vs avoiding poorly placed open biopsy)",
+    "Principles of en bloc resection with adjacent organs if needed",
+    "Limited role of radiation and chemotherapy in retroperitoneal sarcoma",
+    "Importance of multidisciplinary planning (surgical oncology, radiation oncology, medical oncology)",
+    "Surveillance strategies and recurrence management"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to order imaging or biopsy"
+          },
+          {
+            "score": 2,
+            "description": "Orders incomplete or inappropriate workup (e.g., excisional biopsy)"
+          },
+          {
+            "score": 3,
+            "description": "Correctly orders CT and biopsy, recognizes sarcoma diagnosis"
+          },
+          {
+            "score": 4,
+            "description": "Interprets imaging and pathology appropriately, understands staging"
+          },
+          {
+            "score": 5,
+            "description": "Excellent  with comprehensive workup and anticipation of multidisciplinary input"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inappropriate management (piecemeal excision, no staging)"
+          },
+          {
+            "score": 2,
+            "description": "Suboptimal management, omits multidisciplinary care"
+          },
+          {
+            "score": 3,
+            "description": "Recommends en bloc resection and appropriate staging"
+          },
+          {
+            "score": 4,
+            "description": "Good judgment with organ-sacrificing resection when necessary"
+          },
+          {
+            "score": 5,
+            "description": "Excellent sequencing of diagnosis, surgical management, adjuvant therapy considerations, and follow-up"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear plan"
+          },
+          {
+            "score": 2,
+            "description": "Partially clear but incomplete explanation"
+          },
+          {
+            "score": 3,
+            "description": "Clear  of diagnosis and operative plan"
+          },
+          {
+            "score": 4,
+            "description": "Well-structured, systematic explanation with rationale"
+          },
+          {
+            "score": 5,
+            "description": "Exceptionally clear and multidisciplinary  with rationale for each decision"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inadequate knowledge of sarcoma management"
+          },
+          {
+            "score": 2,
+            "description": "Basic understanding, incomplete or outdated approach"
+          },
+          {
+            "score": 3,
+            "description": "Adequate knowledge of biopsy techniques and surgical principles"
+          },
+          {
+            "score": 4,
+            "description": "Good knowledge of en bloc resection principles and adjuvant options"
+          },
+          {
+            "score": 5,
+            "description": "Excellent knowledge of multidisciplinary sarcoma care, resection techniques, and recurrence management"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Does not involve multidisciplinary team"
+          },
+          {
+            "score": 2,
+            "description": "Minimal collaboration, defensive approach"
+          },
+          {
+            "score": 3,
+            "description": "Appropriate referral to oncology team"
+          },
+          {
+            "score": 4,
+            "description": "Good leadership in multidisciplinary care setting"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , coordinates multidisciplinary approach, communicates prognosis with patient and family"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:\u201cYou demonstrated solid diagnostic reasoning by obtaining appropriate imaging and biopsy, and you correctly emphasized en bloc resection for retroperitoneal sarcoma. Your communication of the multidisciplinary plan was clear and well-organized.\u201dAreas for Improvement:\u201cConsider a more structured discussion of biopsy pitfalls and the limited role of radiation and chemotherapy in retroperitoneal sarcoma. Long-term surveillance and recurrence management should be more explicitly addressed.\u201dSuggested Reading Topics:- Retroperitoneal Sarcoma (SCORE Curriculum)- Principles of En Bloc Resection (NCCN Guidelines)- Surveillance and Recurrence in Retroperitoneal Sarcoma"
+}

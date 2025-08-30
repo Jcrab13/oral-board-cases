@@ -1,0 +1,211 @@
+{
+  "case_id": "end_10",
+  "title": "Symptomatic Hyperthyroidism Requiring Surgery",
+  "diagnosis_topic": "Graves Disease Refractory to Medical Therapy",
+  "tags": [
+    "endocrine",
+    "hyperthyroidism",
+    "thyroidectomy"
+  ],
+  "setup_script": "\u201cA 30-year-old woman with Graves disease presents with palpitations, weight loss, and ophthalmopathy despite high doses of methimazole and beta-blockers. She is considering definitive therapy and wants to discuss surgery versus radioactive iodine. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks about symptoms",
+      "reply": "\u201cShe reports palpitations, heat intolerance, tremors, and progressive weight loss despite medical therapy. She also has eye irritation and mild proptosis.\u201d"
+    },
+    {
+      "trigger": "If resident asks for labs",
+      "reply": "\u201cTSH is suppressed; free T4 and T3 are elevated. Thyroid receptor antibodies are positive.\u201d"
+    },
+    {
+      "trigger": "If resident discusses treatment options",
+      "reply": "\u201cShe is not pregnant but has moderate ophthalmopathy. What options would you discuss with her?\u201d"
+    },
+    {
+      "trigger": "If resident discusses radioactive iodine",
+      "reply": "\u201cHow would her ophthalmopathy affect your recommendation?\u201d"
+    },
+    {
+      "trigger": "If resident recommends surgery",
+      "reply": "\u201cWhat are the key indications for surgery in Graves disease?\u201d"
+    },
+    {
+      "trigger": "If resident lists indications",
+      "reply": "\u201cThis patient has failed medical therapy and has ophthalmopathy. Surgery is a reasonable choice. What preoperative steps are necessary?\u201d"
+    },
+    {
+      "trigger": "If resident ensures preoperative euthyroidism",
+      "reply": "\u201cShe is continued on beta-blockers and methimazole. Potassium iodide is started 7 days prior to surgery.\u201d"
+    },
+    {
+      "trigger": "If resident requests preoperative laryngoscopy",
+      "reply": "\u201cFlexible laryngoscopy shows normal vocal cord function.\u201d"
+    },
+    {
+      "trigger": "If resident proceeds to surgery",
+      "reply": "\u201cDescribe the key technical steps of performing a total thyroidectomy in this patient.\u201d"
+    },
+    {
+      "trigger": "If resident describes thyroidectomy",
+      "reply": "\u201cThe thyroid is markedly vascular and requires meticulous ligation of vessels and preservation of recurrent laryngeal nerves and parathyroid glands. What intraoperative risks should you anticipate?\u201d"
+    },
+    {
+      "trigger": "If resident mentions risks",
+      "reply": "\u201cRisks include recurrent laryngeal nerve injury, hypocalcemia, bleeding, and thyroid storm.\u201d"
+    },
+    {
+      "trigger": "If resident completes surgery",
+      "reply": "\u201cIn the recovery unit, the patient develops perioral numbness and tingling. Serum calcium is 7.3 mg/dL. How would you manage this?\u201d"
+    },
+    {
+      "trigger": "If resident initiates calcium replacement",
+      "reply": "\u201cHer symptoms improve with IV calcium, and she is transitioned to oral calcium and vitamin D supplementation. Levothyroxine is started.\u201d"
+    },
+    {
+      "trigger": "If resident asks for pathology",
+      "reply": "\u201cFinal pathology confirms diffuse hyperplasia consistent with Graves disease; no malignancy is found.\u201d"
+    },
+    {
+      "trigger": "If resident addresses follow-up",
+      "reply": "\u201cShe is referred to endocrinology for long-term levothyroxine management. How would you educate her about lifelong care?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of hyperthyroidism refractory to medical management.",
+    "Counseling on definitive therapy options (surgery vs.\u00a0radioactive iodine) and considering contraindications.",
+    "Ensuring preoperative euthyroidism to avoid thyroid storm.",
+    "Technical knowledge of thyroidectomy including preservation of nerves and parathyroid glands.",
+    "Immediate postoperative monitoring and management of hypocalcemia.",
+    "Long-term follow-up with endocrinology and patient education on hormone replacement."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize Graves disease or misattributes symptoms."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete recognition of hyperthyroidism."
+          },
+          {
+            "score": 3,
+            "description": "Identifies hyperthyroidism but omits relevant evaluation steps."
+          },
+          {
+            "score": 4,
+            "description": "Systematically confirms Graves disease with labs and clinical features."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly recognizes Graves disease refractory to medical therapy and integrates diagnostic data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inappropriate or unsafe plan; fails to consider definitive therapy."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes need for therapy but delays or recommends inadequate management."
+          },
+          {
+            "score": 3,
+            "description": "Proposes appropriate treatment but with some omissions."
+          },
+          {
+            "score": 4,
+            "description": "Balances patient preference with clinical indications; ensures euthyroidism before surgery."
+          },
+          {
+            "score": 5,
+            "description": "Excellent sequencing of care; anticipates risks; coordinates multidisciplinary management."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides partial information, lacks clarity."
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and options clearly but misses engagement opportunities."
+          },
+          {
+            "score": 4,
+            "description": "Clear, structured, empathetic  with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates needs of patient and team."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of thyroidectomy in Graves disease."
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgery as needed but with major gaps in technical details."
+          },
+          {
+            "score": 3,
+            "description": "Describes key steps with omissions."
+          },
+          {
+            "score": 4,
+            "description": "Accurately details operative management including vessel ligation, nerve identification, and parathyroid preservation."
+          },
+          {
+            "score": 5,
+            "description": "Mastery of surgical anatomy, operative nuances, complications, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or unsafe."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful and appropriate but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model ; demonstrates cultural sensitivity, humility, and ethics."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by identifying hyperthyroidism refractory to medical therapy and articulating the indications for surgery. Your preoperative optimization and explanation of risks were clear and structured.Areas for Improvement: Be more detailed in describing the technical steps of thyroidectomy, particularly preservation of parathyroid glands and recurrent laryngeal nerves. Clarify your discussion of postoperative monitoring and long-term follow-up.Suggested Reading Topics: - ATA Guidelines on the Management of Hyperthyroidism and Graves Disease - Surgical Anatomy and Technique of Total Thyroidectomy - Management of Thyroid Storm and Postoperative Hypocalcemia"
+}

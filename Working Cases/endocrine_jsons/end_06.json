@@ -1,0 +1,211 @@
+{
+  "case_id": "end_06",
+  "title": "Palpable Thyroid Nodule with Suspicious Ultrasound",
+  "diagnosis_topic": "Papillary Thyroid Carcinoma with Nodal Disease",
+  "tags": [
+    "endocrine",
+    "thyroid_nodule",
+    "oncologic_surgery"
+  ],
+  "setup_script": "\u201cA 45-year-old woman presents to your clinic with a 2 cm thyroid nodule found on routine physical examination. She reports no compressive symptoms. Her thyroid function tests are normal. A neck ultrasound shows a hypoechoic nodule with microcalcifications in the right thyroid lobe and abnormal cervical lymph nodes. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks about history",
+      "reply": "\u201cShe denies prior radiation exposure, has no family history of thyroid cancer, and reports no voice changes or dysphagia.\u201d"
+    },
+    {
+      "trigger": "If resident asks for physical exam",
+      "reply": "\u201cYou palpate a firm 2 cm nodule in the right thyroid lobe. No compressive symptoms are noted. Cervical lymphadenopathy is present on the right.\u201d"
+    },
+    {
+      "trigger": "If resident orders additional thyroid labs",
+      "reply": "\u201cThyroid function tests are within normal limits.\u201d"
+    },
+    {
+      "trigger": "If resident requests fine needle aspiration (FNA)",
+      "reply": "\u201cFNA of the thyroid nodule shows Bethesda VI papillary thyroid carcinoma. FNA of a cervical lymph node confirms metastatic carcinoma.\u201d"
+    },
+    {
+      "trigger": "If resident discusses extent of surgery",
+      "reply": "\u201cGiven nodal involvement, what operative approach would you recommend?\u201d"
+    },
+    {
+      "trigger": "If resident recommends lobectomy",
+      "reply": "\u201cGiven nodal metastases, would this approach be adequate?\u201d"
+    },
+    {
+      "trigger": "If resident recommends total thyroidectomy with central neck dissection",
+      "reply": "\u201cPreoperative laryngoscopy demonstrates normal vocal cord function. How would you counsel the patient on surgical risks?\u201d"
+    },
+    {
+      "trigger": "If resident discusses risks",
+      "reply": "\u201cYou explain risks including recurrent laryngeal nerve injury, hypocalcemia, and bleeding. Informed consent is obtained.\u201d"
+    },
+    {
+      "trigger": "If resident proceeds with surgery",
+      "reply": "\u201cDuring surgery, you find gross central neck nodal disease, prompting a formal central compartment dissection. What are your next steps intraoperatively?\u201d"
+    },
+    {
+      "trigger": "If resident is asked about operative technique",
+      "reply": "\u201cPlease describe the key technical steps of performing a total thyroidectomy with central neck dissection.\u201d"
+    },
+    {
+      "trigger": "If resident completes thyroidectomy and dissection",
+      "reply": "\u201cThe patient is transferred to recovery. Postoperatively, her calcium is 7.1 mg/dL and she reports perioral numbness. How would you manage this?\u201d"
+    },
+    {
+      "trigger": "If resident initiates calcium replacement",
+      "reply": "\u201cHer symptoms improve with IV calcium and oral supplementation. She is also started on levothyroxine.\u201d"
+    },
+    {
+      "trigger": "If resident asks for pathology",
+      "reply": "\u201cFinal pathology shows papillary thyroid carcinoma, 2 cm, negative margins, 6 of 12 lymph nodes positive for metastases.\u201d"
+    },
+    {
+      "trigger": "If resident discusses adjuvant therapy",
+      "reply": "\u201cYou refer her to endocrinology for consideration of radioactive iodine therapy.\u201d"
+    },
+    {
+      "trigger": "If resident addresses long-term surveillance",
+      "reply": "\u201cYou arrange follow-up with thyroglobulin monitoring and neck ultrasound. What specific symptoms would you educate the patient to monitor for long-term?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of suspicious ultrasound findings and need for FNA.",
+    "Decision-making regarding total thyroidectomy versus lobectomy in presence of nodal disease.",
+    "Safe operative management protecting recurrent laryngeal nerves and parathyroid glands.",
+    "Ability to articulate key technical details of thyroidectomy with nodal dissection.",
+    "Postoperative recognition and management of hypocalcemia.",
+    "Counseling regarding long-term surveillance and adjuvant therapy."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize malignant features or misattributes findings."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete workup; overlooks key findings."
+          },
+          {
+            "score": 3,
+            "description": "Identifies malignancy but omits relevant aspects of staging and nodal disease."
+          },
+          {
+            "score": 4,
+            "description": "Systematically evaluates thyroid nodule with appropriate imaging, labs, and FNA."
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies papillary carcinoma with nodal disease, articulates full differential, and integrates workup data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inappropriate operative plan; misses urgent interventions."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes need for surgery but delays or recommends inadequate approach."
+          },
+          {
+            "score": 3,
+            "description": "Proposes appropriate workup and treatment with some omissions."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes surgery and perioperative care appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates superb judgment, anticipates complications, and integrates multidisciplinary care."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides basic information but lacks clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and plan clearly but misses opportunities for engagement."
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, and empathetic with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, and anticipates patient and team needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of thyroidectomy or nodal dissection."
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgery as needed but with major knowledge gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes some operative steps with omissions or inaccuracies."
+          },
+          {
+            "score": 4,
+            "description": "Accurately details key steps of thyroidectomy and central neck dissection, and anticipates complications."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of surgical anatomy, operative technique, and perioperative management in thyroid and nodal disease."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unsafe."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful and appropriate but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model  with humility, cultural sensitivity, and ethics."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated solid diagnostic reasoning by identifying suspicious ultrasound features and appropriately ordering FNA. Your operative planning reflected understanding of nodal disease, and you communicated surgical risks effectively. You described the operative steps in a logical and structured manner.Areas for Improvement: Further refinement is needed in outlining technical nuances of the operation and postoperative calcium management. Be more precise in discussing adjuvant therapy options and long-term surveillance.Suggested Reading Topics: - ATA Guidelines on Management of Thyroid Nodules and Differentiated Thyroid Cancer - Surgical Anatomy and Technical Steps of Thyroidectomy with Central Neck Dissection - Management of Post-Thyroidectomy Hypocalcemia and Hypoparathyroidism"
+}

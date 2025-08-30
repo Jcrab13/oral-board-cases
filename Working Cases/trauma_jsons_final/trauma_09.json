@@ -1,0 +1,146 @@
+{
+  "case_id": "trauma_09",
+  "title": "Penetrating Thoracic Trauma with Hemothorax",
+  "diagnosis_topic": "Gunshot wound causing massive hemothorax and potential cardiac injury",
+  "tags": [
+    "trauma",
+    "thoracic",
+    "penetrating",
+    "hemothorax"
+  ],
+  "setup_script": "\u201cA 29-year-old man presents with a single gunshot wound to the left posterior chest. He is short of breath and coughing up blood. He has no past medical history. On arrival, he appears distressed. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident assesses airway and breathing",
+      "reply": "Airway is patent. Breath sounds are decreased on the left with dullness to percussion."
+    },
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 95/55 mmHg, HR 125 bpm, RR 28/min, SpO\u2082 90% on a nonrebreather mask."
+    },
+    {
+      "trigger": "If resident establishes IV access and orders labs/type and cross",
+      "reply": "Two large-bore IVs placed, blood sent. Initial hemoglobin 10 g/dL, INR 1.2."
+    },
+    {
+      "trigger": "If resident places a large-bore chest tube on the left",
+      "reply": "1.5 L of blood drains immediately, followed by continuous output > 200 mL/hr."
+    },
+    {
+      "trigger": "If resident orders chest X-ray after tube placement",
+      "reply": "Film shows left hemothorax decompressed, chest tube in good position, mediastinum shifted toward the right."
+    },
+    {
+      "trigger": "If resident initiates blood transfusion and resuscitation",
+      "reply": "Two units PRBCs given. HR improves to 110, BP to 100/60, SpO\u2082 94% on nonrebreather. Chest tube continues to drain > 200 mL/hr."
+    },
+    {
+      "trigger": "If resident asks about indications for thoracotomy",
+      "reply": "Chest tube output > 1500 mL initially or > 200 mL/hr ongoing suggests major vascular injury."
+    },
+    {
+      "trigger": "If resident prepares for operative intervention",
+      "reply": "Trauma and cardiothoracic surgery teams are mobilized for emergent thoracotomy."
+    },
+    {
+      "trigger": "If resident delays surgical intervention",
+      "reply": "Patient becomes hypotensive to 70/40 mmHg, HR 140, and progresses to cardiac arrest."
+    },
+    {
+      "trigger": "If resident proceeds with thoracotomy",
+      "reply": "A left posterolateral thoracotomy is performed. There is massive intrathoracic clot and active bleeding from the left pulmonary hilum."
+    },
+    {
+      "trigger": "If resident is asked to describe operative steps",
+      "reply": "Please describe your operative approach, exposure, hemorrhage control, and repair options for this injury."
+    },
+    {
+      "trigger": "If resident inspects injury pattern",
+      "reply": "There is pulmonary parenchymal injury with bleeding from segmental vessels, and concern for cardiac injury near the pericardium."
+    },
+    {
+      "trigger": "If resident performs appropriate repair or clamping",
+      "reply": "Hemorrhage is controlled, BP improves to 100/65, HR decreases to 110."
+    },
+    {
+      "trigger": "If resident discusses intraoperative adjuncts (packing, cross-clamping aorta, autotransfusion)",
+      "reply": "Autotransfusion is available; patient receives additional resuscitation and stabilizes."
+    },
+    {
+      "trigger": "If resident asks about postoperative course",
+      "reply": "Patient is transferred to ICU intubated, on vasopressors. Risks include retained hemothorax, empyema, ARDS, and recurrent bleeding."
+    },
+    {
+      "trigger": "If resident addresses postoperative pain control",
+      "reply": "IV analgesia provided; patient remains sedated and ventilated in ICU."
+    }
+  ],
+  "critical_decision_points": [
+    "Management of airway, breathing, and circulation in penetrating chest trauma",
+    "Recognition of massive hemothorax and indications for thoracotomy",
+    "Timely chest tube placement and monitoring of output",
+    "Activation of operative team without unnecessary delay",
+    "Intraoperative control of bleeding and repair of thoracic injuries",
+    "Postoperative surveillance for complications (retained hemothorax, empyema, ARDS)"
+  ],
+  "rubric": {
+    "domains": [
+      {
+        "name": "Diagnostic Reasoning",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to consider thoracic trauma; misattributes symptoms to unrelated diagnosis",
+          "2": "Delayed or incomplete differential diagnosis; overlooks key features",
+          "3": "Recognizes thoracic trauma as possible but omits important alternatives",
+          "4": "Develops comprehensive differential including penetrating thoracic trauma and systematically rules out other causes",
+          "5": "Quickly identifies penetrating thoracic trauma as leading diagnosis and articulates full differential with supporting/refuting data"
+        }
+      },
+      {
+        "name": "Clinical Judgment",
+        "weight": 0.3,
+        "anchors": {
+          "1": "Fails to recognize instability or need for urgent intervention",
+          "2": "Recognizes urgency but delays critical actions or orders inappropriate tests",
+          "3": "Initiates management but misses key steps or timing",
+          "4": "Prioritizes resuscitation, diagnostics, and therapy appropriately with good timing",
+          "5": "Anticipates complications, coordinates multidisciplinary care, and makes timely decisions"
+        }
+      },
+      {
+        "name": "Communication",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Disorganized, confusing, or lacks empathy",
+          "2": "Provides information but lacks clarity or engagement",
+          "3": "Communicates findings and plans clearly but incompletely",
+          "4": "Clear, logical, and empathetic communication with patient and team",
+          "5": "Exemplary: succinct, compassionate, anticipates information needs of team and patient"
+        }
+      },
+      {
+        "name": "Surgical Knowledge",
+        "weight": 0.15,
+        "anchors": {
+          "1": "Lacks understanding of operative/procedural management for penetrating thoracic trauma",
+          "2": "Identifies operative option but with major gaps in technique or indications",
+          "3": "Describes some operative steps but with omissions in exposure, hemorrhage control, or repair",
+          "4": "Completely describes thoracotomy approach, hemorrhage control, repair techniques, and common complications",
+          "5": "Demonstrates mastery of thoracotomy technique, operative nuances, alternative exposures (e.g., clamshell), and perioperative considerations"
+        }
+      },
+      {
+        "name": "Professionalism",
+        "weight": 0.1,
+        "anchors": {
+          "1": "Disrespectful, breaches confidentiality, or fails to recognize limitations",
+          "2": "Inconsistent respect or accountability",
+          "3": "Maintains respect and integrity but needs prompting for self-reflection",
+          "4": "Consistently respectful, accountable, receptive to feedback",
+          "5": "Role model for professionalism: humility, cultural sensitivity, ethical behavior"
+        }
+      }
+    ]
+  },
+  "resident_feedback_template": "StrengthsYou demonstrated strong diagnostic reasoning by recognizing massive hemothorax and identifying criteria for emergent thoracotomy. You managed resuscitation appropriately and escalated care to surgical intervention without unnecessary delay.\nAreas for ImprovementWork on refining assessment of wound trajectory and intraoperative management steps, particularly when injuries involve pulmonary or cardiac structures. Further development of postoperative planning and complication anticipation will strengthen your performance.\nSuggested Reading Topics- Indications and techniques for Emergency Department Thoracotomy (SCORE)- Management of Penetrating Thoracic Trauma (ACS/ASE Review Manual)- Postoperative complications of thoracic trauma (retained hemothorax, empyema, ARDS)"
+}

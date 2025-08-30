@@ -1,0 +1,219 @@
+{
+  "case_id": "gen_01",
+  "title": "Acute Appendicitis",
+  "diagnosis_topic": "Acute Appendicitis leading to an acute abdomen",
+  "tags": [
+    "general_surgery",
+    "appendicitis",
+    "acute_abdomen"
+  ],
+  "setup_script": "\u201cA 25-year-old man presents with 12 hours of abdominal pain that began around the umbilicus and migrated to the right lower quadrant. He reports nausea and one episode of vomiting. On exam, he appears uncomfortable but is hemodynamically stable. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBP 118/70 mmHg, HR 96 bpm, RR 18/min, Temp 37.8 \u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "\u201cTenderness at McBurney\u2019s point with guarding; positive psoas sign.\u201d"
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "\u201cWBC 14 K/\u00b5L with neutrophilia; CRP elevated.\u201d"
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "\u201cCT scan with IV contrast shows dilated appendix 9 mm with wall thickening and periappendiceal fat stranding.\u201d"
+    },
+    {
+      "trigger": "If resident asks about ultrasound",
+      "reply": "\u201cUltrasound can demonstrate a dilated, noncompressible appendix; often used in young or pregnant patients.\u201d"
+    },
+    {
+      "trigger": "If resident initiates NPO, IV fluids, and antibiotics",
+      "reply": "\u201cThe patient is kept NPO, started on IV fluids and broad-spectrum antibiotics.\u201d"
+    },
+    {
+      "trigger": "If resident consults surgery",
+      "reply": "\u201cThe patient is scheduled for a laparoscopic appendectomy.\u201d"
+    },
+    {
+      "trigger": "If appendix appears perforated with abscess on imaging",
+      "reply": "\u201cImaging shows a periappendiceal abscess. Percutaneous drainage is performed with IV antibiotics.\u201d"
+    },
+    {
+      "trigger": "If resident delays diagnosis",
+      "reply": "\u201cThe patient develops worsening pain, fever 39.5 \u00b0C, HR 120, and diffuse peritonitis.\u201d"
+    },
+    {
+      "trigger": "If resident proceeds with appendectomy",
+      "reply": "\u201cAt laparoscopy, the appendix is inflamed but not perforated. Please describe your operative steps.\u201d"
+    },
+    {
+      "trigger": "If resident describes laparoscopic technique",
+      "reply": "\u201cYou establish pneumoperitoneum, identify the appendix, divide the mesoappendix, and ligate the base. How would you manage the appendiceal stump?\u201d"
+    },
+    {
+      "trigger": "If resident describes open appendectomy",
+      "reply": "\u201cThrough a right lower quadrant incision, you mobilize the cecum and deliver the appendix. How will you divide and secure the mesoappendix?\u201d"
+    },
+    {
+      "trigger": "If resident addresses intraoperative complications (bleeding, friable cecum, perforation)",
+      "reply": "\u201cThe base appears inflamed and friable. What options do you have for stump closure in this situation?\u201d"
+    },
+    {
+      "trigger": "If resident completes appendectomy",
+      "reply": "\u201cThe appendix is removed and the patient stabilizes. What will be your postoperative management plan?\u201d"
+    },
+    {
+      "trigger": "If resident discusses nonoperative management",
+      "reply": "\u201cThe patient improves on IV antibiotics. What counseling will you provide regarding recurrence risk?\u201d"
+    },
+    {
+      "trigger": "If resident addresses differential diagnoses",
+      "reply": "\u201cWhat other conditions would you consider in this patient?\u201d"
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "\u201cWhat instructions will you give for postoperative follow-up?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis of acute appendicitis using history, exam, and imaging",
+    "Initiation of preoperative management with NPO, fluids, and antibiotics",
+    "Timely surgical consultation and operative planning",
+    "Technical knowledge of appendectomy (laparoscopic vs.\u00a0open, stump management, handling complications)",
+    "Recognition of perforated appendicitis and appropriate management (drainage vs.\u00a0interval appendectomy)",
+    "Postoperative care and patient education"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider acute appendicitis or misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential diagnosis; overlooks key features of appendicitis."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes acute appendicitis but omits important alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including appendicitis and systematically rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies appendicitis, articulates full differential with supporting and refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays key actions or orders inappropriate tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic workup and management but with errors in timing or sequencing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes diagnostics and treatment appropriately with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely, appropriate decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, or lacking empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings and plans, though somewhat limited."
+          },
+          {
+            "score": 4,
+            "description": "Well-organized, logical, empathetic  with team and patient."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates patient and team needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management for appendicitis."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with significant gaps in knowledge."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Accurately describes operative management, including laparoscopic and open techniques, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of technical steps (port placement, mesoappendix division, stump closure), management of difficult anatomy, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect or breaches ."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains  but requires prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Serves as a role model, demonstrating humility, sensitivity, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing the clinical picture of appendicitis and appropriately initiating preoperative management. Your communication with the surgical team was clear and structured. You outlined operative steps in a logical manner.Areas for Improvement: Further detail in technical operative management, such as handling of a friable appendiceal base and postoperative complications, would strengthen your performance. Expand consideration of alternative diagnoses in the differential.Suggested Reading Topics: - SCORE: Appendicitis \u2013 diagnosis and management - ACS/ASE Review Manual: Acute Abdomen - Operative approaches to appendectomy (laparoscopic vs.\u00a0open) - Management of appendiceal stump and intraoperative complications"
+}

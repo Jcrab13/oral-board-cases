@@ -1,0 +1,213 @@
+{
+  "case_id": "vascular_04",
+  "title": "Chronic Limb Ischemia",
+  "diagnosis_topic": "Peripheral artery disease causing rest pain and ulceration",
+  "tags": [
+    "vascular",
+    "peripheral_artery_disease",
+    "limb_ischemia",
+    "revascularization"
+  ],
+  "setup_script": "A 58-year-old man with a history of diabetes, hyperlipidemia, and a 40 pack-year smoking history presents with progressive right foot pain at rest and a nonhealing ulcer on his great toe. He reports worsening claudication over the past several months, now limited to one block of walking. On exam, you note an ulcer with a necrotic base on the first toe. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks for vitals",
+      "reply": "BP 140/80 mmHg, HR 85 bpm, RR 18/min, Temp 37 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs vascular exam",
+      "reply": "Diminished dorsalis pedis and posterior tibial pulses on right, ankle-brachial index 0.4, ulcer with necrotic base at first toe."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "HbA1c 9.0%, LDL 180 mg/dL, creatinine 1.2 mg/dL."
+    },
+    {
+      "trigger": "If resident requests imaging",
+      "reply": "Duplex ultrasound shows multilevel occlusive disease in superficial femoral and popliteal arteries; CT angiography demonstrates distal tibial runoff."
+    },
+    {
+      "trigger": "If resident initiates medical therapy",
+      "reply": "Antiplatelet, statin, diabetes optimization, and smoking cessation counseling are started."
+    },
+    {
+      "trigger": "If resident delays intervention after medical therapy",
+      "reply": "Ulcer worsens and progresses to gangrene requiring amputation."
+    },
+    {
+      "trigger": "If resident consults vascular surgery for intervention",
+      "reply": "Plan for infrainguinal bypass versus endovascular revascularization."
+    },
+    {
+      "trigger": "If resident asks about indications for surgery",
+      "reply": "Rest pain and tissue loss are indications for revascularization."
+    },
+    {
+      "trigger": "If resident discusses wound care",
+      "reply": "Local wound debridement, offloading, and infection control measures are necessary."
+    },
+    {
+      "trigger": "If resident proposes exercise therapy only",
+      "reply": "Patient continues to have ischemic rest pain and ulcer progression; exercise therapy alone is insufficient."
+    },
+    {
+      "trigger": "If resident proceeds with bypass",
+      "reply": "Operative finding: occluded superficial femoral artery with poor inflow; vein graft bypass performed with improved distal perfusion."
+    },
+    {
+      "trigger": "If resident is asked to describe operative technique",
+      "reply": "Resident should describe exposure, selection of conduit, proximal and distal anastomosis technique, heparinization, and intraoperative assessment of flow."
+    },
+    {
+      "trigger": "If resident proposes endovascular intervention",
+      "reply": "Balloon angioplasty and stenting performed with improved perfusion."
+    },
+    {
+      "trigger": "If resident manages postoperative surveillance",
+      "reply": "Long-term follow-up with ABI and duplex imaging is planned; continued aggressive risk factor control."
+    },
+    {
+      "trigger": "If resident asks about amputation",
+      "reply": "If revascularization fails or patient presents late with non-salvageable limb, amputation level is determined by tissue viability and perfusion."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of critical limb ischemia with rest pain and tissue loss",
+    "Initiation of risk factor modification and medical therapy",
+    "Appropriate use of diagnostic imaging to assess runoff",
+    "Timely referral for revascularization (bypass or endovascular)",
+    "Integration of wound care and infection control",
+    "Postoperative surveillance and secondary prevention",
+    "Ability to describe operative technique for revascularization"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider chronic limb ischemia; attributes symptoms to unrelated causes"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes chronic limb ischemia but omits important differentials"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential and systematically rules out alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies critical limb ischemia and articulates complete differential with supporting data"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency; delays critical decisions"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but orders inappropriate or delayed tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic management but with incomplete or delayed decisions"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes diagnostic testing and definitive therapy with good timing"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates superb judgment, anticipates complications, coordinates multidisciplinary care"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacking empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or structure"
+          },
+          {
+            "score": 3,
+            "description": "Communicates findings and plans clearly but without confirmation of understanding"
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, and empathetically with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary communication: succinct, compassionate, anticipates patient/team needs"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of revascularization for limb ischemia"
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps in indications/technique"
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, alternatives, and complications"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, current evidence, perioperative care, and can detail operative technique including exposure, conduit choice, anastomosis, and flow assessment"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or denies limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability lapses"
+          },
+          {
+            "score": 3,
+            "description": "Respectful and professional but requires prompting for self-reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, humility, and ethical behavior"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Your performance on this chronic limb ischemia scenario demonstrated You recognized the clinical presentation of chronic limb ischemia and appropriately pursued diagnostic imaging. Your management plan included initiation of medical therapy and revascularization options. You demonstrated clear communication of findings and management priorities.. Areas for improvement include Earlier recognition of the need for urgent revascularization could have improved patient outcomes. A more detailed operative description would strengthen your performance, including exposure, conduit selection, anastomotic technique, and intraoperative flow assessment. Avoid reliance on conservative measures alone in patients with tissue loss.. Suggested reading includes SCORE Curriculum: Chronic Limb Ischemia and Peripheral Artery Disease; SVS Guidelines on Management of Critical Limb Ischemia; ACS/ASE Review Manual: Operative Approaches to Infrainguinal Bypass and Endovascular Therapy"
+  }
+}

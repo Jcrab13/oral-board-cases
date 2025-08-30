@@ -1,0 +1,207 @@
+{
+  "case_id": "sst_08",
+  "title": "Lipoma vs.\u00a0Liposarcoma",
+  "diagnosis_topic": "Evaluation of a subcutaneous mass with consideration of malignancy",
+  "tags": [
+    "skin",
+    "soft_tissue",
+    "lipoma",
+    "liposarcoma"
+  ],
+  "setup_script": "A 45-year-old woman presents with a soft, mobile mass on her upper arm that she noticed two years ago. It has grown slowly and is now about 5 cm in diameter. She denies pain, weight loss, or systemic symptoms. How would you proceed with evaluation and management?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "Vitals are within normal limits."
+    },
+    {
+      "trigger": "If resident performs physical exam of the mass",
+      "reply": "Mass is soft, rubbery, mobile under the skin, nontender; overlying skin appears normal."
+    },
+    {
+      "trigger": "If resident asks about history of growth or symptoms",
+      "reply": "Growth has been gradual; patient denies pain, fever, or weight loss."
+    },
+    {
+      "trigger": "If resident considers differential diagnosis",
+      "reply": "Differential includes benign lipoma, liposarcoma, epidermoid cyst, and other soft tissue tumors."
+    },
+    {
+      "trigger": "If resident orders ultrasound",
+      "reply": "Ultrasound shows a homogeneous, hypoechoic, well-circumscribed lesion consistent with lipoma."
+    },
+    {
+      "trigger": "If resident proceeds to MRI (lesions >5 cm or deep)",
+      "reply": "MRI demonstrates a well-encapsulated superficial mass without invasion into muscle or surrounding structures."
+    },
+    {
+      "trigger": "If resident raises concern for malignancy",
+      "reply": "Malignant features would include size >10 cm, rapid growth, firmness, fixation, pain, or infiltration; biopsy indicated if suspicious."
+    },
+    {
+      "trigger": "If resident recommends excision without biopsy",
+      "reply": "Local excision can be offered for symptomatic relief or cosmetic reasons; pathology required."
+    },
+    {
+      "trigger": "If resident performs excisional biopsy",
+      "reply": "Pathology returns benign lipoma."
+    },
+    {
+      "trigger": "If resident delays biopsy or excision in suspicious case",
+      "reply": "Mass continues to enlarge and becomes firmer, raising concern for liposarcoma."
+    },
+    {
+      "trigger": "If resident discusses management of liposarcoma",
+      "reply": "Treatment would require wide excision with negative margins, referral to surgical oncology, and possible multidisciplinary care."
+    },
+    {
+      "trigger": "If resident evaluates for multiple lipomas",
+      "reply": "No additional lesions found; no family history of multiple lipomatosis."
+    },
+    {
+      "trigger": "If resident provides postoperative counseling",
+      "reply": "Instruct patient to keep incision clean and dry; advise on monitoring for recurrence."
+    },
+    {
+      "trigger": "If resident advises return precautions",
+      "reply": "Patient is counseled to report rapid growth, firmness, pain, or other new concerning features."
+    }
+  ],
+  "critical_decision_points": [
+    "Clinical evaluation of subcutaneous masses, considering size, depth, and growth characteristics.",
+    "Appropriate use of imaging and biopsy for suspicious lesions.",
+    "Differentiating benign lipoma from liposarcoma.",
+    "Decision-making between observation and excision.",
+    "Patient counseling regarding recurrence and warning signs of malignancy."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider lipoma vs.\u00a0liposarcoma; attributes to unrelated causes."
+          },
+          {
+            "score": 2,
+            "description": "Incomplete differential; overlooks key features."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes lipoma vs.\u00a0liposarcoma but omits important alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Comprehensive differential including benign and malignant soft tissue masses; appropriate use of data."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies lipoma vs.\u00a0liposarcoma with complete differential and supporting/refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Misses malignant potential; inappropriately reassures or delays workup."
+          },
+          {
+            "score": 2,
+            "description": "Acknowledges possible malignancy but delays biopsy or misuses imaging."
+          },
+          {
+            "score": 3,
+            "description": "Initiates reasonable workup but misses timing or sequence."
+          },
+          {
+            "score": 4,
+            "description": "Appropriately uses imaging, biopsy, and decision-making regarding excision."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and demonstrates timely, appropriate decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or dismissive of patient concerns."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or empathy."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings and plan but incomplete in counseling."
+          },
+          {
+            "score": 4,
+            "description": "Organized, logical, empathetic  with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates patient questions, and ensures shared understanding."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of management for soft tissue masses."
+          },
+          {
+            "score": 2,
+            "description": "Identifies excision but with major errors in technique or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor gaps."
+          },
+          {
+            "score": 4,
+            "description": "Complete description of excision, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative nuances, evidence-based management, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or dismissive, breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, cultural sensitivity, ethical standards."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated solid diagnostic reasoning by recognizing the features distinguishing lipoma from liposarcoma. Your management decisions regarding imaging and excision were well justified. Communication with the patient was clear and empathetic.Areas for Improvement: Earlier escalation to biopsy when malignant features arise would strengthen clinical judgment. At times, your counseling did not fully address the potential implications of a malignant diagnosis. Ensure you consistently provide comprehensive follow-up instructions.Suggested Reading Topics: - Evaluation and management of soft tissue masses (SCORE) - Differentiating benign from malignant soft tissue tumors (ACS/ASE Core Curriculum) - Principles of biopsy and surgical excision of soft tissue tumors"
+}

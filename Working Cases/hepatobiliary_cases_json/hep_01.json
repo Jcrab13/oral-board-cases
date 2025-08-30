@@ -1,0 +1,214 @@
+{
+  "case_id": "hep_01",
+  "title": "Acute Calculous Cholecystitis",
+  "diagnosis_topic": "Inflammation of the gallbladder secondary to cystic duct obstruction",
+  "tags": [
+    "hepatobiliary",
+    "cholecystitis",
+    "gallstones"
+  ],
+  "setup_script": "A 45-year-old woman presents with right upper quadrant abdominal pain for the past 24 hours. She has fever and nausea. On physical exam, there is a positive Murphy\u2019s sign. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 130/85 mmHg, HR 100 bpm, RR 18/min, Temp 38.3 \u00b0C."
+    },
+    {
+      "trigger": "If resident orders laboratory studies",
+      "reply": "WBC 14,000/\u00b5L, mildly elevated AST/ALT and bilirubin; amylase and lipase normal."
+    },
+    {
+      "trigger": "If resident requests urinalysis",
+      "reply": "Normal."
+    },
+    {
+      "trigger": "If resident orders right upper quadrant ultrasound",
+      "reply": "Gallbladder wall thickening >4 mm, pericholecystic fluid, gallstones obstructing the cystic duct."
+    },
+    {
+      "trigger": "If resident requests CT abdomen",
+      "reply": "CT confirms gallbladder wall thickening, distension, pericholecystic fluid, impacted cystic duct stone."
+    },
+    {
+      "trigger": "If resident initiates NPO status, IV fluids, and analgesia",
+      "reply": "Patient\u2019s pain improves slightly; remains febrile and tender."
+    },
+    {
+      "trigger": "If resident starts broad-spectrum antibiotics",
+      "reply": "Coverage with ceftriaxone and metronidazole initiated."
+    },
+    {
+      "trigger": "If resident delays initiation of antibiotics",
+      "reply": "Patient develops worsening fever to 39.1 \u00b0C, HR increases to 120 bpm."
+    },
+    {
+      "trigger": "If resident consults surgery and plans for early laparoscopic cholecystectomy",
+      "reply": "OR scheduled within 24\u201372 hours of symptom onset."
+    },
+    {
+      "trigger": "If resident delays surgery beyond 1 week",
+      "reply": "Patient develops worsening abdominal pain, fever, and leukocytosis; higher risk of conversion to open surgery."
+    },
+    {
+      "trigger": "If resident proposes percutaneous cholecystostomy in this otherwise healthy patient",
+      "reply": "Examiner reply: \u201cThe patient is otherwise fit for surgery. What is your management plan?"
+    },
+    {
+      "trigger": "If resident indicates patient is critically ill or unstable and chooses percutaneous cholecystostomy",
+      "reply": "Appropriate; patient stabilizes with drain in place."
+    },
+    {
+      "trigger": "If resident proceeds with laparoscopic cholecystectomy",
+      "reply": "Gallbladder is inflamed with dense adhesions. Examiner: \u201cPlease describe your operative steps."
+    },
+    {
+      "trigger": "If resident requests intraoperative cholangiogram",
+      "reply": "Shows patent common bile duct, no stones."
+    },
+    {
+      "trigger": "If resident describes postoperative care",
+      "reply": "Patient recovers well, tolerates oral intake within 24 hours, discharged home on postoperative day 1."
+    },
+    {
+      "trigger": "If resident discusses patient education",
+      "reply": "Risk factors include female sex, obesity, pregnancy, rapid weight loss, oral contraceptive use."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of acute calculous cholecystitis via history, exam, and ultrasound",
+    "Initiation of resuscitation, NPO, antibiotics, and pain control",
+    "Appropriate and timely surgical intervention (early laparoscopic cholecystectomy)",
+    "Consideration of percutaneous drainage only in high-risk/unstable patients",
+    "Postoperative care and education on risk factors for recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider acute cholecystitis; attributes symptoms to unrelated cause"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes acute cholecystitis but misses key alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops complete differential including acute cholecystitis; uses supporting data"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies acute cholecystitis; comprehensive differential with supporting/refuting evidence"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency; delays intervention"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but orders inappropriate/untimely tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but with key omissions"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and surgery appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely, sound decisions"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides some information but unclear or incomplete"
+          },
+          {
+            "score": 3,
+            "description": "Communicates findings and plan clearly but misses confirmation of understanding"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic communication with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary clarity, compassion, and anticipation of team/patient needs"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of surgical management for acute cholecystitis"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgery as treatment but with major gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of current evidence, operative nuances, and perioperative considerations"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, unprofessional conduct"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but limited self-reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, cultural sensitivity, humility, ethical behavior"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by identifying acute cholecystitis and recognizing the need for surgical intervention. You communicated the management plan clearly and appropriately initiated resuscitation and antibiotics. Areas for Improvement:Work on clearly articulating the indications for percutaneous cholecystostomy in high-risk or unstable patients. Also ensure timely transition from diagnosis to definitive surgical management without unnecessary delays. Be prepared to describe operative steps of laparoscopic cholecystectomy in detail when asked. Suggested Reading Topics:- Acute Cholecystitis (SCORE Curriculum)- Surgical Infections and Source Control (ACS/ASE Review Manual)- Laparoscopic Cholecystectomy: Indications, Technique, and Complications"
+  }
+}

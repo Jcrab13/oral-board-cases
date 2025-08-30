@@ -1,0 +1,210 @@
+{
+  "case_id": "ped_11",
+  "title": "Traumatic Diaphragmatic Rupture",
+  "diagnosis_topic": "Left diaphragmatic tear from blunt trauma with herniation",
+  "tags": [
+    "trauma",
+    "diaphragmatic_rupture",
+    "blunt_injury"
+  ],
+  "setup_script": "\u201cA 45-year-old man presents after a high-speed motor vehicle collision with airbag deployment. He complains of left chest and abdominal pain. On arrival, he is alert but appears uncomfortable. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 125/80 mmHg, HR 100 bpm, RR 24/min, SpO\u2082 93% on room air."
+    },
+    {
+      "trigger": "If resident performs primary survey and physical exam",
+      "reply": "Decreased breath sounds on the left, bowel sounds audible in the chest, abdomen tender with guarding."
+    },
+    {
+      "trigger": "If resident orders chest X-ray",
+      "reply": "Elevated left hemidiaphragm with opacification; nasogastric tube seen coiling into chest."
+    },
+    {
+      "trigger": "If resident requests insertion of nasogastric tube",
+      "reply": "It coils within the thoracic cavity, decompressing the stomach."
+    },
+    {
+      "trigger": "If resident requests CT scan",
+      "reply": "Herniation of stomach and splenic flexure into left hemithorax through a diaphragmatic defect."
+    },
+    {
+      "trigger": "If resident delays diagnosis or operative planning",
+      "reply": "Patient develops worsening respiratory distress, hypoxia, and hemodynamic instability."
+    },
+    {
+      "trigger": "If resident initiates resuscitation and prepares for OR",
+      "reply": "Patient stabilizes with supplemental oxygen and fluids while awaiting surgery."
+    },
+    {
+      "trigger": "If resident proceeds with operative management",
+      "reply": "Laparotomy reveals a 6 cm left diaphragmatic tear with stomach and splenic flexure herniated into the chest."
+    },
+    {
+      "trigger": "If resident describes operative steps",
+      "reply": "Reduction of herniated contents, inspection for associated intra-abdominal injuries, primary repair of the diaphragm with non-absorbable sutures."
+    },
+    {
+      "trigger": "If resident is asked to describe operative technique",
+      "reply": "Please describe your operative approach for reducing herniated viscera and repairing the diaphragmatic defect."
+    },
+    {
+      "trigger": "If resident assesses for associated injuries",
+      "reply": "Splenic capsular tear noted but hemostatic; multiple left rib fractures present."
+    },
+    {
+      "trigger": "If resident neglects evaluation for associated injuries",
+      "reply": "Splenic laceration with bleeding is missed, leading to postoperative hemorrhagic shock."
+    },
+    {
+      "trigger": "If resident completes operative repair and chest tube placement",
+      "reply": "Patient is transferred to ICU, extubated on postoperative day 1, and recovers uneventfully."
+    },
+    {
+      "trigger": "If resident discusses postoperative management",
+      "reply": "Pulmonary toileting, chest tube care, pain control, and follow-up for recurrence."
+    },
+    {
+      "trigger": "If resident addresses mechanism of injury and prevention",
+      "reply": "High-energy blunt trauma often causes diaphragmatic tears; proper seat belt use reduces risk."
+    }
+  ],
+  "critical_decision_points": [
+    "Suspicion for diaphragmatic rupture in high-energy blunt trauma",
+    "Diagnostic interpretation of chest X-ray, nasogastric tube position, and CT scan",
+    "Timely surgical repair to prevent strangulation and respiratory compromise",
+    "Recognition and management of associated injuries (splenic, rib fractures)",
+    "Postoperative respiratory and critical care management"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider diaphragmatic rupture; misattributes findings to unrelated pathology."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features of diaphragmatic injury."
+          },
+          {
+            "score": 3,
+            "description": "Considers diaphragmatic rupture but omits alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops appropriate differential including diaphragmatic rupture, systematically rules out others."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies diaphragmatic rupture as leading diagnosis, integrates mechanism and findings."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency; delays critical actions."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but orders inappropriate or delayed tests."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but misses key steps or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and definitive therapy with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks clarity with team/patient."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks structure or engagement."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of plan but misses opportunities to confirm understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates logically and empathetically with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates needs of patient and team."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management, complications, alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect or breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but needs prompting for self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for , culturally sensitive, ethical."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "StrengthsYou demonstrated solid diagnostic reasoning by recognizing the signs of diaphragmatic injury and appropriately ordering confirmatory imaging. Your surgical plan was logical and included safe operative principles. Communication with the team was clear and structured.Areas for ImprovementEarlier suspicion in polytrauma settings would strengthen your diagnostic reasoning. Greater emphasis on systematic evaluation for associated injuries (e.g., splenic or rib fractures) is needed. In postoperative care, consider highlighting pulmonary rehabilitation and long-term follow-up.Suggested Reading Topics- Traumatic Diaphragmatic Injuries (SCORE)- Operative Management of Thoracoabdominal Trauma (ACS/ASE Review Manual)- Postoperative Pulmonary Complications and Management (SCORE)"
+}

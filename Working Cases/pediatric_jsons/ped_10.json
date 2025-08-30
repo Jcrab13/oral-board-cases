@@ -1,0 +1,212 @@
+{
+  "case_id": "ped_10",
+  "title": "Pediatric Appendicitis",
+  "diagnosis_topic": "Acute Appendicitis in a Child",
+  "tags": [
+    "pediatric",
+    "appendicitis",
+    "acute_abdomen"
+  ],
+  "setup_script": "\u201cA 10-year-old girl presents to the emergency department with 24 hours of abdominal pain. The pain began around her umbilicus and has migrated to the right lower quadrant. She has a low-grade fever and decreased appetite. On exam, she appears uncomfortable but stable. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 110/65 mmHg, HR 105 bpm, RR 22/min, Temp 38 \u00b0C."
+    },
+    {
+      "trigger": "If resident conducts abdominal exam",
+      "reply": "Tenderness at McBurney\u2019s point with rebound and guarding; Rovsing sign positive."
+    },
+    {
+      "trigger": "If resident asks for laboratory studies",
+      "reply": "WBC 15,000/\u00b5L with left shift, CRP elevated; urinalysis normal."
+    },
+    {
+      "trigger": "If resident requests abdominal ultrasound",
+      "reply": "Noncompressible tubular structure 8 mm in diameter with periappendiceal fluid, consistent with appendicitis."
+    },
+    {
+      "trigger": "If resident orders CT scan instead",
+      "reply": "CT abdomen/pelvis shows inflamed appendix with periappendiceal stranding, no perforation."
+    },
+    {
+      "trigger": "If resident delays diagnosis or management",
+      "reply": "The patient\u2019s pain worsens, fever increases to 39 \u00b0C, and she becomes tachycardic to 130 bpm."
+    },
+    {
+      "trigger": "If resident initiates NPO status, IV fluids, and broad-spectrum antibiotics",
+      "reply": "Patient stabilizes; antibiotics given (ceftriaxone plus metronidazole)."
+    },
+    {
+      "trigger": "If resident consults surgery for laparoscopic appendectomy",
+      "reply": "Patient is scheduled for urgent operative intervention."
+    },
+    {
+      "trigger": "If resident inquires about intraoperative findings",
+      "reply": "Appendix is inflamed but intact; no perforation."
+    },
+    {
+      "trigger": "If resident delays surgical intervention",
+      "reply": "Appendix perforates; purulent peritonitis develops."
+    },
+    {
+      "trigger": "If resident manages perforated appendix operatively",
+      "reply": "Appendectomy performed, abdomen irrigated, and drains placed; patient taken to ICU."
+    },
+    {
+      "trigger": "If resident is asked to describe operative techniques",
+      "reply": "Please describe the steps of a laparoscopic appendectomy in this patient."
+    },
+    {
+      "trigger": "If resident discusses postoperative care",
+      "reply": "Early ambulation, pain control, diet advancement, and discharge when tolerating oral intake."
+    },
+    {
+      "trigger": "If resident addresses complications",
+      "reply": "Wound erythema noted on day 3; culture shows superficial SSI. Managed with local care and antibiotics."
+    },
+    {
+      "trigger": "If resident educates family",
+      "reply": "Explained warning signs of complications, follow-up needs, and risk of recurrence if non-operative management had been chosen."
+    }
+  ],
+  "critical_decision_points": [
+    "Evaluation of suspected appendicitis with history, physical exam, and imaging.",
+    "Initiation of NPO status, IV fluids, and antibiotics.",
+    "Decision regarding immediate surgery vs.\u00a0non-operative management.",
+    "Recognition and management of perforated appendicitis.",
+    "Operative technique for appendectomy.",
+    "Postoperative care and complication management.",
+    "Family education and discharge planning."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider appendicitis or attributes symptoms to unrelated causes."
+          },
+          {
+            "score": 2,
+            "description": "Considers appendicitis but misses key features or delays evaluation."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes appendicitis as a likely diagnosis but omits important differentials."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential and orders appropriate confirmatory tests."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies appendicitis with accurate interpretation of clinical and imaging findings."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency; delays critical actions."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but mis-sequences evaluation or management."
+          },
+          {
+            "score": 3,
+            "description": "Initiates appropriate workup and management but with timing or priority issues."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnosis, and surgery appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care efficiently, and makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, or confusing ."
+          },
+          {
+            "score": 2,
+            "description": "Provides some information but lacks clarity or completeness."
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and plan clearly but without detail or engagement."
+          },
+          {
+            "score": 4,
+            "description": "Clear, organized, empathetic  with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary clarity, compassion, and anticipation of patient/family/team concerns."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of appendectomy or perioperative care."
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical option but with major errors in steps or indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes basic operative steps with some omissions."
+          },
+          {
+            "score": 4,
+            "description": "Clearly explains operative management, alternatives, and risks."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative techniques, complications, and perioperative care."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, dismissive, or breaches ethical standards."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: demonstrates humility, cultural sensitivity, and ."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by promptly recognizing appendicitis. You prioritized resuscitation, antibiotics, and surgical consultation effectively. Communication with the patient\u2019s family was clear and compassionate.Areas for Improvement: Consider refining decision-making around non-operative management, including discussing recurrence risk. Earlier recognition and intervention in the setting of worsening vitals would improve timeliness of care. Expand discussion of postoperative complications and ensure thorough description of operative techniques.Suggested Reading Topics: - Pediatric Appendicitis (SCORE curriculum) - Non-operative Management of Appendicitis in Children (ASE Core Curriculum) - Operative Techniques in Pediatric Appendectomy - Postoperative Care and Complications in Pediatric Surgery"
+}

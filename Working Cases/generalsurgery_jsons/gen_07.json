@@ -1,0 +1,203 @@
+{
+  "case_id": "gen_07",
+  "title": "Incisional Hernia",
+  "diagnosis_topic": "Herniation through a previous surgical incision",
+  "tags": [
+    "general_surgery",
+    "hernia",
+    "incisional"
+  ],
+  "setup_script": "\u201cA 65-year-old obese woman presents with a bulge at her midline laparotomy incision from a hysterectomy performed 5 years ago. The bulge enlarges when she stands and reduces when she lies down. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBP 130/75 mmHg, HR 88 bpm, RR 16/min, Temp 36.8 \u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "\u201cThere is an 8 cm reducible midline hernia with a soft sac; no tenderness or signs of incarceration.\u201d"
+    },
+    {
+      "trigger": "If resident requests CT scan of the abdomen",
+      "reply": "\u201cCT shows a 5 cm fascial defect with protrusion of preperitoneal fat; no bowel obstruction.\u201d"
+    },
+    {
+      "trigger": "If resident asks about risk factors",
+      "reply": "\u201cObesity, smoking, chronic cough, wound infection, and poor nutrition contribute to incisional hernia formation.\u201d"
+    },
+    {
+      "trigger": "If resident recommends elective repair",
+      "reply": "\u201cWhat operative approaches would you consider for this patient?\u201d"
+    },
+    {
+      "trigger": "If resident delays repair",
+      "reply": "\u201cOver time, the hernia enlarges and the risk of incarceration increases. How would you manage this situation?\u201d"
+    },
+    {
+      "trigger": "If resident discusses patient with minimal symptoms and significant comorbidities",
+      "reply": "\u201cWould you proceed with watchful waiting or recommend repair?\u201d"
+    },
+    {
+      "trigger": "If resident describes surgical techniques",
+      "reply": "\u201cPlease describe in detail your approach to open versus laparoscopic hernia repair.\u201d"
+    },
+    {
+      "trigger": "If resident discusses mesh placement",
+      "reply": "\u201cWhat are your indications for mesh, and what type would you select in this case?\u201d"
+    },
+    {
+      "trigger": "If resident outlines postoperative precautions",
+      "reply": "\u201cWhat activity modifications and precautions would you recommend after repair?\u201d"
+    },
+    {
+      "trigger": "If resident addresses recurrence risk",
+      "reply": "\u201cHow would you counsel the patient regarding recurrence after repair?\u201d"
+    },
+    {
+      "trigger": "If resident discusses prevention in future surgeries",
+      "reply": "\u201cWhat perioperative strategies may help reduce risk of incisional hernia formation?\u201d"
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "\u201cWhat instructions would you give regarding recognition of strangulation and when to seek urgent care?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Assessment of hernia size and reducibility via physical exam and imaging",
+    "Recognition and discussion of modifiable risk factors",
+    "Decision between elective repair versus watchful waiting",
+    "Choice of operative approach (open vs.\u00a0minimally invasive, use of mesh)",
+    "Postoperative management and recurrence prevention",
+    "Patient education regarding warning signs of incarceration/strangulation"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize incisional hernia; misattributes symptoms to unrelated diagnoses."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes possibility but misses key features; incomplete differential."
+          },
+          {
+            "score": 3,
+            "description": "Identifies incisional hernia but omits alternative diagnoses."
+          },
+          {
+            "score": 4,
+            "description": "Develops a complete differential and recognizes hernia as leading diagnosis."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies incisional hernia, articulates thorough differential, and integrates clinical/imaging data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize need for timely intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes risk but delays critical actions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates management but misses key steps."
+          },
+          {
+            "score": 4,
+            "description": "Appropriately prioritizes repair vs.\u00a0observation, risk modification, and surgical planning."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates excellent judgment, anticipates complications, and personalizes management to patient factors."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks structure or clarity."
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings and plan."
+          },
+          {
+            "score": 4,
+            "description": "Well-organized, logical, and empathetic ."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary, concise, compassionate  anticipating patient/team needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management of incisional hernia."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative options with major gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Accurately describes operative management, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative nuances, evidence-based techniques, and perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful or breaches patient confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but needs prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for ; demonstrates humility, sensitivity, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated solid diagnostic reasoning by identifying the incisional hernia and appropriately considering repair versus observation. Your explanation of surgical options and postoperative precautions was clear and well-structured.Areas for Improvement:Earlier and more detailed discussion of risk factor modification, including smoking cessation and weight optimization, would strengthen your management plan. Expanding on patient education regarding recurrence and complications would further improve your communication.Suggested Reading:- SCORE Curriculum: Ventral and Incisional Hernias- ACS/ASE Review Manual: Abdominal Wall Hernias- Current guidelines on mesh use and minimally invasive hernia repair"
+}

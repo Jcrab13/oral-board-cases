@@ -1,0 +1,208 @@
+{
+  "case_id": "eso_08",
+  "title": "Nonvariceal Upper Gastrointestinal Bleeding",
+  "diagnosis_topic": "Peptic ulcer disease causing upper GI bleeding",
+  "tags": [
+    "general_surgery",
+    "upper_gi_bleed",
+    "peptic_ulcer",
+    "endoscopy",
+    "resuscitation"
+  ],
+  "setup_script": "\u201cA 65-year-old man presents with melena and lightheadedness. He takes NSAIDs for chronic knee pain. He denies alcohol use. On arrival, he appears pale and diaphoretic.\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBP 95/60 mmHg, HR 110 bpm, RR 20/min, Temp 36.9\u00b0C; patient pale and diaphoretic.\u201d"
+    },
+    {
+      "trigger": "If resident secures two large-bore IVs and begins fluid resuscitation",
+      "reply": "\u201cAdminister crystalloid followed by transfusion to maintain hemoglobin above 7 g/dL.\u201d"
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "\u201cCBC, coagulation profile, and type & cross are obtained. Hemoglobin 7.6 g/dL, INR 1.2, BUN elevated disproportionately to creatinine.\u201d"
+    },
+    {
+      "trigger": "If resident starts IV proton pump inhibitor infusion",
+      "reply": "\u201cEsomeprazole bolus followed by continuous infusion is initiated.\u201d"
+    },
+    {
+      "trigger": "If resident considers nasogastric lavage",
+      "reply": "\u201cNG aspirate reveals coffee-ground material confirming an upper GI source.\u201d"
+    },
+    {
+      "trigger": "If resident consults gastroenterology for urgent endoscopy",
+      "reply": "\u201cEndoscopy shows a bleeding duodenal ulcer; epinephrine injection and hemoclip achieve hemostasis.\u201d"
+    },
+    {
+      "trigger": "If resident administers octreotide",
+      "reply": "\u201cNot required in nonvariceal bleeding; patient\u2019s status is unchanged.\u201d"
+    },
+    {
+      "trigger": "If resident delays endoscopy",
+      "reply": "\u201cPatient becomes hypotensive with ongoing melena. What do you want to do next?\u201d"
+    },
+    {
+      "trigger": "If endoscopic therapy fails",
+      "reply": "\u201cBleeding persists despite therapy. Interventional radiology is available for embolization, or operative oversewing may be required.\u201d"
+    },
+    {
+      "trigger": "If resident tests for Helicobacter pylori",
+      "reply": "\u201cBiopsy is positive for H. pylori. What is your management plan?\u201d"
+    },
+    {
+      "trigger": "If resident counsels on NSAID cessation and PPI maintenance",
+      "reply": "\u201cNSAIDs are discontinued. Long-term PPI therapy is prescribed.\u201d"
+    },
+    {
+      "trigger": "If resident discusses risk stratification",
+      "reply": "\u201cGlasgow\u2013Blatchford score is high, requiring admission and close monitoring.\u201d"
+    },
+    {
+      "trigger": "If patient rebleeds after initial endoscopy",
+      "reply": "\u201cPatient develops melena and tachycardia overnight. Repeat endoscopy shows recurrent bleeding at ulcer site. What is your next step?\u201d"
+    },
+    {
+      "trigger": "If interventional radiology embolization fails",
+      "reply": "\u201cIR is unable to control the bleeding. The patient continues to bleed with dropping hemoglobin and worsening hypotension. What operative management will you perform?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition and resuscitation of upper GI bleeding with hemodynamic instability",
+    "Appropriate use of IV PPI and early endoscopy for diagnosis and therapy",
+    "Differentiation between variceal and nonvariceal sources",
+    "Management of recurrent bleeding and failed endoscopic therapy",
+    "Long-term management including H. pylori eradication and NSAID avoidance"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider nonvariceal upper GI bleeding or misattributes symptoms to unrelated diagnoses"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features of upper GI bleeding"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes nonvariceal upper GI bleeding as a possibility but omits important alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential including upper GI bleeding and systematically rules out other causes"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies upper GI bleed as primary diagnosis, articulates complete differential with supporting/refuting data"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize instability or need for timely intervention"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays actions or orders inappropriate tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup/management but misses key steps or timing"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and therapy with appropriate timing"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, makes timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or engagement"
+          },
+          {
+            "score": 3,
+            "description": "Communicates findings and plans clearly but incompletely"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, and empathetic  with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary: succinct, compassionate, anticipates team and patient needs"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of procedural/operative management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Completely describes management, complications, and alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of evidence, operative nuances, perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, fails to recognize limitations"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Respectful and ethical but requires prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model , humility, cultural sensitivity, and ethics"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by recognizing the upper GI bleed and appropriately prioritizing resuscitation and endoscopy. Your communication of the management plan was structured and clear.Areas for Improvement:Earlier recognition of the risks of rebleeding and escalation to interventional or operative management could improve timeliness of care. Greater emphasis on long-term strategies, including H. pylori eradication and strict NSAID avoidance, is recommended.Suggested Reading Topics:- SCORE: Management of Upper GI Bleeding- ACS/ASE Review Manual: Peptic Ulcer Disease and Complications- Endoscopic and Surgical Management of Nonvariceal Hemorrhage"
+}

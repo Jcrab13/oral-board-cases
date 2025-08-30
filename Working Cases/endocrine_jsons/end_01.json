@@ -1,0 +1,198 @@
+{
+  "case_id": "end_01",
+  "title": "Adrenal Incidentaloma with Subclinical Cushing Syndrome",
+  "diagnosis_topic": "Functional Adrenocortical Tumor",
+  "tags": [
+    "endocrine",
+    "adrenal_incidentaloma",
+    "hypercortisolism"
+  ],
+  "setup_script": "\u201cA 50-year-old woman undergoes abdominal CT for renal colic, which incidentally reveals a 4 cm right adrenal mass. She has a history of mild hypertension and obesity. Laboratory workup shows elevated late-night salivary cortisol and failure to suppress on a 1 mg overnight dexamethasone test, consistent with subclinical Cushing syndrome. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident discusses differential",
+      "reply": "\u201cWhat diagnoses would you consider for an adrenal incidentaloma?\u201d"
+    },
+    {
+      "trigger": "If resident requests biochemical evaluation",
+      "reply": "\u201cThe results show elevated late-night salivary cortisol, nonsuppression on dexamethasone test, normal plasma metanephrines, and normal aldosterone/renin ratio. DHEAS is mildly elevated.\u201d"
+    },
+    {
+      "trigger": "If resident reviews imaging",
+      "reply": "\u201cCT scan shows a 4 cm right adrenal mass with 15 Hounsfield units and borderline washout characteristics.\u201d"
+    },
+    {
+      "trigger": "If resident discusses surgical thresholds",
+      "reply": "\u201cWhat features of this mass would make you consider adrenalectomy versus observation?\u201d"
+    },
+    {
+      "trigger": "If resident counsels patient",
+      "reply": "\u201cThe patient asks about risks and benefits of laparoscopic adrenalectomy compared with observation. How do you counsel her?\u201d"
+    },
+    {
+      "trigger": "If resident optimizes patient",
+      "reply": "\u201cThe patient\u2019s blood pressure is moderately elevated. What preoperative considerations do you have?\u201d"
+    },
+    {
+      "trigger": "If resident proceeds to surgery",
+      "reply": "\u201cYou perform a laparoscopic right adrenalectomy. Please describe the critical intraoperative steps.\u201d"
+    },
+    {
+      "trigger": "If resident discusses intraoperative findings",
+      "reply": "\u201cThe mass is resected without spillage and specimen is removed intact. What are your postoperative concerns?\u201d"
+    },
+    {
+      "trigger": "If resident addresses perioperative steroids",
+      "reply": "\u201cGiven the patient\u2019s suppressed contralateral adrenal, how would you manage steroid coverage perioperatively?\u201d"
+    },
+    {
+      "trigger": "If resident reviews pathology",
+      "reply": "\u201cFinal pathology demonstrates adrenocortical adenoma with no features concerning for carcinoma.\u201d"
+    },
+    {
+      "trigger": "If resident monitors post-op course",
+      "reply": "\u201cOn post-op day 2, the patient has fatigue and nausea. Morning cortisol is low. How do you manage this?\u201d"
+    },
+    {
+      "trigger": "If resident addresses long-term follow-up",
+      "reply": "\u201cWhat are your recommendations for surveillance and long-term management?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Appropriate hormonal evaluation of adrenal incidentaloma.",
+    "Use of imaging features and size to guide operative decision-making.",
+    "Safe and technically sound laparoscopic adrenalectomy.",
+    "Perioperative steroid coverage and taper.",
+    "Long-term surveillance for recurrence and management of metabolic effects."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider adrenal incidentaloma or misattributes findings."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes incidentaloma but misses key elements of differential."
+          },
+          {
+            "score": 3,
+            "description": "Considers adrenal incidentaloma and partial differential diagnosis."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential with appropriate workup."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies adrenal incidentaloma, provides thorough differential with supporting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize significance or delays intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes problem but orders inappropriate or delayed actions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management but with gaps in timing or completeness."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes testing and therapy appropriately, timely operative planning."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates excellent judgment, anticipates complications, coordinates multidisciplinary care."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides basic information but lacks clarity or structure."
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan clearly but misses opportunities for shared understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates logically and empathetically with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary : concise, compassionate, anticipates information needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of adrenalectomy indications or techniques."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major technical gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with some omissions."
+          },
+          {
+            "score": 4,
+            "description": "Provides complete description of management, complications, alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Mastery of evidence, operative nuances, perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, unprofessional, or breaches ethics."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful but needs prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, open to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for , humility, and ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by considering a comprehensive hormonal evaluation. Your communication regarding operative versus non-operative management was structured and clear.Areas for Improvement: Earlier recognition of the significance of imaging features and their role in operative decision-making would strengthen your clinical judgment. Further refinement in perioperative steroid management is recommended.Suggested Reading Topics: - Evaluation and management of adrenal incidentalomas (SCORE) - Surgical approaches to adrenal tumors (ACS/ASE Core Curriculum) - Perioperative management of steroid-dependent patients (Endocrine Society Guidelines)"
+}

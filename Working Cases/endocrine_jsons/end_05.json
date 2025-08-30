@@ -1,0 +1,212 @@
+{
+  "case_id": "end_05",
+  "title": "Medullary Thyroid Carcinoma in a Young Patient",
+  "diagnosis_topic": "Hereditary Medullary Thyroid Carcinoma (MEN 2)",
+  "tags": [
+    "endocrine",
+    "thyroid_cancer",
+    "men_2",
+    "hereditary_cancer",
+    "ret_mutation"
+  ],
+  "setup_script": "\u201cA 25-year-old man with a family history of MEN 2 presents for evaluation of a thyroid nodule. His serum calcitonin is elevated. Genetic testing confirms a RET mutation. Ultrasound shows a 1.8 cm hypoechoic thyroid nodule without suspicious cervical lymphadenopathy. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks about associated endocrinopathies",
+      "reply": "Provide that plasma metanephrines are normal and calcium/PTH are normal."
+    },
+    {
+      "trigger": "If resident proceeds without pheochromocytoma workup",
+      "reply": "Patient develops severe intraoperative hypertension during induction of anesthesia."
+    },
+    {
+      "trigger": "If resident requests neck ultrasound findings",
+      "reply": "Provide that there is a 1.8 cm hypoechoic thyroid nodule, no pathologic cervical lymphadenopathy."
+    },
+    {
+      "trigger": "If resident asks about calcitonin level",
+      "reply": "Serum calcitonin is 450 pg/mL."
+    },
+    {
+      "trigger": "If resident discusses surgical options",
+      "reply": "Ask what procedure they would recommend for this patient."
+    },
+    {
+      "trigger": "If resident recommends thyroid lobectomy only",
+      "reply": "Patient develops recurrent disease on follow-up calcitonin testing and imaging."
+    },
+    {
+      "trigger": "If resident recommends total thyroidectomy without central neck dissection",
+      "reply": "Pathology shows multiple positive central lymph nodes not removed."
+    },
+    {
+      "trigger": "If resident recommends total thyroidectomy with central neck dissection",
+      "reply": "Pathology confirms medullary thyroid carcinoma, with 2 of 8 central lymph nodes positive."
+    },
+    {
+      "trigger": "If resident asks about lateral neck management",
+      "reply": "No suspicious lymph nodes are seen on imaging; intraoperatively, no gross lateral disease is found."
+    },
+    {
+      "trigger": "If resident requests pathology",
+      "reply": "Pathology reveals medullary thyroid carcinoma, 1.8 cm, margins negative, 2 of 8 central lymph nodes positive, no extrathyroidal extension."
+    },
+    {
+      "trigger": "If resident asks about postoperative monitoring",
+      "reply": "Post-op calcium is normal, vocal cord function intact. Calcitonin on POD 1 is undetectable."
+    },
+    {
+      "trigger": "If resident inquires about long-term follow-up",
+      "reply": "Recommend serial calcitonin and CEA levels every 6 months, annual neck ultrasound."
+    },
+    {
+      "trigger": "If resident addresses genetic counseling",
+      "reply": "Patient is referred for genetic counseling; his younger sister is also found to carry a RET mutation."
+    },
+    {
+      "trigger": "If resident does not address family screening",
+      "reply": "Examiner asks what recommendations they have for at-risk family members."
+    },
+    {
+      "trigger": "If resident discusses prognosis",
+      "reply": "Prognosis depends on early intervention and calcitonin doubling time; currently favorable given complete resection and undetectable postoperative calcitonin."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of MEN 2 and importance of evaluating for pheochromocytoma prior to thyroid surgery.",
+    "Decision regarding appropriate surgical procedure (total thyroidectomy + central neck dissection).",
+    "Understanding that radioiodine ablation is not indicated for medullary thyroid carcinoma.",
+    "Importance of postoperative calcitonin surveillance.",
+    "Genetic counseling and family screening for RET mutation."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider medullary thyroid carcinoma or misattributes findings to benign disease."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes thyroid malignancy but does not connect findings to hereditary medullary thyroid carcinoma."
+          },
+          {
+            "score": 3,
+            "description": "Identifies medullary thyroid carcinoma but omits key elements of MEN 2 evaluation."
+          },
+          {
+            "score": 4,
+            "description": "Correctly identifies hereditary medullary thyroid carcinoma and orders appropriate endocrine and genetic testing."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly and comprehensively diagnoses hereditary medullary thyroid carcinoma, incorporates MEN 2 evaluation, and integrates all clinical and genetic data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Proceeds to thyroid surgery without evaluation for pheochromocytoma."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes need for surgery but chooses inadequate extent (lobectomy only)."
+          },
+          {
+            "score": 3,
+            "description": "Recommends thyroidectomy but incompletely addresses nodal disease."
+          },
+          {
+            "score": 4,
+            "description": "Recommends total thyroidectomy with central neck dissection, recognizes role of surveillance."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates superb judgment, anticipates complications, coordinates genetic counseling, and develops a comprehensive long-term management plan."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, or lacks patient-centered ."
+          },
+          {
+            "score": 2,
+            "description": "Provides some relevant information but lacks clarity or completeness."
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and management plan adequately."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly and logically, empathetic with patient and family."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , anticipates patient and family concerns, provides structured and compassionate counseling."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of surgical management of medullary thyroid carcinoma."
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgery as treatment but with major technical or conceptual gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes thyroidectomy but incompletely addresses lymph node management."
+          },
+          {
+            "score": 4,
+            "description": "Accurately describes total thyroidectomy with central neck dissection, perioperative considerations, and follow-up."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative technique, perioperative management, and evidence-based surveillance strategies."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect or ignores hereditary implications."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Professional behavior but limited attention to genetic/family implications."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and patient-centered."
+          },
+          {
+            "score": 5,
+            "description": "Role model , demonstrates cultural sensitivity, ethical awareness, and commitment to family-centered care."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing the hereditary nature of medullary thyroid carcinoma and incorporating MEN 2 evaluation. You communicated your surgical plan clearly and showed good understanding of the operative and postoperative considerations.Areas for Improvement: Earlier recognition of the importance of pheochromocytoma screening would improve patient safety. Consider strengthening your approach to nodal management in medullary thyroid carcinoma and expanding discussion of long-term genetic counseling implications.Suggested Reading Topics: - SCORE Curriculum: Medullary Thyroid Carcinoma - ACS/ASE Review Manual: Multiple Endocrine Neoplasia Syndromes - ATA Guidelines on Management of Medullary Thyroid Carcinoma"
+}

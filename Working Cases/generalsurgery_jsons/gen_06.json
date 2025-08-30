@@ -1,0 +1,222 @@
+{
+  "case_id": "gen_06",
+  "title": "Incarcerated Inguinal Hernia",
+  "diagnosis_topic": "Irreducible inguinal hernia with risk of strangulation",
+  "tags": [
+    "general_surgery",
+    "hernia",
+    "emergency"
+  ],
+  "setup_script": "\u201cA 60-year-old man with a longstanding right inguinal hernia presents to the emergency department with acute right groin pain and a bulge that he cannot reduce. He also reports nausea and vomiting. On exam, you note a tender, non-reducible mass in the right inguinal canal. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests vital signs",
+      "reply": "BP 135/85 mmHg, HR 98 bpm, RR 18/min, Temp 37.6 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "No peritonitis; abdomen soft, mild distention, bowel sounds present."
+    },
+    {
+      "trigger": "If resident examines groin",
+      "reply": "Tender, non-reducible mass in right inguinal canal; skin erythematous, no necrosis."
+    },
+    {
+      "trigger": "If resident attempts gentle manual reduction (taxis) after analgesia/Trendelenburg",
+      "reply": "Reduction fails, pain worsens."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 13,000/\u00b5L, lactate normal, electrolytes unremarkable."
+    },
+    {
+      "trigger": "If resident orders imaging",
+      "reply": "Ultrasound shows incarcerated small bowel loop with venous congestion but preserved arterial flow."
+    },
+    {
+      "trigger": "If resident delays operative planning",
+      "reply": "Patient develops worsening pain, tachycardia HR 120, new fever 38.5 \u00b0C."
+    },
+    {
+      "trigger": "If resident prepares patient NPO, places IV fluids, and administers broad-spectrum antibiotics",
+      "reply": "Patient stabilized for operative intervention."
+    },
+    {
+      "trigger": "If resident proceeds to emergent inguinal exploration",
+      "reply": "A standard groin incision is made over the inguinal canal. The external oblique aponeurosis is opened, cord structures isolated, and the hernia sac is identified and opened. A strangulated loop of small bowel is encountered."
+    },
+    {
+      "trigger": "If resident assesses bowel viability",
+      "reply": "The loop shows patchy necrosis with dusky appearance and loss of peristalsis."
+    },
+    {
+      "trigger": "If resident chooses to enlarge exposure",
+      "reply": "Conversion to midline laparotomy is performed for safe reduction and resection."
+    },
+    {
+      "trigger": "If resident performs small bowel resection",
+      "reply": "The nonviable segment is resected with primary anastomosis using stapled or hand-sewn technique, depending on stability and contamination."
+    },
+    {
+      "trigger": "If resident considers mesh use",
+      "reply": "Because of contamination, hernia repair is performed with primary tissue approximation without mesh placement."
+    },
+    {
+      "trigger": "If resident closes",
+      "reply": "Groin incision closed in layers; abdomen closed primarily after irrigation. Temporary abdominal closure may be used if instability present."
+    },
+    {
+      "trigger": "If resident delays surgery further",
+      "reply": "Patient develops peritonitis, septic shock requiring vasopressors."
+    },
+    {
+      "trigger": "If resident discusses elective vs.\u00a0emergent repair",
+      "reply": "Examiner asks: \u201cHow do you counsel patients with reducible hernias to prevent this scenario?\u201d"
+    },
+    {
+      "trigger": "If resident outlines postoperative care",
+      "reply": "Nasogastric tube until bowel function returns, IV antibiotics continued, early ambulation, DVT prophylaxis, and avoidance of heavy lifting for 4\u20136 weeks."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Reinforces recognition of recurrence, contralateral hernia risk, and importance of weight control."
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of incarcerated hernia and risk of strangulation",
+    "Decision-making regarding attempted reduction vs.\u00a0emergent surgery",
+    "Appropriate preoperative management (IV fluids, antibiotics, NPO)",
+    "Operative management: resection of non-viable bowel, avoidance of mesh in contaminated field",
+    "Postoperative care and counseling for prevention of recurrence"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize incarcerated hernia, attributes symptoms incorrectly"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes hernia but misses risk of strangulation or alternative diagnoses"
+          },
+          {
+            "score": 3,
+            "description": "Identifies incarcerated hernia as likely but incomplete differential"
+          },
+          {
+            "score": 4,
+            "description": "Comprehensive differential including incarcerated hernia; uses exam and labs appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly recognizes incarcerated hernia, articulates complete differential with supporting/refuting data"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency, delays care dangerously"
+          },
+          {
+            "score": 2,
+            "description": "Identifies urgency but delays key interventions or tests"
+          },
+          {
+            "score": 3,
+            "description": "Initiates reasonable management but misses timing or key steps"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes timely resuscitation, imaging, and surgery appropriately"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care seamlessly, and makes timely, correct decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides partial or confusing explanations"
+          },
+          {
+            "score": 3,
+            "description": "Clear  of findings and plan, but limited engagement with team/patient"
+          },
+          {
+            "score": 4,
+            "description": "Consistently clear, logical, empathetic with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary: succinct, compassionate, anticipates team/patient information needs"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management for incarcerated hernia"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgery but with major gaps in indications or technique"
+          },
+          {
+            "score": 3,
+            "description": "Describes operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Complete knowledge of management, complications, alternatives"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative nuances, evidence-based decisions, perioperative considerations"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unsafe behavior"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect/integrity but requires prompting for reflection"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, cultural sensitivity, ethical standards"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated solid diagnostic reasoning by recognizing the incarcerated hernia and prioritizing timely surgical intervention. Your clinical judgment in preoperative preparation and antibiotic selection was appropriate. Communication of the operative plan was clear and structured.Areas for Improvement:Earlier escalation to surgery would have avoided progression to strangulation. Review the operative principles of bowel resection and the contraindications for mesh placement in contaminated fields.Suggested Reading Topics:- Management of Incarcerated and Strangulated Hernias (SCORE)- Principles of Emergency Bowel Resection (ACS/ASE Review Manual)- Indications for Mesh Use in Hernia Surgery (SAGES Guidelines)"
+}

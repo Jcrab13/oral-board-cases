@@ -1,0 +1,199 @@
+{
+  "case_id": "eso_02",
+  "title": "Barrett\u2019s Esophagus with High-Grade Dysplasia",
+  "diagnosis_topic": "Premalignant change in distal esophagus with high-grade dysplasia",
+  "tags": [
+    "esophagogastric",
+    "barrett\u2019s_esophagus",
+    "dysplasia"
+  ],
+  "setup_script": "\u201cA 48-year-old man with chronic gastroesophageal reflux disease undergoes surveillance endoscopy. The gastroenterologist notes a segment of salmon-colored mucosa in the distal esophagus. Biopsies are obtained, and pathology reports high-grade dysplasia. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident requests pathology confirmation",
+      "reply": "\u201cHistology is reviewed by two independent GI pathologists, both confirming high-grade dysplasia without invasive carcinoma.\u201d"
+    },
+    {
+      "trigger": "If resident discusses management options",
+      "reply": "\u201cWhat treatment approaches are available for this patient?\u201d"
+    },
+    {
+      "trigger": "If resident chooses endoscopic eradication therapy",
+      "reply": "\u201cEndoscopic mucosal resection is performed on nodular areas. Pathology confirms high-grade dysplasia without invasion. Radiofrequency ablation is then applied to the remaining Barrett\u2019s segment. What is your surveillance plan?\u201d"
+    },
+    {
+      "trigger": "If resident selects surveillance alone",
+      "reply": "\u201cThree months later, repeat endoscopy shows progression with nodularity and multifocal high-grade dysplasia. How do you proceed?\u201d"
+    },
+    {
+      "trigger": "If resident delays intervention",
+      "reply": "\u201cThe patient presents six months later with dysphagia. Biopsies reveal intramucosal adenocarcinoma. What is your management now?\u201d"
+    },
+    {
+      "trigger": "If resident considers esophagectomy",
+      "reply": "\u201cWhat operative approach would you consider, and why?\u201d"
+    },
+    {
+      "trigger": "If resident begins esophagectomy",
+      "reply": "\u201cPlease describe your operative steps for an Ivor Lewis or transhiatal esophagectomy.\u201d"
+    },
+    {
+      "trigger": "If resident performs esophagectomy",
+      "reply": "\u201cPathology reveals high-grade dysplasia throughout and no invasive carcinoma. The patient recovers uneventfully. How will you structure follow-up?\u201d"
+    },
+    {
+      "trigger": "If resident prescribes acid suppression",
+      "reply": "\u201cThe patient is started on high-dose proton pump inhibitor therapy. What is the role of ongoing acid suppression?\u201d"
+    },
+    {
+      "trigger": "If resident discusses lifestyle modifications",
+      "reply": "\u201cThe patient asks what changes he can make to reduce risk of recurrence or progression.\u201d"
+    },
+    {
+      "trigger": "If resident asks about H. pylori",
+      "reply": "\u201cTesting is negative for H. pylori.\u201d"
+    },
+    {
+      "trigger": "If resident addresses patient education",
+      "reply": "\u201cThe patient asks about his risk of cancer in the future. How do you counsel him?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Confirmation of high-grade dysplasia by expert pathology",
+    "Decision between endoscopic eradication therapy and surgical esophagectomy",
+    "Technical performance and intraoperative decision-making if esophagectomy is performed",
+    "Appropriate use of surveillance vs.\u00a0intervention",
+    "Importance of acid suppression and lifestyle modification",
+    "Patient education and counseling on risk of progression"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize Barrett\u2019s esophagus with high-grade dysplasia or misattributes findings."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential, overlooks key features."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes Barrett\u2019s with dysplasia but omits alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Develops comprehensive differential and rules out other causes."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies high-grade dysplasia with complete, well-supported differential."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Misses urgency, no intervention."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays action."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup but misses key timing/steps."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes timely definitive therapy."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, makes timely decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, lacks empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but unclear/incomplete."
+          },
+          {
+            "score": 3,
+            "description": "Clear but misses confirmation of understanding."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly, logically, empathetically."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , anticipates patient/team needs."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of management for Barrett\u2019s with dysplasia; unable to describe esophagectomy."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative options but with major gaps in technique/indications."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with omissions or uncertainties; limited understanding of alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Provides complete description of esophagectomy techniques, perioperative care, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative approach, technical steps, complication avoidance, and evidence-based perioperative considerations."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect, lapses in accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect but requires prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: humility, cultural sensitivity, ethical behavior."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by promptly recognizing Barrett\u2019s esophagus with high-grade dysplasia and appropriately considering both endoscopic and surgical management. Your operative description of esophagectomy was structured and complete.Areas for Improvement:Strengthen your management approach by explicitly addressing surveillance schedules and the role of acid suppression after therapy. Be more detailed in describing technical steps and perioperative considerations for esophagectomy.Suggested Reading:- SCORE: Barrett\u2019s Esophagus and Esophageal Dysplasia- ASE Core Curriculum: Esophagectomy \u2013 operative approaches and outcomes- NCCN Guidelines: Esophageal and Esophagogastric Junction Cancers"
+}

@@ -1,0 +1,202 @@
+{
+  "case_id": "gen_08",
+  "title": "Large Bowel Obstruction from Colon Cancer",
+  "diagnosis_topic": "Malignant Large Bowel Obstruction",
+  "tags": [
+    "general_surgery",
+    "large_bowel_obstruction",
+    "colon_cancer"
+  ],
+  "setup_script": "\u201cA 70-year-old man presents with progressive abdominal distension, obstipation, and weight loss over the past two weeks. He reports intermittent cramping abdominal pain and nausea. On arrival, he is uncomfortable but alert. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "BP 110/70 mmHg, HR 100 bpm, RR 18/min, Temp 37.3 \u00b0C."
+    },
+    {
+      "trigger": "If resident performs abdominal and rectal exam",
+      "reply": "Abdomen is distended and tympanitic with hyperactive bowel sounds; rectal vault is empty; no palpable mass."
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "WBC 13,000/\u00b5L, sodium 130 mEq/L, hemoglobin 10 g/dL."
+    },
+    {
+      "trigger": "If resident orders abdominal X-ray",
+      "reply": "Markedly dilated colon with haustral markings; cecum measures 9 cm; no free air."
+    },
+    {
+      "trigger": "If resident orders CT abdomen/pelvis with contrast",
+      "reply": "Apple-core lesion in the sigmoid colon with proximal dilation; no evidence of perforation."
+    },
+    {
+      "trigger": "If resident initiates resuscitation",
+      "reply": "Patient is made NPO, NG tube placed with 500 mL bilious output, IV fluids started; broad-spectrum antibiotics given. Vitals improve modestly."
+    },
+    {
+      "trigger": "If resident delays decompression",
+      "reply": "The patient becomes hypotensive (BP 85/50), tachycardic (HR 120), abdomen tense; free air is seen on repeat X-ray suggesting cecal perforation."
+    },
+    {
+      "trigger": "If resident consults surgery",
+      "reply": "Patient is taken for operative management. What operation would you perform?"
+    },
+    {
+      "trigger": "If resident proceeds with endoscopic stent",
+      "reply": "Stent is placed across the sigmoid lesion; abdomen decompresses; patient stabilizes. What is your next step in planning?"
+    },
+    {
+      "trigger": "If resident recommends emergent surgery",
+      "reply": "Exploratory laparotomy reveals a sigmoid obstructing mass. What are your operative steps?"
+    },
+    {
+      "trigger": "If resident chooses resection with primary anastomosis",
+      "reply": "A sigmoid colectomy with primary anastomosis is performed; no gross contamination noted. Post-op vitals are stable."
+    },
+    {
+      "trigger": "If resident chooses resection with colostomy",
+      "reply": "Hartmann\u2019s procedure is performed; patient recovers uneventfully in ICU."
+    },
+    {
+      "trigger": "If resident discusses postoperative considerations",
+      "reply": "Pathology shows adenocarcinoma. Plan includes oncology referral for staging and adjuvant therapy. What will you counsel the patient about long-term management?"
+    }
+  ],
+  "critical_decision_points": [
+    "Diagnosis of large bowel obstruction and differentiation of causes",
+    "Timely resuscitation and decompression of the obstructed colon",
+    "Decision-making between stent placement and emergent surgery",
+    "Recognition and management of perforation risk",
+    "Postoperative planning and oncologic management"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize bowel obstruction; attributes findings to unrelated causes."
+          },
+          {
+            "score": 2,
+            "description": "Considers obstruction but with delayed or incomplete evaluation; misses key features."
+          },
+          {
+            "score": 3,
+            "description": "Identifies large bowel obstruction and orders appropriate initial tests."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential, interprets imaging and labs appropriately, and recognizes malignant obstruction."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly and accurately identifies malignant large bowel obstruction, articulates differential, and integrates supporting/refuting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Does not recognize urgency; fails to initiate resuscitation or definitive management."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays key actions or makes inappropriate management decisions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates workup and management, but with missed or delayed steps."
+          },
+          {
+            "score": 4,
+            "description": "Appropriately prioritizes resuscitation, decompression, and timely operative planning."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates excellent judgment with anticipatory management, timely decisions, and coordination of multidisciplinary care."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or incomplete; unable to convey plan clearly."
+          },
+          {
+            "score": 2,
+            "description": "Provides some information but lacks clarity, organization, or engagement."
+          },
+          {
+            "score": 3,
+            "description": "Communicates findings and management plan clearly, though with some gaps."
+          },
+          {
+            "score": 4,
+            "description": "Organized, clear, and empathetic  with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Succinct, structured, and compassionate; anticipates information needs of patient, team, and consultants."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management for malignant large bowel obstruction."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative options but with major gaps in knowledge."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with some omissions or uncertainty."
+          },
+          {
+            "score": 4,
+            "description": "Demonstrates solid knowledge of operative management, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Mastery of current evidence, operative technique nuances, and perioperative considerations for malignant obstruction."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or fails to recognize limitations."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but limited self-reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, and receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model : ethical, culturally sensitive, humble, and reliable."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "StrengthsYou demonstrated strong diagnostic reasoning in recognizing large bowel obstruction and appropriately pursuing confirmatory imaging. Your prioritization of resuscitation and decompression reflected sound clinical judgment. Communication of your management plan was structured and clear.Areas for ImprovementAt times, decisions around stenting versus immediate surgery could have been more clearly articulated, particularly in unstable patients. Earlier recognition of perforation risk and escalation to operative intervention would strengthen your management.Suggested Reading Topics- Management of Malignant Large Bowel Obstruction (SCORE)- Role of Stenting vs.\u00a0Surgery in Left-Sided Obstruction (NCCN Guidelines)- Surgical Approaches to Emergency Colectomy (ACS/ASE Review Manual)"
+}

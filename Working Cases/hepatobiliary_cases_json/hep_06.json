@@ -1,0 +1,207 @@
+{
+  "case_id": "hep_06",
+  "title": "Incidental Gallbladder Cancer",
+  "diagnosis_topic": "T2 Gallbladder Adenocarcinoma Discovered on Pathology",
+  "tags": [
+    "hepatobiliary",
+    "gallbladder_cancer",
+    "oncology"
+  ],
+  "setup_script": "A 65-year-old woman underwent laparoscopic cholecystectomy for symptomatic gallstones. She recovered well postoperatively. One week later, the pathology report reveals an incidental pT2 gallbladder adenocarcinoma invading the perimuscular connective tissue. You are asked to see her in clinic to discuss further management. How would you proceed?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews operative note",
+      "reply": "Gallbladder removed intact, no bile spillage. Cystic duct margin was negative on frozen section."
+    },
+    {
+      "trigger": "If resident orders staging imaging",
+      "reply": "CT chest/abdomen/pelvis shows no distant metastasis. MRCP shows no common bile duct involvement."
+    },
+    {
+      "trigger": "If resident discusses extended cholecystectomy",
+      "reply": "For T2 disease, hepatic bed resection (segments IVB/V) with hepatoduodenal ligament lymphadenectomy is indicated. Please describe your operative technique in detail."
+    },
+    {
+      "trigger": "If resident describes operative steps (hepatic wedge resection, lymphadenectomy, margin assessment)",
+      "reply": "Operation is completed successfully without complications. What are your immediate postoperative considerations?"
+    },
+    {
+      "trigger": "If resident omits key steps",
+      "reply": "What else would you include in your operative approach?"
+    },
+    {
+      "trigger": "If resident delays reoperation beyond 6 weeks",
+      "reply": "The patient develops new liver lesions on follow-up imaging. What are your concerns now?"
+    },
+    {
+      "trigger": "If resident states simple cholecystectomy alone is sufficient",
+      "reply": "Recurrence risk is high. How would you address this with the patient?"
+    },
+    {
+      "trigger": "If resident evaluates margins",
+      "reply": "Cystic duct margin is negative. How does this affect your surgical decision making?"
+    },
+    {
+      "trigger": "If resident considers bile duct excision",
+      "reply": "Extrahepatic bile duct excision is not performed unless the margin is positive. What is your plan?"
+    },
+    {
+      "trigger": "If resident refers to medical oncology",
+      "reply": "Medical oncology is consulted. What adjuvant treatment considerations are there?"
+    },
+    {
+      "trigger": "If resident explains prognosis",
+      "reply": "Five-year survival ranges from 60\u201380% if completely resected early. How would you counsel the patient?"
+    },
+    {
+      "trigger": "If resident outlines surveillance",
+      "reply": "What surveillance schedule would you recommend after resection?"
+    },
+    {
+      "trigger": "If resident identifies risk factors",
+      "reply": "What risk factors are associated with gallbladder cancer?"
+    },
+    {
+      "trigger": "If resident coordinates multidisciplinary care",
+      "reply": "Which specialties would you involve in her care?"
+    }
+  ],
+  "critical_decision_points": [
+    "Interpretation of incidental gallbladder cancer pathology and staging",
+    "Indications for extended cholecystectomy with hepatic resection and lymphadenectomy",
+    "Description of operative technique for extended cholecystectomy",
+    "Timing of reoperation to minimize tumor spread",
+    "Postoperative surveillance and adjuvant therapy considerations",
+    "Patient counseling regarding prognosis and risk factors"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider gallbladder cancer, attributes findings to unrelated causes"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes possibility but misses key staging or differential elements"
+          },
+          {
+            "score": 3,
+            "description": "Identifies gallbladder cancer, obtains partial workup"
+          },
+          {
+            "score": 4,
+            "description": "Comprehensive staging, accurate interpretation of pathology"
+          },
+          {
+            "score": 5,
+            "description": "Rapid recognition with complete staging, integrates pathology and risk factors into differential"
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Inappropriate management, no recognition of need for re-operation"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or inadequate management decisions"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes extended resection but with gaps in timing/indications"
+          },
+          {
+            "score": 4,
+            "description": "Timely decisions with correct sequencing of surgery and adjuvant care"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, excellent timing of interventions"
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but limited clarity or engagement"
+          },
+          {
+            "score": 3,
+            "description": "Clear explanation of diagnosis and management, some missed opportunities"
+          },
+          {
+            "score": 4,
+            "description": "Logical, empathetic, structured communication with team and patient"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary clarity, compassion, and anticipation of patient/team needs"
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "No understanding of operative management for gallbladder cancer"
+          },
+          {
+            "score": 2,
+            "description": "Identifies resection but omits or misstates critical steps"
+          },
+          {
+            "score": 3,
+            "description": "Adequate description of hepatic bed resection or lymphadenectomy with minor gaps"
+          },
+          {
+            "score": 4,
+            "description": "Clear, detailed operative technique including hepatic resection, lymphadenectomy, margin evaluation, and complications"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative management: precise technical description, perioperative considerations, and integration of current guidelines"
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, unprofessional behavior"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent integrity, lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Respectful, maintains integrity with some prompting"
+          },
+          {
+            "score": 4,
+            "description": "Consistently professional, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model professionalism, humility, cultural sensitivity, ethical behavior"
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by appropriately interpreting the incidental cancer finding and pursuing staging workup. Your recognition of the need for extended resection showed solid clinical judgment. Areas for Improvement:Earlier discussion of the importance of timing for reoperation would strengthen your management plan. Consider being more structured when outlining surveillance and adjuvant therapy recommendations. Suggested Reading Topics:- Management of Incidental Gallbladder Cancer (SCORE Curriculum)- Extended Cholecystectomy for T2 Gallbladder Cancer (Surgical Clinics of North America)- NCCN Guidelines for Hepatobiliary Cancers"
+  }
+}

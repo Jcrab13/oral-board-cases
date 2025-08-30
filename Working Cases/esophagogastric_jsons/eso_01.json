@@ -1,0 +1,212 @@
+{
+  "case_id": "eso_01",
+  "title": "Achalasia",
+  "diagnosis_topic": "Failure of lower esophageal sphincter relaxation and absence of peristalsis",
+  "tags": [
+    "esophagogastric",
+    "achalasia",
+    "motility_disorder"
+  ],
+  "setup_script": "\"A 45-year-old woman presents with progressive difficulty swallowing both solids and liquids over several months. She reports regurgitation of undigested food and has developed a nocturnal cough. She has lost 10 pounds over this time. How would you proceed with this patient?\"",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews vital signs",
+      "reply": "\"All within normal limits.\""
+    },
+    {
+      "trigger": "If resident obtains detailed history",
+      "reply": "\"She describes dysphagia to solids and liquids, regurgitation of saliva and undigested food, 10-pound weight loss, and denies heartburn.\""
+    },
+    {
+      "trigger": "If resident orders barium esophagram",
+      "reply": "\"Barium swallow shows a markedly dilated esophagus with bird-beak narrowing at the gastroesophageal junction and delayed emptying.\""
+    },
+    {
+      "trigger": "If resident orders esophageal manometry",
+      "reply": "\"Manometry demonstrates elevated LES pressure with incomplete relaxation and absent peristalsis.\""
+    },
+    {
+      "trigger": "If resident performs upper endoscopy",
+      "reply": "\"Endoscopy rules out malignancy; no obstructing lesion identified.\""
+    },
+    {
+      "trigger": "If resident discusses treatment options",
+      "reply": "\"Therapeutic options include pneumatic dilation, laparoscopic Heller myotomy with fundoplication, POEM (peroral endoscopic myotomy), or botulinum toxin injection.\""
+    },
+    {
+      "trigger": "If resident recommends Heller myotomy",
+      "reply": "\"This patient is considered a good candidate for laparoscopic Heller myotomy with Dor fundoplication. What are the key technical steps you would describe?\""
+    },
+    {
+      "trigger": "If resident outlines operative technique",
+      "reply": "\"Ports are placed laparoscopically, the esophagus is mobilized, and a 6-cm myotomy on the esophagus with a 2-cm extension onto the stomach is performed. A Dor fundoplication is used for reflux prevention.\""
+    },
+    {
+      "trigger": "If resident mentions intraoperative mucosal perforation",
+      "reply": "\"How would you manage an intraoperative esophageal mucosal perforation?\""
+    },
+    {
+      "trigger": "If resident answers",
+      "reply": "\"Small mucosal tears are repaired primarily and the myotomy is extended to ensure adequate relief. A wrap is still performed.\""
+    },
+    {
+      "trigger": "If patient is high surgical risk",
+      "reply": "\"For high-risk patients, botulinum toxin injection or pneumatic dilation may be performed but carry higher recurrence risk.\""
+    },
+    {
+      "trigger": "If resident delays treatment",
+      "reply": "\"Without intervention, the esophagus progressively dilates, symptoms worsen, and risk of aspiration pneumonia increases.\""
+    },
+    {
+      "trigger": "If resident discusses postoperative management",
+      "reply": "\"Postoperatively, the patient is started on clear liquids, diet advanced as tolerated, and monitored for GERD symptoms. Proton pump inhibitors are prescribed as needed.\""
+    },
+    {
+      "trigger": "If resident explains long-term follow-up",
+      "reply": "\"Follow-up includes monitoring symptoms, periodic imaging or manometry if indicated, and addressing recurrent dysphagia with repeat intervention.\""
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "\"The patient is advised to eat small frequent meals, elevate the head of bed, and avoid lying flat after eating.\""
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of achalasia and differentiation from pseudoachalasia",
+    "Use of appropriate diagnostic tests (barium swallow, manometry, endoscopy)",
+    "Selection of definitive therapy based on age and comorbidities",
+    "Technical description of Heller myotomy and fundoplication",
+    "Recognition and management of intraoperative complications (e.g., mucosal perforation)",
+    "Postoperative reflux management and surveillance for recurrence",
+    "Patient education on lifestyle modifications and long-term follow-up"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize achalasia; attributes symptoms incorrectly"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; misses key features"
+          },
+          {
+            "score": 3,
+            "description": "Considers achalasia but differential is incomplete"
+          },
+          {
+            "score": 4,
+            "description": "Accurately diagnoses achalasia with appropriate testing"
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies achalasia, rules out pseudoachalasia, and integrates all diagnostic modalities"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to provide appropriate diagnostic or therapeutic plan"
+          },
+          {
+            "score": 2,
+            "description": "Identifies diagnosis but delays or selects inappropriate treatment"
+          },
+          {
+            "score": 3,
+            "description": "Proposes reasonable management with some omissions"
+          },
+          {
+            "score": 4,
+            "description": "Selects appropriate treatment considering patient factors"
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates excellent judgment, tailors therapy, anticipates complications"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, or lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides partial information, lacks structure"
+          },
+          {
+            "score": 3,
+            "description": "Communicates diagnosis and plan adequately"
+          },
+          {
+            "score": 4,
+            "description": "Clear, organized, empathetic  with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Exemplary , addresses complex decisions and patient concerns"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of treatment options or operative management"
+          },
+          {
+            "score": 2,
+            "description": "Identifies surgical options but lacks detail"
+          },
+          {
+            "score": 3,
+            "description": "Describes basic steps of Heller myotomy or alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Explains surgical options, technical steps, and postoperative care"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of operative approaches (Heller, POEM, dilation), complication management, and evidence-based decision-making"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Unprofessional, disrespectful, or unsafe"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains  but with occasional lapses"
+          },
+          {
+            "score": 4,
+            "description": "Consistently professional, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model: ethical, culturally sensitive, respectful, and collaborative"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated solid diagnostic reasoning in recognizing achalasia and appropriately applying confirmatory testing. Your discussion of management options reflected awareness of surgical and non-surgical approaches. Communication was organized and clear.Areas for Improvement: Consider providing greater detail when describing the technical aspects of Heller myotomy and how to manage intraoperative complications such as mucosal perforation. More emphasis on comparing outcomes of POEM versus Heller myotomy in different populations would strengthen your responses.Suggested Reading Topics:Achalasia: pathophysiology and management (SCORE)Operative techniques for laparoscopic Heller myotomy with fundoplication (ACS/ASE Review Manual)Comparative outcomes of POEM vs Heller myotomy (current literature review)"
+}

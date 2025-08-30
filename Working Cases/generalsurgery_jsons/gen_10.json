@@ -1,0 +1,212 @@
+{
+  "case_id": "gen_10",
+  "title": "Perforated Peptic Ulcer",
+  "diagnosis_topic": "Full-thickness gastric or duodenal ulcer resulting in peritonitis",
+  "tags": [
+    "general_surgery",
+    "peptic_ulcer",
+    "perforation"
+  ],
+  "setup_script": "\u201cA 50-year-old man with a history of NSAID use presents with sudden, severe epigastric pain radiating to the back. He appears acutely ill and his abdomen is rigid. How would you proceed?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident obtains vital signs",
+      "reply": "\u201cBP 90/60 mmHg, HR 120 bpm, RR 24/min, Temp 38 \u00b0C.\u201d"
+    },
+    {
+      "trigger": "If resident performs abdominal exam",
+      "reply": "\u201cYou note board-like rigidity with diffuse rebound tenderness and absent bowel sounds.\u201d"
+    },
+    {
+      "trigger": "If resident orders labs",
+      "reply": "\u201cWBC 18 K/\u00b5L, lactate 4 mmol/L, hemoglobin within normal range.\u201d"
+    },
+    {
+      "trigger": "If resident requests upright chest or abdominal X-ray",
+      "reply": "\u201cFree air is seen under the diaphragm.\u201d"
+    },
+    {
+      "trigger": "If resident requests CT scan",
+      "reply": "\u201cCT confirms pneumoperitoneum with free fluid and no evidence of localized containment.\u201d"
+    },
+    {
+      "trigger": "If resident initiates IV fluids and broad-spectrum antibiotics with NG decompression",
+      "reply": "\u201cThe patient stabilizes slightly with fluids and NG decompression in place.\u201d"
+    },
+    {
+      "trigger": "If resident delays operative intervention",
+      "reply": "\u201cThe patient develops worsening hypotension and confusion, consistent with progressing sepsis.\u201d"
+    },
+    {
+      "trigger": "If resident proceeds to surgery",
+      "reply": "\u201cYou bring the patient emergently to the operating room. Please describe your operative approach.\u201d"
+    },
+    {
+      "trigger": "If resident describes laparoscopic approach",
+      "reply": "\u201cYou perform laparoscopic exploration and identify a 1 cm perforation on the anterior duodenal bulb. What are your next operative steps?\u201d"
+    },
+    {
+      "trigger": "If resident describes open approach",
+      "reply": "\u201cYou perform a midline laparotomy. The same 1 cm perforation is identified. What operative steps will you perform?\u201d"
+    },
+    {
+      "trigger": "If resident performs Graham patch repair",
+      "reply": "\u201cYou complete an omental patch repair with peritoneal irrigation. The patient stabilizes intraoperatively.\u201d"
+    },
+    {
+      "trigger": "If resident does not describe operative details fully",
+      "reply": "\u201cPlease describe the steps of the repair, including preparation, patch placement, and closure.\u201d"
+    },
+    {
+      "trigger": "If resident does not address antibiotic coverage or postoperative care",
+      "reply": "\u201cThe patient is extubated postoperatively. What additional postoperative management will you provide?\u201d"
+    },
+    {
+      "trigger": "If resident addresses H. pylori and ulcer prevention",
+      "reply": "\u201cPPI therapy is initiated. H. pylori testing is pending. What follow-up counseling will you provide to this patient?\u201d"
+    },
+    {
+      "trigger": "If resident discusses nonoperative management",
+      "reply": "\u201cIn what scenario would nonoperative management be considered for perforated ulcer disease?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Recognition of perforated viscus from exam and imaging",
+    "Timely resuscitation with IV fluids, antibiotics, and NG decompression",
+    "Decision to proceed with operative management",
+    "Appropriate operative strategy (laparoscopic vs.\u00a0open, Graham patch repair)",
+    "Ability to describe operative details (omentum mobilization, defect closure, irrigation)",
+    "Consideration of postoperative PPI therapy and H. pylori eradication",
+    "Understanding of indications and limitations of nonoperative management"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize perforated viscus; attributes findings to unrelated causes."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete diagnosis; misses key features of peritonitis."
+          },
+          {
+            "score": 3,
+            "description": "Considers perforated ulcer but omits alternatives."
+          },
+          {
+            "score": 4,
+            "description": "Develops complete differential; identifies perforated ulcer appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly recognizes perforated ulcer, articulates comprehensive differential and supporting data."
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize patient instability or surgical urgency."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but delays critical steps."
+          },
+          {
+            "score": 3,
+            "description": "Initiates management but misses key actions or timing."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes resuscitation, diagnostics, and surgery with appropriate timing."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, makes timely, high-quality decisions."
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, unclear, or lacking empathy."
+          },
+          {
+            "score": 2,
+            "description": "Provides information with limited clarity or organization."
+          },
+          {
+            "score": 3,
+            "description": "Clear  but misses opportunities for confirmation."
+          },
+          {
+            "score": 4,
+            "description": "Organized, logical, empathetic  with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exemplary clarity, anticipates patient/team needs, compassionate."
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of operative management of perforated ulcer."
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps."
+          },
+          {
+            "score": 3,
+            "description": "Describes operative steps with minor omissions."
+          },
+          {
+            "score": 4,
+            "description": "Describes operative management, including omentum mobilization, patch placement, and irrigation, with minor gaps."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative details, perioperative considerations, and current evidence."
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Displays disrespect, breaches confidentiality, or unsafe behavior."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Respectful and professional but requires prompting."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model: ethical, culturally sensitive, professional demeanor."
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths:You demonstrated strong diagnostic reasoning by rapidly identifying perforated peptic ulcer based on history, exam, and imaging. Your prioritization of resuscitation and surgical intervention showed good clinical judgment. Communication of your management plan was structured and clear.Areas for Improvement:A more detailed description of operative steps, including omental patch technique, would strengthen your performance. Earlier discussion of postoperative management, including H. pylori testing and ulcer prevention strategies, would also enhance your care plan.Suggested Reading:- SCORE Curriculum: Peptic Ulcer Disease- ACS/ASE Review Manual: Perforated Viscus- Graham Patch Repair and Operative Management of Peptic Ulcer Disease"
+}

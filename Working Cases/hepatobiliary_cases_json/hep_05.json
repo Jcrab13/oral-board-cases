@@ -1,0 +1,200 @@
+{
+  "case_id": "hep_05",
+  "title": "Hepatocellular Carcinoma Case",
+  "diagnosis_topic": "",
+  "tags": [
+    "hepatobiliary"
+  ],
+  "setup_script": "A 58-year-old man with chronic hepatitis C and compensated cirrhosis presents for routine surveillance. An abdominal ultrasound shows a 2.5 cm lesion in segment VI of the liver. Alpha-fetoprotein is elevated. How would you proceed with this patient?",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident reviews liver function tests",
+      "reply": "Child\u2013Pugh A (bilirubin 1.2, albumin 3.5, INR 1.1, no ascites or encephalopathy)."
+    },
+    {
+      "trigger": "If resident orders contrast-enhanced MRI",
+      "reply": "Lesion demonstrates arterial enhancement with washout in venous phase, consistent with LI-RADS HCC."
+    },
+    {
+      "trigger": "If resident requests staging evaluation",
+      "reply": "No evidence of extrahepatic disease."
+    },
+    {
+      "trigger": "If resident evaluates for portal hypertension",
+      "reply": "Endoscopy shows small varices; hepatic venous pressure gradient 9 mmHg (not clinically significant)."
+    },
+    {
+      "trigger": "If resident discusses treatment options",
+      "reply": "Options include resection, ablation, or transplantation, depending on portal hypertension and performance status."
+    },
+    {
+      "trigger": "If resident selects partial hepatectomy",
+      "reply": "Right segmentectomy performed with negative margins."
+    },
+    {
+      "trigger": "If resident delays definitive therapy",
+      "reply": "Tumor grows to 5.2 cm, no longer within Milan criteria for transplant eligibility."
+    },
+    {
+      "trigger": "If resident discusses TACE",
+      "reply": "Appropriate for unresectable lesions or as bridge to transplant."
+    },
+    {
+      "trigger": "If resident explains transplant criteria",
+      "reply": "Milan criteria: single lesion \u22645 cm or up to three lesions \u22643 cm without vascular invasion."
+    },
+    {
+      "trigger": "If resident outlines postoperative surveillance",
+      "reply": "Imaging and AFP every 3\u20136 months."
+    },
+    {
+      "trigger": "If resident addresses antiviral therapy",
+      "reply": "Continues hepatitis C antiviral therapy."
+    },
+    {
+      "trigger": "If resident discusses cirrhosis management",
+      "reply": "Abstinence from alcohol, vaccination against HAV/HBV, ongoing variceal screening."
+    },
+    {
+      "trigger": "If resident educates patient",
+      "reply": "Explains prognosis, recurrence risk, and importance of long-term follow-up."
+    }
+  ],
+  "critical_decision_points": [
+    "Interpretation of imaging criteria for HCC.",
+    "Assessment of liver function and portal hypertension.",
+    "Selection of appropriate treatment modality (resection, ablation, transplant, TACE).",
+    "Understanding and application of Milan criteria.",
+    "Long-term surveillance and cirrhosis management."
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize HCC or attributes findings incorrectly."
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete consideration of HCC."
+          },
+          {
+            "score": 3,
+            "description": "Recognizes HCC but omits key differentials or staging elements."
+          },
+          {
+            "score": 4,
+            "description": "Develops a comprehensive differential and interprets staging appropriately."
+          },
+          {
+            "score": 5,
+            "description": "Rapidly identifies HCC, interprets data correctly, and applies diagnostic criteria."
+          }
+        ]
+      },
+      "clinical_judgment": {
+        "weight": 0.3,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or selects inappropriate therapy."
+          },
+          {
+            "score": 2,
+            "description": "Recognizes disease but delays or mis-sequences key decisions."
+          },
+          {
+            "score": 3,
+            "description": "Initiates appropriate evaluation but with minor errors in timing/priority."
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes correct diagnostic and therapeutic steps with good timing."
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates multidisciplinary care, and makes timely, appropriate decisions."
+          }
+        ]
+      },
+      "communication": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, or lacks engagement."
+          },
+          {
+            "score": 2,
+            "description": "Provides information but with limited clarity or organization."
+          },
+          {
+            "score": 3,
+            "description": "Communicates plan and findings clearly but misses some details."
+          },
+          {
+            "score": 4,
+            "description": "Communicates clearly and logically with patient and team."
+          },
+          {
+            "score": 5,
+            "description": "Exceptionally clear, succinct, empathetic, and anticipates team/patient needs."
+          }
+        ]
+      },
+      "surgical_knowledge": {
+        "weight": 0.15,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks knowledge of operative options for HCC."
+          },
+          {
+            "score": 2,
+            "description": "Identifies an option but with major errors in understanding or technique."
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with some omissions."
+          },
+          {
+            "score": 4,
+            "description": "Explains operative management, complications, and alternatives."
+          },
+          {
+            "score": 5,
+            "description": "Demonstrates mastery of operative principles, nuances, and perioperative care in HCC."
+          }
+        ]
+      },
+      "professionalism": {
+        "weight": 0.1,
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unsafe."
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or accountability."
+          },
+          {
+            "score": 3,
+            "description": "Maintains integrity but requires prompting for reflection."
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback."
+          },
+          {
+            "score": 5,
+            "description": "Role model for professionalism, humility, and ethical behavior."
+          }
+        ]
+      }
+    },
+    "resident_feedback_template": "StrengthsYou demonstrated strong diagnostic reasoning by recognizing hepatocellular carcinoma and applying LI-RADS criteria. You appropriately considered surgical, ablative, and transplant options. Your communication was clear and organized. Areas for ImprovementEarlier articulation of transplant eligibility and bridging strategies such as TACE would strengthen your management plan. Consider refining the discussion of portal hypertension assessment and its impact on surgical candidacy. Suggested Reading Topics- SCORE: Hepatocellular Carcinoma- Milan Criteria and Transplant Selection Guidelines- AASLD Guidelines on Management of Cirrhosis and HCC"
+  }
+}

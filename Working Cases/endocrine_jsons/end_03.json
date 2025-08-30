@@ -1,0 +1,203 @@
+{
+  "case_id": "end_03",
+  "title": "Insulinoma Causing Hypoglycemic Episodes",
+  "diagnosis_topic": "Pancreatic Neuroendocrine Tumor (Insulinoma)",
+  "tags": [
+    "endocrine",
+    "pancreatic_neuroendocrine_tumor",
+    "hypoglycemia"
+  ],
+  "setup_script": "\u201cA 35-year-old woman presents with recurrent episodes of diaphoresis, tremor, and confusion that are relieved by eating. During a clinic visit, her fasting glucose is found to be 40 mg/dL with inappropriately elevated insulin and C-peptide levels. Abdominal MRI demonstrates a 1 cm lesion in the pancreatic tail. How would you proceed with this patient?\u201d",
+  "dynamic_flow": [
+    {
+      "trigger": "If resident asks about confirming diagnosis",
+      "reply": "\u201cA supervised fast shows recurrent hypoglycemia with elevated insulin, C-peptide, and proinsulin levels. Sulfonylurea screen is negative.\u201d"
+    },
+    {
+      "trigger": "If resident discusses differential diagnosis",
+      "reply": "\u201cWhat entities would you consider in the differential diagnosis for hypoglycemia in this patient?\u201d"
+    },
+    {
+      "trigger": "If resident requests localization studies",
+      "reply": "\u201cEndoscopic ultrasound confirms a 1 cm lesion in the tail of the pancreas, consistent with insulinoma.\u201d"
+    },
+    {
+      "trigger": "If resident asks about management options",
+      "reply": "\u201cWhat are your treatment options for this patient?\u201d"
+    },
+    {
+      "trigger": "If resident proposes surgical resection",
+      "reply": "\u201cWhat surgical approaches are available for a small insulinoma in the tail of the pancreas?\u201d"
+    },
+    {
+      "trigger": "If resident recommends enucleation",
+      "reply": "\u201cThe lesion is close to the pancreatic duct. What is your operative plan now?\u201d"
+    },
+    {
+      "trigger": "If resident proposes distal pancreatectomy",
+      "reply": "\u201cHow would you approach this operation laparoscopically, and what factors would influence whether you preserve the spleen?\u201d"
+    },
+    {
+      "trigger": "If resident does not address preoperative optimization",
+      "reply": "\u201cHow would you manage this patient preoperatively?\u201d"
+    },
+    {
+      "trigger": "If resident proceeds to surgery",
+      "reply": "\u201cIntraoperative ultrasound confirms the lesion in the tail of the pancreas. Please describe your operative steps.\u201d"
+    },
+    {
+      "trigger": "If resident completes resection",
+      "reply": "\u201cThe patient remains stable intraoperatively, but postoperative glucose levels are elevated. How would you manage this?\u201d"
+    },
+    {
+      "trigger": "If resident orders pathology",
+      "reply": "\u201cPathology confirms a well-differentiated neuroendocrine tumor consistent with insulinoma, Ki-67 index < 2%. What is your next step in postoperative care?\u201d"
+    },
+    {
+      "trigger": "If resident discusses postoperative complications",
+      "reply": "\u201cThe patient has elevated drain amylase on postoperative day 3. How do you manage this finding?\u201d"
+    },
+    {
+      "trigger": "If resident addresses follow-up",
+      "reply": "\u201cWhat is your plan for surveillance and counseling of this patient after discharge?\u201d"
+    }
+  ],
+  "critical_decision_points": [
+    "Confirming diagnosis of insulinoma with supervised fasting and biochemical markers",
+    "Localizing the tumor with appropriate imaging and endoscopic ultrasound",
+    "Choosing operative approach (enucleation vs distal pancreatectomy)",
+    "Managing perioperative glucose control",
+    "Recognizing and managing postoperative complications",
+    "Counseling regarding recurrence risk and follow-up"
+  ],
+  "rubric": {
+    "domains": {
+      "diagnostic_reasoning": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to consider insulinoma or misattributes symptoms"
+          },
+          {
+            "score": 2,
+            "description": "Delayed or incomplete differential; overlooks key features"
+          },
+          {
+            "score": 3,
+            "description": "Recognizes insulinoma but omits alternatives"
+          },
+          {
+            "score": 4,
+            "description": "Develops a complete differential including insulinoma and other causes"
+          },
+          {
+            "score": 5,
+            "description": "Quickly identifies insulinoma, articulates full differential with supporting/refuting data"
+          }
+        ],
+        "weight": 0.3
+      },
+      "clinical_judgment": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Fails to recognize urgency or delays action"
+          },
+          {
+            "score": 2,
+            "description": "Recognizes urgency but orders inappropriate or delayed testing"
+          },
+          {
+            "score": 3,
+            "description": "Initiates basic workup but misses key timing or steps"
+          },
+          {
+            "score": 4,
+            "description": "Prioritizes diagnostic testing and definitive therapy with good timing"
+          },
+          {
+            "score": 5,
+            "description": "Anticipates complications, coordinates care, makes timely decisions"
+          }
+        ],
+        "weight": 0.3
+      },
+      "communication": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disorganized, confusing, lacks empathy"
+          },
+          {
+            "score": 2,
+            "description": "Provides information but lacks clarity or structure"
+          },
+          {
+            "score": 3,
+            "description": "Clear  but misses opportunities for confirmation"
+          },
+          {
+            "score": 4,
+            "description": "Clear, logical, empathetic with patient and team"
+          },
+          {
+            "score": 5,
+            "description": "Succinct, compassionate, anticipates needs of patient and team"
+          }
+        ],
+        "weight": 0.15
+      },
+      "surgical_knowledge": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Lacks understanding of operative management of insulinoma"
+          },
+          {
+            "score": 2,
+            "description": "Identifies operative option but with major gaps"
+          },
+          {
+            "score": 3,
+            "description": "Describes key operative steps with minor omissions"
+          },
+          {
+            "score": 4,
+            "description": "Completely describes operative management and complications"
+          },
+          {
+            "score": 5,
+            "description": "Mastery of current evidence, operative nuances, perioperative care"
+          }
+        ],
+        "weight": 0.15
+      },
+      "professionalism": {
+        "anchors": [
+          {
+            "score": 1,
+            "description": "Disrespectful, breaches confidentiality, or unsafe"
+          },
+          {
+            "score": 2,
+            "description": "Inconsistent respect or lapses in accountability"
+          },
+          {
+            "score": 3,
+            "description": "Maintains respect and integrity but requires prompting"
+          },
+          {
+            "score": 4,
+            "description": "Consistently respectful, accountable, receptive to feedback"
+          },
+          {
+            "score": 5,
+            "description": "Role model  with humility, cultural sensitivity, ethics"
+          }
+        ],
+        "weight": 0.1
+      }
+    }
+  },
+  "resident_feedback_template": "Strengths: You demonstrated strong diagnostic reasoning by recognizing Whipple\u2019s triad and ordering confirmatory testing. Your operative planning showed solid knowledge of surgical options and you articulated your management plan clearly.Areas for Improvement: Earlier discussion of preoperative glucose management and detailed planning for pancreatic fistula prevention would strengthen your approach. Refinement in addressing postoperative complications such as pancreatic leak is recommended.Suggested Reading Topics: - SCORE Curriculum: Pancreatic Neuroendocrine Tumors - ACS/ASE Review Manual: Management of Insulinoma - Perioperative Management of Pancreatic Surgery"
+}
