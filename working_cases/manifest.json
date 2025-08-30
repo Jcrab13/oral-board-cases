@@ -1,0 +1,599 @@
+{
+  "working_cases": [
+    {
+      "id": "end_01",
+      "slug": "adrenal-incidentaloma-with-subclinical-cushing-syndrome",
+      "title": "Adrenal Incidentaloma with Subclinical Cushing Syndrome",
+      "path": "working_cases/endocrine_jsons/end_01.json",
+      "tags": ["endocrine", "adrenal_incidentaloma", "hypercortisolism"]
+    },
+    {
+      "id": "end_02",
+      "slug": "primary-hyperparathyroidism",
+      "title": "Primary Hyperparathyroidism",
+      "path": "working_cases/endocrine_jsons/end_02.json",
+      "tags": ["endocrine", "hyperparathyroidism", "parathyroid"]
+    },
+    {
+      "id": "end_03",
+      "slug": "thyroid-nodule-evaluation",
+      "title": "Thyroid Nodule Evaluation",
+      "path": "working_cases/endocrine_jsons/end_03.json",
+      "tags": ["endocrine", "thyroid", "nodule"]
+    },
+    {
+      "id": "end_04",
+      "slug": "medullary-thyroid-carcinoma",
+      "title": "Medullary Thyroid Carcinoma",
+      "path": "working_cases/endocrine_jsons/end_04.json",
+      "tags": ["endocrine", "thyroid", "medullary_carcinoma"]
+    },
+    {
+      "id": "end_05",
+      "slug": "graves-disease",
+      "title": "Graves Disease",
+      "path": "working_cases/endocrine_jsons/end_05.json",
+      "tags": ["endocrine", "thyroid", "graves_disease"]
+    },
+    {
+      "id": "end_06",
+      "slug": "insulinoma",
+      "title": "Insulinoma",
+      "path": "working_cases/endocrine_jsons/end_06.json",
+      "tags": ["endocrine", "pancreas", "insulinoma"]
+    },
+    {
+      "id": "end_07",
+      "slug": "pheochromocytoma",
+      "title": "Pheochromocytoma",
+      "path": "working_cases/endocrine_jsons/end_07.json",
+      "tags": ["endocrine", "adrenal", "pheochromocytoma"]
+    },
+    {
+      "id": "end_08",
+      "slug": "hyperaldosteronism",
+      "title": "Hyperaldosteronism",
+      "path": "working_cases/endocrine_jsons/end_08.json",
+      "tags": ["endocrine", "adrenal", "hyperaldosteronism"]
+    },
+    {
+      "id": "end_09",
+      "slug": "men-syndrome",
+      "title": "MEN Syndrome",
+      "path": "working_cases/endocrine_jsons/end_09.json",
+      "tags": ["endocrine", "genetic", "men_syndrome"]
+    },
+    {
+      "id": "end_10",
+      "slug": "post-thyroidectomy-hypocalcemia",
+      "title": "Post-Thyroidectomy Hypocalcemia",
+      "path": "working_cases/endocrine_jsons/end_10.json",
+      "tags": ["endocrine", "thyroid", "hypocalcemia"]
+    },
+    {
+      "id": "eso_01",
+      "slug": "esophageal-perforation",
+      "title": "Esophageal Perforation",
+      "path": "working_cases/esophagogastric_jsons/eso_01.json",
+      "tags": ["esophagogastric", "esophageal", "perforation"]
+    },
+    {
+      "id": "eso_02",
+      "slug": "achalasia",
+      "title": "Achalasia",
+      "path": "working_cases/esophagogastric_jsons/eso_02.json",
+      "tags": ["esophagogastric", "esophageal", "achalasia"]
+    },
+    {
+      "id": "eso_03",
+      "slug": "hiatal-hernia",
+      "title": "Hiatal Hernia",
+      "path": "working_cases/esophagogastric_jsons/eso_03.json",
+      "tags": ["esophagogastric", "hernia", "hiatal"]
+    },
+    {
+      "id": "eso_04",
+      "slug": "gastric-cancer",
+      "title": "Gastric Cancer",
+      "path": "working_cases/esophagogastric_jsons/eso_04.json",
+      "tags": ["esophagogastric", "gastric", "cancer"]
+    },
+    {
+      "id": "eso_05",
+      "slug": "esophageal-cancer",
+      "title": "Esophageal Cancer",
+      "path": "working_cases/esophagogastric_jsons/eso_05.json",
+      "tags": ["esophagogastric", "esophageal", "cancer"]
+    },
+    {
+      "id": "eso_06",
+      "slug": "barrett-esophagus",
+      "title": "Barrett Esophagus",
+      "path": "working_cases/esophagogastric_jsons/eso_06.json",
+      "tags": ["esophagogastric", "esophageal", "barrett"]
+    },
+    {
+      "id": "eso_07",
+      "slug": "gastric-ulcer",
+      "title": "Gastric Ulcer",
+      "path": "working_cases/esophagogastric_jsons/eso_07.json",
+      "tags": ["esophagogastric", "gastric", "ulcer"]
+    },
+    {
+      "id": "eso_08",
+      "slug": "paraesophageal-hernia",
+      "title": "Paraesophageal Hernia",
+      "path": "working_cases/esophagogastric_jsons/eso_08.json",
+      "tags": ["esophagogastric", "hernia", "paraesophageal"]
+    },
+    {
+      "id": "eso_09",
+      "slug": "gastric-outlet-obstruction",
+      "title": "Gastric Outlet Obstruction",
+      "path": "working_cases/esophagogastric_jsons/eso_09.json",
+      "tags": ["esophagogastric", "gastric", "obstruction"]
+    },
+    {
+      "id": "gen_01",
+      "slug": "acute-appendicitis",
+      "title": "Acute Appendicitis",
+      "path": "working_cases/generalsurgery_jsons/gen_01.json",
+      "tags": ["general_surgery", "appendicitis", "acute"]
+    },
+    {
+      "id": "gen_02",
+      "slug": "small-bowel-obstruction",
+      "title": "Small Bowel Obstruction",
+      "path": "working_cases/generalsurgery_jsons/gen_02.json",
+      "tags": ["general_surgery", "bowel", "obstruction"]
+    },
+    {
+      "id": "gen_03",
+      "slug": "large-bowel-obstruction",
+      "title": "Large Bowel Obstruction",
+      "path": "working_cases/generalsurgery_jsons/gen_03.json",
+      "tags": ["general_surgery", "bowel", "obstruction"]
+    },
+    {
+      "id": "gen_04",
+      "slug": "incarcerated-hernia",
+      "title": "Incarcerated Hernia",
+      "path": "working_cases/generalsurgery_jsons/gen_04.json",
+      "tags": ["general_surgery", "hernia", "incarcerated"]
+    },
+    {
+      "id": "gen_05",
+      "slug": "acute-diverticulitis",
+      "title": "Acute Diverticulitis",
+      "path": "working_cases/generalsurgery_jsons/gen_05.json",
+      "tags": ["general_surgery", "diverticulitis", "acute"]
+    },
+    {
+      "id": "gen_06",
+      "slug": "upper-gi-bleeding",
+      "title": "Upper GI Bleeding",
+      "path": "working_cases/generalsurgery_jsons/gen_06.json",
+      "tags": ["general_surgery", "bleeding", "upper_gi"]
+    },
+    {
+      "id": "gen_07",
+      "slug": "acute-pancreatitis",
+      "title": "Acute Pancreatitis",
+      "path": "working_cases/generalsurgery_jsons/gen_07.json",
+      "tags": ["general_surgery", "pancreatitis", "acute"]
+    },
+    {
+      "id": "gen_08",
+      "slug": "enterocutaneous-fistula",
+      "title": "Enterocutaneous Fistula",
+      "path": "working_cases/generalsurgery_jsons/gen_08.json",
+      "tags": ["general_surgery", "fistula", "enterocutaneous"]
+    },
+    {
+      "id": "gen_09",
+      "slug": "incisional-hernia",
+      "title": "Incisional Hernia",
+      "path": "working_cases/generalsurgery_jsons/gen_09.json",
+      "tags": ["general_surgery", "hernia", "incisional"]
+    },
+    {
+      "id": "gen_10",
+      "slug": "perforated-peptic-ulcer",
+      "title": "Perforated Peptic Ulcer",
+      "path": "working_cases/generalsurgery_jsons/gen_10.json",
+      "tags": ["general_surgery", "ulcer", "perforated"]
+    },
+    {
+      "id": "gen_11",
+      "slug": "acute-cholecystitis",
+      "title": "Acute Cholecystitis",
+      "path": "working_cases/generalsurgery_jsons/gen_11.json",
+      "tags": ["general_surgery", "cholecystitis", "acute"]
+    },
+    {
+      "id": "gen_12",
+      "slug": "mesenteric-ischemia",
+      "title": "Mesenteric Ischemia",
+      "path": "working_cases/generalsurgery_jsons/gen_12.json",
+      "tags": ["general_surgery", "mesenteric", "ischemia"]
+    },
+    {
+      "id": "hep_01",
+      "slug": "acute-cholecystitis",
+      "title": "Acute Cholecystitis",
+      "path": "working_cases/hepatobiliary_jsons/hep_01.json",
+      "tags": ["hepatobiliary", "cholecystitis", "acute"]
+    },
+    {
+      "id": "hep_02",
+      "slug": "acute-cholangitis",
+      "title": "Acute Cholangitis",
+      "path": "working_cases/hepatobiliary_jsons/hep_02.json",
+      "tags": ["hepatobiliary", "cholangitis", "acute"]
+    },
+    {
+      "id": "hep_03",
+      "slug": "gallstone-pancreatitis",
+      "title": "Gallstone Pancreatitis",
+      "path": "working_cases/hepatobiliary_jsons/hep_03.json",
+      "tags": ["hepatobiliary", "pancreatitis", "gallstone"]
+    },
+    {
+      "id": "hep_04",
+      "slug": "liver-abscess",
+      "title": "Liver Abscess",
+      "path": "working_cases/hepatobiliary_jsons/hep_04.json",
+      "tags": ["hepatobiliary", "liver", "abscess"]
+    },
+    {
+      "id": "hep_05",
+      "slug": "hepatocellular-carcinoma",
+      "title": "Hepatocellular Carcinoma",
+      "path": "working_cases/hepatobiliary_jsons/hep_05.json",
+      "tags": ["hepatobiliary", "liver", "carcinoma"]
+    },
+    {
+      "id": "hep_06",
+      "slug": "choledocholithiasis",
+      "title": "Choledocholithiasis",
+      "path": "working_cases/hepatobiliary_jsons/hep_06.json",
+      "tags": ["hepatobiliary", "bile_duct", "stones"]
+    },
+    {
+      "id": "hep_07",
+      "slug": "bile-leak",
+      "title": "Bile Leak",
+      "path": "working_cases/hepatobiliary_jsons/hep_07.json",
+      "tags": ["hepatobiliary", "bile", "leak"]
+    },
+    {
+      "id": "hep_08",
+      "slug": "variceal-bleeding",
+      "title": "Variceal Bleeding",
+      "path": "working_cases/hepatobiliary_jsons/hep_08.json",
+      "tags": ["hepatobiliary", "varices", "bleeding"]
+    },
+    {
+      "id": "hep_09",
+      "slug": "gallbladder-cancer",
+      "title": "Gallbladder Cancer",
+      "path": "working_cases/hepatobiliary_jsons/hep_09.json",
+      "tags": ["hepatobiliary", "gallbladder", "cancer"]
+    },
+    {
+      "id": "ped_01",
+      "slug": "anorectal-malformation",
+      "title": "Anorectal Malformation",
+      "path": "working_cases/pediatric_jsons/ped_01.json",
+      "tags": ["pediatric", "congenital", "anorectal_malformation"]
+    },
+    {
+      "id": "ped_02",
+      "slug": "hypertrophic-pyloric-stenosis",
+      "title": "Hypertrophic Pyloric Stenosis",
+      "path": "working_cases/pediatric_jsons/ped_02.json",
+      "tags": ["pediatric", "pyloric_stenosis", "hypertrophic"]
+    },
+    {
+      "id": "ped_03",
+      "slug": "intussusception",
+      "title": "Intussusception",
+      "path": "working_cases/pediatric_jsons/ped_03.json",
+      "tags": ["pediatric", "intussusception", "bowel"]
+    },
+    {
+      "id": "ped_04",
+      "slug": "pediatric-appendicitis",
+      "title": "Pediatric Appendicitis",
+      "path": "working_cases/pediatric_jsons/ped_04.json",
+      "tags": ["pediatric", "appendicitis", "acute"]
+    },
+    {
+      "id": "ped_05",
+      "slug": "hirschsprung-disease",
+      "title": "Hirschsprung Disease",
+      "path": "working_cases/pediatric_jsons/ped_05.json",
+      "tags": ["pediatric", "hirschsprung", "congenital"]
+    },
+    {
+      "id": "ped_06",
+      "slug": "congenital-diaphragmatic-hernia",
+      "title": "Congenital Diaphragmatic Hernia",
+      "path": "working_cases/pediatric_jsons/ped_06.json",
+      "tags": ["pediatric", "diaphragmatic_hernia", "congenital"]
+    },
+    {
+      "id": "ped_07",
+      "slug": "midgut-volvulus",
+      "title": "Midgut Volvulus",
+      "path": "working_cases/pediatric_jsons/ped_07.json",
+      "tags": ["pediatric", "volvulus", "malrotation"]
+    },
+    {
+      "id": "ped_08",
+      "slug": "meckel-diverticulum",
+      "title": "Meckel Diverticulum",
+      "path": "working_cases/pediatric_jsons/ped_08.json",
+      "tags": ["pediatric", "meckel", "diverticulum"]
+    },
+    {
+      "id": "ped_09",
+      "slug": "necrotizing-enterocolitis",
+      "title": "Necrotizing Enterocolitis",
+      "path": "working_cases/pediatric_jsons/ped_09.json",
+      "tags": ["pediatric", "necrotizing_enterocolitis", "neonatal"]
+    },
+    {
+      "id": "ped_10",
+      "slug": "biliary-atresia",
+      "title": "Biliary Atresia",
+      "path": "working_cases/pediatric_jsons/ped_10.json",
+      "tags": ["pediatric", "biliary_atresia", "congenital"]
+    },
+    {
+      "id": "ped_11",
+      "slug": "pediatric-hernia",
+      "title": "Pediatric Hernia",
+      "path": "working_cases/pediatric_jsons/ped_11.json",
+      "tags": ["pediatric", "hernia", "inguinal"]
+    },
+    {
+      "id": "sst_01",
+      "slug": "necrotizing-fasciitis",
+      "title": "Necrotizing Fasciitis",
+      "path": "working_cases/skin&softtissue_jsons/sst_01.json",
+      "tags": ["skin_soft_tissue", "necrotizing_fasciitis", "infection"]
+    },
+    {
+      "id": "sst_02",
+      "slug": "skin-abscess",
+      "title": "Skin Abscess",
+      "path": "working_cases/skin&softtissue_jsons/sst_02.json",
+      "tags": ["skin_soft_tissue", "abscess", "infection"]
+    },
+    {
+      "id": "sst_03",
+      "slug": "cellulitis",
+      "title": "Cellulitis",
+      "path": "working_cases/skin&softtissue_jsons/sst_03.json",
+      "tags": ["skin_soft_tissue", "cellulitis", "infection"]
+    },
+    {
+      "id": "sst_04",
+      "slug": "soft-tissue-sarcoma",
+      "title": "Soft Tissue Sarcoma",
+      "path": "working_cases/skin&softtissue_jsons/sst_04.json",
+      "tags": ["skin_soft_tissue", "sarcoma", "cancer"]
+    },
+    {
+      "id": "sst_05",
+      "slug": "basal-cell-carcinoma",
+      "title": "Basal Cell Carcinoma",
+      "path": "working_cases/skin&softtissue_jsons/sst_05.json",
+      "tags": ["skin_soft_tissue", "basal_cell", "cancer"]
+    },
+    {
+      "id": "sst_06",
+      "slug": "melanoma",
+      "title": "Melanoma",
+      "path": "working_cases/skin&softtissue_jsons/sst_06.json",
+      "tags": ["skin_soft_tissue", "melanoma", "cancer"]
+    },
+    {
+      "id": "sst_07",
+      "slug": "lipoma",
+      "title": "Lipoma",
+      "path": "working_cases/skin&softtissue_jsons/sst_07.json",
+      "tags": ["skin_soft_tissue", "lipoma", "benign"]
+    },
+    {
+      "id": "sst_08",
+      "slug": "surgical-site-infection",
+      "title": "Surgical Site Infection",
+      "path": "working_cases/skin&softtissue_jsons/sst_08.json",
+      "tags": ["skin_soft_tissue", "infection", "postoperative"]
+    },
+    {
+      "id": "sst_09",
+      "slug": "fournier-gangrene",
+      "title": "Fournier Gangrene",
+      "path": "working_cases/skin&softtissue_jsons/sst_09.json",
+      "tags": ["skin_soft_tissue", "fournier", "necrotizing"]
+    },
+    {
+      "id": "sst_10",
+      "slug": "pressure-ulcer",
+      "title": "Pressure Ulcer",
+      "path": "working_cases/skin&softtissue_jsons/sst_10.json",
+      "tags": ["skin_soft_tissue", "pressure_ulcer", "chronic"]
+    },
+    {
+      "id": "sst_11",
+      "slug": "hidradenitis-suppurativa",
+      "title": "Hidradenitis Suppurativa",
+      "path": "working_cases/skin&softtissue_jsons/sst_11.json",
+      "tags": ["skin_soft_tissue", "hidradenitis", "chronic"]
+    },
+    {
+      "id": "sst_12",
+      "slug": "cutaneous-lymphoma",
+      "title": "Cutaneous Lymphoma",
+      "path": "working_cases/skin&softtissue_jsons/sst_12.json",
+      "tags": ["skin_soft_tissue", "lymphoma", "cancer"]
+    },
+    {
+      "id": "sst_13",
+      "slug": "squamous-cell-carcinoma",
+      "title": "Squamous Cell Carcinoma",
+      "path": "working_cases/skin&softtissue_jsons/sst_13.json",
+      "tags": ["skin_soft_tissue", "squamous_cell", "cancer"]
+    },
+    {
+      "id": "trauma_01",
+      "slug": "acute-compartment-syndrome",
+      "title": "Acute Compartment Syndrome",
+      "path": "working_cases/trauma_jsons/trauma_01.json",
+      "tags": ["trauma", "extremity", "compartment_syndrome"]
+    },
+    {
+      "id": "trauma_02",
+      "slug": "penetrating-abdominal-trauma",
+      "title": "Penetrating Abdominal Trauma",
+      "path": "working_cases/trauma_jsons/trauma_02.json",
+      "tags": ["trauma", "abdominal", "penetrating"]
+    },
+    {
+      "id": "trauma_03",
+      "slug": "blunt-abdominal-trauma",
+      "title": "Blunt Abdominal Trauma",
+      "path": "working_cases/trauma_jsons/trauma_03.json",
+      "tags": ["trauma", "abdominal", "blunt"]
+    },
+    {
+      "id": "trauma_04",
+      "slug": "pelvic-fracture",
+      "title": "Pelvic Fracture",
+      "path": "working_cases/trauma_jsons/trauma_04.json",
+      "tags": ["trauma", "pelvic", "fracture"]
+    },
+    {
+      "id": "trauma_05",
+      "slug": "penetrating-neck-injury",
+      "title": "Penetrating Neck Injury",
+      "path": "working_cases/trauma_jsons/trauma_05.json",
+      "tags": ["trauma", "neck", "penetrating"]
+    },
+    {
+      "id": "trauma_06",
+      "slug": "thoracic-trauma",
+      "title": "Thoracic Trauma",
+      "path": "working_cases/trauma_jsons/trauma_06.json",
+      "tags": ["trauma", "thoracic", "chest"]
+    },
+    {
+      "id": "trauma_07",
+      "slug": "cardiac-tamponade",
+      "title": "Cardiac Tamponade",
+      "path": "working_cases/trauma_jsons/trauma_07.json",
+      "tags": ["trauma", "cardiac", "tamponade"]
+    },
+    {
+      "id": "trauma_08",
+      "slug": "thermal-burns",
+      "title": "Thermal Burns",
+      "path": "working_cases/trauma_jsons/trauma_08.json",
+      "tags": ["trauma", "burns", "thermal"]
+    },
+    {
+      "id": "trauma_09",
+      "slug": "diaphragmatic-rupture",
+      "title": "Diaphragmatic Rupture",
+      "path": "working_cases/trauma_jsons/trauma_09.json",
+      "tags": ["trauma", "diaphragm", "rupture"]
+    },
+    {
+      "id": "trauma_10",
+      "slug": "open-fracture",
+      "title": "Open Fracture",
+      "path": "working_cases/trauma_jsons/trauma_10.json",
+      "tags": ["trauma", "fracture", "open"]
+    },
+    {
+      "id": "trauma_11",
+      "slug": "traumatic-brain-injury",
+      "title": "Traumatic Brain Injury",
+      "path": "working_cases/trauma_jsons/trauma_11.json",
+      "tags": ["trauma", "brain", "injury"]
+    },
+    {
+      "id": "vascular_01",
+      "slug": "acute-limb-ischemia",
+      "title": "Acute Limb Ischemia",
+      "path": "working_cases/vascular_jsons/vascular_01.json",
+      "tags": ["vascular", "limb", "ischemia"]
+    },
+    {
+      "id": "vascular_02",
+      "slug": "ruptured-aaa",
+      "title": "Ruptured AAA",
+      "path": "working_cases/vascular_jsons/vascular_02.json",
+      "tags": ["vascular", "aaa", "rupture"]
+    },
+    {
+      "id": "vascular_03",
+      "slug": "carotid-stenosis",
+      "title": "Carotid Stenosis",
+      "path": "working_cases/vascular_jsons/vascular_03.json",
+      "tags": ["vascular", "carotid", "stenosis"]
+    },
+    {
+      "id": "vascular_04",
+      "slug": "chronic-limb-ischemia",
+      "title": "Chronic Limb Ischemia",
+      "path": "working_cases/vascular_jsons/vascular_04.json",
+      "tags": ["vascular", "limb", "ischemia"]
+    },
+    {
+      "id": "vascular_05",
+      "slug": "mesenteric-ischemia",
+      "title": "Mesenteric Ischemia",
+      "path": "working_cases/vascular_jsons/vascular_05.json",
+      "tags": ["vascular", "mesenteric", "ischemia"]
+    },
+    {
+      "id": "vascular_06",
+      "slug": "dvt-pe",
+      "title": "DVT/PE",
+      "path": "working_cases/vascular_jsons/vascular_06.json",
+      "tags": ["vascular", "dvt", "pe"]
+    },
+    {
+      "id": "vascular_07",
+      "slug": "thoracic-outlet-syndrome",
+      "title": "Thoracic Outlet Syndrome",
+      "path": "working_cases/vascular_jsons/vascular_07.json",
+      "tags": ["vascular", "thoracic_outlet", "syndrome"]
+    },
+    {
+      "id": "vascular_08",
+      "slug": "aortic-dissection",
+      "title": "Aortic Dissection",
+      "path": "working_cases/vascular_jsons/vascular_08.json",
+      "tags": ["vascular", "aorta", "dissection"]
+    },
+    {
+      "id": "vascular_09",
+      "slug": "dialysis-access",
+      "title": "Dialysis Access",
+      "path": "working_cases/vascular_jsons/vascular_09.json",
+      "tags": ["vascular", "dialysis", "access"]
+    },
+    {
+      "id": "vascular_10",
+      "slug": "varicose-veins",
+      "title": "Varicose Veins",
+      "path": "working_cases/vascular_jsons/vascular_10.json",
+      "tags": ["vascular", "varicose", "veins"]
+    }
+  ]
+}
